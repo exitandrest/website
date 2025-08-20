@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-label="Branding Logo" viewBox="-6 0 202 87.5">
   <defs>
     <style>
+      /** TODO: this is not being respected/supported */
       @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700');
     </style>
     <filter id="a" width="240%" height="240%" x="-48%" y="-64%">
