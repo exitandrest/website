@@ -1,55 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" aria-label="Branding Logo" viewBox="-6 0 202 87.5">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700');
+      @supports (color: oklch(0.5 0.1 200)) {
+        .bg { fill: oklch(0.55 0.09 240) }
+        .cloud { fill: oklch(0.97 0.01 220) }
+        .sun { fill: oklch(0.85 0.19 95) }
+        .sun-light { fill: oklch(0.95 0.13 95); }
+        .cloud-bottom { fill: oklch(0.97 0.01 220) }
+        .dot { fill: oklch(0.95 0.13 95) }
+      }
+      @supports (fill: linear-gradient(48deg, oklch(0.48 0.09 240 / .48) oklch(0.55 0.09 240));) {
+        .bg {
+          fill: linear-gradient(48deg, oklch(0.48 0.09 240 / .48) oklch(0.55 0.09 240));
+        }
+      }
     </style>
-    <filter id="a" width="240%" height="240%" x="-48%" y="-64%">
-      <feGaussianBlur result="blur" stdDeviation="10" />
-      <feFlood flood-color="gold" flood-opacity=".28" />
-      <feComposite in2="blur" operator="in" />
-      <feMerge>
-        <feMergeNode />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <filter id="b" width="180%" height="180%" x="-40%" y="-40%">
-      <feGaussianBlur result="blur" stdDeviation="6" />
-      <feFlood flood-color="#134" flood-opacity=".36" />
-      <feComposite in2="blur" operator="in" />
-      <feMerge>
-        <feMergeNode />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
   </defs>
-  <g filter="url(#a)" font-family="MuseoModerno, sans-serif" font-weight="400" text-anchor="middle">
-    <text x="50%" y="56" fill="gold" font-size="48" opacity=".64">
-      Exıt<tspan fill="#2f4f4f">…</tspan>
-    </text>
-    <text x="48%" y="75.25" fill="#2f4f4f" fill-opacity=".64" font-size="24">
-      &amp;
-    </text>
-  </g>
-  <text x="50%" y="56" fill="#2f4f4f" font-family="MuseoModerno, sans-serif" font-size="48" font-weight="400"
-    text-anchor="middle">
-    Exıt<tspan fill="none" stroke="gold" stroke-width=".5" class="outline">…</tspan>
-  </text>
-  <text x="48%" y="75.25" fill="none" stroke="gold" stroke-width=".5" class="outline"
-    font-family="MuseoModerno, sans-serif" font-size="24" font-weight="100" paint-order="stroke" text-anchor="middle">
-    &amp;
-  </text>
-  <text x="65%" y="71" fill="#2f4f4f" fill-opacity=".8" font-family="MuseoModerno, sans-serif" font-size="18"
-    font-weight="400" text-anchor="middle">
-    REST
-  </text>
-  <g filter="url(#b)">
-    <text x="50.25%" y="25" font-family="MuseoModerno, sans-serif" font-size="16" font-weight="light" opacity=".8"
-      text-anchor="middle">
-      🌙
-    </text>
-  </g>
-  <text x="50.25%" y="25" font-family="MuseoModerno, sans-serif" font-size="16" font-weight="light"
-    text-anchor="middle">
-    🌙
-  </text>
+  <path class="bg" fill="#3a4e6b"
+    d="M512 256A256 256 0 0 1 1 278.62Q0 267.46 0 256C0 114.64 114.6 0 256 0s256 114.61 256 256Z" />
+  <path class="cloud" fill="#e6f6ff"
+    d="M342.41 310.84H5.9A255 255 0 0 1 1 278.61c11-6.87 25.38-11 41.13-11a88.42 88.42 0 0 1 9.86.56 71.87 71.87 0 0 1-.86-10.94A69.37 69.37 0 0 1 188.4 243a55.22 55.22 0 0 1 72.41 26.7 86.13 86.13 0 0 1 19-2.11c1.23 0 2.47 0 3.68.07 27.16 1.13 49.66 14.63 56.67 32.74a33.66 33.66 0 0 1 2.25 10.44Z" />
+  <path class="sun" fill="#ffcc29"
+    d="M425.46 111q-2.35-4.22-4.94-8.29a199.17 199.17 0 0 0-44.77-50c-2.43-2-4.93-3.82-7.47-5.65a194.23 194.23 0 0 0-16.09-10.44 196.82 196.82 0 0 0-28-13.45c-1.28-.51-2.55-1-3.85-1.46a181.71 181.71 0 0 1-26.36 237q-5.07 4.66-10.47 8.94A182 182 0 0 1 63.22 272a196.53 196.53 0 0 0 11 26.31q3.23 6.44 6.91 12.58c.12.23.26.45.38.66a196.63 196.63 0 0 0 21.34 29.1 200.35 200.35 0 0 0 14.72 15q5 4.65 10.41 8.92a198 198 0 0 0 70 35.86q4.32 1.22 8.76 2.26A199 199 0 0 0 425.46 111Z" />
+  <path class="sun-light" fill="#ffde55"
+    d="M363.12 72.25a205.53 205.53 0 0 0-4.95-8.28 199.2 199.2 0 0 0-34-40.77c-1.29-.51-2.56-1-3.86-1.46a181.77 181.77 0 0 1-26.36 237 174.3 174.3 0 0 1-10.47 8.93A182.08 182.08 0 0 1 63.23 272a197.08 197.08 0 0 0 11 26.31q3.22 6.44 6.91 12.58l.38.66a197.15 197.15 0 0 0 21.34 29.1 200.45 200.45 0 0 0 14.73 15 199.52 199.52 0 0 0 212.89-44.77q5.06-5 9.75-10.45a197.28 197.28 0 0 0 31.2-48.92 198.87 198.87 0 0 0-8.28-179.21Z" />
+  <path class="cloud-bottom" fill="#e6f6ff"
+    d="M440.89 433a256.45 256.45 0 0 1-67 50.23h-235.8a256.23 256.23 0 0 1-52.45-36.2c13.55-9.63 32.2-15.58 52.8-15.58A101.63 101.63 0 0 1 161.2 434a66.07 66.07 0 0 1 86.67-32 83 83 0 0 1 163.27 30.11 101.71 101.71 0 0 1 11.81-.67 104.5 104.5 0 0 1 17.94 1.56Z" />
+  <circle class="dot" cx="218.06" cy="76.62" r="7.96" fill="#ffde55" />
+  <circle class="dot" cx="297.07" cy="159.24" r="7.96" fill="#ffde55" />
+  <circle class="dot" cx="460.84" cy="315.68" r="7.96" fill="#ffde55" />
+  <circle class="dot" cx="93.88" cy="383.05" r="7.96" fill="#ffde55" />
+  <circle class="dot" cx="143.51" cy="145.98" r="7.96" fill="#ffde55" />
 </svg>
