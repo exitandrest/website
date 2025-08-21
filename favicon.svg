@@ -46,13 +46,13 @@
 
   <!-- Night sky background with gradient -->
   <!-- Curved bottom edge creates horizon effect -->
-  <path class="bg" fill="#3a4e6b"
-    d="M32 16A16 16 0 0 1 0.0625 17.41Q0 16.72 0 16C0 7.16 7.16 0 16 0s16 7.16 16 16Z" />
+  <!--path class="bg" fill="#3a4e6b"
+    d="M32 16A16 16 0 0 1 0.0625 17.41Q0 16.72 0 16C0 7.16 7.16 0 16 0s16 7.16 16 16Z" /-->
 
   <!-- Upper cloud layer -->
   <!-- Creates depth and atmosphere in the night scene -->
-  <path class="cloud" fill="#e6f6ff"
-    d="M21.4 19.43H0.37A15.94 15.94 0 0 1 0.0625 17.41c0.69-0.43 1.59-0.69 2.57-0.69a5.53 5.53 0 0 1 0.62 0.04 4.49 4.49 0 0 1-0.05-0.68A4.34 4.34 0 0 1 11.78 15.19a3.45 3.45 0 0 1 4.53 1.67 5.38 5.38 0 0 1 1.19-0.13c0.08 0 0.15 0 0.23 0 1.7 0.07 3.1 0.91 3.54 2.05a2.1 2.1 0 0 1 0.14 0.65Z" />
+  <!--path class="cloud" fill="#e6f6ff"
+    d="M21.4 19.43H0.37A15.94 15.94 0 0 1 0.0625 17.41c0.69-0.43 1.59-0.69 2.57-0.69a5.53 5.53 0 0 1 0.62 0.04 4.49 4.49 0 0 1-0.05-0.68A4.34 4.34 0 0 1 11.78 15.19a3.45 3.45 0 0 1 4.53 1.67 5.38 5.38 0 0 1 1.19-0.13c0.08 0 0.15 0 0.23 0 1.7 0.07 3.1 0.91 3.54 2.05a2.1 2.1 0 0 1 0.14 0.65Z" /-->
 
   <!-- Main moon/sun shape -->
   <!-- Crescent form with organic, flowing edges -->
@@ -66,14 +66,16 @@
 
   <!-- Lower cloud formation -->
   <!-- Creates atmospheric depth at the bottom of the scene -->
-  <path class="cloud-bottom" fill="#e6f6ff"
-    d="M27.56 27.06a16.03 16.03 0 0 1-4.19 3.14h-14.74a16.01 16.01 0 0 1-3.28-2.26c0.85-0.6 2.01-0.97 3.3-0.97A6.35 6.35 0 0 1 10.08 27.13a4.13 4.13 0 0 1 5.42-2 5.19 5.19 0 0 1 10.2 1.88 6.36 6.36 0 0 1 0.74-0.04 6.53 6.53 0 0 1 1.12 0.1Z" />
+  <!--path class="cloud-bottom" fill="#e6f6ff"
+    d="M27.56 27.06a16.03 16.03 0 0 1-4.19 3.14h-14.74a16.01 16.01 0 0 1-3.28-2.26c0.85-0.6 2.01-0.97 3.3-0.97A6.35 6.35 0 0 1 10.08 27.13a4.13 4.13 0 0 1 5.42-2 5.19 5.19 0 0 1 10.2 1.88 6.36 6.36 0 0 1 0.74-0.04 6.53 6.53 0 0 1 1.12 0.1Z" /-->
 
   <!-- Decorative star elements -->
   <!-- Small golden dots scattered across the sky for ambiance -->
-  <circle class="dot" cx="13.63" cy="4.79" r="0.5" fill="#ffde55" />   <!-- Upper left star -->
-  <circle class="dot" cx="18.57" cy="9.95" r="0.5" fill="#ffde55" />   <!-- Right side star -->
-  <circle class="dot" cx="28.8" cy="19.73" r="0.5" fill="#ffde55" />   <!-- Far right star -->
-  <circle class="dot" cx="5.87" cy="23.94" r="0.5" fill="#ffde55" />   <!-- Lower left star -->
-  <circle class="dot" cx="8.97" cy="9.12" r="0.5" fill="#ffde55" />    <!-- Left center star -->
+  <g fill="#ffde55" fill-opacity=".2">
+  <circle class="dot" cx="13.63" cy="4.79" r="0.5" />   <!-- Upper left star -->
+  <circle class="dot" cx="18.57" cy="9.95" r="0.5" />   <!-- Right side star -->
+  <circle class="dot" cx="28.8" cy="19.73" r="0.5" />   <!-- Far right star -->
+  <circle class="dot" cx="5.87" cy="23.94" r="0.5" />   <!-- Lower left star -->
+  <circle class="dot" cx="8.97" cy="9.12" r="0.5" />    <!-- Left center star -->
+  </g>
 </svg>
