@@ -489,119 +489,130 @@ header .z-20 p {
     <a href="#listen" class="skip-link">Skip to music player</a>
     <a href="#footer-navigation" class="skip-link">Skip to footer navigation</a>
 
-    <!-- Header Section -->
-    <header
-      class="relative w-full h-screen min-h-[400px] flex items-center justify-center text-center overflow-hidden"
-      itemscope
-      itemtype="https://schema.org/WPHeader"
-      role="banner"
-      aria-label="Site header with hero image and navigation"
+
+
+
+
+    
+
+<!-- Header Section -->
+<header
+  class="relative w-full h-screen min-h-[400px] flex items-center justify-center text-center overflow-hidden"
+  itemscope
+  itemtype="https://schema.org/WPHeader"
+  role="banner"
+  aria-label="Site header with hero image and navigation"
+>
+  <!-- Background Image -->
+  <img
+    src="moonbanner.jpg"
+    alt="A serene crescent moon framed by palm tree shadows, evoking tranquility and introspection for ambient music"
+    class="absolute top-0 left-0 w-full h-full object-cover z-0"
+    onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/000000/FFFFFF?text=Exit+and+Rest';"
+    itemprop="image"
+    role="img"
+    aria-describedby="hero-description"
+  />
+  <!-- Overlay (remove or adjust if dimming is unwanted) -->
+  <div
+    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Header Content -->
+  <div
+    class="relative z-20 flex flex-col items-center justify-center w-full h-full p-4"
+    itemscope
+    itemtype="https://schema.org/MusicGroup"
+    role="main"
+    aria-labelledby="site-title"
+  >
+    <img
+      src="EARLOGO.png"
+      alt="Exit and Rest Logo - Modern text design with Exit & Rest"
+      class="max-w-[30%] mx-auto mb-4"
+      style="height: auto;"
+      itemprop="logo"
+    />
+    <p
+      id="hero-description"
+      class="text-lg md:text-xl font-light text-stone-300 mt-4 max-w-2xl mx-auto text-center"
+      itemprop="description"
+      role="text"
+      aria-label="Site description: A frequency project for peace and introspection"
     >
-      <!-- Background Image -->
-      <img
-        src="moonbanner.jpg"
-        alt="A serene crescent moon framed by palm tree shadows, evoking tranquility and introspection for ambient music"
-        class="absolute top-0 left-0 w-full h-full object-cover z-0"
-        onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/000000/FFFFFF?text=Exit+and+Rest';"
-        itemprop="image"
-        role="img"
-        aria-describedby="hero-description"
-      />
-      <!-- Overlay -->
-      <div
-        class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-0 z-10"
+      A frequency project for peace and introspection.
+    </p>
+    <meta itemprop="url" content="https://exitandrest.com/" />
+    <meta itemprop="genre" content="Ambient" />
+    <meta itemprop="genre" content="Meditation" />
+    <meta itemprop="genre" content="New Age" />
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <div
+    id="theme-toggle-container"
+    class="absolute top-4 right-4 z-30"
+    role="complementary"
+  >
+    <button
+      id="theme-toggle"
+      aria-label="Toggle between dark and light mode"
+      aria-pressed="false"
+      class="p-2 rounded-full bg-stone-800 bg-opacity-50 text-white hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white transition"
+      role="switch"
+      aria-describedby="theme-description"
+    >
+      <!-- Sun Icon for Light Mode -->
+      <svg
+        id="theme-toggle-sun"
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
-      ></div>
-
-      <!-- Header Content -->
-      <div
-        class="relative z-20 p-4"
-        itemscope
-        itemtype="https://schema.org/MusicGroup"
-        role="main"
-        aria-labelledby="site-title"
+        focusable="false"
       >
-        <img
-          src="EARLOGO.png"
-          alt="Exit and Rest Logo - Modern text design with Exit & Rest"
-          class="max-w-xl mx-auto mb-4"
-          style="max-width: 60%; height: auto;"
-          itemprop="logo"
-        />
-        <p
-          id="hero-description"
-          class="text-lg md:text-xl font-light text-stone-300 mt-4 max-w-2xl mx-auto"
-          itemprop="description"
-          role="text"
-          aria-label="Site description: A frequency project for peace and introspection"
-        >
-          A frequency project for peace and introspection.
-        </p>
-        <meta itemprop="url" content="https://exitandrest.com/" />
-        <meta itemprop="genre" content="Ambient" />
-        <meta itemprop="genre" content="Meditation" />
-        <meta itemprop="genre" content="New Age" />
-      </div>
-
-
-      <!-- Dark Mode Toggle -->
-      <div
-        id="theme-toggle-container"
-        class="absolute top-4 right-4 z-30"
-        role="complementary"
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
+        ></path>
+        <circle cx="12" cy="12" r="5"></circle>
+      </svg>
+      <!-- Moon Icon for Dark Mode -->
+      <svg
+        id="theme-toggle-moon"
+        class="w-6 h-6 hidden"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
       >
-        <button
-          id="theme-toggle"
-          aria-label="Toggle between dark and light mode"
-          aria-pressed="false"
-          class="p-2 rounded-full bg-stone-800 bg-opacity-50 text-white hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white transition"
-          role="switch"
-          aria-describedby="theme-description"
-        >
-          <!-- Sun Icon for Light Mode -->
-          <svg
-            id="theme-toggle-sun"
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
-            ></path>
-            <circle cx="12" cy="12" r="5"></circle>
-          </svg>
-          <!-- Moon Icon for Dark Mode -->
-          <svg
-            id="theme-toggle-moon"
-            class="w-6 h-6 hidden"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-            ></path>
-          </svg>
-        </button>
-        <div id="theme-description" class="sr-only">
-          Toggle between dark and light theme. Current theme will be announced
-          when changed.
-        </div>
-      </div>
-    </header>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        ></path>
+      </svg>
+    </button>
+    <div id="theme-description" class="sr-only">
+      Toggle between dark and light theme. Current theme will be announced
+      when changed.
+    </div>
+  </div>
+</header>
+
+
+
+
+    
+
 
     <!-- Main Content Section -->
     <main
