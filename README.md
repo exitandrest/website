@@ -95,15 +95,6 @@ exitandrest/
 
 ## 🎨 Brand Identity & Visual Design
 
-### 🖼️ Icons & Symbolism
-
-The project features a cohesive set of custom SVG icons that represent different aspects of the Exit and Rest philosophy:
-
-- ![Exit Icon](exit.svg) **Exit** - Departure from stress and anxiety
-- ![Rest Icon](rest.svg) **Rest** - Peaceful restoration and rejuvenation
-- ![Relax Icon](relax.svg) **Relax** - Active tension release and mindfulness
-- ![Leave Icon](leave.svg) **Leave** - Transition to higher states of consciousness
-
 ### 🎨 Design Philosophy
 
 - **Minimalism** - Clean, uncluttered interfaces that don't distract from the music
