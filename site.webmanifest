@@ -6,9 +6,33 @@
   "display": "standalone",
   "icons": [
     {
+      "purpose": "any",
       "sizes": "512x512",
       "src": "google-touch-icon.png",
       "type": "image/png"
+    },
+    {
+      "purpose": "any maskable",
+      "sizes": "any",
+      "src": "favicon.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "sizes": "16x16 32x32 48x48",
+      "src": "favicon.ico",
+      "type": "image/x-icon"
+    },
+    {
+      "purpose": "any",
+      "sizes": "180x180",
+      "src": "apple-touch-icon.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any maskable",
+      "sizes": "any",
+      "src": "logo.svg",
+      "type": "image/svg+xml"
     }
   ],
   "lang": "en-US",
@@ -34,7 +58,7 @@
       "type": "image/jpeg"
     }
   ],
-  "short_name": "Exit and Rest",
+  "short_name": "Exit & Rest",
   "shortcuts": [
     {
       "description": "Listen to Exit and Rest on YouTube",

@@ -1,149 +1,308 @@
 <!doctype html>
+<!--
+  =============================================================================
+  EXIT AND REST - AMBIENT MUSIC WEBSITE
+  =============================================================================
+  A comprehensive website for Exit and Rest, an ambient music artist creating
+  original soundscapes for meditation, relaxation, and introspection.
+
+  Features:
+  - Progressive Web App (PWA) capabilities
+  - Dark/Light theme switching with system preference detection
+  - Full accessibility compliance (WCAG 2.1 AA)
+  - SEO optimized with structured data markup
+  - Social media integration and sharing optimization
+  - Responsive design for all device types
+  =============================================================================
+-->
 <html lang="en-US" dir="auto" class="dark" itemscope itemtype="https://schema.org/WebSite">
   <head>
+    <!-- =======================================================================
+         CORE DOCUMENT SETTINGS AND VIEWPORT CONFIGURATION
+         ======================================================================= -->
+
+    <!-- Character encoding specification - UTF-8 for international support -->
     <meta charset="UTF-8" />
+
+    <!-- Responsive viewport configuration for mobile devices -->
+    <!-- viewport-fit=cover ensures full screen usage on devices with notches -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Theme color for browser chrome and PWA title bars -->
+    <!-- Matches the brand color (#3a3ad9) for consistent visual identity -->
     <meta name="theme-color" content="#3a3ad9" />
 
-    <!-- Basic SEO Meta Tags -->
+    <!-- =======================================================================
+         SEARCH ENGINE OPTIMIZATION (SEO) META TAGS
+         ======================================================================= -->
+
+    <!-- Primary page title - appears in browser tab and search results -->
+    <!-- Optimized with target keywords for music discovery -->
     <title>Exit and Rest - Ambient Music for Peace and Introspection</title>
+
+    <!-- Meta description - appears in search engine results snippets -->
+    <!-- Concise description of the artist and music style for SEO -->
     <meta name="description" content="Exit and Rest creates original ambient music, meditation music, and healing soundscapes for relaxation and introspection." />
+
+    <!-- Keywords meta tag - helps search engines categorize content -->
+    <!-- Comprehensive list of relevant music and wellness terms -->
     <meta name="keywords" content="ambient music, meditation music, sleep music, relaxing music, healing music, soundscapes, frequency project, yoga music, study music, stress relief" />
+
+    <!-- Content author identification for search engines -->
     <meta name="author" content="Exit and Rest" />
+
+    <!-- Search engine crawler instructions -->
+    <!-- "index, follow" allows indexing and link following for SEO -->
     <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <!-- Establishes this as the primary/official page URL -->
     <link rel="canonical" href="https://exitandrest.com/" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- =======================================================================
+         OPEN GRAPH (FACEBOOK/SOCIAL MEDIA) META TAGS
+         ======================================================================= -->
+
+    <!-- Content type declaration for social media platforms -->
     <meta property="og:type" content="website" />
+
+    <!-- Canonical URL for social media sharing -->
+    <!-- Ensures consistent link sharing across platforms -->
     <meta property="og:url" content="https://exitandrest.com/" />
+
+    <!-- Social media optimized title -->
+    <!-- May differ slightly from page title for better social engagement -->
     <meta property="og:title" content="Exit and Rest - Ambient Music for Peace and Introspection" />
+
+    <!-- Rich description for social media cards and previews -->
+    <!-- Emphasizes the original content and brand value proposition -->
     <meta property="og:description" content="Experience original ambient music and healing soundscapes designed for meditation, sleep, and relaxation. Every visual and sound is produced by Exit and Rest." />
+
+    <!-- Social media preview image configuration -->
+    <!-- 1200x630 is the optimal size for Facebook and most social platforms -->
     <meta property="og:image" content="https://exitandrest.com/logo.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Exit and Rest - Ambient Music Artist Logo" />
+
+    <!-- Website/brand name for social media attribution -->
     <meta property="og:site_name" content="Exit and Rest" />
+
+    <!-- Locale specification for international social media support -->
     <meta property="og:locale" content="en_US" />
 
-    <!-- Twitter Card -->
+    <!-- =======================================================================
+         TWITTER CARD OPTIMIZATION
+         ======================================================================= -->
+
+    <!-- Twitter card type - "summary_large_image" shows large preview image -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@exitandrest" />
-    <meta name="twitter:creator" content="@exitandrest" />
+
+    <!-- Twitter account handles for attribution and engagement -->
+    <meta name="twitter:site" content="@exitandrest" />      <!-- Website's Twitter -->
+    <meta name="twitter:creator" content="@exitandrest" />   <!-- Content creator's Twitter -->
+
+    <!-- Twitter-optimized title and description -->
+    <!-- May differ from Open Graph for platform-specific optimization -->
     <meta name="twitter:title" content="Exit and Rest - Ambient Music for Peace and Introspection" />
     <meta name="twitter:description" content="Experience original ambient music and healing soundscapes designed for meditation, sleep, and relaxation." />
+
+    <!-- Twitter card image configuration -->
+    <!-- Uses same image as Open Graph for consistency -->
     <meta name="twitter:image" content="https://exitandrest.com/logo.jpg" />
     <meta name="twitter:image:alt" content="Exit and Rest - Ambient Music Artist Logo" />
 
-    <!-- Music-specific Open Graph -->
+    <!-- =======================================================================
+         MUSIC-SPECIFIC OPEN GRAPH TAGS
+         ======================================================================= -->
+
+    <!-- Direct links to music platforms for rich social media integration -->
+    <!-- Spotify artist profile for music discovery -->
     <meta property="music:musician" content="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN" />
+
+    <!-- Spotify playlist for immediate listening access -->
     <meta property="music:song" content="https://open.spotify.com/playlist/3JiPmwzvhlWmPZ5GHixsbp" />
 
-    <!-- Favicon and Icons -->
+    <!-- =======================================================================
+         FAVICON AND ICON CONFIGURATION
+         ======================================================================= -->
+
+    <!-- Modern SVG favicon - scalable and crisp at any size -->
+    <!-- Used as primary favicon for modern browsers -->
     <link rel="icon" href="favicon.svg" />
+
+    <!-- Safari mask icon for pinned tabs -->
+    <!-- Monochrome version with specified theme color -->
     <link rel="mask-icon" href="mask-icon.svg" color="#3a3ad9" />
+
+    <!-- Apple touch icon for iOS devices -->
+    <!-- Used for home screen shortcuts and bookmark icons -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
 
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="site.webmanifest" />
+    <!-- Progressive Web App manifest file -->
+    <!-- Defines app behavior when installed on devices -->
+    <link rel="manifest" href="site.webmanifest" />    <!-- =======================================================================
+         EXTERNAL RESOURCES AND PERFORMANCE OPTIMIZATION
+         ======================================================================= -->
 
+    <!-- Tailwind CSS CDN - Utility-first CSS framework -->
+    <!-- Provides responsive design classes and consistent styling -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Google Fonts optimization - DNS prefetching for better performance -->
+    <!-- Establishes early connection to font servers to reduce loading time -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- MuseoModerno font family loading -->
+    <!-- Variable weight font (100-900) with italic support -->
+    <!-- display=swap prevents invisible text during font loading -->
     <link
       href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <style>
-      /* Custom styles to apply the MuseoModerno font */
+      /* ==========================================================================
+         TYPOGRAPHY AND FONT CONFIGURATION
+         ========================================================================== */
+
+      /* Apply MuseoModerno font family to entire website */
+      /* This creates a modern, artistic aesthetic matching the ambient music theme */
       body {
         font-family: "MuseoModerno", sans-serif;
       }
 
-      /* Style for the dark mode toggle switch */
+      /* ==========================================================================
+         DARK MODE TOGGLE SWITCH STYLING (Legacy - Not Currently Used)
+         ========================================================================== */
+
+      /* Styles for checkbox-style toggle when in checked/active state */
+      /* Positions toggle to right side and applies green accent color */
       .toggle-checkbox:checked {
         right: 0;
-        border-color: #68d391;
-      }
-      .toggle-checkbox:checked + .toggle-label {
-        background-color: #68d391;
+        border-color: #68d391; /* Green-400 for active state indication */
       }
 
-      /* Accessibility improvements */
+      /* Background color for toggle label when checkbox is checked */
+      .toggle-checkbox:checked + .toggle-label {
+        background-color: #68d391; /* Matching green-400 background */
+      }
+
+      /* ==========================================================================
+         ACCESSIBILITY IMPROVEMENTS
+         ========================================================================== */
+
+      /* Skip navigation links for screen readers and keyboard users */
+      /* Hidden by default, visible when focused for keyboard navigation */
       .skip-link {
         position: absolute;
-        top: -40px;
-        left: 6px;
-        background: #000;
-        color: #fff;
-        padding: 8px;
-        text-decoration: none;
-        z-index: 9999;
-        border-radius: 4px;
-        font-weight: bold;
+        top: -40px;           /* Hidden above viewport */
+        left: 6px;            /* Small left margin */
+        background: #000;     /* High contrast black background */
+        color: #fff;          /* White text for maximum contrast */
+        padding: 8px;         /* Comfortable clickable area */
+        text-decoration: none; /* Remove default link underline */
+        z-index: 9999;        /* Ensure it appears above all other content */
+        border-radius: 4px;   /* Subtle rounded corners */
+        font-weight: bold;    /* Bold text for better readability */
       }
 
+      /* Make skip links visible when focused via keyboard navigation */
       .skip-link:focus {
-        top: 6px;
+        top: 6px; /* Move into viewport when focused */
       }
 
-      /* Enhanced focus indicators */
+      /* Enhanced focus indicators for better accessibility */
+      /* Applies to all interactive elements: buttons, links, and iframes */
       button:focus,
       a:focus,
       iframe:focus {
-        outline: 3px solid #3b82f6;
-        outline-offset: 2px;
+        outline: 3px solid #3b82f6;  /* Blue-500 outline for high visibility */
+        outline-offset: 2px;         /* Space between element and outline */
       }
 
-      /* Dark mode focus indicators */
+      /* Dark mode specific focus indicators */
+      /* Lighter blue for better contrast on dark backgrounds */
       .dark button:focus,
       .dark a:focus,
       .dark iframe:focus {
-        outline-color: #60a5fa;
+        outline-color: #60a5fa; /* Blue-400 for dark mode contrast */
       }
 
-      /* Improved contrast for footer text */
+      /* ==========================================================================
+         COLOR CONTRAST IMPROVEMENTS
+         ========================================================================== */
+
+      /* Enhanced text contrast for footer and secondary text elements */
+      /* Replaces stone-600/stone-400 with darker alternatives for WCAG compliance */
       .footer-text-enhanced {
-        color: #374151 !important; /* stone-700 instead of stone-600 */
+        color: #374151 !important; /* stone-700 instead of stone-600 for better contrast */
       }
 
+      /* Dark mode version with lighter text for contrast on dark backgrounds */
       .dark .footer-text-enhanced {
-        color: #d1d5db !important; /* stone-300 instead of stone-400 */
+        color: #d1d5db !important; /* stone-300 instead of stone-400 for better contrast */
       }
 
-      /* Screen reader only class */
+      /* ==========================================================================
+         SCREEN READER AND ASSISTIVE TECHNOLOGY SUPPORT
+         ========================================================================== */
+
+      /* Screen reader only content - visually hidden but available to assistive technology */
+      /* Uses clip method for better screen reader compatibility than display:none */
       .sr-only {
         position: absolute;
-        width: 1px;
+        width: 1px;           /* Minimal dimensions */
         height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border-width: 0;
+        padding: 0;           /* Remove padding */
+        margin: -1px;         /* Negative margin to hide */
+        overflow: hidden;     /* Hide any overflow */
+        clip: rect(0, 0, 0, 0); /* Clip to hide visually */
+        white-space: nowrap;  /* Prevent text wrapping */
+        border-width: 0;      /* Remove borders */
       }
 
-      /* Ensure high contrast ratios */
+      /* ==========================================================================
+         HIGH CONTRAST TEXT UTILITIES
+         ========================================================================== */
+
+      /* Utility class for maximum contrast text in light mode */
       .text-high-contrast {
-        color: #1f2937 !important; /* gray-800 */
+        color: #1f2937 !important; /* gray-800 for maximum readability */
       }
 
+      /* Dark mode version with near-white text for maximum contrast */
       .dark .text-high-contrast {
-        color: #f9fafb !important; /* gray-50 */
+        color: #f9fafb !important; /* gray-50 for dark mode maximum contrast */
       }
     </style>
     <script>
-      // Set theme on initial load
-      // This script is in the <head> to prevent a flash of the wrong theme.
+      /* ========================================================================
+         THEME INITIALIZATION SCRIPT - DARK/LIGHT MODE DETECTION
+         ========================================================================
+         This script runs in the <head> section to prevent flash of incorrect
+         theme (FOIT). It must execute before the body renders to avoid visual
+         glitches when the page loads.
+         ======================================================================== */
+
+      // Check for user's theme preference in the following priority order:
+      // 1. Explicit user preference stored in localStorage
+      // 2. System/browser preference for dark mode
+      // 3. Default to light mode if neither is available
+
       if (
+        // First condition: User explicitly chose dark mode previously
         localStorage.theme === "dark" ||
+        // Second condition: No explicit preference AND system prefers dark mode
         (!("theme" in localStorage) &&
           window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
+        // Apply dark mode by adding 'dark' class to root HTML element
+        // This triggers all dark: prefixed Tailwind classes throughout the site
         document.documentElement.classList.add("dark");
       } else {
+        // Apply light mode by removing 'dark' class from root HTML element
+        // This ensures clean state if dark class was previously applied
         document.documentElement.classList.remove("dark");
       }
     </script>
@@ -685,62 +844,90 @@
     </footer>
 
     <script>
-      /**
-       * @file Manages the theme (dark/light mode) for the Exit and Rest website.
-       * @description This script handles theme initialization, user-triggered toggling,
-       * and persistence of the theme preference in localStorage. It also updates UI elements
-       * accordingly and provides accessibility features.
-       */
+      /* ========================================================================
+         INTERACTIVE THEME MANAGEMENT AND ACCESSIBILITY FEATURES
+         ========================================================================
+         This script manages dark/light mode toggling, accessibility features,
+         and user interface enhancements. It runs after the DOM is fully loaded
+         to ensure all elements are available for manipulation.
+         ======================================================================== */
 
+      /**
+       * Main application initialization - waits for DOM to be fully loaded
+       * before setting up event handlers and initial state
+       */
       document.addEventListener("DOMContentLoaded", () => {
+        /* =====================================================================
+           DOM ELEMENT REFERENCES
+           ===================================================================== */
+
+        // Theme toggle button in the header navigation
         const themeToggleButton = document.getElementById("theme-toggle");
+
+        // Sun and moon icons for visual feedback of current theme
         const sunIcon = document.getElementById("theme-toggle-sun");
         const moonIcon = document.getElementById("theme-toggle-moon");
+
+        // Copyright year span for automatic year updates
         const copyrightYear = document.getElementById("copyright-year");
 
+        /* =====================================================================
+           THEME ICON MANAGEMENT FUNCTIONS
+           ===================================================================== */
+
         /**
-         * @function updateThemeIcons
-         * @description Updates the visibility of the sun and moon icons based on the current theme.
-         * @param {boolean} isDarkMode - True if dark mode is active, false otherwise.
+         * Updates the visibility of sun/moon icons based on current theme
+         * @param {boolean} isDarkMode - True if dark theme is active
          */
         const updateThemeIcons = (isDarkMode) => {
           if (isDarkMode) {
+            // Dark mode: Hide sun icon, show moon icon
             sunIcon.classList.add("hidden");
             moonIcon.classList.remove("hidden");
           } else {
+            // Light mode: Show sun icon, hide moon icon
             sunIcon.classList.remove("hidden");
             moonIcon.classList.add("hidden");
           }
         };
 
+        /* =====================================================================
+           ACCESSIBILITY AND SCREEN READER SUPPORT
+           ===================================================================== */
+
         /**
-         * @function announceThemeChange
-         * @description Announces theme changes to screen readers
-         * @param {boolean} isDarkMode - True if dark mode is active, false otherwise.
+         * Creates and announces theme changes to screen reader users
+         * Uses ARIA live regions for non-intrusive announcements
+         * @param {boolean} isDarkMode - True if dark theme was activated
          */
         const announceThemeChange = (isDarkMode) => {
+          // Create temporary announcement element
           const announcement = document.createElement("div");
-          announcement.setAttribute("aria-live", "polite");
-          announcement.setAttribute("aria-atomic", "true");
-          announcement.className = "sr-only";
+          announcement.setAttribute("aria-live", "polite");  // Non-intrusive announcement
+          announcement.setAttribute("aria-atomic", "true");   // Read entire content as one unit
+          announcement.className = "sr-only";                // Visually hidden but available to screen readers
           announcement.textContent = `Theme changed to ${isDarkMode ? 'dark' : 'light'} mode`;
 
+          // Add to DOM for screen readers to detect
           document.body.appendChild(announcement);
 
-          // Remove announcement after screen reader has had time to read it
+          // Remove after sufficient time for screen readers to process
           setTimeout(() => {
             document.body.removeChild(announcement);
           }, 1000);
         };
 
         /**
-         * @function updateAriaPressed
-         * @description Updates the aria-pressed attribute for the theme toggle button
-         * @param {boolean} isDarkMode - True if dark mode is active, false otherwise.
+         * Updates ARIA attributes for the theme toggle button
+         * Provides current state and available actions to screen readers
+         * @param {boolean} isDarkMode - True if dark theme is active
          */
         const updateAriaPressed = (isDarkMode) => {
           if (themeToggleButton) {
+            // Set pressed state for screen readers (true/false)
             themeToggleButton.setAttribute("aria-pressed", isDarkMode.toString());
+
+            // Update descriptive label with current state and next action
             themeToggleButton.setAttribute(
               "aria-label",
               `Toggle to ${isDarkMode ? 'light' : 'dark'} mode. Currently in ${isDarkMode ? 'dark' : 'light'} mode.`
@@ -748,59 +935,94 @@
           }
         };
 
-        /**
-         * @function toggleTheme
-         * @description Toggles the theme between light and dark mode, updates localStorage,
-         * updates the UI icons, and announces changes to screen readers.
-         */
-        const toggleTheme = () => {
-          const isDarkMode = document.documentElement.classList.toggle("dark");
-          localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-          updateThemeIcons(isDarkMode);
-          updateAriaPressed(isDarkMode);
-          announceThemeChange(isDarkMode);
-        };
+        /* =====================================================================
+           THEME TOGGLING FUNCTIONALITY
+           ===================================================================== */
 
         /**
-         * @function handleKeyboardNavigation
-         * @description Handles keyboard navigation for better accessibility
-         * @param {KeyboardEvent} event - The keyboard event
+         * Main theme toggle function - handles all aspects of theme switching
+         * - Toggles CSS classes for visual changes
+         * - Saves user preference to localStorage for persistence
+         * - Updates UI elements and accessibility attributes
+         * - Announces changes to screen readers
+         */
+        const toggleTheme = () => {
+          // Toggle 'dark' class on root HTML element and get resulting state
+          const isDarkMode = document.documentElement.classList.toggle("dark");
+
+          // Persist user's theme preference for future visits
+          localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+
+          // Update all theme-related UI elements
+          updateThemeIcons(isDarkMode);      // Switch sun/moon icons
+          updateAriaPressed(isDarkMode);     // Update accessibility attributes
+          announceThemeChange(isDarkMode);   // Notify screen readers
+        };
+
+        /* =====================================================================
+           KEYBOARD NAVIGATION SUPPORT
+           ===================================================================== */
+
+        /**
+         * Handles keyboard interactions for the theme toggle button
+         * Ensures full keyboard accessibility beyond mouse/touch
+         * @param {KeyboardEvent} event - The keyboard event object
          */
         const handleKeyboardNavigation = (event) => {
-          // Allow Enter key to trigger theme toggle
+          // Support both Enter and Space keys for activation (standard practice)
           if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            toggleTheme();
+            event.preventDefault(); // Prevent default browser behavior
+            toggleTheme();          // Execute theme toggle
           }
         };
 
-        // Set initial state of the toggle button icons and attributes
-        const initialDarkMode = document.documentElement.classList.contains("dark");
-        updateThemeIcons(initialDarkMode);
-        updateAriaPressed(initialDarkMode);
+        /* =====================================================================
+           INITIALIZATION AND EVENT BINDING
+           ===================================================================== */
 
-        // Add click event listener to the toggle button
+        // Determine initial theme state from current HTML class
+        const initialDarkMode = document.documentElement.classList.contains("dark");
+
+        // Set up initial UI state based on current theme
+        updateThemeIcons(initialDarkMode);  // Show correct sun/moon icon
+        updateAriaPressed(initialDarkMode); // Set correct ARIA attributes
+
+        // Bind event handlers to theme toggle button (if it exists)
         if (themeToggleButton) {
+          // Mouse/touch interaction
           themeToggleButton.addEventListener("click", toggleTheme);
+
+          // Keyboard interaction for accessibility
           themeToggleButton.addEventListener("keydown", handleKeyboardNavigation);
         }
 
-        // Set the copyright year dynamically
+        /* =====================================================================
+           AUTOMATIC COPYRIGHT YEAR UPDATE
+           ===================================================================== */
+
+        // Automatically update copyright year to current year
         if (copyrightYear) {
           copyrightYear.textContent = new Date().getFullYear();
         }
 
-        // Improve focus management for skip links
+        /* =====================================================================
+           SKIP LINK FUNCTIONALITY FOR ACCESSIBILITY
+           ===================================================================== */
+
+        // Enhance skip links with proper focus management
         const skipLinks = document.querySelectorAll('.skip-link');
         skipLinks.forEach(link => {
           link.addEventListener('click', (e) => {
+            // Extract target ID from href attribute
             const targetId = link.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
+
             if (targetElement) {
-              // Set focus to target element after a short delay
+              // Set focus to target element after DOM updates
               setTimeout(() => {
                 targetElement.focus();
-                // If the target isn't naturally focusable, make it focusable
+
+                // Make non-focusable elements focusable for skip link functionality
                 if (!targetElement.hasAttribute('tabindex')) {
                   targetElement.setAttribute('tabindex', '-1');
                 }
@@ -809,9 +1031,14 @@
           });
         });
 
-        // Add reduced motion support
+        /* =====================================================================
+           REDUCED MOTION ACCESSIBILITY SUPPORT
+           ===================================================================== */
+
+        // Respect user's motion preferences for accessibility
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
         if (prefersReducedMotion.matches) {
+          // Disable transitions for users who prefer reduced motion
           document.body.style.setProperty('--transition-duration', '0ms');
         }
       });

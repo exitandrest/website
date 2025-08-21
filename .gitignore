@@ -1,1 +1,15 @@
+# =============================================================================
+# EXIT AND REST WEBSITE - GIT IGNORE CONFIGURATION
+# =============================================================================
+# This file specifies which files and directories should be ignored by Git
+# version control. These are typically system-generated files, user-specific
+# settings, or temporary files that don't belong in the repository.
+# =============================================================================
+
+# =============================================================================
+# MACOS SYSTEM FILES
+# =============================================================================
+# .DS_Store files are created by macOS Finder to store folder metadata
+# These files are system-specific and should never be committed to version control
+# The ** pattern matches .DS_Store files in any directory or subdirectory
 **/.DS_Store

@@ -1,14 +1,41 @@
+<!--
+  =============================================================================
+  EXIT AND REST - FAVICON SVG
+  =============================================================================
+  Scalable vector favicon for the Exit and Rest ambient music website.
+  Features a night sky theme with moon, clouds, and stars to reflect the
+  peaceful, contemplative nature of the music.
+
+  Design Elements:
+  - Night sky gradient background (dark blue to lighter blue)
+  - Crescent moon with gradient lighting effects
+  - Layered clouds with transparency
+  - Scattered star dots for ambiance
+  - Modern CSS with OKLCH color space support and fallbacks
+
+  Technical Features:
+  - 32x32 viewBox optimized for small favicon sizes
+  - Progressive enhancement with modern CSS features
+  - Fallback colors for older browsers
+  - Semantic class names for maintainability
+  =============================================================================
+-->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <defs>
     <style>
+      /* Modern color definitions using OKLCH color space for better color accuracy */
+      /* OKLCH provides more perceptually uniform colors than RGB/HSL */
       @supports (color: oklch(0.5 0.1 200)) {
-        .bg { fill: oklch(0.55 0.09 240) }
-        .cloud { fill: oklch(0.97 0.01 220) }
-        .sun { fill: oklch(0.85 0.19 95) }
-        .sun-light { fill: oklch(0.95 0.13 95); }
-        .cloud-bottom { fill: oklch(0.97 0.01 220) }
-        .dot { fill: oklch(0.95 0.13 95) }
+        .bg { fill: oklch(0.55 0.09 240) }           /* Deep night sky blue */
+        .cloud { fill: oklch(0.97 0.01 220) }       /* Soft white clouds */
+        .sun { fill: oklch(0.85 0.19 95) }          /* Warm golden moon */
+        .sun-light { fill: oklch(0.95 0.13 95); }   /* Bright moon highlights */
+        .cloud-bottom { fill: oklch(0.97 0.01 220) } /* Bottom cloud layer */
+        .dot { fill: oklch(0.95 0.13 95) }          /* Golden star dots */
       }
+
+      /* Advanced gradient support for modern browsers */
+      /* Creates subtle depth in the background */
       @supports (fill: linear-gradient(48deg, oklch(0.48 0.09 240 / .48) oklch(0.55 0.09 240));) {
         .bg {
           fill: linear-gradient(48deg, oklch(0.48 0.09 240 / .48) oklch(0.55 0.09 240));
@@ -16,19 +43,37 @@
       }
     </style>
   </defs>
+
+  <!-- Night sky background with gradient -->
+  <!-- Curved bottom edge creates horizon effect -->
   <path class="bg" fill="#3a4e6b"
     d="M32 16A16 16 0 0 1 0.0625 17.41Q0 16.72 0 16C0 7.16 7.16 0 16 0s16 7.16 16 16Z" />
+
+  <!-- Upper cloud layer -->
+  <!-- Creates depth and atmosphere in the night scene -->
   <path class="cloud" fill="#e6f6ff"
     d="M21.4 19.43H0.37A15.94 15.94 0 0 1 0.0625 17.41c0.69-0.43 1.59-0.69 2.57-0.69a5.53 5.53 0 0 1 0.62 0.04 4.49 4.49 0 0 1-0.05-0.68A4.34 4.34 0 0 1 11.78 15.19a3.45 3.45 0 0 1 4.53 1.67 5.38 5.38 0 0 1 1.19-0.13c0.08 0 0.15 0 0.23 0 1.7 0.07 3.1 0.91 3.54 2.05a2.1 2.1 0 0 1 0.14 0.65Z" />
+
+  <!-- Main moon/sun shape -->
+  <!-- Crescent form with organic, flowing edges -->
   <path class="sun" fill="#ffcc29"
     d="M26.59 6.94q-0.15-0.26-0.31-0.52a12.45 12.45 0 0 0-2.8-3.13c-0.15-0.13-0.31-0.24-0.47-0.35a12.14 12.14 0 0 0-1.01-0.65 12.3 12.3 0 0 0-1.75-0.84c-0.08-0.03-0.16-0.06-0.24-0.09a11.36 11.36 0 0 1-1.65 14.81q-0.32 0.29-0.65 0.56A11.38 11.38 0 0 1 3.95 17a12.28 12.28 0 0 0 0.69 1.64q0.2 0.4 0.43 0.79c0.01 0.01 0.02 0.03 0.02 0.04a12.29 12.29 0 0 0 1.33 1.82 12.52 12.52 0 0 0 0.92 0.94q0.31 0.29 0.65 0.56a12.38 12.38 0 0 0 4.38 2.24q0.27 0.08 0.55 0.14A12.44 12.44 0 0 0 26.59 6.94Z" />
+
+  <!-- Moon highlight/lighting effect -->
+  <!-- Adds dimension and luminosity to the moon -->
   <path class="sun-light" fill="#ffde55"
     d="M22.7 4.52a12.85 12.85 0 0 0-0.31-0.52 12.45 12.45 0 0 0-2.13-2.55c-0.08-0.03-0.16-0.06-0.24-0.09a11.36 11.36 0 0 1-1.65 14.81 10.89 10.89 0 0 1-0.65 0.56A11.38 11.38 0 0 1 3.95 17a12.32 12.32 0 0 0 0.69 1.64q0.2 0.4 0.43 0.79l0.02 0.04a12.32 12.32 0 0 0 1.33 1.82 12.53 12.53 0 0 0 0.92 0.94 12.47 12.47 0 0 0 13.31-2.8q0.32-0.31 0.61-0.65a12.33 12.33 0 0 0 1.95-3.06 12.43 12.43 0 0 0-0.52-11.2Z" />
+
+  <!-- Lower cloud formation -->
+  <!-- Creates atmospheric depth at the bottom of the scene -->
   <path class="cloud-bottom" fill="#e6f6ff"
     d="M27.56 27.06a16.03 16.03 0 0 1-4.19 3.14h-14.74a16.01 16.01 0 0 1-3.28-2.26c0.85-0.6 2.01-0.97 3.3-0.97A6.35 6.35 0 0 1 10.08 27.13a4.13 4.13 0 0 1 5.42-2 5.19 5.19 0 0 1 10.2 1.88 6.36 6.36 0 0 1 0.74-0.04 6.53 6.53 0 0 1 1.12 0.1Z" />
-  <circle class="dot" cx="13.63" cy="4.79" r="0.5" fill="#ffde55" />
-  <circle class="dot" cx="18.57" cy="9.95" r="0.5" fill="#ffde55" />
-  <circle class="dot" cx="28.8" cy="19.73" r="0.5" fill="#ffde55" />
-  <circle class="dot" cx="5.87" cy="23.94" r="0.5" fill="#ffde55" />
-  <circle class="dot" cx="8.97" cy="9.12" r="0.5" fill="#ffde55" />
+
+  <!-- Decorative star elements -->
+  <!-- Small golden dots scattered across the sky for ambiance -->
+  <circle class="dot" cx="13.63" cy="4.79" r="0.5" fill="#ffde55" />   <!-- Upper left star -->
+  <circle class="dot" cx="18.57" cy="9.95" r="0.5" fill="#ffde55" />   <!-- Right side star -->
+  <circle class="dot" cx="28.8" cy="19.73" r="0.5" fill="#ffde55" />   <!-- Far right star -->
+  <circle class="dot" cx="5.87" cy="23.94" r="0.5" fill="#ffde55" />   <!-- Lower left star -->
+  <circle class="dot" cx="8.97" cy="9.12" r="0.5" fill="#ffde55" />    <!-- Left center star -->
 </svg>
