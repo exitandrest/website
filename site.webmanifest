@@ -1,0 +1,66 @@
+{
+  "background_color": "#000000",
+  "categories": ["music", "entertainment", "lifestyle"],
+  "description": "Exit and Rest creates original ambient music, meditation music, and healing soundscapes for relaxation and introspection.",
+  "dir": "ltr",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "512x512",
+      "src": "google-touch-icon.png",
+      "type": "image/png"
+    }
+  ],
+  "lang": "en-US",
+  "name": "Exit and Rest - Ambient Music for Peace and Introspection",
+  "orientation": "portrait-primary",
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN"
+    },
+    {
+      "platform": "web",
+      "url": "https://www.youtube.com/@exitandrest"
+    }
+  ],
+  "scope": "/",
+  "screenshots": [
+    {
+      "label": "Exit and Rest - Ambient Music Artist",
+      "platform": "wide",
+      "sizes": "1200x630",
+      "src": "logo.jpg",
+      "type": "image/jpeg"
+    }
+  ],
+  "short_name": "Exit and Rest",
+  "shortcuts": [
+    {
+      "description": "Listen to Exit and Rest on YouTube",
+      "icons": [
+        {
+          "sizes": "96x96",
+          "src": "favicon.svg"
+        }
+      ],
+      "name": "Listen on YouTube",
+      "short_name": "YouTube",
+      "url": "/?utm_source=pwa&utm_medium=shortcut#listen"
+    },
+    {
+      "description": "Stream Exit and Rest on Spotify",
+      "icons": [
+        {
+          "sizes": "96x96",
+          "src": "favicon.svg"
+        }
+      ],
+      "name": "Listen on Spotify",
+      "short_name": "Spotify",
+      "url": "/?utm_source=pwa&utm_medium=shortcut#listen"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#3a3ad9"
+}
