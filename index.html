@@ -15,7 +15,13 @@
   - Responsive design for all device types
   =============================================================================
 -->
-<html lang="en-US" dir="auto" class="dark" itemscope itemtype="https://schema.org/WebSite">
+<html
+  lang="en-US"
+  dir="auto"
+  class="dark"
+  itemscope
+  itemtype="https://schema.org/WebSite"
+>
   <head>
     <!-- =======================================================================
          CORE DOCUMENT SETTINGS AND VIEWPORT CONFIGURATION
@@ -26,7 +32,10 @@
 
     <!-- Responsive viewport configuration for mobile devices -->
     <!-- viewport-fit=cover ensures full screen usage on devices with notches -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
 
     <!-- Theme color for browser chrome and PWA title bars -->
     <!-- Matches the brand color (#3a3ad9) for consistent visual identity -->
@@ -42,11 +51,17 @@
 
     <!-- Meta description - appears in search engine results snippets -->
     <!-- Concise description of the artist and music style for SEO -->
-    <meta name="description" content="Exit and Rest creates original ambient music, meditation music, and healing soundscapes for relaxation and introspection." />
+    <meta
+      name="description"
+      content="Exit and Rest creates original ambient music, meditation music, and healing soundscapes for relaxation and introspection."
+    />
 
     <!-- Keywords meta tag - helps search engines categorize content -->
     <!-- Comprehensive list of relevant music and wellness terms -->
-    <meta name="keywords" content="ambient music, meditation music, sleep music, relaxing music, healing music, soundscapes, frequency project, yoga music, study music, stress relief" />
+    <meta
+      name="keywords"
+      content="ambient music, meditation music, sleep music, relaxing music, healing music, soundscapes, frequency project, yoga music, study music, stress relief"
+    />
 
     <!-- Content author identification for search engines -->
     <meta name="author" content="Exit and Rest" />
@@ -72,18 +87,27 @@
 
     <!-- Social media optimized title -->
     <!-- May differ slightly from page title for better social engagement -->
-    <meta property="og:title" content="Exit and Rest - Ambient Music for Peace and Introspection" />
+    <meta
+      property="og:title"
+      content="Exit and Rest - Ambient Music for Peace and Introspection"
+    />
 
     <!-- Rich description for social media cards and previews -->
     <!-- Emphasizes the original content and brand value proposition -->
-    <meta property="og:description" content="Experience original ambient music and healing soundscapes designed for meditation, sleep, and relaxation. Every visual and sound is produced by Exit and Rest." />
+    <meta
+      property="og:description"
+      content="Experience original ambient music and healing soundscapes designed for meditation, sleep, and relaxation. Every visual and sound is produced by Exit and Rest."
+    />
 
     <!-- Social media preview image configuration -->
     <!-- 1200x630 is the optimal size for Facebook and most social platforms -->
     <meta property="og:image" content="https://exitandrest.com/logo.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Exit and Rest - Ambient Music Artist Logo" />
+    <meta
+      property="og:image:alt"
+      content="Exit and Rest - Ambient Music Artist Logo"
+    />
 
     <!-- Website/brand name for social media attribution -->
     <meta property="og:site_name" content="Exit and Rest" />
@@ -99,18 +123,29 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Twitter account handles for attribution and engagement -->
-    <meta name="twitter:site" content="@exitandrest" />      <!-- Website's Twitter -->
-    <meta name="twitter:creator" content="@exitandrest" />   <!-- Content creator's Twitter -->
+    <meta name="twitter:site" content="@exitandrest" />
+    <!-- Website's Twitter -->
+    <meta name="twitter:creator" content="@exitandrest" />
+    <!-- Content creator's Twitter -->
 
     <!-- Twitter-optimized title and description -->
     <!-- May differ from Open Graph for platform-specific optimization -->
-    <meta name="twitter:title" content="Exit and Rest - Ambient Music for Peace and Introspection" />
-    <meta name="twitter:description" content="Experience original ambient music and healing soundscapes designed for meditation, sleep, and relaxation." />
+    <meta
+      name="twitter:title"
+      content="Exit and Rest - Ambient Music for Peace and Introspection"
+    />
+    <meta
+      name="twitter:description"
+      content="Experience original ambient music and healing soundscapes designed for meditation, sleep, and relaxation."
+    />
 
     <!-- Twitter card image configuration -->
     <!-- Uses same image as Open Graph for consistency -->
     <meta name="twitter:image" content="https://exitandrest.com/logo.jpg" />
-    <meta name="twitter:image:alt" content="Exit and Rest - Ambient Music Artist Logo" />
+    <meta
+      name="twitter:image:alt"
+      content="Exit and Rest - Ambient Music Artist Logo"
+    />
 
     <!-- =======================================================================
          MUSIC-SPECIFIC OPEN GRAPH TAGS
@@ -118,10 +153,16 @@
 
     <!-- Direct links to music platforms for rich social media integration -->
     <!-- Spotify artist profile for music discovery -->
-    <meta property="music:musician" content="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN" />
+    <meta
+      property="music:musician"
+      content="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN"
+    />
 
     <!-- Spotify playlist for immediate listening access -->
-    <meta property="music:song" content="https://open.spotify.com/playlist/3JiPmwzvhlWmPZ5GHixsbp" />
+    <meta
+      property="music:song"
+      content="https://open.spotify.com/playlist/3JiPmwzvhlWmPZ5GHixsbp"
+    />
 
     <!-- =======================================================================
          FAVICON AND ICON CONFIGURATION
@@ -141,7 +182,8 @@
 
     <!-- Progressive Web App manifest file -->
     <!-- Defines app behavior when installed on devices -->
-    <link rel="manifest" href="site.webmanifest" />    <!-- =======================================================================
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- =======================================================================
          EXTERNAL RESOURCES AND PERFORMANCE OPTIMIZATION
          ======================================================================= -->
 
@@ -172,6 +214,12 @@
         font-family: "MuseoModerno", sans-serif;
       }
 
+      img {
+        display: inline-block;
+        max-inline-size: 100dvw;
+        block-size: auto;
+      }
+
       /* ==========================================================================
          DARK MODE TOGGLE SWITCH STYLING (Legacy - Not Currently Used)
          ========================================================================== */
@@ -196,15 +244,15 @@
       /* Hidden by default, visible when focused for keyboard navigation */
       .skip-link {
         position: absolute;
-        top: -40px;           /* Hidden above viewport */
-        left: 6px;            /* Small left margin */
-        background: #000;     /* High contrast black background */
-        color: #fff;          /* White text for maximum contrast */
-        padding: 8px;         /* Comfortable clickable area */
+        top: -40px; /* Hidden above viewport */
+        left: 6px; /* Small left margin */
+        background: #000; /* High contrast black background */
+        color: #fff; /* White text for maximum contrast */
+        padding: 8px; /* Comfortable clickable area */
         text-decoration: none; /* Remove default link underline */
-        z-index: 9999;        /* Ensure it appears above all other content */
-        border-radius: 4px;   /* Subtle rounded corners */
-        font-weight: bold;    /* Bold text for better readability */
+        z-index: 9999; /* Ensure it appears above all other content */
+        border-radius: 4px; /* Subtle rounded corners */
+        font-weight: bold; /* Bold text for better readability */
       }
 
       /* Make skip links visible when focused via keyboard navigation */
@@ -217,8 +265,8 @@
       button:focus,
       a:focus,
       iframe:focus {
-        outline: 3px solid #3b82f6;  /* Blue-500 outline for high visibility */
-        outline-offset: 2px;         /* Space between element and outline */
+        outline: 3px solid #3b82f6; /* Blue-500 outline for high visibility */
+        outline-offset: 2px; /* Space between element and outline */
       }
 
       /* Dark mode specific focus indicators */
@@ -252,14 +300,14 @@
       /* Uses clip method for better screen reader compatibility than display:none */
       .sr-only {
         position: absolute;
-        width: 1px;           /* Minimal dimensions */
+        width: 1px; /* Minimal dimensions */
         height: 1px;
-        padding: 0;           /* Remove padding */
-        margin: -1px;         /* Negative margin to hide */
-        overflow: hidden;     /* Hide any overflow */
+        padding: 0; /* Remove padding */
+        margin: -1px; /* Negative margin to hide */
+        overflow: hidden; /* Hide any overflow */
         clip: rect(0, 0, 0, 0); /* Clip to hide visually */
-        white-space: nowrap;  /* Prevent text wrapping */
-        border-width: 0;      /* Remove borders */
+        white-space: nowrap; /* Prevent text wrapping */
+        border-width: 0; /* Remove borders */
       }
 
       /* ==========================================================================
@@ -309,92 +357,98 @@
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://exitandrest.com/#website",
-          "url": "https://exitandrest.com/",
-          "name": "Exit and Rest",
-          "description": "Official website of Exit and Rest - Ambient music for peace and introspection",
-          "publisher": {
-            "@id": "https://exitandrest.com/#organization"
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://exitandrest.com/?s={search_term_string}"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://exitandrest.com/#website",
+            "url": "https://exitandrest.com/",
+            "name": "Exit and Rest",
+            "description": "Official website of Exit and Rest - Ambient music for peace and introspection",
+            "publisher": {
+              "@id": "https://exitandrest.com/#organization"
             },
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://exitandrest.com/#webpage",
-          "url": "https://exitandrest.com/",
-          "name": "Exit and Rest - Ambient Music for Peace and Introspection",
-          "isPartOf": {
-            "@id": "https://exitandrest.com/#website"
-          },
-          "about": {
-            "@id": "https://exitandrest.com/#organization"
-          },
-          "description": "Experience original ambient music and healing soundscapes designed for meditation, sleep, and relaxation.",
-          "breadcrumb": {
-            "@id": "https://exitandrest.com/#breadcrumb"
-          }
-        },
-        {
-          "@type": "MusicGroup",
-          "@id": "https://exitandrest.com/#organization",
-          "name": "Exit and Rest",
-          "description": "Frequency project creating original ambient music, meditation music, and healing soundscapes for peace and introspection.",
-          "url": "https://exitandrest.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://exitandrest.com/logo.svg",
-            "width": 512,
-            "height": 512
-          },
-          "image": {
-            "@type": "ImageObject",
-            "url": "https://exitandrest.com/logo.jpg",
-            "width": 1200,
-            "height": 630
-          },
-          "genre": ["Ambient", "New Age", "Meditation", "Healing", "Relaxation"],
-          "sameAs": [
-            "https://www.youtube.com/@exitandrest",
-            "https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN",
-            "https://x.com/exitandrest",
-            "https://www.instagram.com/exitandrest",
-            "https://www.facebook.com/exitandrest"
-          ],
-          "foundingDate": "2020",
-          "musicBy": {
-            "@type": "Person",
-            "name": "Exit and Rest"
-          }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://exitandrest.com/#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "item": {
-                "@type": "WebPage",
-                "@id": "https://exitandrest.com/",
-                "name": "Home"
-              }
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://exitandrest.com/?s={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
             }
-          ]
-        }
-      ]
-    }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://exitandrest.com/#webpage",
+            "url": "https://exitandrest.com/",
+            "name": "Exit and Rest - Ambient Music for Peace and Introspection",
+            "isPartOf": {
+              "@id": "https://exitandrest.com/#website"
+            },
+            "about": {
+              "@id": "https://exitandrest.com/#organization"
+            },
+            "description": "Experience original ambient music and healing soundscapes designed for meditation, sleep, and relaxation.",
+            "breadcrumb": {
+              "@id": "https://exitandrest.com/#breadcrumb"
+            }
+          },
+          {
+            "@type": "MusicGroup",
+            "@id": "https://exitandrest.com/#organization",
+            "name": "Exit and Rest",
+            "description": "Frequency project creating original ambient music, meditation music, and healing soundscapes for peace and introspection.",
+            "url": "https://exitandrest.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://exitandrest.com/logo.svg",
+              "width": 512,
+              "height": 512
+            },
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://exitandrest.com/logo.jpg",
+              "width": 1200,
+              "height": 630
+            },
+            "genre": [
+              "Ambient",
+              "New Age",
+              "Meditation",
+              "Healing",
+              "Relaxation"
+            ],
+            "sameAs": [
+              "https://www.youtube.com/@exitandrest",
+              "https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN",
+              "https://x.com/exitandrest",
+              "https://www.instagram.com/exitandrest",
+              "https://www.facebook.com/exitandrest"
+            ],
+            "foundingDate": "2020",
+            "musicBy": {
+              "@type": "Person",
+              "name": "Exit and Rest"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://exitandrest.com/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "WebPage",
+                  "@id": "https://exitandrest.com/",
+                  "name": "Home"
+                }
+              }
+            ]
+          }
+        ]
+      }
     </script>
   </head>
   <body
@@ -447,7 +501,11 @@
           aria-label="Exit and Rest - Ambient Music Artist"
         >
           <strong style="font-weight: 400" aria-label="Exit">Exit</strong>
-          <span style="position: relative; display: inline-block" role="img" aria-label="moon and ampersand symbol">
+          <span
+            style="position: relative; display: inline-block"
+            role="img"
+            aria-label="moon and ampersand symbol"
+          >
             <span style="font-size: 5rem">🌙</span>
             <span
               style="
@@ -484,7 +542,11 @@
       </div>
 
       <!-- Dark Mode Toggle -->
-      <div id="theme-toggle-container" class="absolute top-4 right-4 z-30" role="complementary">
+      <div
+        id="theme-toggle-container"
+        class="absolute top-4 right-4 z-30"
+        role="complementary"
+      >
         <button
           id="theme-toggle"
           aria-label="Toggle between dark and light mode"
@@ -532,7 +594,8 @@
           </svg>
         </button>
         <div id="theme-description" class="sr-only">
-          Toggle between dark and light theme. Current theme will be announced when changed.
+          Toggle between dark and light theme. Current theme will be announced
+          when changed.
         </div>
       </div>
     </header>
@@ -570,24 +633,36 @@
             <p>
               Frequency project designed to guide you through a journey of peace
               and introspection. This collection of sounds blends soothing
-              <span itemprop="genre">ambient music</span> with <span itemprop="genre">meditation music</span>, crafting an atmosphere where
-              <span itemprop="genre">sleep music</span> and <span itemprop="genre">relaxing music</span> become one. Let the calming music
-              wash over you, as layers of <span itemprop="genre">healing</span> and <span itemprop="genre">chillout music</span> merge with
-              nature sounds to create a serene escape from the noise of daily
-              life.
+              <span itemprop="genre">ambient music</span> with
+              <span itemprop="genre">meditation music</span>, crafting an
+              atmosphere where <span itemprop="genre">sleep music</span> and
+              <span itemprop="genre">relaxing music</span> become one. Let the
+              calming music wash over you, as layers of
+              <span itemprop="genre">healing</span> and
+              <span itemprop="genre">chillout music</span> merge with nature
+              sounds to create a serene escape from the noise of daily life.
             </p>
             <p>
               Each track of "Exit and Rest" is a soundscape for meditation, a
-              backdrop for <span itemprop="genre">yoga music</span>, or the perfect <span itemprop="genre">study music</span> to enhance
-              focus in silence. With <span itemprop="genre">stress relief music</span> at its core, this
-              project invites you to relax, unwind, and find a moment of zen
-              amidst the chaos. Whether you're seeking background music for a
-              quiet evening, <span itemprop="genre">spa music</span> for rejuvenation, or <span itemprop="genre">new age music</span> for
+              backdrop for <span itemprop="genre">yoga music</span>, or the
+              perfect <span itemprop="genre">study music</span> to enhance focus
+              in silence. With
+              <span itemprop="genre">stress relief music</span> at its core,
+              this project invites you to relax, unwind, and find a moment of
+              zen amidst the chaos. Whether you're seeking background music for
+              a quiet evening, <span itemprop="genre">spa music</span> for
+              rejuvenation, or <span itemprop="genre">new age music</span> for
               spiritual exploration, "Exit and Rest" offers a mysterious, yet
               comforting auditory experience.
             </p>
             <p class="font-normal text-center pt-4" itemprop="description">
-              Every visual and sound is original and produced by <span itemprop="author" itemscope itemtype="https://schema.org/MusicGroup"><span itemprop="name">Exit and Rest</span></span>.
+              Every visual and sound is original and produced by
+              <span
+                itemprop="author"
+                itemscope
+                itemtype="https://schema.org/MusicGroup"
+                ><span itemprop="name">Exit and Rest</span></span
+              >.
             </p>
           </div>
         </section>
@@ -609,9 +684,16 @@
             Listen Now
           </h2>
           <meta itemprop="name" content="Exit and Rest Music Collection" />
-          <meta itemprop="description" content="Listen to Exit and Rest ambient music on YouTube and Spotify" />
+          <meta
+            itemprop="description"
+            content="Listen to Exit and Rest ambient music on YouTube and Spotify"
+          />
           <meta itemprop="numTracks" content="Multiple" />
-          <div class="space-y-8" role="group" aria-label="Music streaming platforms">
+          <div
+            class="space-y-8"
+            role="group"
+            aria-label="Music streaming platforms"
+          >
             <!-- YouTube Embed -->
             <div
               class="relative w-full"
@@ -635,13 +717,29 @@
                 tabindex="0"
               >
               </iframe>
-              <meta itemprop="name" content="Exit and Rest - YouTube Playlist" />
-              <meta itemprop="description" content="Complete collection of Exit and Rest ambient music videos" />
-              <meta itemprop="embedUrl" content="https://www.youtube.com/embed/videoseries?si=ZKOuTTKzQRJpBqDB&list=PLuB5ulPguuaA4R-13u_PpgKhlpemfbB-A" />
+              <meta
+                itemprop="name"
+                content="Exit and Rest - YouTube Playlist"
+              />
+              <meta
+                itemprop="description"
+                content="Complete collection of Exit and Rest ambient music videos"
+              />
+              <meta
+                itemprop="embedUrl"
+                content="https://www.youtube.com/embed/videoseries?si=ZKOuTTKzQRJpBqDB&list=PLuB5ulPguuaA4R-13u_PpgKhlpemfbB-A"
+              />
               <meta itemprop="uploadDate" content="2024-01-01" />
-              <span itemprop="author" itemscope itemtype="https://schema.org/MusicGroup">
+              <span
+                itemprop="author"
+                itemscope
+                itemtype="https://schema.org/MusicGroup"
+              >
                 <meta itemprop="name" content="Exit and Rest" />
-                <meta itemprop="url" content="https://www.youtube.com/@exitandrest" />
+                <meta
+                  itemprop="url"
+                  content="https://www.youtube.com/@exitandrest"
+                />
               </span>
             </div>
             <!-- Spotify Embed -->
@@ -666,12 +764,28 @@
                 tabindex="0"
               >
               </iframe>
-              <meta itemprop="name" content="Exit and Rest - Spotify Collection" />
-              <meta itemprop="description" content="Stream Exit and Rest ambient music on Spotify" />
-              <meta itemprop="url" content="https://open.spotify.com/playlist/3JiPmwzvhlWmPZ5GHixsbp" />
-              <span itemprop="byArtist" itemscope itemtype="https://schema.org/MusicGroup">
+              <meta
+                itemprop="name"
+                content="Exit and Rest - Spotify Collection"
+              />
+              <meta
+                itemprop="description"
+                content="Stream Exit and Rest ambient music on Spotify"
+              />
+              <meta
+                itemprop="url"
+                content="https://open.spotify.com/playlist/3JiPmwzvhlWmPZ5GHixsbp"
+              />
+              <span
+                itemprop="byArtist"
+                itemscope
+                itemtype="https://schema.org/MusicGroup"
+              >
                 <meta itemprop="name" content="Exit and Rest" />
-                <meta itemprop="url" content="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN" />
+                <meta
+                  itemprop="url"
+                  content="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN"
+                />
               </span>
             </div>
           </div>
@@ -837,8 +951,9 @@
           role="contentinfo"
           aria-label="Copyright information"
         >
-          &copy; <span id="copyright-year" aria-label="Current year"></span> Exit and Rest. All rights
-          reserved.
+          &copy;
+          <span id="copyright-year" aria-label="Current year"></span> Exit and
+          Rest. All rights reserved.
         </p>
       </div>
     </footer>
@@ -903,10 +1018,10 @@
         const announceThemeChange = (isDarkMode) => {
           // Create temporary announcement element
           const announcement = document.createElement("div");
-          announcement.setAttribute("aria-live", "polite");  // Non-intrusive announcement
-          announcement.setAttribute("aria-atomic", "true");   // Read entire content as one unit
-          announcement.className = "sr-only";                // Visually hidden but available to screen readers
-          announcement.textContent = `Theme changed to ${isDarkMode ? 'dark' : 'light'} mode`;
+          announcement.setAttribute("aria-live", "polite"); // Non-intrusive announcement
+          announcement.setAttribute("aria-atomic", "true"); // Read entire content as one unit
+          announcement.className = "sr-only"; // Visually hidden but available to screen readers
+          announcement.textContent = `Theme changed to ${isDarkMode ? "dark" : "light"} mode`;
 
           // Add to DOM for screen readers to detect
           document.body.appendChild(announcement);
@@ -925,12 +1040,15 @@
         const updateAriaPressed = (isDarkMode) => {
           if (themeToggleButton) {
             // Set pressed state for screen readers (true/false)
-            themeToggleButton.setAttribute("aria-pressed", isDarkMode.toString());
+            themeToggleButton.setAttribute(
+              "aria-pressed",
+              isDarkMode.toString()
+            );
 
             // Update descriptive label with current state and next action
             themeToggleButton.setAttribute(
               "aria-label",
-              `Toggle to ${isDarkMode ? 'light' : 'dark'} mode. Currently in ${isDarkMode ? 'dark' : 'light'} mode.`
+              `Toggle to ${isDarkMode ? "light" : "dark"} mode. Currently in ${isDarkMode ? "dark" : "light"} mode.`
             );
           }
         };
@@ -954,9 +1072,9 @@
           localStorage.setItem("theme", isDarkMode ? "dark" : "light");
 
           // Update all theme-related UI elements
-          updateThemeIcons(isDarkMode);      // Switch sun/moon icons
-          updateAriaPressed(isDarkMode);     // Update accessibility attributes
-          announceThemeChange(isDarkMode);   // Notify screen readers
+          updateThemeIcons(isDarkMode); // Switch sun/moon icons
+          updateAriaPressed(isDarkMode); // Update accessibility attributes
+          announceThemeChange(isDarkMode); // Notify screen readers
         };
 
         /* =====================================================================
@@ -970,9 +1088,9 @@
          */
         const handleKeyboardNavigation = (event) => {
           // Support both Enter and Space keys for activation (standard practice)
-          if (event.key === 'Enter' || event.key === ' ') {
+          if (event.key === "Enter" || event.key === " ") {
             event.preventDefault(); // Prevent default browser behavior
-            toggleTheme();          // Execute theme toggle
+            toggleTheme(); // Execute theme toggle
           }
         };
 
@@ -981,10 +1099,11 @@
            ===================================================================== */
 
         // Determine initial theme state from current HTML class
-        const initialDarkMode = document.documentElement.classList.contains("dark");
+        const initialDarkMode =
+          document.documentElement.classList.contains("dark");
 
         // Set up initial UI state based on current theme
-        updateThemeIcons(initialDarkMode);  // Show correct sun/moon icon
+        updateThemeIcons(initialDarkMode); // Show correct sun/moon icon
         updateAriaPressed(initialDarkMode); // Set correct ARIA attributes
 
         // Bind event handlers to theme toggle button (if it exists)
@@ -993,7 +1112,10 @@
           themeToggleButton.addEventListener("click", toggleTheme);
 
           // Keyboard interaction for accessibility
-          themeToggleButton.addEventListener("keydown", handleKeyboardNavigation);
+          themeToggleButton.addEventListener(
+            "keydown",
+            handleKeyboardNavigation
+          );
         }
 
         /* =====================================================================
@@ -1010,11 +1132,11 @@
            ===================================================================== */
 
         // Enhance skip links with proper focus management
-        const skipLinks = document.querySelectorAll('.skip-link');
-        skipLinks.forEach(link => {
-          link.addEventListener('click', (e) => {
+        const skipLinks = document.querySelectorAll(".skip-link");
+        skipLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
             // Extract target ID from href attribute
-            const targetId = link.getAttribute('href').substring(1);
+            const targetId = link.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
@@ -1023,8 +1145,8 @@
                 targetElement.focus();
 
                 // Make non-focusable elements focusable for skip link functionality
-                if (!targetElement.hasAttribute('tabindex')) {
-                  targetElement.setAttribute('tabindex', '-1');
+                if (!targetElement.hasAttribute("tabindex")) {
+                  targetElement.setAttribute("tabindex", "-1");
                 }
               }, 100);
             }
@@ -1036,10 +1158,12 @@
            ===================================================================== */
 
         // Respect user's motion preferences for accessibility
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const prefersReducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        );
         if (prefersReducedMotion.matches) {
           // Disable transitions for users who prefer reduced motion
-          document.body.style.setProperty('--transition-duration', '0ms');
+          document.body.style.setProperty("--transition-duration", "0ms");
         }
       });
     </script>
