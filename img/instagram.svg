@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.46 283.46" id="instagram">
+  <defs>
+    <linearGradient id="b" x1="219.5" x2="-23.18" y1="241.54" y2="-69.93" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9240fc"></stop>
+      <stop offset=".14" stop-color="#ab48e3"></stop>
+      <stop offset=".43" stop-color="#d857b8"></stop>
+      <stop offset=".65" stop-color="#f4619d"></stop>
+      <stop offset=".77" stop-color="#ff6594"></stop>
+    </linearGradient>
+    <linearGradient id="a" x1="165.81" x2="128.6" y1="179.36" y2="117.01" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2cafe"></stop>
+      <stop offset=".48" stop-color="#e3ccfe"></stop>
+      <stop offset=".74" stop-color="#e7d4fe"></stop>
+      <stop offset=".96" stop-color="#eee2fe"></stop>
+      <stop offset="1" stop-color="#f0e6ff"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="c" x1="197.91" x2="99.35" y1="209.95" y2="90.27"></linearGradient>
+    <linearGradient xlink:href="#a" id="d" x1="197.48" x2="185.75" y1="109.23" y2="94.81"></linearGradient>
+  </defs>
+  <rect width="227.3" height="227.3" x="28.08" y="28.08" fill="url(#b)" rx="51.34" ry="51.34"></rect>
+  <g>
+    <path fill="url(#a)" d="M142.84,112.82c15.5,0,28.06,12.56,28.06,28.06s-12.56,28.06-28.06,28.06-28.06-12.56-28.06-28.06,12.56-28.06,28.06-28.06m0-15.14c-23.82,0-43.2,19.38-43.2,43.2s19.38,43.2,43.2,43.2,43.2-19.38,43.2-43.2-19.38-43.2-43.2-43.2h0Z"></path>
+    <path fill="url(#c)" d="M177.61,72.88c18.21,0,32.98,14.76,32.98,32.98v71.76c0,18.21-14.76,32.98-32.98,32.98H105.85c-18.21,0-32.98-14.76-32.98-32.98V105.85c0-18.21,14.76-32.98,32.98-32.98h71.76m0-14.55H105.85c-26.2,0-47.52,21.32-47.52,47.52v71.76c0,26.2,21.32,47.52,47.52,47.52h71.76c26.2,0,47.52-21.32,47.52-47.52V105.85c0-26.2-21.32-47.52-47.52-47.52h0Z"></path>
+    <circle cx="187.85" cy="97.39" r="10.72" fill="url(#d)"></circle>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46" id="messenger">
+  <defs>
+    <linearGradient id="a" x1="29.95" x2="253.51" y1="139.84" y2="139.84" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#5fe8ff"></stop>
+      <stop offset=".61" stop-color="#4cddfb"></stop>
+      <stop offset="1" stop-color="#3dd5f8"></stop>
+    </linearGradient>
+    <linearGradient id="b" x1="83.51" x2="180.64" y1="209.16" y2="93.96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dcfffe"></stop>
+      <stop offset=".52" stop-color="#c9f7fe"></stop>
+      <stop offset="1" stop-color="#bdf3ff"></stop>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="M141.73,26.63c-61.73,0-111.78,50.69-111.78,113.21,0,18.52,4.4,36,12.18,51.44,5.27,10.44,5.08,22.8-.2,33.23l-9.29,18.37c-2.59,5.12,2.21,10.86,7.71,9.2l31.88-9.61c8.43-2.54,17.48-2,25.56,1.5,13.49,5.84,28.34,9.08,43.93,9.08,61.73,0,111.78-50.69,111.78-113.21S203.47,26.63,141.73,26.63Z"></path>
+  <path fill="url(#b)" d="M73.81,162.77l45.92-48.26c4.51-4.74,12.02-4.93,16.76-.41l18.28,17.42c2.88,2.75,7.35,2.95,10.47,.48l38.5-30.5c1.51-1.2,3.69-1.07,5.05,.29h0c1.33,1.33,1.49,3.44,.37,4.95l-44.19,63.66c-2.76,3.98-8.41,4.6-11.97,1.32l-19.35-17.82c-3.64-3.35-8.98-4.09-13.39-1.85l-39.27,19.93c-2.31,1.35-5.24,.96-7.14-.93h0c-2.28-2.28-2.31-5.98-.05-8.29Z"></path>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46" id="x">
+  <defs>
+    <linearGradient id="a" x1="18.09" x2="240.25" y1="27.06" y2="238.98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"></stop>
+      <stop offset=".16" stop-color="#c9c9c9"></stop>
+      <stop offset=".39" stop-color="#828282"></stop>
+      <stop offset=".6" stop-color="#4a4a4a"></stop>
+      <stop offset=".78" stop-color="#212121"></stop>
+      <stop offset=".92" stop-color="#090909"></stop>
+      <stop offset="1"></stop>
+    </linearGradient>
+    <linearGradient id="b" x1="81.07" x2="236.93" y1="144.04" y2="144.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"></stop>
+      <stop offset=".28" stop-color="#fcfcfc"></stop>
+      <stop offset=".44" stop-color="#f4f4f4"></stop>
+      <stop offset=".57" stop-color="#e6e6e6"></stop>
+      <stop offset=".69" stop-color="#d2d2d2"></stop>
+      <stop offset=".79" stop-color="#b9b9b9"></stop>
+      <stop offset=".88" stop-color="#9a9a9a"></stop>
+      <stop offset=".97" stop-color="#757575"></stop>
+      <stop offset="1" stop-color="#666"></stop>
+    </linearGradient>
+    <linearGradient id="c" x1="72.8" x2="226.46" y1="172.3" y2="109.56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"></stop>
+      <stop offset=".41" stop-color="#fdfdfd"></stop>
+      <stop offset=".56" stop-color="#f6f6f6"></stop>
+      <stop offset=".67" stop-color="#eaeaea"></stop>
+      <stop offset=".75" stop-color="#d9d9d9"></stop>
+      <stop offset=".83" stop-color="#c3c3c3"></stop>
+      <stop offset=".89" stop-color="#a8a8a8"></stop>
+      <stop offset=".95" stop-color="#888"></stop>
+      <stop offset="1" stop-color="#666"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="203.49" height="203.49" x="39.99" y="43.26" fill="url(#a)" rx="41.58" ry="41.58"></rect>
+  <g>
+    <path fill="url(#b)" d="M155.03,136.64l-7.72-10.2-28.46-37.62h-37.78l46.7,61.03,7.68,10.02,30.13,39.39h36.81l-47.37-62.62Zm-12.43,14.74l-7.74-10.03-31.37-40.68h11.84l25.37,33.7,7.66,10.19,32.27,42.87h-10.24l-27.79-36.04Z"></path>
+    <path fill="url(#c)" d="M134.86,141.35l7.74,10.03-7.15,8.49-34.84,41.31h-15.69l42.86-51.34,7.09-8.5Zm43.85-52.53l-31.4,37.62-6.61,7.92,7.66,10.19,6.67-7.91,40.33-47.82h-16.64Z"></path>
+  </g>
+</svg>

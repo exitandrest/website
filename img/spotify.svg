@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.46 283.46" id="spotify">
+  <defs>
+    <linearGradient id="b" x1="62.65" x2="223.41" y1="46.23" y2="234.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5fffd9"></stop>
+      <stop offset=".35" stop-color="#5cfed7"></stop>
+      <stop offset=".53" stop-color="#54fad3"></stop>
+      <stop offset=".68" stop-color="#47f4cc"></stop>
+      <stop offset=".8" stop-color="#34ecc3"></stop>
+      <stop offset=".91" stop-color="#1be2b6"></stop>
+      <stop offset=".93" stop-color="#18e1b5"></stop>
+    </linearGradient>
+    <linearGradient id="a" x1="80.77" x2="182.41" y1="185.75" y2="185.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c3faf2"></stop>
+      <stop offset=".66" stop-color="#c5faf2"></stop>
+      <stop offset="1" stop-color="#cdfaf3"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="c" x1="79.4" x2="197.83" y1="150.02" y2="150.02"></linearGradient>
+    <linearGradient xlink:href="#a" id="d" x1="80.59" x2="207.56" y1="98.48" y2="106.87"></linearGradient>
+  </defs>
+  <g>
+    <ellipse cx="141.73" cy="138.62" fill="url(#b)" rx="115.89" ry="111.99"></ellipse>
+    <path fill="url(#a)" d="M174.12,205.84c-2.32,0-4.63-.97-6.27-2.86-32.54-37.58-72.64-12.79-74.33-11.71-3.86,2.43-8.98,1.33-11.44-2.53-2.46-3.84-1.36-8.95,2.48-11.43,18.42-11.88,62.16-24.07,95.82,14.81,3,3.47,2.62,8.7-.84,11.7-1.57,1.36-3.5,2.02-5.43,2.02Z"></path>
+    <path fill="url(#c)" d="M188.17,173.41c-2.71,0-5.4-1.13-7.31-3.34-37.92-43.8-84.63-14.89-86.6-13.65-4.49,2.86-10.46,1.54-13.33-2.94-2.87-4.49-1.58-10.44,2.89-13.32,21.46-13.84,72.42-28.03,111.65,17.25,3.49,4.03,3.06,10.14-.98,13.63-1.83,1.58-4.08,2.36-6.32,2.36Z"></path>
+    <path fill="url(#d)" d="M204.72,136.19c-4.15,0-8.28-1.73-11.21-5.12-44.91-51.85-100.35-17.7-102.69-16.22-6.89,4.36-16.05,2.34-20.44-4.53-4.39-6.88-2.42-15.99,4.43-20.41,27.14-17.49,91.54-35.46,141.09,21.76,5.36,6.18,4.69,15.54-1.5,20.9-2.8,2.43-6.26,3.62-9.69,3.62Z"></path>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46" id="facebook">
+  <defs>
+    <linearGradient id="a" x1="233.72" x2="31.52" y1="242.18" y2="12.29" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3d62fc"></stop>
+      <stop offset=".33" stop-color="#3f64fc"></stop>
+      <stop offset=".51" stop-color="#466cfc"></stop>
+      <stop offset=".66" stop-color="#547afc"></stop>
+      <stop offset=".79" stop-color="#668dfc"></stop>
+      <stop offset=".84" stop-color="#7098fc"></stop>
+    </linearGradient>
+    <linearGradient id="b" x1="172.15" x2="166.62" y1="41.75" y2="207.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4ebff"></stop>
+      <stop offset=".32" stop-color="#f1e9ff"></stop>
+      <stop offset=".5" stop-color="#e9e4ff"></stop>
+      <stop offset=".64" stop-color="#dbdcff"></stop>
+      <stop offset=".77" stop-color="#c8d0ff"></stop>
+      <stop offset=".84" stop-color="#b8c7ff"></stop>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="M62.14,21.79H221.92c19.27,0,34.92,15.65,34.92,34.92V218.85c0,19.27-15.65,34.92-34.92,34.92H62.14c-19.6,0-35.51-15.91-35.51-35.51V57.3c0-19.6,15.91-35.51,35.51-35.51Z"></path>
+  <path fill="url(#b)" d="M184.61,228.74v-91.49h23.8l4.1-32.44h-28.31v-18.82c0-4.58,3.68-8.32,8.26-8.38l20.05-.29v-31.6h-32.99c-17.93,0-32.46,14.53-32.46,32.46v27.04h-19.49v32.03h19.49v91.49h37.55Z"></path>
+</svg>

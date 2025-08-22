@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.46 283.46" id="youtube">
+  <defs>
+    <linearGradient id="a" x1="22.57" x2="263.12" y1="141.73" y2="141.73" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6565"></stop>
+      <stop offset=".38" stop-color="#ff6767"></stop>
+      <stop offset=".59" stop-color="#ff6f6f"></stop>
+      <stop offset=".76" stop-color="#ff7d7d"></stop>
+      <stop offset=".89" stop-color="#ff8d8d"></stop>
+    </linearGradient>
+    <linearGradient id="b" x1="202.29" x2="84.83" y1="202.81" y2="81.97" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"></stop>
+      <stop offset=".02" stop-color="#fefcfc"></stop>
+      <stop offset=".21" stop-color="#fde6e7"></stop>
+      <stop offset=".43" stop-color="#fcd6d8"></stop>
+      <stop offset=".67" stop-color="#fccccf"></stop>
+      <stop offset="1" stop-color="#fccacd"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="c" x1="100.08" x2="152.79" y1="98.36" y2="160.2"></linearGradient>
+  </defs>
+  <rect width="240.55" height="240.55" x="22.57" y="21.46" fill="url(#a)" rx="55.37" ry="55.37"></rect>
+  <rect width="152.01" height="110.08" x="66.97" y="86.75" fill="url(#b)" rx="35.88" ry="35.88"></rect>
+  <path fill="url(#c)" d="M124.57,120.08v43.43c0,3.45,3.8,5.56,6.73,3.72l34.75-21.77c2.75-1.72,2.75-5.74,0-7.45l-34.75-21.66c-2.93-1.82-6.72,.28-6.72,3.73Z"></path>
+</svg>

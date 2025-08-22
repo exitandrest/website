@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-label="Branding Logo" viewBox="-6 0 202 87.5">
+  <defs>
+    <style>
+      /** TODO: this is not being respected/supported */
+      @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700');
+    </style>
+    <filter id="a" width="240%" height="240%" x="-48%" y="-64%">
+      <feGaussianBlur result="blur" stdDeviation="10" />
+      <feFlood flood-color="gold" flood-opacity=".28" />
+      <feComposite in2="blur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="b" width="180%" height="180%" x="-40%" y="-40%">
+      <feGaussianBlur result="blur" stdDeviation="6" />
+      <feFlood flood-color="#134" flood-opacity=".36" />
+      <feComposite in2="blur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#a)" font-family="MuseoModerno, sans-serif" font-weight="400" text-anchor="middle">
+    <text x="50%" y="56" fill="gold" font-size="48" opacity=".64">
+      Exıt<tspan fill="#2f4f4f">…</tspan>
+    </text>
+    <text x="48%" y="75.25" fill="#2f4f4f" fill-opacity=".64" font-size="24">
+      &amp;
+    </text>
+  </g>
+  <text x="50%" y="56" fill="#2f4f4f" font-family="MuseoModerno, sans-serif" font-size="48" font-weight="400"
+    text-anchor="middle">
+    Exıt<tspan fill="none" stroke="gold" stroke-width=".5" class="outline">…</tspan>
+  </text>
+  <text x="48%" y="75.25" fill="none" stroke="gold" stroke-width=".5" class="outline"
+    font-family="MuseoModerno, sans-serif" font-size="24" font-weight="100" paint-order="stroke" text-anchor="middle">
+    &amp;
+  </text>
+  <text x="65%" y="71" fill="#2f4f4f" fill-opacity=".8" font-family="MuseoModerno, sans-serif" font-size="18"
+    font-weight="400" text-anchor="middle">
+    REST
+  </text>
+  <g filter="url(#b)">
+    <text x="50.25%" y="25" font-family="MuseoModerno, sans-serif" font-size="16" font-weight="light" opacity=".8"
+      text-anchor="middle">
+      🌙
+    </text>
+  </g>
+  <text x="50.25%" y="25" font-family="MuseoModerno, sans-serif" font-size="16" font-weight="light"
+    text-anchor="middle">
+    🌙
+  </text>
+</svg>
