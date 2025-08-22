@@ -231,6 +231,12 @@ header .z-20 p {
   margin-top: -2rem; /* Reduces the top margin, adjust as needed (negative value pulls it up) */
   padding-top: 1rem; /* Optional: Adds a small padding to avoid content touching the header */
 }
+
+      @media (max-width: 768px) {
+  header .z-20 {
+    transform: translateY(-10%); /* Adjusts content upward, tweak the percentage */
+  }
+}
       
       /* ==========================================================================
          TYPOGRAPHY AND FONT CONFIGURATION
