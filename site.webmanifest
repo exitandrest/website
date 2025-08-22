@@ -31,7 +31,7 @@
     {
       "purpose": "any maskable",
       "sizes": "any",
-      "src": "logo.svg",
+      "src": "mask-icon.svg",
       "type": "image/svg+xml"
     }
   ],
@@ -54,7 +54,7 @@
       "label": "Exit and Rest - Ambient Music Artist",
       "platform": "wide",
       "sizes": "1200x630",
-      "src": "logo.jpg",
+      "src": "img/logo.jpg",
       "type": "image/jpeg"
     }
   ],
