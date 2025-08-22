@@ -232,9 +232,15 @@ header .z-20 p {
   padding-top: 1rem; /* Optional: Adds a small padding to avoid content touching the header */
 }
 
-      @media (max-width: 768px) {
-  header .z-20 {
-    transform: translateY(-10%); /* Adjusts content upward, tweak the percentage */
+ @media (max-width: 640px) {
+  .z-20 img {
+    max-width: 70% !important; /* Overrides Tailwind for mobile */
+  }
+}
+
+      @media (max-width: 640px) {
+  header img {
+    object-position: center 70%; /* Adjusts where the image is cropped, tweak the percentage */
   }
 }
       
@@ -529,7 +535,7 @@ header .z-20 p {
     <img
       src="EARLOGO.svg"
       alt="Exit and Rest Logo - Modern text design with Exit & Rest"
-      class="max-w-[40%] w-full h-auto mx-auto mb-2 md:mb-4"
+      class="max-w-[40%] md:max-w-[40%] sm:max-w-[60%] w-full h-auto mx-auto mb-2 md:mb-4"
       itemprop="logo"
     />
    
@@ -598,7 +604,6 @@ header .z-20 p {
     </div>
   </div>
 </header>
-
 
 
 
