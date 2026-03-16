@@ -20,12 +20,20 @@
   src="https://www.facebook.com/tr?id=1334453668358087&ev=PageView&noscript=1"/></noscript>
 
   <style>
+    @font-face {
+      font-family: 'MuseoModerno';
+      src: url('MuseoModerno.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     html, body {
       height: 100%;
       background: #07090f;
-      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      font-family: 'MuseoModerno', -apple-system, 'Helvetica Neue', sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -39,55 +47,58 @@
 
     .card {
       width: 100%;
-      max-width: 380px;
+      max-width: 360px;
       text-align: center;
     }
 
     .artwork {
       width: 100%;
-      max-width: 320px;
+      max-width: 300px;
       aspect-ratio: 1;
-      border-radius: 8px;
+      border-radius: 6px;
       object-fit: cover;
       display: block;
       margin: 0 auto 2rem;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.8);
     }
 
     .label {
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.3);
-      margin-bottom: 0.5rem;
+      color: rgba(255,255,255,0.28);
+      margin-bottom: 0.45rem;
     }
 
     h1 {
-      font-size: 1.4rem;
-      font-weight: 300;
-      letter-spacing: 0.08em;
-      color: rgba(255,255,255,0.85);
-      margin-bottom: 0.4rem;
+      font-size: 1.35rem;
+      font-weight: 200;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 0.35rem;
     }
 
     .sub {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.3);
-      letter-spacing: 0.05em;
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 0.12em;
       margin-bottom: 2rem;
     }
 
     .btn {
       display: block;
       width: 100%;
-      padding: 0.95rem;
+      padding: 0.9rem;
       background: #1DB954;
       border: none;
       border-radius: 50px;
       color: #000;
-      font-size: 0.85rem;
+      font-family: 'MuseoModerno', sans-serif;
+      font-size: 0.78rem;
       font-weight: 600;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       text-decoration: none;
       cursor: pointer;
@@ -95,13 +106,14 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    .btn:hover, .btn:active { opacity: 0.88; }
+    .btn:hover, .btn:active { opacity: 0.85; }
 
     .note {
-      margin-top: 1.2rem;
-      font-size: 0.7rem;
-      color: rgba(255,255,255,0.18);
-      letter-spacing: 0.04em;
+      margin-top: 1.1rem;
+      font-size: 0.65rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.15);
+      letter-spacing: 0.06em;
     }
   </style>
 </head>
@@ -111,9 +123,7 @@
     <p class="label">Exit &amp; Rest</p>
     <h1>cosmic sleep</h1>
     <p class="sub">ambient healing frequencies</p>
-    <a class="btn" id="btn"
-       href="https://open.spotify.com/track/0X4wTVLpA2GsGF7UHFUl7G?context=spotify:playlist:4doqZUR4rfbrkMHptTirj3&si=fc404e6fbe9a4db4"
-       onclick="trackClick()">
+    <a class="btn" href="https://open.spotify.com/track/0X4wTVLpA2GsGF7UHFUl7G?context=spotify:playlist:4doqZUR4rfbrkMHptTirj3&si=fc404e6fbe9a4db4" onclick="trackClick()">
       Listen on Spotify
     </a>
     <p class="note">redirecting in <span id="count">5</span>s</p>
@@ -121,11 +131,9 @@
 
   <script>
     const URL = 'https://open.spotify.com/track/0X4wTVLpA2GsGF7UHFUl7G?context=spotify:playlist:4doqZUR4rfbrkMHptTirj3&si=fc404e6fbe9a4db4';
-
     function trackClick() {
       fbq('track', 'Lead', { content_name: 'spotify_click', content_category: 'cosmic_sleep' });
     }
-
     let sec = 5;
     const el = document.getElementById('count');
     const t = setInterval(() => {
