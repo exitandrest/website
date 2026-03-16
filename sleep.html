@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Cosmic Sleep — Exit and Rest</title>
   <meta name="description" content="Healing ambient frequencies for deep rest." />
 
@@ -20,118 +20,252 @@
 
   <style>
     @font-face {
-      font-family: 'MuseoModerno';
+      font-family: 'MM';
       src: url('MuseoModerno.ttf') format('truetype');
       font-weight: 100 900;
-      font-style: normal;
       font-display: swap;
     }
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body {
-      height: 100%;
-      background: #07090f;
-      font-family: 'MuseoModerno', -apple-system, sans-serif;
-      -webkit-font-smoothing: antialiased;
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+    :root {
+      --bg: #04060d;
+      --fg: rgba(235,240,255,0.85);
+      --fg-dim: rgba(235,240,255,0.28);
+      --fg-faint: rgba(235,240,255,0.1);
+      --green: #1DB954;
     }
+
+    html {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'MM', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+    }
+
     body {
+      min-height: 100dvh;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 2rem 2rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-svg {
+      width: 90px;
+      height: auto;
+      opacity: 0.5;
+    }
+    .logo-svg path { fill: #ffffff !important; }
+
+    .header-tag {
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--fg-dim);
+    }
+
+    /* ── Main ── */
+    main {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      padding: 2rem 1.5rem;
+      padding: 2rem;
+      gap: 0;
+      position: relative;
+    }
+
+    /* Full-bleed artwork behind with blur overlay */
+    .bg-art {
+      position: fixed;
+      inset: 0;
+      background-image: url('cosmic-sleep.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.08;
+      filter: blur(40px);
+      transform: scale(1.1);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 320px;
       gap: 0;
     }
-    .logo {
-      width: 52px;
-      height: 52px;
-      object-fit: contain;
-      opacity: 0.35;
-      margin-bottom: 2.2rem;
-      mix-blend-mode: screen;
-    }
-    .card {
+
+    .artwork-wrap {
       width: 100%;
-      max-width: 340px;
-      text-align: center;
+      position: relative;
+      margin-bottom: 2rem;
     }
+
     .artwork {
       width: 100%;
       aspect-ratio: 1;
-      border-radius: 6px;
       object-fit: cover;
+      border-radius: 4px;
       display: block;
-      margin: 0 auto 1.8rem;
-      box-shadow: 0 24px 64px rgba(0,0,0,0.85);
+      box-shadow:
+        0 2px 4px rgba(0,0,0,0.3),
+        0 8px 24px rgba(0,0,0,0.5),
+        0 24px 80px rgba(0,0,0,0.6);
     }
+
+    /* Subtle gradient at bottom of artwork */
+    .artwork-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 40%;
+      background: linear-gradient(to top, rgba(4,6,13,0.5), transparent);
+      border-radius: 0 0 4px 4px;
+      pointer-events: none;
+    }
+
+    .title-block {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
     h1 {
-      font-size: 1.2rem;
+      font-size: clamp(1.1rem, 4vw, 1.3rem);
       font-weight: 200;
-      letter-spacing: 0.12em;
-      color: rgba(255,255,255,0.78);
-      margin-bottom: 0.3rem;
+      letter-spacing: 0.15em;
+      color: var(--fg);
+      margin-bottom: 0.4rem;
     }
-    .sub {
-      font-size: 0.68rem;
+
+    .tagline {
+      font-size: 0.65rem;
       font-weight: 300;
-      color: rgba(255,255,255,0.22);
-      letter-spacing: 0.14em;
-      margin-bottom: 1.8rem;
+      letter-spacing: 0.18em;
+      color: var(--fg-dim);
+      text-transform: uppercase;
     }
+
+    /* Thin line divider */
+    .divider {
+      width: 1px;
+      height: 32px;
+      background: linear-gradient(to bottom, transparent, var(--fg-faint), transparent);
+      margin: 0 auto 2rem;
+    }
+
     .btn {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
       width: 100%;
-      padding: 0.88rem;
-      background: #1DB954;
+      padding: 1rem 1.5rem;
+      background: var(--green);
       border: none;
       border-radius: 50px;
       color: #000;
-      font-family: 'MuseoModerno', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
+      font-family: 'MM', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       text-decoration: none;
       cursor: pointer;
-      transition: opacity 0.2s;
+      transition: opacity 0.15s, transform 0.15s;
       -webkit-tap-highlight-color: transparent;
     }
-    .btn:hover, .btn:active { opacity: 0.85; }
-    .note {
-      margin-top: 1rem;
-      font-size: 0.62rem;
+
+    .btn:active { opacity: 0.82; transform: scale(0.98); }
+
+    .btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+    /* ── Footer ── */
+    footer {
+      padding: 1.2rem 2rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .redirect-note {
+      font-size: 0.6rem;
       font-weight: 300;
-      color: rgba(255,255,255,0.13);
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
+      color: var(--fg-faint);
     }
   </style>
 </head>
 <body>
-  <img class="logo" src="ear-logo.jpg" alt="Exit and Rest" />
-  <div class="card">
-    <img class="artwork" src="cosmic-sleep.jpg" alt="Cosmic Sleep" />
-    <h1>cosmic sleep</h1>
-    <p class="sub">ambient healing frequencies</p>
-    <a class="btn" href="https://open.spotify.com/track/0X4wTVLpA2GsGF7UHFUl7G?context=spotify:playlist:4doqZUR4rfbrkMHptTirj3&si=fc404e6fbe9a4db4" onclick="trackClick()">
-      Listen on Spotify
-    </a>
-    <p class="note">redirecting in <span id="count">5</span>s</p>
-  </div>
+
+  <div class="bg-art"></div>
+
+  <header>
+    <!-- Inline SVG logo — colored white via CSS -->
+    <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 375" aria-label="Exit and Rest">
+      <g style="fill:#ffffff;fill-opacity:0.9;">
+        <g transform="translate(1.04, 133.75)"><path d="M 34.15625 0 C 28.695312 0 23.941406 -1.269531 19.890625 -3.8125 C 15.847656 -6.351562 12.722656 -9.710938 10.515625 -13.890625 C 8.304688 -18.078125 7.203125 -22.523438 7.203125 -27.234375 C 7.203125 -31.941406 8.398438 -36.382812 10.796875 -40.5625 C 13.191406 -44.75 16.695312 -47.925781 21.3125 -50.09375 C 16.695312 -52.445312 13.285156 -55.570312 11.078125 -59.46875 C 8.867188 -63.375 7.765625 -67.492188 7.765625 -71.828125 C 7.765625 -76.804688 8.9375 -81.316406 11.28125 -85.359375 C 13.632812 -89.410156 16.785156 -92.632812 20.734375 -95.03125 C 24.691406 -97.4375 29.113281 -98.640625 34 -98.640625 L 72.25 -98.640625 L 72.25 -89.609375 L 35.140625 -89.609375 C 31.847656 -89.609375 28.90625 -88.832031 26.3125 -87.28125 C 23.726562 -85.726562 21.679688 -83.585938 20.171875 -80.859375 C 18.671875 -78.128906 17.921875 -75.117188 17.921875 -71.828125 C 17.921875 -68.816406 18.71875 -65.992188 20.3125 -63.359375 C 21.914062 -60.722656 24.035156 -58.628906 26.671875 -57.078125 C 29.304688 -55.523438 32.316406 -54.75 35.703125 -54.75 L 67.03125 -54.75 L 67.03125 -45.71875 L 36.546875 -45.71875 C 32.503906 -45.71875 29.046875 -44.820312 26.171875 -43.03125 C 23.304688 -41.25 21.144531 -38.945312 19.6875 -36.125 C 18.226562 -33.300781 17.5 -30.289062 17.5 -27.09375 C 17.5 -23.988281 18.203125 -21.070312 19.609375 -18.34375 C 21.023438 -15.613281 23.097656 -13.378906 25.828125 -11.640625 C 28.554688 -9.898438 31.847656 -9.03125 35.703125 -9.03125 L 72.25 -9.03125 L 72.25 0 Z"/></g>
+      </g>
+    </svg>
+    <span class="header-tag">Ambient · Healing · Sleep</span>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="artwork-wrap">
+        <img class="artwork" src="cosmic-sleep.jpg" alt="Cosmic Sleep Playlist" />
+      </div>
+
+      <div class="title-block">
+        <h1>cosmic sleep</h1>
+        <p class="tagline">healing frequencies · exit and rest</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <a class="btn" id="spotify-btn"
+         href="https://open.spotify.com/track/0X4wTVLpA2GsGF7UHFUl7G?context=spotify:playlist:4doqZUR4rfbrkMHptTirj3&si=fc404e6fbe9a4db4"
+         onclick="trackClick()">
+        <!-- Spotify icon -->
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        Listen on Spotify
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p class="redirect-note">opening spotify in <span id="count">5</span>s</p>
+  </footer>
 
   <script>
-    const URL = 'https://open.spotify.com/track/0X4wTVLpA2GsGF7UHFUl7G?context=spotify:playlist:4doqZUR4rfbrkMHptTirj3&si=fc404e6fbe9a4db4';
+    const DEST = 'https://open.spotify.com/track/0X4wTVLpA2GsGF7UHFUl7G?context=spotify:playlist:4doqZUR4rfbrkMHptTirj3&si=fc404e6fbe9a4db4';
     function trackClick() {
       fbq('track', 'Lead', { content_name: 'spotify_click', content_category: 'cosmic_sleep' });
     }
-    let sec = 5;
+    let s = 5;
     const el = document.getElementById('count');
-    const t = setInterval(() => {
-      sec--;
-      el.textContent = sec;
-      if (sec <= 0) {
-        clearInterval(t);
+    const timer = setInterval(() => {
+      s--;
+      el.textContent = s;
+      if (s <= 0) {
+        clearInterval(timer);
         fbq('track', 'Lead', { content_name: 'auto_redirect', content_category: 'cosmic_sleep' });
-        window.location.href = URL;
+        window.location.href = DEST;
       }
     }, 1000);
   </script>
