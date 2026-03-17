@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Stats — Exit and Rest</title>
+  <meta name="robots" content="noindex,nofollow"/>
+  <style>
+    @font-face{font-family:'MM';src:url('MuseoModerno.ttf') format('truetype');font-weight:100 900;font-display:swap;}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    :root{
+      --bg:#04060d;
+      --card:#0b0f1a;
+      --border:rgba(255,255,255,0.07);
+      --fg:rgba(235,240,255,0.88);
+      --dim:rgba(235,240,255,0.4);
+      --faint:rgba(235,240,255,0.15);
+      --green:#1DB954;
+      --blue:#4A9EFF;
+      --purple:#9B6BFF;
+      --orange:#FF8C42;
+    }
+    html,body{background:var(--bg);color:var(--fg);font-family:'MM',system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;}
+    body{padding:2rem 1.25rem 4rem;}
+
+    /* Auth gate */
+    #auth-gate{position:fixed;inset:0;background:var(--bg);z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;}
+    #auth-gate input{background:var(--card);border:1px solid var(--border);color:var(--fg);font-family:'MM',sans-serif;font-size:1rem;padding:.75rem 1rem;border-radius:8px;width:280px;text-align:center;outline:none;}
+    #auth-gate input:focus{border-color:var(--faint);}
+    #auth-gate button{background:var(--green);color:#000;font-family:'MM',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:none;border-radius:50px;padding:.75rem 2rem;cursor:pointer;}
+    #auth-gate .err{color:#ff5555;font-size:.75rem;display:none;}
+
+    /* Layout */
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:2.5rem;}
+    .logo{width:80px;filter:brightness(0) invert(1);opacity:.5;}
+    .page-title{font-size:.65rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);}
+    .updated{font-size:.6rem;color:var(--faint);}
+
+    /* Grid */
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:2rem;}
+    @media(min-width:600px){.grid{grid-template-columns:repeat(4,1fr);}}
+
+    /* Cards */
+    .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;}
+    .card-label{font-size:.58rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.5rem;}
+    .card-value{font-size:1.6rem;font-weight:200;letter-spacing:.02em;}
+    .card-sub{font-size:.65rem;color:var(--faint);margin-top:.25rem;}
+    .card-delta{font-size:.65rem;margin-top:.3rem;}
+    .up{color:#4ade80;}.down{color:#f87171;}.flat{color:var(--faint);}
+
+    /* Section headers */
+    .section{margin-bottom:.5rem;margin-top:1.5rem;}
+    .section h2{font-size:.6rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);padding-bottom:.5rem;border-bottom:1px solid var(--border);}
+
+    /* Accent colors per platform */
+    .c-spotify .card-value{color:var(--green);}
+    .c-yt .card-value{color:#ff4444;}
+    .c-meta .card-value{color:var(--blue);}
+    .c-kalshi .card-value{color:var(--orange);}
+
+    /* Trend bar */
+    .trend{display:flex;gap:2px;align-items:flex-end;height:28px;margin-top:.5rem;}
+    .trend-bar{flex:1;background:rgba(255,255,255,0.12);border-radius:2px;min-height:3px;}
+
+    /* Table */
+    .table-wrap{overflow-x:auto;margin-top:.5rem;}
+    table{width:100%;border-collapse:collapse;font-size:.72rem;}
+    th{font-weight:300;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--border);}
+    td{padding:.5rem .75rem;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--fg);}
+    tr:last-child td{border:none;}
+  </style>
+</head>
+<body>
+
+<!-- Auth gate -->
+<div id="auth-gate">
+  <img src="EARLOGO.svg" style="width:100px;filter:brightness(0) invert(1);opacity:.6;" alt="E&R"/>
+  <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);">Dashboard Access</div>
+  <input type="password" id="pin" placeholder="enter pin" autocomplete="off"/>
+  <button onclick="checkPin()">Enter</button>
+  <div class="err" id="err">Wrong pin.</div>
+</div>
+
+<div id="dashboard" style="display:none;">
+  <header>
+    <img class="logo" src="EARLOGO.svg" alt="Exit and Rest"/>
+    <div>
+      <div class="page-title">Exit and Rest — Stats</div>
+      <div class="updated" id="last-updated">Loading...</div>
+    </div>
+  </header>
+
+  <!-- Spotify -->
+  <div class="section"><h2>Spotify</h2></div>
+  <div class="grid">
+    <div class="card c-spotify">
+      <div class="card-label">Streams (28d)</div>
+      <div class="card-value" id="sp-streams">—</div>
+      <div class="card-delta" id="sp-streams-d"></div>
+    </div>
+    <div class="card c-spotify">
+      <div class="card-label">Listeners (28d)</div>
+      <div class="card-value" id="sp-listeners">—</div>
+    </div>
+    <div class="card c-spotify">
+      <div class="card-label">Artist Followers</div>
+      <div class="card-value" id="sp-followers">—</div>
+      <div class="card-delta" id="sp-followers-d"></div>
+    </div>
+    <div class="card c-spotify">
+      <div class="card-label">Playlist Followers</div>
+      <div class="card-value" id="sp-playlist">—</div>
+    </div>
+  </div>
+
+  <!-- YouTube -->
+  <div class="section"><h2>YouTube</h2></div>
+  <div class="grid">
+    <div class="card c-yt">
+      <div class="card-label">Subscribers</div>
+      <div class="card-value" id="yt-subs">—</div>
+    </div>
+    <div class="card c-yt">
+      <div class="card-label">Total Views</div>
+      <div class="card-value" id="yt-views">—</div>
+    </div>
+    <div class="card c-yt">
+      <div class="card-label">Videos</div>
+      <div class="card-value" id="yt-videos">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Landing Page (7d)</div>
+      <div class="card-value" id="lp-views">—</div>
+      <div class="card-sub">page views</div>
+    </div>
+  </div>
+
+  <!-- Meta Ads -->
+  <div class="section"><h2>Meta Ads</h2></div>
+  <div class="grid">
+    <div class="card c-meta">
+      <div class="card-label">Spend (lifetime)</div>
+      <div class="card-value" id="meta-spend">—</div>
+    </div>
+    <div class="card c-meta">
+      <div class="card-label">Landing Page Views</div>
+      <div class="card-value" id="meta-lpv">—</div>
+    </div>
+    <div class="card c-meta">
+      <div class="card-label">Cost / LPV</div>
+      <div class="card-value" id="meta-cplpv">—</div>
+    </div>
+    <div class="card c-meta">
+      <div class="card-label">CPM (winner ad)</div>
+      <div class="card-value" id="meta-cpm">—</div>
+    </div>
+  </div>
+
+  <!-- Kalshi -->
+  <div class="section"><h2>Kalshi Trading</h2></div>
+  <div class="grid">
+    <div class="card c-kalshi">
+      <div class="card-label">Balance</div>
+      <div class="card-value" id="k-balance">—</div>
+    </div>
+    <div class="card c-kalshi">
+      <div class="card-label">Trades</div>
+      <div class="card-value" id="k-trades">—</div>
+    </div>
+    <div class="card c-kalshi">
+      <div class="card-label">Win Rate</div>
+      <div class="card-value" id="k-wr">—</div>
+    </div>
+    <div class="card c-kalshi">
+      <div class="card-label">P&L</div>
+      <div class="card-value" id="k-pnl">—</div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:3rem;font-size:.58rem;color:var(--faint);letter-spacing:.1em;">
+    DATA REFRESHED DAILY 10AM PT · LEOLA
+  </div>
+</div>
+
+<script>
+// Simple PIN gate — stored in localStorage so it persists
+const PIN = '5150'; // Van Halen 🤘 — change this
+
+function checkPin() {
+  const v = document.getElementById('pin').value;
+  if (v === PIN) {
+    localStorage.setItem('ear_auth', '1');
+    document.getElementById('auth-gate').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+    loadData();
+  } else {
+    document.getElementById('err').style.display = 'block';
+  }
+}
+
+document.getElementById('pin').addEventListener('keydown', e => {
+  if (e.key === 'Enter') checkPin();
+});
+
+if (localStorage.getItem('ear_auth') === '1') {
+  document.getElementById('auth-gate').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+}
+
+function fmt(n) {
+  if (n === undefined || n === null) return '—';
+  if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n/1000).toFixed(1) + 'K';
+  return n.toLocaleString();
+}
+
+function delta(v, suffix='') {
+  if (!v && v !== 0) return '';
+  const sign = v > 0 ? '+' : '';
+  const cls = v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
+  return `<span class="${cls}">${sign}${v}${suffix}</span>`;
+}
+
+async function loadData() {
+  // Load from stats JSON files via GitHub raw or relative path
+  // Data is pre-computed by daily scraper and committed to repo
+  try {
+    const r = await fetch('stats-data.json?v=' + Date.now());
+    if (!r.ok) throw new Error('no data');
+    const d = await r.json();
+
+    document.getElementById('last-updated').textContent = 'Last updated: ' + (d.date || '—');
+
+    // Spotify
+    if (d.spotify) {
+      const s = d.spotify;
+      document.getElementById('sp-streams').textContent = fmt(s.streams_28d);
+      document.getElementById('sp-listeners').textContent = fmt(s.listeners_28d);
+      document.getElementById('sp-followers').textContent = fmt(s.artist_followers);
+      document.getElementById('sp-playlist').textContent = fmt(s.playlist_followers);
+      if (s.streams_delta) document.getElementById('sp-streams-d').innerHTML = delta(s.streams_delta, ' vs last week');
+    }
+
+    // YouTube
+    if (d.youtube) {
+      const y = d.youtube;
+      document.getElementById('yt-subs').textContent = fmt(y.subscribers);
+      document.getElementById('yt-views').textContent = fmt(y.views);
+      document.getElementById('yt-videos').textContent = y.videos || '—';
+    }
+
+    // Landing page pixel
+    if (d.pixel_7d) {
+      document.getElementById('lp-views').textContent = fmt(d.pixel_7d.PageView || 0);
+    }
+
+    // Meta ads
+    if (d.meta) {
+      const m = d.meta;
+      document.getElementById('meta-spend').textContent = '$' + (m.spend || '—');
+      document.getElementById('meta-lpv').textContent = fmt(m.lpv);
+      document.getElementById('meta-cplpv').textContent = m.cost_per_lpv ? '$' + m.cost_per_lpv : '—';
+      document.getElementById('meta-cpm').textContent = m.cpm ? '$' + m.cpm : '—';
+    }
+
+    // Kalshi
+    if (d.kalshi) {
+      const k = d.kalshi;
+      document.getElementById('k-balance').textContent = '$' + (k.balance || '100.00');
+      document.getElementById('k-trades').textContent = k.trades || '0';
+      document.getElementById('k-wr').textContent = k.win_rate ? k.win_rate + '%' : 'paper';
+      document.getElementById('k-pnl').textContent = k.pnl !== undefined ? (k.pnl >= 0 ? '+' : '') + '$' + k.pnl : '$0';
+    }
+
+  } catch(e) {
+    document.getElementById('last-updated').textContent = 'No data yet — run scrapers';
+    // Show baseline hardcoded data
+    document.getElementById('sp-streams').textContent = '35K';
+    document.getElementById('sp-listeners').textContent = '5.9K';
+    document.getElementById('sp-followers').textContent = '532';
+    document.getElementById('sp-playlist').textContent = '571';
+    document.getElementById('yt-subs').textContent = '1.6K';
+    document.getElementById('yt-videos').textContent = '199';
+    document.getElementById('meta-spend').textContent = '$348';
+    document.getElementById('meta-lpv').textContent = '1.6K';
+    document.getElementById('meta-cplpv').textContent = '$0.19';
+    document.getElementById('meta-cpm').textContent = '$1.31';
+    document.getElementById('k-balance').textContent = '$100';
+    document.getElementById('k-trades').textContent = '0';
+    document.getElementById('k-wr').textContent = 'paper';
+    document.getElementById('k-pnl').textContent = '$0';
+  }
+}
+
+if (localStorage.getItem('ear_auth') === '1') loadData();
+</script>
+</body>
+</html>
