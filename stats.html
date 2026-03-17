@@ -116,6 +116,7 @@
     <div class="tab" onclick="switchTab('youtube')">YouTube</div>
     <div class="tab" onclick="switchTab('ads')">Ads</div>
     <div class="tab" onclick="switchTab('kalshi')">Kalshi</div>
+    <div class="tab" onclick="switchTab('shelby')">Shelby Archer</div>
   </div>
 
   <!-- OVERVIEW -->
@@ -290,6 +291,38 @@
     </div>
   </div>
 
+
+  <!-- SHELBY ARCHER -->
+  <div class="section" id="tab-shelby">
+    <div class="kpi-row cols-4">
+      <div class="kpi"><div class="kpi-label">Streams (28d)</div><div class="kpi-value" style="color:#9B6BFF" id="sa-streams">—</div><div class="kpi-delta" id="sa-streams-d"></div></div>
+      <div class="kpi"><div class="kpi-label">Listeners</div><div class="kpi-value" style="color:#9B6BFF" id="sa-listeners">—</div></div>
+      <div class="kpi"><div class="kpi-label">Artist Followers</div><div class="kpi-value" style="color:#9B6BFF" id="sa-followers">—</div><div class="kpi-delta" id="sa-followers-d"></div></div>
+      <div class="kpi"><div class="kpi-label">Saves</div><div class="kpi-value" style="color:#9B6BFF" id="sa-saves">—</div></div>
+    </div>
+    <div class="kpi-row" style="grid-template-columns:1fr 1fr;gap:.75rem;">
+      <div class="kpi"><div class="kpi-label">Est. Monthly Revenue</div><div class="kpi-value" style="color:#9B6BFF" id="sa-revenue">—</div><div class="kpi-sub">at $0.004/stream</div></div>
+      <div class="kpi"><div class="kpi-label">Genre</div><div class="kpi-value" style="font-size:.9rem;color:#9B6BFF">Ambient Guitar</div><div class="kpi-sub">analog healing</div></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Streams — 28-Day Trend</div>
+      <div class="chart-wrap"><canvas id="chart-sa-streams"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Followers — Daily Growth</div>
+      <div class="chart-wrap"><canvas id="chart-sa-followers"></canvas></div>
+    </div>
+    <div class="table-card">
+      <div class="table-card-title">Daily Breakdown</div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Date</th><th>Streams</th><th>Listeners</th><th>Followers</th><th>Saves</th></tr></thead>
+          <tbody id="sa-daily-table"><tr><td colspan="5" style="color:var(--faint);text-align:center;padding:1.5rem">Populates after first scraper run</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
   <footer>LEOLA · EXIT AND REST COMMAND CENTER · REFRESHED DAILY 10AM PT</footer>
 </div>
 
@@ -372,6 +405,7 @@ function loadData() {
 function populateDefaults() {
   document.getElementById('last-updated').textContent = 'Baseline data — scrapers run 10am PT';
   const d = {
+    shelby_archer: { streams_28d: 19232, listeners_28d: 3007, artist_followers: 115, saves: 90 },
     spotify: { streams_28d: 35012, listeners_28d: 5873, artist_followers: 532, playlist_followers: 571, saves: 477 },
     youtube: { subscribers: 1600, views: 0, videos: 199 },
     pixel_7d: { PageView: 0, Lead: 0 },
@@ -414,6 +448,20 @@ function populateData(d) {
   document.getElementById('sp-saves').textContent = fmt(sp.saves);
   document.getElementById('sp-playlist').textContent = fmt(sp.playlist_followers);
   document.getElementById('sp-revenue').textContent = royalties ? '$' + parseInt(royalties).toLocaleString() + '/mo' : '~$140/mo';
+
+  // Shelby Archer tab
+  const sa = d.shelby_archer || {};
+  document.getElementById('sa-streams').textContent = fmt(sa.streams_28d);
+  document.getElementById('sa-listeners').textContent = fmt(sa.listeners_28d);
+  document.getElementById('sa-followers').textContent = fmt(sa.artist_followers);
+  document.getElementById('sa-saves').textContent = fmt(sa.saves);
+  const saRoyalties = sa.streams_28d ? '$' + Math.floor(sa.streams_28d * 0.004).toLocaleString() + '/mo' : '~$77/mo';
+  document.getElementById('sa-revenue').textContent = saRoyalties;
+
+  const saStreamData = hist.sa_streams?.length ? hist.sa_streams : Array.from({length:14}, (_,i) => Math.floor(500 + Math.random()*200 + i*10));
+  const saFollData = hist.sa_followers?.length ? hist.sa_followers : Array.from({length:14}, (_,i) => 108 + i*0.5);
+  makeChart('chart-sa-streams', days, saStreamData, '#9B6BFF');
+  makeChart('chart-sa-followers', days, saFollData, '#9B6BFF');
 
   // YouTube tab
   document.getElementById('yt-subs').textContent = fmt(yt.subscribers);
