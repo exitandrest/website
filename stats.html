@@ -144,7 +144,7 @@
     <div class="kpi-row cols-4">
       <div class="kpi"><div class="kpi-label">Landing Page (7d)</div><div class="kpi-value" id="ov-lp">—</div><div class="kpi-sub">page views</div></div>
       <div class="kpi"><div class="kpi-label">Spotify Clicks (7d)</div><div class="kpi-value" id="ov-clicks">—</div></div>
-      <div class="kpi"><div class="kpi-label">Playlist Followers</div><div class="kpi-value" id="ov-playlist">—</div></div>
+      <div class="kpi"><div class="kpi-label">Cosmic Sleep Saves</div><div class="kpi-value" id="ov-playlist">—</div></div>
       <div class="kpi"><div class="kpi-label">Kalshi Balance</div><div class="kpi-value" id="ov-kalshi">—</div></div>
     </div>
   </div>
@@ -158,7 +158,7 @@
       <div class="kpi"><div class="kpi-label">Saves</div><div class="kpi-value" style="color:var(--green)" id="sp-saves">—</div></div>
     </div>
     <div class="kpi-row" style="grid-template-columns:1fr 1fr;gap:.75rem;">
-      <div class="kpi"><div class="kpi-label">Cosmic Sleep Playlist</div><div class="kpi-value" style="color:var(--green)" id="sp-playlist">—</div><div class="kpi-sub">followers</div></div>
+      <div class="kpi"><div class="kpi-label">Cosmic Sleep Saves</div><div class="kpi-value" style="color:var(--green)" id="sp-playlist-saves">—</div><div class="kpi-sub">playlist saves</div></div>
       <div class="kpi"><div class="kpi-label">Est. Monthly Revenue</div><div class="kpi-value" style="color:var(--green)" id="sp-revenue">—</div><div class="kpi-sub">at $0.004/stream</div></div>
     </div>
     <div class="chart-card">
@@ -406,7 +406,7 @@ function populateDefaults() {
   document.getElementById('last-updated').textContent = 'Baseline data — scrapers run 10am PT';
   const d = {
     shelby_archer: { streams_28d: 19232, listeners_28d: 3007, artist_followers: 115, saves: 90 },
-    spotify: { streams_28d: 35012, listeners_28d: 5873, artist_followers: 532, playlist_followers: 571, saves: 477 },
+    spotify: { streams_28d: 37000, listeners_28d: 6400, artist_followers: 58, playlist_saves: 576, saves: 456 },
     youtube: { subscribers: 1600, views: 0, videos: 199 },
     pixel_7d: { PageView: 0, Lead: 0 },
     meta: { spend: '348.00', lpv: 1645, cost_per_lpv: '0.21', cpm: '1.31' },
@@ -438,7 +438,7 @@ function populateData(d) {
   document.getElementById('ov-followers').textContent = fmt(sp.artist_followers);
   document.getElementById('ov-lp').textContent = fmt(px.PageView);
   document.getElementById('ov-clicks').textContent = fmt(px.Lead);
-  document.getElementById('ov-playlist').textContent = fmt(sp.playlist_followers);
+  document.getElementById('ov-playlist').textContent = fmt(sp.playlist_saves);
   document.getElementById('ov-kalshi').textContent = '$' + (k.balance || '100.00');
 
   // Spotify tab
@@ -446,7 +446,7 @@ function populateData(d) {
   document.getElementById('sp-listeners').textContent = fmt(sp.listeners_28d);
   document.getElementById('sp-followers').textContent = fmt(sp.artist_followers);
   document.getElementById('sp-saves').textContent = fmt(sp.saves);
-  document.getElementById('sp-playlist').textContent = fmt(sp.playlist_followers);
+  document.getElementById('sp-playlist').textContent = fmt(sp.playlist_saves);
   document.getElementById('sp-revenue').textContent = royalties ? '$' + parseInt(royalties).toLocaleString() + '/mo' : '~$140/mo';
 
   // Shelby Archer tab
