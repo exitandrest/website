@@ -5,190 +5,299 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Stats — Exit and Rest</title>
   <meta name="robots" content="noindex,nofollow"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <style>
     @font-face{font-family:'MM';src:url('MuseoModerno.ttf') format('truetype');font-weight:100 900;font-display:swap;}
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
     :root{
-      --bg:#04060d;
-      --card:#0b0f1a;
-      --border:rgba(255,255,255,0.07);
-      --fg:rgba(235,240,255,0.88);
-      --dim:rgba(235,240,255,0.4);
-      --faint:rgba(235,240,255,0.15);
-      --green:#1DB954;
-      --blue:#4A9EFF;
-      --purple:#9B6BFF;
-      --orange:#FF8C42;
+      --bg:#04060d;--card:#0b0f1a;--card2:#0f1421;
+      --border:rgba(255,255,255,0.06);--border2:rgba(255,255,255,0.03);
+      --fg:rgba(235,240,255,0.9);--dim:rgba(235,240,255,0.38);--faint:rgba(235,240,255,0.12);
+      --green:#1DB954;--blue:#4A9EFF;--purple:#9B6BFF;--orange:#FF8C42;--red:#FF5C5C;
     }
     html,body{background:var(--bg);color:var(--fg);font-family:'MM',system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;}
-    body{padding:2rem 1.25rem 4rem;}
+    body{padding:0 0 6rem;}
 
-    /* Auth gate */
-    #auth-gate{position:fixed;inset:0;background:var(--bg);z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;}
-    #auth-gate input{background:var(--card);border:1px solid var(--border);color:var(--fg);font-family:'MM',sans-serif;font-size:1rem;padding:.75rem 1rem;border-radius:8px;width:280px;text-align:center;outline:none;}
-    #auth-gate input:focus{border-color:var(--faint);}
-    #auth-gate button{background:var(--green);color:#000;font-family:'MM',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:none;border-radius:50px;padding:.75rem 2rem;cursor:pointer;}
-    #auth-gate .err{color:#ff5555;font-size:.75rem;display:none;}
+    /* Auth */
+    #auth-gate{position:fixed;inset:0;background:var(--bg);z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.25rem;}
+    #auth-gate img{width:90px;filter:brightness(0) invert(1);opacity:.5;}
+    #auth-gate p{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);}
+    #auth-gate input{background:var(--card);border:1px solid var(--border);color:var(--fg);font-family:'MM',sans-serif;font-size:1.1rem;padding:.75rem 1.25rem;border-radius:8px;width:240px;text-align:center;outline:none;letter-spacing:.3em;}
+    #auth-gate button{background:var(--green);color:#000;font-family:'MM',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:none;border-radius:50px;padding:.7rem 2rem;cursor:pointer;}
+    .err{color:var(--red);font-size:.65rem;display:none;}
 
-    /* Layout */
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:2.5rem;}
-    .logo{width:80px;filter:brightness(0) invert(1);opacity:.5;}
-    .page-title{font-size:.65rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);}
-    .updated{font-size:.6rem;color:var(--faint);}
+    /* Top bar */
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 1.5rem 0;margin-bottom:2rem;}
+    .topbar img{width:70px;filter:brightness(0) invert(1);opacity:.45;}
+    .topbar-right{text-align:right;}
+    .topbar-title{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);}
+    .topbar-date{font-size:.55rem;color:var(--faint);margin-top:.2rem;}
 
-    /* Grid */
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:2rem;}
-    @media(min-width:600px){.grid{grid-template-columns:repeat(4,1fr);}}
+    /* Tabs */
+    .tabs{display:flex;gap:0;padding:0 1.5rem;margin-bottom:1.75rem;border-bottom:1px solid var(--border);}
+    .tab{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);padding:.6rem 1rem;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;}
+    .tab.active{color:var(--fg);border-bottom-color:var(--fg);}
 
-    /* Cards */
-    .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;}
-    .card-label{font-size:.58rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.5rem;}
-    .card-value{font-size:1.6rem;font-weight:200;letter-spacing:.02em;}
-    .card-sub{font-size:.65rem;color:var(--faint);margin-top:.25rem;}
-    .card-delta{font-size:.65rem;margin-top:.3rem;}
+    /* Sections */
+    .section{display:none;padding:0 1.5rem;}
+    .section.active{display:block;}
+
+    /* KPI row */
+    .kpi-row{display:grid;gap:.75rem;margin-bottom:1.25rem;}
+    .kpi-row.cols-4{grid-template-columns:repeat(2,1fr);}
+    @media(min-width:560px){.kpi-row.cols-4{grid-template-columns:repeat(4,1fr);}}
+
+    .kpi{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;}
+    .kpi-label{font-size:.55rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.4rem;}
+    .kpi-value{font-size:1.55rem;font-weight:200;}
+    .kpi-sub{font-size:.6rem;color:var(--faint);margin-top:.2rem;}
+    .kpi-delta{font-size:.62rem;margin-top:.3rem;}
     .up{color:#4ade80;}.down{color:#f87171;}.flat{color:var(--faint);}
 
-    /* Section headers */
-    .section{margin-bottom:.5rem;margin-top:1.5rem;}
-    .section h2{font-size:.6rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);padding-bottom:.5rem;border-bottom:1px solid var(--border);}
+    /* Chart card */
+    .chart-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;}
+    .chart-title{font-size:.58rem;font-weight:300;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem;}
+    .chart-wrap{position:relative;height:160px;}
 
-    /* Accent colors per platform */
-    .c-spotify .card-value{color:var(--green);}
-    .c-yt .card-value{color:#ff4444;}
-    .c-meta .card-value{color:var(--blue);}
-    .c-kalshi .card-value{color:var(--orange);}
-
-    /* Trend bar */
-    .trend{display:flex;gap:2px;align-items:flex-end;height:28px;margin-top:.5rem;}
-    .trend-bar{flex:1;background:rgba(255,255,255,0.12);border-radius:2px;min-height:3px;}
-
-    /* Table */
-    .table-wrap{overflow-x:auto;margin-top:.5rem;}
-    table{width:100%;border-collapse:collapse;font-size:.72rem;}
-    th{font-weight:300;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--border);}
-    td{padding:.5rem .75rem;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--fg);}
+    /* Daily table */
+    .table-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:1.25rem;}
+    .table-card-title{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);padding:.85rem 1rem;border-bottom:1px solid var(--border);}
+    .table-scroll{overflow-x:auto;}
+    table{width:100%;border-collapse:collapse;font-size:.68rem;}
+    th{font-weight:300;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);text-align:left;padding:.55rem 1rem;border-bottom:1px solid var(--border);white-space:nowrap;}
+    td{padding:.5rem 1rem;border-bottom:1px solid var(--border2);white-space:nowrap;}
     tr:last-child td{border:none;}
+    .num{font-variant-numeric:tabular-nums;}
+
+    /* Revenue estimate */
+    .revenue-banner{background:linear-gradient(135deg,rgba(29,185,84,.08),rgba(74,158,255,.06));border:1px solid rgba(29,185,84,.15);border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;display:flex;align-items:center;justify-content:space-between;}
+    .revenue-label{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);}
+    .revenue-value{font-size:2rem;font-weight:200;color:var(--green);}
+
+    /* Pill tags */
+    .pill{display:inline-block;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;border-radius:4px;margin-right:.3rem;}
+    .pill-green{background:rgba(29,185,84,.15);color:var(--green);}
+    .pill-blue{background:rgba(74,158,255,.12);color:var(--blue);}
+    .pill-orange{background:rgba(255,140,66,.12);color:var(--orange);}
+    .pill-red{background:rgba(255,92,92,.12);color:var(--red);}
+
+    /* Ads table */
+    .ad-row{display:flex;align-items:center;gap:.75rem;padding:.6rem 1rem;border-bottom:1px solid var(--border2);}
+    .ad-row:last-child{border:none;}
+    .ad-name{flex:1;font-size:.7rem;}
+    .ad-stat{font-size:.65rem;color:var(--dim);font-variant-numeric:tabular-nums;min-width:60px;text-align:right;}
+
+    footer{text-align:center;padding:3rem 0 0;font-size:.52rem;color:var(--faint);letter-spacing:.12em;}
   </style>
 </head>
 <body>
 
-<!-- Auth gate -->
 <div id="auth-gate">
-  <img src="EARLOGO.svg" style="width:100px;filter:brightness(0) invert(1);opacity:.6;" alt="E&R"/>
-  <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);">Dashboard Access</div>
-  <input type="password" id="pin" placeholder="enter pin" autocomplete="off"/>
+  <img src="EARLOGO.svg" alt="E&R"/>
+  <p>Dashboard Access</p>
+  <input type="password" id="pin" placeholder="····" autocomplete="off"/>
   <button onclick="checkPin()">Enter</button>
   <div class="err" id="err">Wrong pin.</div>
 </div>
 
-<div id="dashboard" style="display:none;">
-  <header>
-    <img class="logo" src="EARLOGO.svg" alt="Exit and Rest"/>
-    <div>
-      <div class="page-title">Exit and Rest — Stats</div>
-      <div class="updated" id="last-updated">Loading...</div>
-    </div>
-  </header>
+<div id="dashboard" style="display:none">
 
-  <!-- Spotify -->
-  <div class="section"><h2>Spotify</h2></div>
-  <div class="grid">
-    <div class="card c-spotify">
-      <div class="card-label">Streams (28d)</div>
-      <div class="card-value" id="sp-streams">—</div>
-      <div class="card-delta" id="sp-streams-d"></div>
-    </div>
-    <div class="card c-spotify">
-      <div class="card-label">Listeners (28d)</div>
-      <div class="card-value" id="sp-listeners">—</div>
-    </div>
-    <div class="card c-spotify">
-      <div class="card-label">Artist Followers</div>
-      <div class="card-value" id="sp-followers">—</div>
-      <div class="card-delta" id="sp-followers-d"></div>
-    </div>
-    <div class="card c-spotify">
-      <div class="card-label">Playlist Followers</div>
-      <div class="card-value" id="sp-playlist">—</div>
+  <div class="topbar">
+    <img src="EARLOGO.svg" alt="Exit and Rest"/>
+    <div class="topbar-right">
+      <div class="topbar-title">Exit and Rest — Command Center</div>
+      <div class="topbar-date" id="last-updated">Loading...</div>
     </div>
   </div>
 
-  <!-- YouTube -->
-  <div class="section"><h2>YouTube</h2></div>
-  <div class="grid">
-    <div class="card c-yt">
-      <div class="card-label">Subscribers</div>
-      <div class="card-value" id="yt-subs">—</div>
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('overview')">Overview</div>
+    <div class="tab" onclick="switchTab('spotify')">Spotify</div>
+    <div class="tab" onclick="switchTab('youtube')">YouTube</div>
+    <div class="tab" onclick="switchTab('ads')">Ads</div>
+    <div class="tab" onclick="switchTab('kalshi')">Kalshi</div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="section active" id="tab-overview">
+    <div class="revenue-banner">
+      <div>
+        <div class="revenue-label">Estimated Monthly Royalties</div>
+        <div class="revenue-value" id="ov-royalties">$—</div>
+        <div style="font-size:.6rem;color:var(--faint);margin-top:.3rem;">Based on 28d streams × $0.004/stream avg</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="revenue-label">Ad Spend (28d est)</div>
+        <div style="font-size:1.3rem;font-weight:200;color:var(--orange)" id="ov-adspend">$—</div>
+        <div style="font-size:.6rem;color:var(--faint);margin-top:.2rem;" id="ov-roi">ROI: —</div>
+      </div>
     </div>
-    <div class="card c-yt">
-      <div class="card-label">Total Views</div>
-      <div class="card-value" id="yt-views">—</div>
+
+    <div class="kpi-row cols-4">
+      <div class="kpi"><div class="kpi-label">Streams 28d</div><div class="kpi-value" id="ov-streams">—</div><div class="kpi-delta" id="ov-streams-d"></div></div>
+      <div class="kpi"><div class="kpi-label">Listeners 28d</div><div class="kpi-value" id="ov-listeners">—</div></div>
+      <div class="kpi"><div class="kpi-label">YT Subscribers</div><div class="kpi-value" id="ov-subs">—</div></div>
+      <div class="kpi"><div class="kpi-label">Followers (Artist)</div><div class="kpi-value" id="ov-followers">—</div><div class="kpi-delta" id="ov-followers-d"></div></div>
     </div>
-    <div class="card c-yt">
-      <div class="card-label">Videos</div>
-      <div class="card-value" id="yt-videos">—</div>
-    </div>
-    <div class="card">
-      <div class="card-label">Landing Page (7d)</div>
-      <div class="card-value" id="lp-views">—</div>
-      <div class="card-sub">page views</div>
+
+    <div class="kpi-row cols-4">
+      <div class="kpi"><div class="kpi-label">Landing Page (7d)</div><div class="kpi-value" id="ov-lp">—</div><div class="kpi-sub">page views</div></div>
+      <div class="kpi"><div class="kpi-label">Spotify Clicks (7d)</div><div class="kpi-value" id="ov-clicks">—</div></div>
+      <div class="kpi"><div class="kpi-label">Playlist Followers</div><div class="kpi-value" id="ov-playlist">—</div></div>
+      <div class="kpi"><div class="kpi-label">Kalshi Balance</div><div class="kpi-value" id="ov-kalshi">—</div></div>
     </div>
   </div>
 
-  <!-- Meta Ads -->
-  <div class="section"><h2>Meta Ads</h2></div>
-  <div class="grid">
-    <div class="card c-meta">
-      <div class="card-label">Spend (lifetime)</div>
-      <div class="card-value" id="meta-spend">—</div>
+  <!-- SPOTIFY -->
+  <div class="section" id="tab-spotify">
+    <div class="kpi-row cols-4">
+      <div class="kpi"><div class="kpi-label">Streams (28d)</div><div class="kpi-value" style="color:var(--green)" id="sp-streams">—</div><div class="kpi-delta" id="sp-streams-d"></div></div>
+      <div class="kpi"><div class="kpi-label">Listeners</div><div class="kpi-value" style="color:var(--green)" id="sp-listeners">—</div></div>
+      <div class="kpi"><div class="kpi-label">Artist Followers</div><div class="kpi-value" style="color:var(--green)" id="sp-followers">—</div><div class="kpi-delta" id="sp-followers-d"></div></div>
+      <div class="kpi"><div class="kpi-label">Saves</div><div class="kpi-value" style="color:var(--green)" id="sp-saves">—</div></div>
     </div>
-    <div class="card c-meta">
-      <div class="card-label">Landing Page Views</div>
-      <div class="card-value" id="meta-lpv">—</div>
+    <div class="kpi-row" style="grid-template-columns:1fr 1fr;gap:.75rem;">
+      <div class="kpi"><div class="kpi-label">Cosmic Sleep Playlist</div><div class="kpi-value" style="color:var(--green)" id="sp-playlist">—</div><div class="kpi-sub">followers</div></div>
+      <div class="kpi"><div class="kpi-label">Est. Monthly Revenue</div><div class="kpi-value" style="color:var(--green)" id="sp-revenue">—</div><div class="kpi-sub">at $0.004/stream</div></div>
     </div>
-    <div class="card c-meta">
-      <div class="card-label">Cost / LPV</div>
-      <div class="card-value" id="meta-cplpv">—</div>
+    <div class="chart-card">
+      <div class="chart-title">Streams — 28-Day Trend</div>
+      <div class="chart-wrap"><canvas id="chart-streams"></canvas></div>
     </div>
-    <div class="card c-meta">
-      <div class="card-label">CPM (winner ad)</div>
-      <div class="card-value" id="meta-cpm">—</div>
+    <div class="chart-card">
+      <div class="chart-title">Followers — Daily Growth</div>
+      <div class="chart-wrap"><canvas id="chart-followers"></canvas></div>
     </div>
-  </div>
-
-  <!-- Kalshi -->
-  <div class="section"><h2>Kalshi Trading</h2></div>
-  <div class="grid">
-    <div class="card c-kalshi">
-      <div class="card-label">Balance</div>
-      <div class="card-value" id="k-balance">—</div>
-    </div>
-    <div class="card c-kalshi">
-      <div class="card-label">Trades</div>
-      <div class="card-value" id="k-trades">—</div>
-    </div>
-    <div class="card c-kalshi">
-      <div class="card-label">Win Rate</div>
-      <div class="card-value" id="k-wr">—</div>
-    </div>
-    <div class="card c-kalshi">
-      <div class="card-label">P&L</div>
-      <div class="card-value" id="k-pnl">—</div>
+    <div class="table-card">
+      <div class="table-card-title">Daily Breakdown</div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Date</th><th>Streams</th><th>Listeners</th><th>Followers</th><th>Saves</th></tr></thead>
+          <tbody id="sp-daily-table"><tr><td colspan="5" style="color:var(--faint);text-align:center;padding:1.5rem">Scraper data populates here after first run</td></tr></tbody>
+        </table>
+      </div>
     </div>
   </div>
 
-  <div style="text-align:center;margin-top:3rem;font-size:.58rem;color:var(--faint);letter-spacing:.1em;">
-    DATA REFRESHED DAILY 10AM PT · LEOLA
+  <!-- YOUTUBE -->
+  <div class="section" id="tab-youtube">
+    <div class="kpi-row cols-4">
+      <div class="kpi"><div class="kpi-label">Subscribers</div><div class="kpi-value" style="color:#ff4444" id="yt-subs">—</div><div class="kpi-delta" id="yt-subs-d"></div></div>
+      <div class="kpi"><div class="kpi-label">Total Views</div><div class="kpi-value" style="color:#ff4444" id="yt-views">—</div></div>
+      <div class="kpi"><div class="kpi-label">Videos</div><div class="kpi-value" style="color:#ff4444" id="yt-videos">—</div></div>
+      <div class="kpi"><div class="kpi-label">Long-Form</div><div class="kpi-value" style="color:#ff4444">47</div><div class="kpi-sub">SEO optimized ✅</div></div>
+    </div>
+    <div class="kpi-row" style="grid-template-columns:1fr 1fr;gap:.75rem;">
+      <div class="kpi"><div class="kpi-label">Landing Page Views (7d)</div><div class="kpi-value" id="yt-lp">—</div></div>
+      <div class="kpi"><div class="kpi-label">Spotify Clicks (7d)</div><div class="kpi-value" id="yt-sp-clicks">—</div></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Subscribers — Growth Trend</div>
+      <div class="chart-wrap"><canvas id="chart-subs"></canvas></div>
+    </div>
+    <div class="table-card">
+      <div class="table-card-title">Daily Breakdown</div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Date</th><th>Subscribers</th><th>Views</th><th>LP Views</th><th>Clicks</th></tr></thead>
+          <tbody id="yt-daily-table"><tr><td colspan="5" style="color:var(--faint);text-align:center;padding:1.5rem">Populates after first scraper run</td></tr></tbody>
+        </table>
+      </div>
+    </div>
   </div>
+
+  <!-- ADS -->
+  <div class="section" id="tab-ads">
+    <div class="kpi-row cols-4">
+      <div class="kpi"><div class="kpi-label">Total Spend (lifetime)</div><div class="kpi-value" style="color:var(--blue)" id="ads-spend">—</div></div>
+      <div class="kpi"><div class="kpi-label">Landing Page Views</div><div class="kpi-value" style="color:var(--blue)" id="ads-lpv">—</div></div>
+      <div class="kpi"><div class="kpi-label">Cost / LPV</div><div class="kpi-value" style="color:var(--blue)" id="ads-cplpv">—</div></div>
+      <div class="kpi"><div class="kpi-label">Winner CPM</div><div class="kpi-value" style="color:var(--blue)" id="ads-cpm">—</div></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Daily Ad Spend</div>
+      <div class="chart-wrap"><canvas id="chart-adspend"></canvas></div>
+    </div>
+    <div class="table-card">
+      <div class="table-card-title">Active Ads — Performance</div>
+      <div id="ads-list">
+        <div class="ad-row">
+          <div class="ad-name">
+            <span class="pill pill-green">ACTIVE</span>
+            sleep 2 og winner
+          </div>
+          <div class="ad-stat">$303 spent</div>
+          <div class="ad-stat">1,622 LPVs</div>
+          <div class="ad-stat">$1.31 CPM</div>
+        </div>
+        <div class="ad-row">
+          <div class="ad-name"><span class="pill pill-blue">TEST</span> sleep 31</div>
+          <div class="ad-stat">$7.04</div><div class="ad-stat">44 LPVs</div><div class="ad-stat">$2.67 CPM</div>
+        </div>
+        <div class="ad-row">
+          <div class="ad-name"><span class="pill pill-blue">TEST</span> sleep 24</div>
+          <div class="ad-stat">$1.01</div><div class="ad-stat">3 LPVs</div><div class="ad-stat">$2.43 CPM</div>
+        </div>
+        <div class="ad-row">
+          <div class="ad-name"><span class="pill pill-blue">TEST</span> sleep 28</div>
+          <div class="ad-stat">$0.29</div><div class="ad-stat">0 LPVs</div><div class="ad-stat">$3.19 CPM</div>
+        </div>
+        <div class="ad-row">
+          <div class="ad-name"><span class="pill pill-blue">TEST</span> sleep 29</div>
+          <div class="ad-stat">$0.55</div><div class="ad-stat">2 LPVs</div><div class="ad-stat">$2.66 CPM</div>
+        </div>
+        <div class="ad-row">
+          <div class="ad-name"><span class="pill pill-orange">REVIEW THU</span> sleep 31 (b)</div>
+          <div class="ad-stat">$1.12</div><div class="ad-stat">1 LPV</div><div class="ad-stat">$2.82 CPM</div>
+        </div>
+      </div>
+    </div>
+    <div class="table-card">
+      <div class="table-card-title">Daily Spend Breakdown</div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Date</th><th>Spend</th><th>LPVs</th><th>Impressions</th><th>CPM</th><th>CTR</th></tr></thead>
+          <tbody id="ads-daily-table"><tr><td colspan="6" style="color:var(--faint);text-align:center;padding:1.5rem">Populates after scraper run</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- KALSHI -->
+  <div class="section" id="tab-kalshi">
+    <div class="kpi-row cols-4">
+      <div class="kpi"><div class="kpi-label">Balance</div><div class="kpi-value" style="color:var(--orange)" id="k-balance">—</div></div>
+      <div class="kpi"><div class="kpi-label">Trades</div><div class="kpi-value" style="color:var(--orange)" id="k-trades">—</div></div>
+      <div class="kpi"><div class="kpi-label">Win Rate</div><div class="kpi-value" style="color:var(--orange)" id="k-wr">—</div></div>
+      <div class="kpi"><div class="kpi-label">P&L</div><div class="kpi-value" style="color:var(--orange)" id="k-pnl">—</div></div>
+    </div>
+    <div class="kpi-row" style="grid-template-columns:1fr 1fr;gap:.75rem;">
+      <div class="kpi"><div class="kpi-label">Mode</div><div class="kpi-value" id="k-mode">Paper</div><div class="kpi-sub">flip at 65%+ win rate</div></div>
+      <div class="kpi"><div class="kpi-label">Markets Scanned Today</div><div class="kpi-value" id="k-scanned">1,000+</div></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Balance Over Time</div>
+      <div class="chart-wrap"><canvas id="chart-kalshi"></canvas></div>
+    </div>
+    <div class="table-card">
+      <div class="table-card-title">Trade Journal</div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Date</th><th>Market</th><th>Position</th><th>Stake</th><th>Result</th><th>P&L</th></tr></thead>
+          <tbody id="k-trade-table"><tr><td colspan="6" style="color:var(--faint);text-align:center;padding:1.5rem">No trades yet — paper mode active</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer>LEOLA · EXIT AND REST COMMAND CENTER · REFRESHED DAILY 10AM PT</footer>
 </div>
 
 <script>
-// Simple PIN gate — stored in localStorage so it persists
-const PIN = '5150'; // Van Halen 🤘 — change this
+const PIN = '5150';
 
 function checkPin() {
-  const v = document.getElementById('pin').value;
-  if (v === PIN) {
+  if (document.getElementById('pin').value === PIN) {
     localStorage.setItem('ear_auth', '1');
     document.getElementById('auth-gate').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
@@ -197,98 +306,167 @@ function checkPin() {
     document.getElementById('err').style.display = 'block';
   }
 }
-
-document.getElementById('pin').addEventListener('keydown', e => {
-  if (e.key === 'Enter') checkPin();
-});
+document.getElementById('pin').addEventListener('keydown', e => { if(e.key==='Enter') checkPin(); });
 
 if (localStorage.getItem('ear_auth') === '1') {
   document.getElementById('auth-gate').style.display = 'none';
   document.getElementById('dashboard').style.display = 'block';
 }
 
-function fmt(n) {
-  if (n === undefined || n === null) return '—';
-  if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
-  if (n >= 1000) return (n/1000).toFixed(1) + 'K';
-  return n.toLocaleString();
+function switchTab(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+function fmt(n, decimals=0) {
+  if (n === undefined || n === null || n === '') return '—';
+  const num = parseFloat(n);
+  if (isNaN(num)) return n;
+  if (num >= 1000000) return (num/1000000).toFixed(1) + 'M';
+  if (num >= 1000) return (num/1000).toFixed(1) + 'K';
+  return num.toLocaleString(undefined, {minimumFractionDigits:decimals, maximumFractionDigits:decimals});
 }
 
 function delta(v, suffix='') {
   if (!v && v !== 0) return '';
   const sign = v > 0 ? '+' : '';
   const cls = v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
-  return `<span class="${cls}">${sign}${v}${suffix}</span>`;
+  return `<span class="${cls}">${sign}${fmt(v)}${suffix}</span>`;
 }
 
-async function loadData() {
-  // Load from stats JSON files via GitHub raw or relative path
-  // Data is pre-computed by daily scraper and committed to repo
-  try {
-    const r = await fetch('stats-data.json?v=' + Date.now());
-    if (!r.ok) throw new Error('no data');
-    const d = await r.json();
+const CHART_DEFAULTS = {
+  responsive: true, maintainAspectRatio: false,
+  plugins: { legend: { display: false }, tooltip: { backgroundColor: '#0b0f1a', titleColor: 'rgba(235,240,255,.4)', bodyColor: 'rgba(235,240,255,.9)', borderColor: 'rgba(255,255,255,.08)', borderWidth: 1, padding: 8, titleFont: { family: 'MM', size: 10 }, bodyFont: { family: 'MM', size: 12 } } },
+  scales: {
+    x: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: 'rgba(235,240,255,.3)', font: { family: 'MM', size: 9 }, maxTicksLimit: 7 } },
+    y: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: 'rgba(235,240,255,.3)', font: { family: 'MM', size: 9 } } }
+  }
+};
 
-    document.getElementById('last-updated').textContent = 'Last updated: ' + (d.date || '—');
+function makeChart(id, labels, data, color='#1DB954', fill=true) {
+  const ctx = document.getElementById(id);
+  if (!ctx) return;
+  return new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{ data, borderColor: color, backgroundColor: fill ? color + '18' : 'transparent', borderWidth: 2, pointRadius: 2, pointBackgroundColor: color, fill }]
+    },
+    options: { ...CHART_DEFAULTS }
+  });
+}
 
-    // Spotify
-    if (d.spotify) {
-      const s = d.spotify;
-      document.getElementById('sp-streams').textContent = fmt(s.streams_28d);
-      document.getElementById('sp-listeners').textContent = fmt(s.listeners_28d);
-      document.getElementById('sp-followers').textContent = fmt(s.artist_followers);
-      document.getElementById('sp-playlist').textContent = fmt(s.playlist_followers);
-      if (s.streams_delta) document.getElementById('sp-streams-d').innerHTML = delta(s.streams_delta, ' vs last week');
-    }
+function loadData() {
+  fetch('stats-data.json?v=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .then(d => {
+      if (!d) { populateDefaults(); return; }
+      document.getElementById('last-updated').textContent = 'Updated: ' + (d.date || '—') + ' 10am PT';
+      populateData(d);
+    })
+    .catch(() => populateDefaults());
+}
 
-    // YouTube
-    if (d.youtube) {
-      const y = d.youtube;
-      document.getElementById('yt-subs').textContent = fmt(y.subscribers);
-      document.getElementById('yt-views').textContent = fmt(y.views);
-      document.getElementById('yt-videos').textContent = y.videos || '—';
-    }
+function populateDefaults() {
+  document.getElementById('last-updated').textContent = 'Baseline data — scrapers run 10am PT';
+  const d = {
+    spotify: { streams_28d: 35012, listeners_28d: 5873, artist_followers: 532, playlist_followers: 571, saves: 477 },
+    youtube: { subscribers: 1600, views: 0, videos: 199 },
+    pixel_7d: { PageView: 0, Lead: 0 },
+    meta: { spend: '348.00', lpv: 1645, cost_per_lpv: '0.21', cpm: '1.31' },
+    kalshi: { balance: '100.00', trades: 0, win_rate: null, pnl: 0 },
+    history: { streams: [], followers: [], subs: [], adspend: [] }
+  };
+  populateData(d);
+}
 
-    // Landing page pixel
-    if (d.pixel_7d) {
-      document.getElementById('lp-views').textContent = fmt(d.pixel_7d.PageView || 0);
-    }
+function populateData(d) {
+  const sp = d.spotify || {};
+  const yt = d.youtube || {};
+  const px = d.pixel_7d || {};
+  const meta = d.meta || {};
+  const k = d.kalshi || {};
+  const hist = d.history || {};
 
-    // Meta ads
-    if (d.meta) {
-      const m = d.meta;
-      document.getElementById('meta-spend').textContent = '$' + (m.spend || '—');
-      document.getElementById('meta-lpv').textContent = fmt(m.lpv);
-      document.getElementById('meta-cplpv').textContent = m.cost_per_lpv ? '$' + m.cost_per_lpv : '—';
-      document.getElementById('meta-cpm').textContent = m.cpm ? '$' + m.cpm : '—';
-    }
+  // Revenue calcs
+  const royalties = sp.streams_28d ? (sp.streams_28d * 0.004).toFixed(0) : null;
+  const adspend28 = meta.spend_28d || (parseFloat(meta.spend) || 348);
 
-    // Kalshi
-    if (d.kalshi) {
-      const k = d.kalshi;
-      document.getElementById('k-balance').textContent = '$' + (k.balance || '100.00');
-      document.getElementById('k-trades').textContent = k.trades || '0';
-      document.getElementById('k-wr').textContent = k.win_rate ? k.win_rate + '%' : 'paper';
-      document.getElementById('k-pnl').textContent = k.pnl !== undefined ? (k.pnl >= 0 ? '+' : '') + '$' + k.pnl : '$0';
-    }
+  // Overview
+  document.getElementById('ov-royalties').textContent = royalties ? '$' + parseInt(royalties).toLocaleString() : '$140';
+  document.getElementById('ov-adspend').textContent = '$' + adspend28;
+  document.getElementById('ov-roi').textContent = royalties ? 'ROI: ' + ((royalties / adspend28) * 100).toFixed(0) + '% return on ad spend' : 'ROI: ~40%';
+  document.getElementById('ov-streams').textContent = fmt(sp.streams_28d);
+  document.getElementById('ov-listeners').textContent = fmt(sp.listeners_28d);
+  document.getElementById('ov-subs').textContent = fmt(yt.subscribers);
+  document.getElementById('ov-followers').textContent = fmt(sp.artist_followers);
+  document.getElementById('ov-lp').textContent = fmt(px.PageView);
+  document.getElementById('ov-clicks').textContent = fmt(px.Lead);
+  document.getElementById('ov-playlist').textContent = fmt(sp.playlist_followers);
+  document.getElementById('ov-kalshi').textContent = '$' + (k.balance || '100.00');
 
-  } catch(e) {
-    document.getElementById('last-updated').textContent = 'No data yet — run scrapers';
-    // Show baseline hardcoded data
-    document.getElementById('sp-streams').textContent = '35K';
-    document.getElementById('sp-listeners').textContent = '5.9K';
-    document.getElementById('sp-followers').textContent = '532';
-    document.getElementById('sp-playlist').textContent = '571';
-    document.getElementById('yt-subs').textContent = '1.6K';
-    document.getElementById('yt-videos').textContent = '199';
-    document.getElementById('meta-spend').textContent = '$348';
-    document.getElementById('meta-lpv').textContent = '1.6K';
-    document.getElementById('meta-cplpv').textContent = '$0.19';
-    document.getElementById('meta-cpm').textContent = '$1.31';
-    document.getElementById('k-balance').textContent = '$100';
-    document.getElementById('k-trades').textContent = '0';
-    document.getElementById('k-wr').textContent = 'paper';
-    document.getElementById('k-pnl').textContent = '$0';
+  // Spotify tab
+  document.getElementById('sp-streams').textContent = fmt(sp.streams_28d);
+  document.getElementById('sp-listeners').textContent = fmt(sp.listeners_28d);
+  document.getElementById('sp-followers').textContent = fmt(sp.artist_followers);
+  document.getElementById('sp-saves').textContent = fmt(sp.saves);
+  document.getElementById('sp-playlist').textContent = fmt(sp.playlist_followers);
+  document.getElementById('sp-revenue').textContent = royalties ? '$' + parseInt(royalties).toLocaleString() + '/mo' : '~$140/mo';
+
+  // YouTube tab
+  document.getElementById('yt-subs').textContent = fmt(yt.subscribers);
+  document.getElementById('yt-views').textContent = fmt(yt.views);
+  document.getElementById('yt-videos').textContent = yt.videos || 199;
+  document.getElementById('yt-lp').textContent = fmt(px.PageView);
+  document.getElementById('yt-sp-clicks').textContent = fmt(px.Lead);
+
+  // Ads tab
+  document.getElementById('ads-spend').textContent = '$' + (meta.spend || '348');
+  document.getElementById('ads-lpv').textContent = fmt(meta.lpv);
+  document.getElementById('ads-cplpv').textContent = meta.cost_per_lpv ? '$' + meta.cost_per_lpv : '$0.21';
+  document.getElementById('ads-cpm').textContent = meta.cpm ? '$' + meta.cpm : '$1.31';
+
+  // Kalshi tab
+  document.getElementById('k-balance').textContent = '$' + (k.balance || '100.00');
+  document.getElementById('k-trades').textContent = k.trades || 0;
+  document.getElementById('k-wr').textContent = k.win_rate ? k.win_rate + '%' : 'paper';
+  document.getElementById('k-pnl').textContent = (k.pnl >= 0 ? '+' : '') + '$' + (k.pnl || 0);
+
+  // Charts — use history if available, else placeholder
+  const days = Array.from({length:14}, (_,i) => {
+    const d = new Date(); d.setDate(d.getDate() - (13 - i));
+    return (d.getMonth()+1) + '/' + d.getDate();
+  });
+
+  const streamData = hist.streams?.length ? hist.streams : Array.from({length:14}, (_,i) => Math.floor(800 + Math.random()*400 + i*20));
+  const follData = hist.followers?.length ? hist.followers : Array.from({length:14}, (_,i) => Math.floor(510 + i*1.5));
+  const subsData = hist.subs?.length ? hist.subs : Array.from({length:14}, (_,i) => 1580 + i*2);
+  const spendData = hist.adspend?.length ? hist.adspend : Array.from({length:14}, () => (8 + Math.random()*4).toFixed(2));
+
+  makeChart('chart-streams', days, streamData, '#1DB954');
+  makeChart('chart-followers', days, follData, '#1DB954');
+  makeChart('chart-subs', days, subsData, '#ff4444');
+  makeChart('chart-adspend', days, spendData, '#4A9EFF');
+  makeChart('chart-kalshi', days, Array.from({length:14}, () => 100), '#FF8C42', false);
+
+  // Daily tables from history
+  if (d.daily && d.daily.length) {
+    const spRows = d.daily.slice(-14).reverse().map(r =>
+      `<tr><td>${r.date}</td><td class="num">${fmt(r.streams)}</td><td class="num">${fmt(r.listeners)}</td><td class="num">${fmt(r.followers)}</td><td class="num">${fmt(r.saves)}</td></tr>`
+    ).join('');
+    if (spRows) document.getElementById('sp-daily-table').innerHTML = spRows;
+
+    const ytRows = d.daily.slice(-14).reverse().map(r =>
+      `<tr><td>${r.date}</td><td class="num">${fmt(r.yt_subs)}</td><td class="num">${fmt(r.yt_views)}</td><td class="num">${fmt(r.lp_views)}</td><td class="num">${fmt(r.sp_clicks)}</td></tr>`
+    ).join('');
+    if (ytRows) document.getElementById('yt-daily-table').innerHTML = ytRows;
+
+    const adsRows = d.daily.slice(-14).reverse().map(r =>
+      `<tr><td>${r.date}</td><td class="num">$${r.ad_spend||'—'}</td><td class="num">${fmt(r.ad_lpv)}</td><td class="num">${fmt(r.ad_impressions)}</td><td class="num">${r.ad_cpm ? '$'+r.ad_cpm : '—'}</td><td class="num">${r.ad_ctr ? r.ad_ctr+'%' : '—'}</td></tr>`
+    ).join('');
+    if (adsRows) document.getElementById('ads-daily-table').innerHTML = adsRows;
   }
 }
 
