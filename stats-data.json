@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-19T17:04:12.726Z",
+  "updatedAt": "2026-03-19T18:03:35.778Z",
   "exitAndRest": {
     "streams28d": 39875,
     "streams28dChange": 578.8,
@@ -318,9 +318,9 @@
     ]
   },
   "youtube": {
-    "subscribers": 1600,
-    "views": 27070,
-    "videos": 201,
-    "title": "Exit and Rest"
+    "subscribers": null,
+    "views": null,
+    "videos": null,
+    "error": "no data"
   }
 }
