@@ -1,81 +1,77 @@
 {
-  "updatedAt": "2026-03-19T18:03:35.778Z",
+  "updatedAt": "2026-03-20T18:16:50.374Z",
   "exitAndRest": {
-    "streams28d": 39875,
-    "streams28dChange": 578.8,
-    "listeners28d": 7459,
-    "listenersChange": 342.7,
-    "followers": 568,
-    "saves": 526,
-    "todayStreams": 1849,
-    "todayListeners": 983,
+    "streams28d": 40767,
+    "streams28dChange": 527.1,
+    "listeners28d": 7741,
+    "listenersChange": 302.4,
+    "followers": 579,
+    "saves": 539,
+    "todayStreams": 1594,
+    "todayListeners": 627,
     "topTracks": [
       {
         "rank": 1,
         "title": "Response",
-        "streams": "3,672",
+        "streams": "3,785",
         "saves": "30"
       },
       {
         "rank": 2,
         "title": "Low Light",
-        "streams": "3,438",
+        "streams": "3,539",
         "saves": "65"
       },
       {
         "rank": 3,
         "title": "REM",
-        "streams": "2,254",
+        "streams": "2,275",
         "saves": "5"
       },
       {
         "rank": 4,
         "title": "Insomnia",
-        "streams": "2,175",
+        "streams": "2,228",
         "saves": "4"
       },
       {
         "rank": 5,
         "title": "Quiet Street",
-        "streams": "2,031",
+        "streams": "2,101",
         "saves": "64"
       },
       {
         "rank": 6,
         "title": "Shadows iii",
-        "streams": "1,456",
+        "streams": "1,497",
         "saves": null
       },
       {
         "rank": 7,
         "title": "Slow Drive",
-        "streams": "1,355",
+        "streams": "1,402",
         "saves": "56"
       },
       {
         "rank": 8,
         "title": "Night Air",
-        "streams": "1,332",
+        "streams": "1,379",
         "saves": "56"
       },
       {
         "rank": 9,
         "title": "Unfinished",
-        "streams": "1,278",
+        "streams": "1,334",
         "saves": "1"
       },
       {
         "rank": 10,
-        "title": "Bedtime",
-        "streams": "1,228",
-        "saves": "3"
+        "title": "Distant Glow",
+        "streams": "1,263",
+        "saves": "55"
       }
     ],
     "daily": [
-      {
-        "date": "2026-03-12",
-        "streams": 1284
-      },
       {
         "date": "2026-03-13",
         "streams": 1256
@@ -99,6 +95,10 @@
       {
         "date": "2026-03-18",
         "streams": 1849
+      },
+      {
+        "date": "2026-03-19",
+        "streams": 1594
       }
     ],
     "followersHistory": [
@@ -126,85 +126,86 @@
         "date": "2026-03-19",
         "followers": 568,
         "saves": 526
+      },
+      {
+        "date": "2026-03-20",
+        "followers": 579,
+        "saves": 539
       }
     ]
   },
   "shelbyArcher": {
-    "streams28d": 20667,
-    "streams28dChange": 120.5,
-    "listeners28d": 3528,
-    "listenersChange": 46.9,
-    "followers": 148,
-    "saves": 117,
-    "todayStreams": 887,
-    "todayListeners": 492,
+    "streams28d": 20717,
+    "streams28dChange": 107.6,
+    "listeners28d": 3593,
+    "listenersChange": 46,
+    "followers": 151,
+    "saves": 119,
+    "todayStreams": 774,
+    "todayListeners": 239,
     "topTracks": [
       {
         "rank": 1,
         "title": "Yin Negative",
-        "streams": "2,424",
+        "streams": "2,468",
         "saves": "3"
       },
       {
         "rank": 2,
         "title": "Yin Feminine",
-        "streams": "2,287",
+        "streams": "2,315",
         "saves": "2"
       },
       {
         "rank": 3,
         "title": "Yang Active",
-        "streams": "1,152",
-        "saves": "4"
+        "streams": "1,178",
+        "saves": "3"
       },
       {
         "rank": 4,
-        "title": "Yang Masculine",
-        "streams": "1,127",
-        "saves": "4"
+        "title": "Yin Passive",
+        "streams": "1,152",
+        "saves": "1"
       },
       {
         "rank": 5,
-        "title": "Yin Passive",
-        "streams": "1,116",
-        "saves": "1"
+        "title": "Yang Masculine",
+        "streams": "1,140",
+        "saves": "3"
       },
       {
         "rank": 6,
         "title": "Mossy Currents",
-        "streams": "995",
-        "saves": "2"
+        "streams": "997",
+        "saves": "3"
       },
       {
         "rank": 7,
         "title": "Velvet Echoes",
-        "streams": "901",
+        "streams": "893",
         "saves": "2"
       },
       {
         "rank": 8,
         "title": "Whispering Sands",
-        "streams": "781",
+        "streams": "777",
         "saves": "1"
       },
       {
         "rank": 9,
         "title": "Fragments 3",
-        "streams": "695",
+        "streams": "694",
         "saves": null
       },
       {
         "rank": 10,
         "title": "Cotton Clouds",
-        "streams": "613",
+        "streams": "603",
         "saves": null
       }
     ],
     "daily": [
-      {
-        "date": "2026-03-12",
-        "streams": 567
-      },
       {
         "date": "2026-03-13",
         "streams": 600
@@ -228,6 +229,10 @@
       {
         "date": "2026-03-18",
         "streams": 887
+      },
+      {
+        "date": "2026-03-19",
+        "streams": 774
       }
     ],
     "followersHistory": [
@@ -260,60 +265,65 @@
         "date": "2026-03-19",
         "followers": 148,
         "saves": 117
+      },
+      {
+        "date": "2026-03-20",
+        "followers": 151,
+        "saves": 119
       }
     ]
   },
   "symphonic": {
-    "streams": 11509,
-    "dateRange": "2026-03-11 to 2026-03-17",
+    "streams": 12335,
+    "dateRange": "2026-03-12 to 2026-03-18",
     "trend7d": [],
     "topCountries": [
       {
         "country": "Brazil",
-        "count": 3808,
-        "display": "3,808"
+        "count": 3991,
+        "display": "3,991"
       },
       {
         "country": "United States of America",
-        "count": 1880,
-        "display": "1,880"
+        "count": 2141,
+        "display": "2,141"
       },
       {
         "country": "Mexico",
-        "count": 1247,
-        "display": "1,247"
+        "count": 1347,
+        "display": "1,347"
       },
       {
         "country": "United Kingdom of Great Britain and Northern Ireland",
-        "count": 504,
-        "display": "504"
+        "count": 521,
+        "display": "521"
       },
       {
-        "country": "Canada",
-        "count": 461,
-        "display": "461"
+        "country": "South Africa",
+        "count": 485,
+        "display": "485"
       }
     ],
     "topTracks": [
       {
         "title": "Response",
-        "count": "1,124"
-      },
-      {
-        "title": "REM",
-        "count": "682"
+        "count": "1,196"
       },
       {
         "title": "Low Light",
-        "count": "676"
+        "count": "841"
+      },
+      {
+        "title": "REM",
+        "count": "759"
       },
       {
         "title": "Insomnia",
-        "count": "578"
+        "count": "617"
       },
       {
         "title": "Shadows iii",
-        "count": "413"
+        "count": "519"
       }
     ]
   },
