@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-21T23:20:31.802Z",
+  "updatedAt": "2026-03-21T23:21:35.020Z",
   "date": "2026-03-21",
   "exitAndRest": {
     "streams28d": 41107,
@@ -541,6 +541,17 @@
     ],
     "subs": [],
     "adspend": []
+  },
+  "kalshi": {
+    "balance": "100.00",
+    "mode": "paper",
+    "trades": 16,
+    "open": 3,
+    "wins": 1,
+    "losses": 15,
+    "win_rate": 6,
+    "pnl": 1.26,
+    "last_trade": "2026-03-21"
   },
   "spotify": {
     "streams_28d": 41107,
