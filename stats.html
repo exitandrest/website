@@ -397,14 +397,14 @@ function loadData() {
     .then(r => r.ok ? r.json() : null)
     .then(d => {
       if (!d) { populateDefaults(); return; }
-      document.getElementById('last-updated').textContent = 'Updated: ' + (d.date || '—') + ' 10am PT';
+      set('last-updated', 'Updated: ' + (d.date || '—') + ' 10am PT');
       populateData(d);
     })
     .catch(() => populateDefaults());
 }
 
 function populateDefaults() {
-  document.getElementById('last-updated').textContent = 'Baseline data — scrapers run 10am PT';
+  set('last-updated', 'Baseline data — scrapers run 10am PT');
   const d = {
     shelby_archer: { streams_28d: 19232, listeners_28d: 3007, artist_followers: 115, saves: 90 },
     spotify: { streams_28d: 37000, listeners_28d: 6400, artist_followers: 58, playlist_saves: 576, saves: 456 },
@@ -415,6 +415,11 @@ function populateDefaults() {
     history: { streams: [], followers: [], subs: [], adspend: [] }
   };
   populateData(d);
+}
+
+function set(id, val) {
+  const el = document.getElementById(id);
+  if (el && val !== undefined && val !== null) el.textContent = val;
 }
 
 function populateData(d) {
@@ -430,34 +435,34 @@ function populateData(d) {
   const adspend28 = meta.spend_28d || (parseFloat(meta.spend) || 348);
 
   // Overview
-  document.getElementById('ov-royalties').textContent = royalties ? '$' + parseInt(royalties).toLocaleString() : '$140';
-  document.getElementById('ov-adspend').textContent = '$' + adspend28;
-  document.getElementById('ov-roi').textContent = royalties ? 'ROI: ' + ((royalties / adspend28) * 100).toFixed(0) + '% return on ad spend' : 'ROI: ~40%';
-  document.getElementById('ov-streams').textContent = fmt(sp.streams_28d);
-  document.getElementById('ov-listeners').textContent = fmt(sp.listeners_28d);
-  document.getElementById('ov-subs').textContent = fmt(yt.subscribers);
-  document.getElementById('ov-followers').textContent = fmt(sp.artist_followers);
-  document.getElementById('ov-lp').textContent = fmt(px.PageView);
-  document.getElementById('ov-clicks').textContent = fmt(px.Lead);
-  document.getElementById('ov-playlist').textContent = fmt(sp.playlist_saves);
-  document.getElementById('ov-kalshi').textContent = '$' + (k.balance || '100.00');
+  set('ov-royalties', royalties ? '$' + parseInt(royalties).toLocaleString() : '$140');
+  set('ov-adspend', '$' + adspend28);
+  set('ov-roi', royalties ? 'ROI: ' + ((royalties / adspend28) * 100).toFixed(0) + '% return on ad spend' : 'ROI: ~40%');
+  set('ov-streams', fmt(sp.streams_28d));
+  set('ov-listeners', fmt(sp.listeners_28d));
+  set('ov-subs', fmt(yt.subscribers));
+  set('ov-followers', fmt(sp.artist_followers));
+  set('ov-lp', fmt(px.PageView));
+  set('ov-clicks', fmt(px.Lead));
+  set('ov-playlist', fmt(sp.playlist_saves));
+  set('ov-kalshi', '$' + (k.balance || '100.00'));
 
   // Spotify tab
-  document.getElementById('sp-streams').textContent = fmt(sp.streams_28d);
-  document.getElementById('sp-listeners').textContent = fmt(sp.listeners_28d);
-  document.getElementById('sp-followers').textContent = fmt(sp.artist_followers);
-  document.getElementById('sp-saves').textContent = fmt(sp.saves);
-  document.getElementById('sp-playlist').textContent = fmt(sp.playlist_saves);
-  document.getElementById('sp-revenue').textContent = royalties ? '$' + parseInt(royalties).toLocaleString() + '/mo' : '~$140/mo';
+  set('sp-streams', fmt(sp.streams_28d));
+  set('sp-listeners', fmt(sp.listeners_28d));
+  set('sp-followers', fmt(sp.artist_followers));
+  set('sp-saves', fmt(sp.saves));
+  set('sp-playlist', fmt(sp.playlist_saves));
+  set('sp-revenue', royalties ? '$' + parseInt(royalties).toLocaleString() + '/mo' : '~$140/mo');
 
   // Shelby Archer tab
   const sa = d.shelby_archer || {};
-  document.getElementById('sa-streams').textContent = fmt(sa.streams_28d);
-  document.getElementById('sa-listeners').textContent = fmt(sa.listeners_28d);
-  document.getElementById('sa-followers').textContent = fmt(sa.artist_followers);
-  document.getElementById('sa-saves').textContent = fmt(sa.saves);
+  set('sa-streams', fmt(sa.streams_28d));
+  set('sa-listeners', fmt(sa.listeners_28d));
+  set('sa-followers', fmt(sa.artist_followers));
+  set('sa-saves', fmt(sa.saves));
   const saRoyalties = sa.streams_28d ? '$' + Math.floor(sa.streams_28d * 0.004).toLocaleString() + '/mo' : '~$77/mo';
-  document.getElementById('sa-revenue').textContent = saRoyalties;
+  set('sa-revenue', saRoyalties);
 
   const saStreamData = hist.sa_streams?.length ? hist.sa_streams : Array.from({length:14}, (_,i) => Math.floor(500 + Math.random()*200 + i*10));
   const saFollData = hist.sa_followers?.length ? hist.sa_followers : Array.from({length:14}, (_,i) => 108 + i*0.5);
@@ -465,23 +470,23 @@ function populateData(d) {
   makeChart('chart-sa-followers', days, saFollData, '#9B6BFF');
 
   // YouTube tab
-  document.getElementById('yt-subs').textContent = fmt(yt.subscribers);
-  document.getElementById('yt-views').textContent = fmt(yt.views);
-  document.getElementById('yt-videos').textContent = yt.videos || 199;
-  document.getElementById('yt-lp').textContent = fmt(px.PageView);
-  document.getElementById('yt-sp-clicks').textContent = fmt(px.Lead);
+  set('yt-subs', fmt(yt.subscribers));
+  set('yt-views', fmt(yt.views));
+  set('yt-videos', yt.videos || 199);
+  set('yt-lp', fmt(px.PageView));
+  set('yt-sp-clicks', fmt(px.Lead));
 
   // Ads tab
-  document.getElementById('ads-spend').textContent = '$' + (meta.spend || '348');
-  document.getElementById('ads-lpv').textContent = fmt(meta.lpv);
-  document.getElementById('ads-cplpv').textContent = meta.cost_per_lpv ? '$' + meta.cost_per_lpv : '$0.21';
-  document.getElementById('ads-cpm').textContent = meta.cpm ? '$' + meta.cpm : '$1.31';
+  set('ads-spend', '$' + (meta.spend || '348'));
+  set('ads-lpv', fmt(meta.lpv));
+  set('ads-cplpv', meta.cost_per_lpv ? '$' + meta.cost_per_lpv : '$0.21');
+  set('ads-cpm', meta.cpm ? '$' + meta.cpm : '$1.31');
 
   // Kalshi tab
-  document.getElementById('k-balance').textContent = '$' + (k.balance || '100.00');
-  document.getElementById('k-trades').textContent = k.trades || 0;
-  document.getElementById('k-wr').textContent = k.win_rate ? k.win_rate + '%' : 'paper';
-  document.getElementById('k-pnl').textContent = (k.pnl >= 0 ? '+' : '') + '$' + (k.pnl || 0);
+  set('k-balance', '$' + (k.balance || '100.00'));
+  set('k-trades', k.trades || 0);
+  set('k-wr', k.win_rate ? k.win_rate + '%' : 'paper');
+  set('k-pnl', (k.pnl >= 0 ? '+' : '') + '$' + (k.pnl || 0));
 
   // Charts — use history if available, else placeholder
   const days = Array.from({length:14}, (_,i) => {
