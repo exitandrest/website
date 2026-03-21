@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-21T22:46:03.115Z",
+  "updatedAt": "2026-03-21T23:15:25.781Z",
   "date": "2026-03-21",
   "exitAndRest": {
     "streams28d": 41107,
@@ -342,8 +342,97 @@
     "subscribers": 1600,
     "views": 27229,
     "videos": 203,
-    "title": "Exit and Rest"
+    "title": "Exit and Rest",
+    "analytics": {
+      "daily": [
+        {
+          "day": "2026-03-14",
+          "views": 120,
+          "estimatedMinutesWatched": 3,
+          "averageViewDuration": 9,
+          "subscribersGained": 0
+        },
+        {
+          "day": "2026-03-15",
+          "views": 14,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 13,
+          "subscribersGained": 0
+        },
+        {
+          "day": "2026-03-16",
+          "views": 235,
+          "estimatedMinutesWatched": 12,
+          "averageViewDuration": 15,
+          "subscribersGained": 0
+        },
+        {
+          "day": "2026-03-17",
+          "views": 22,
+          "estimatedMinutesWatched": 1,
+          "averageViewDuration": 12,
+          "subscribersGained": 1
+        },
+        {
+          "day": "2026-03-18",
+          "views": 24,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 7,
+          "subscribersGained": 0
+        },
+        {
+          "day": "2026-03-19",
+          "views": 56,
+          "estimatedMinutesWatched": 1,
+          "averageViewDuration": 6,
+          "subscribersGained": 0
+        }
+      ],
+      "topVideos": [
+        {
+          "id": "EXPpzdlFF4k",
+          "title": "Love is Abundant — Stay Tuned In 💛 #mindfulness #healing",
+          "views": 193,
+          "watchMin": 9,
+          "retention": 146.88
+        },
+        {
+          "id": "R25goBoCxa4",
+          "title": "Happiness Is a Choice — Choose It 🌤️ #mindfulness #dailyaffirmation",
+          "views": 116,
+          "watchMin": 3,
+          "retention": 132.16
+        },
+        {
+          "id": "atPZPAb9JBs",
+          "title": "Cosmic Sleep Playlist — Deep Otherworldly Sleep 😴 #sleepmusic #432hz",
+          "views": 72,
+          "watchMin": 2,
+          "retention": 92.73
+        },
+        {
+          "id": "1V23aeEAYpI",
+          "title": "Gratitude Exercise Mid-Scroll — Just One Thing. Go. 🙏 #gratitude #shorts",
+          "views": 40,
+          "watchMin": 0,
+          "retention": 69.15
+        },
+        {
+          "id": "Nr4G5sUTPzE",
+          "title": "Your Spring Is Around the Corner 🌱 #hope #nature #shorts",
+          "views": 29,
+          "watchMin": 0,
+          "retention": 83
+        }
+      ]
+    }
   },
+  "pixel_7d": {
+    "PageView": 625,
+    "ViewContent": 253,
+    "Lead": 1
+  },
+  "meta": null,
   "spotify": {
     "streams_28d": 41107,
     "streams_28d_change": 481.1,
