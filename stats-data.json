@@ -1,5 +1,6 @@
 {
-  "updatedAt": "2026-03-21T22:36:13.608Z",
+  "updatedAt": "2026-03-21T22:46:03.115Z",
+  "date": "2026-03-21",
   "exitAndRest": {
     "streams28d": 41107,
     "streams28dChange": 481.1,
@@ -342,5 +343,209 @@
     "views": 27229,
     "videos": 203,
     "title": "Exit and Rest"
+  },
+  "spotify": {
+    "streams_28d": 41107,
+    "streams_28d_change": 481.1,
+    "listeners_28d": 7906,
+    "listeners_change": 265.5,
+    "artist_followers": 585,
+    "saves": 544,
+    "today_streams": 1594,
+    "today_listeners": 627,
+    "top_tracks": [
+      {
+        "rank": 1,
+        "title": "Response",
+        "streams": "3,837",
+        "saves": "28"
+      },
+      {
+        "rank": 2,
+        "title": "Low Light",
+        "streams": "3,599",
+        "saves": "66"
+      },
+      {
+        "rank": 3,
+        "title": "REM",
+        "streams": "2,288",
+        "saves": "5"
+      },
+      {
+        "rank": 4,
+        "title": "Insomnia",
+        "streams": "2,264",
+        "saves": "4"
+      },
+      {
+        "rank": 5,
+        "title": "Quiet Street",
+        "streams": "2,141",
+        "saves": "65"
+      },
+      {
+        "rank": 6,
+        "title": "Shadows iii",
+        "streams": "1,530",
+        "saves": null
+      },
+      {
+        "rank": 7,
+        "title": "Slow Drive",
+        "streams": "1,433",
+        "saves": "57"
+      },
+      {
+        "rank": 8,
+        "title": "Night Air",
+        "streams": "1,408",
+        "saves": "57"
+      },
+      {
+        "rank": 9,
+        "title": "Unfinished",
+        "streams": "1,346",
+        "saves": "1"
+      },
+      {
+        "rank": 10,
+        "title": "Distant Glow",
+        "streams": "1,295",
+        "saves": "56"
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-03-13",
+        "streams": 1256
+      },
+      {
+        "date": "2026-03-14",
+        "streams": 1626
+      },
+      {
+        "date": "2026-03-15",
+        "streams": 1326
+      },
+      {
+        "date": "2026-03-16",
+        "streams": 1743
+      },
+      {
+        "date": "2026-03-17",
+        "streams": 1445
+      },
+      {
+        "date": "2026-03-18",
+        "streams": 1849
+      },
+      {
+        "date": "2026-03-19",
+        "streams": 1594
+      }
+    ]
+  },
+  "shelby_archer": {
+    "streams_28d": 20586,
+    "streams_28d_change": 94.9,
+    "listeners_28d": 3640,
+    "listeners_change": 48.6,
+    "artist_followers": 154,
+    "saves": 123,
+    "today_streams": 774,
+    "today_listeners": 239,
+    "top_tracks": [
+      {
+        "rank": 1,
+        "title": "Yin Negative",
+        "streams": "2,443",
+        "saves": "3"
+      },
+      {
+        "rank": 2,
+        "title": "Yin Feminine",
+        "streams": "2,346",
+        "saves": "2"
+      },
+      {
+        "rank": 3,
+        "title": "Yang Masculine",
+        "streams": "1,267",
+        "saves": "2"
+      },
+      {
+        "rank": 4,
+        "title": "Yang Active",
+        "streams": "1,182",
+        "saves": "2"
+      },
+      {
+        "rank": 5,
+        "title": "Yin Passive",
+        "streams": "1,168",
+        "saves": "1"
+      },
+      {
+        "rank": 6,
+        "title": "Mossy Currents",
+        "streams": "990",
+        "saves": "3"
+      },
+      {
+        "rank": 7,
+        "title": "Velvet Echoes",
+        "streams": "885",
+        "saves": "2"
+      },
+      {
+        "rank": 8,
+        "title": "Whispering Sands",
+        "streams": "769",
+        "saves": "1"
+      },
+      {
+        "rank": 9,
+        "title": "Fragments 3",
+        "streams": "686",
+        "saves": null
+      },
+      {
+        "rank": 10,
+        "title": "Cotton Clouds",
+        "streams": "593",
+        "saves": null
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-03-13",
+        "streams": 600
+      },
+      {
+        "date": "2026-03-14",
+        "streams": 781
+      },
+      {
+        "date": "2026-03-15",
+        "streams": 860
+      },
+      {
+        "date": "2026-03-16",
+        "streams": 922
+      },
+      {
+        "date": "2026-03-17",
+        "streams": 698
+      },
+      {
+        "date": "2026-03-18",
+        "streams": 887
+      },
+      {
+        "date": "2026-03-19",
+        "streams": 774
+      }
+    ]
   }
 }
