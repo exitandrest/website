@@ -470,10 +470,11 @@ function populateData(d) {
     return (d.getMonth()+1) + '/' + d.getDate();
   });
 
+  const saDays = hist.sa_follower_dates?.length ? hist.sa_follower_dates.map(d => { const p=d.split('-'); return p[1]+'/'+p[2]; }) : days;
   const saStreamData = hist.sa_streams?.length ? hist.sa_streams : Array.from({length:14}, (_,i) => Math.floor(500 + Math.random()*200 + i*10));
   const saFollData = hist.sa_followers?.length ? hist.sa_followers : Array.from({length:14}, (_,i) => 108 + i*0.5);
-  makeChart('chart-sa-streams', days, saStreamData, '#9B6BFF');
-  makeChart('chart-sa-followers', days, saFollData, '#9B6BFF');
+  makeChart('chart-sa-streams', hist.stream_dates?.length ? hist.stream_dates.map(d => { const p=d.split('-'); return p[1]+'/'+p[2]; }) : days, saStreamData, '#9B6BFF');
+  makeChart('chart-sa-followers', saDays, saFollData, '#9B6BFF');
 
   // YouTube tab
   set('yt-subs', fmt(yt.subscribers));
@@ -495,13 +496,15 @@ function populateData(d) {
   set('k-pnl', (k.pnl >= 0 ? '+' : '') + '$' + (k.pnl || 0));
 
   // Charts — use history if available, else placeholder
+  const streamDates = hist.stream_dates?.length ? hist.stream_dates.map(d => { const p=d.split('-'); return p[1]+'/'+p[2]; }) : days;
+  const follDates   = hist.follower_dates?.length ? hist.follower_dates.map(d => { const p=d.split('-'); return p[1]+'/'+p[2]; }) : days;
   const streamData = hist.streams?.length ? hist.streams : Array.from({length:14}, (_,i) => Math.floor(800 + Math.random()*400 + i*20));
   const follData = hist.followers?.length ? hist.followers : Array.from({length:14}, (_,i) => Math.floor(510 + i*1.5));
   const subsData = hist.subs?.length ? hist.subs : Array.from({length:14}, (_,i) => 1580 + i*2);
   const spendData = hist.adspend?.length ? hist.adspend : Array.from({length:14}, () => (8 + Math.random()*4).toFixed(2));
 
-  makeChart('chart-streams', days, streamData, '#1DB954');
-  makeChart('chart-followers', days, follData, '#1DB954');
+  makeChart('chart-streams', streamDates, streamData, '#1DB954');
+  makeChart('chart-followers', follDates, follData, '#1DB954');
   makeChart('chart-subs', days, subsData, '#ff4444');
   makeChart('chart-adspend', days, spendData, '#4A9EFF');
   makeChart('chart-kalshi', days, Array.from({length:14}, () => 100), '#FF8C42', false);
