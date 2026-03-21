@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-21T23:15:25.781Z",
+  "updatedAt": "2026-03-21T23:16:51.518Z",
   "date": "2026-03-21",
   "exitAndRest": {
     "streams28d": 41107,
@@ -432,7 +432,38 @@
     "ViewContent": 253,
     "Lead": 1
   },
-  "meta": null,
+  "meta": {
+    "spend": "62.78",
+    "spend_7d": "$63",
+    "impressions": 33847,
+    "lpv": 136,
+    "video_views": 5133,
+    "cost_per_lpv": "0.46",
+    "cpm": "1.85",
+    "top_ads": [
+      {
+        "id": "120243701096670522",
+        "name": "sleep 2 og winner",
+        "spend": 55.67,
+        "impressions": 31362,
+        "link_clicks": 263
+      },
+      {
+        "id": "120243701096650522",
+        "name": "sleep 31",
+        "spend": 4.48,
+        "impressions": 1667,
+        "link_clicks": 31
+      },
+      {
+        "id": "120242447697940522",
+        "name": "Spotify Follow Campaign Ad 1",
+        "spend": 2.77,
+        "impressions": 7742,
+        "link_clicks": 530
+      }
+    ]
+  },
   "spotify": {
     "streams_28d": 41107,
     "streams_28d_change": 481.1,
