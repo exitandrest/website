@@ -344,6 +344,7 @@ document.getElementById('pin').addEventListener('keydown', e => { if(e.key==='En
 if (localStorage.getItem('ear_auth') === '1') {
   document.getElementById('auth-gate').style.display = 'none';
   document.getElementById('dashboard').style.display = 'block';
+  loadData();
 }
 
 function switchTab(id) {
@@ -518,7 +519,7 @@ function populateData(d) {
   }
 }
 
-if (localStorage.getItem('ear_auth') === '1') loadData();
+// loadData() is called in the auth block above when already logged in
 </script>
 </body>
 </html>
