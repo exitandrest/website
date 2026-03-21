@@ -464,6 +464,12 @@ function populateData(d) {
   const saRoyalties = sa.streams_28d ? '$' + Math.floor(sa.streams_28d * 0.004).toLocaleString() + '/mo' : '~$77/mo';
   set('sa-revenue', saRoyalties);
 
+  // Build days array here so all chart calls below can use it
+  const days = Array.from({length:14}, (_,i) => {
+    const d = new Date(); d.setDate(d.getDate() - (13 - i));
+    return (d.getMonth()+1) + '/' + d.getDate();
+  });
+
   const saStreamData = hist.sa_streams?.length ? hist.sa_streams : Array.from({length:14}, (_,i) => Math.floor(500 + Math.random()*200 + i*10));
   const saFollData = hist.sa_followers?.length ? hist.sa_followers : Array.from({length:14}, (_,i) => 108 + i*0.5);
   makeChart('chart-sa-streams', days, saStreamData, '#9B6BFF');
@@ -489,11 +495,6 @@ function populateData(d) {
   set('k-pnl', (k.pnl >= 0 ? '+' : '') + '$' + (k.pnl || 0));
 
   // Charts — use history if available, else placeholder
-  const days = Array.from({length:14}, (_,i) => {
-    const d = new Date(); d.setDate(d.getDate() - (13 - i));
-    return (d.getMonth()+1) + '/' + d.getDate();
-  });
-
   const streamData = hist.streams?.length ? hist.streams : Array.from({length:14}, (_,i) => Math.floor(800 + Math.random()*400 + i*20));
   const follData = hist.followers?.length ? hist.followers : Array.from({length:14}, (_,i) => Math.floor(510 + i*1.5));
   const subsData = hist.subs?.length ? hist.subs : Array.from({length:14}, (_,i) => 1580 + i*2);
