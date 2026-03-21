@@ -491,9 +491,10 @@ function populateData(d) {
 
   // Kalshi tab
   set('k-balance', '$' + (k.balance || '100.00'));
-  set('k-trades', k.trades || 0);
-  set('k-wr', k.win_rate ? k.win_rate + '%' : 'paper');
-  set('k-pnl', (k.pnl >= 0 ? '+' : '') + '$' + (k.pnl || 0));
+  set('k-trades', (k.trades || 0) + ' resolved' + (k.open ? ' · ' + k.open + ' open' : ''));
+  set('k-wr', k.win_rate != null ? k.win_rate + '%  (' + (k.wins||0) + 'W / ' + (k.losses||0) + 'L)' : 'paper');
+  set('k-pnl', (k.pnl >= 0 ? '+' : '') + '$' + (k.pnl || 0) + ' (paper)');
+  set('k-mode', k.mode === 'paper' ? '📄 Paper — live at 65%+ win rate' : '🟢 LIVE');
 
   // Charts — use history if available, else placeholder
   const streamDates = hist.stream_dates?.length ? hist.stream_dates.map(d => { const p=d.split('-'); return p[1]+'/'+p[2]; }) : days;
