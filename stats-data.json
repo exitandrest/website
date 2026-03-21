@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-21T23:21:35.020Z",
+  "updatedAt": "2026-03-21T23:45:43.812Z",
   "date": "2026-03-21",
   "exitAndRest": {
     "streams28d": 41107,
@@ -8,8 +8,8 @@
     "listenersChange": 265.5,
     "followers": 585,
     "saves": 544,
-    "todayStreams": 1594,
-    "todayListeners": 627,
+    "todayStreams": 969,
+    "todayListeners": 363,
     "topTracks": [
       {
         "rank": 1,
@@ -74,10 +74,6 @@
     ],
     "daily": [
       {
-        "date": "2026-03-13",
-        "streams": 1256
-      },
-      {
         "date": "2026-03-14",
         "streams": 1626
       },
@@ -100,6 +96,40 @@
       {
         "date": "2026-03-19",
         "streams": 1594
+      },
+      {
+        "date": "2026-03-20",
+        "streams": 969
+      }
+    ],
+    "dailyListeners": [
+      {
+        "date": "2026-03-14",
+        "listeners": 558
+      },
+      {
+        "date": "2026-03-15",
+        "listeners": 429
+      },
+      {
+        "date": "2026-03-16",
+        "listeners": 534
+      },
+      {
+        "date": "2026-03-17",
+        "listeners": 604
+      },
+      {
+        "date": "2026-03-18",
+        "listeners": 983
+      },
+      {
+        "date": "2026-03-19",
+        "listeners": 627
+      },
+      {
+        "date": "2026-03-20",
+        "listeners": 363
       }
     ],
     "followersHistory": [
@@ -147,8 +177,8 @@
     "listenersChange": 48.6,
     "followers": 154,
     "saves": 123,
-    "todayStreams": 774,
-    "todayListeners": 239,
+    "todayStreams": 700,
+    "todayListeners": 230,
     "topTracks": [
       {
         "rank": 1,
@@ -213,10 +243,6 @@
     ],
     "daily": [
       {
-        "date": "2026-03-13",
-        "streams": 600
-      },
-      {
         "date": "2026-03-14",
         "streams": 781
       },
@@ -239,6 +265,40 @@
       {
         "date": "2026-03-19",
         "streams": 774
+      },
+      {
+        "date": "2026-03-20",
+        "streams": 700
+      }
+    ],
+    "dailyListeners": [
+      {
+        "date": "2026-03-14",
+        "listeners": 173
+      },
+      {
+        "date": "2026-03-15",
+        "listeners": 344
+      },
+      {
+        "date": "2026-03-16",
+        "listeners": 189
+      },
+      {
+        "date": "2026-03-17",
+        "listeners": 251
+      },
+      {
+        "date": "2026-03-18",
+        "listeners": 492
+      },
+      {
+        "date": "2026-03-19",
+        "listeners": 239
+      },
+      {
+        "date": "2026-03-20",
+        "listeners": 230
       }
     ],
     "followersHistory": [
@@ -466,22 +526,22 @@
   },
   "history": {
     "streams": [
-      1256,
       1626,
       1326,
       1743,
       1445,
       1849,
-      1594
+      1594,
+      969
     ],
     "stream_dates": [
-      "2026-03-13",
       "2026-03-14",
       "2026-03-15",
       "2026-03-16",
       "2026-03-17",
       "2026-03-18",
-      "2026-03-19"
+      "2026-03-19",
+      "2026-03-20"
     ],
     "followers": [
       473,
@@ -511,13 +571,13 @@
       544
     ],
     "sa_streams": [
-      600,
       781,
       860,
       922,
       698,
       887,
-      774
+      774,
+      700
     ],
     "sa_followers": [
       113,
@@ -560,8 +620,8 @@
     "listeners_change": 265.5,
     "artist_followers": 585,
     "saves": 544,
-    "today_streams": 1594,
-    "today_listeners": 627,
+    "today_streams": 969,
+    "today_listeners": 363,
     "top_tracks": [
       {
         "rank": 1,
@@ -626,10 +686,6 @@
     ],
     "daily": [
       {
-        "date": "2026-03-13",
-        "streams": 1256
-      },
-      {
         "date": "2026-03-14",
         "streams": 1626
       },
@@ -652,6 +708,10 @@
       {
         "date": "2026-03-19",
         "streams": 1594
+      },
+      {
+        "date": "2026-03-20",
+        "streams": 969
       }
     ]
   },
@@ -662,8 +722,8 @@
     "listeners_change": 48.6,
     "artist_followers": 154,
     "saves": 123,
-    "today_streams": 774,
-    "today_listeners": 239,
+    "today_streams": 700,
+    "today_listeners": 230,
     "top_tracks": [
       {
         "rank": 1,
@@ -728,10 +788,6 @@
     ],
     "daily": [
       {
-        "date": "2026-03-13",
-        "streams": 600
-      },
-      {
         "date": "2026-03-14",
         "streams": 781
       },
@@ -754,6 +810,10 @@
       {
         "date": "2026-03-19",
         "streams": 774
+      },
+      {
+        "date": "2026-03-20",
+        "streams": 700
       }
     ]
   }
