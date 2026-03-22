@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-22T18:03:02.633Z",
+  "updatedAt": "2026-03-22T19:12:10.281Z",
   "date": "2026-03-22",
   "exitAndRest": {
     "streams28d": 41245,
@@ -8459,6 +8459,13 @@
           "estimatedMinutesWatched": 1,
           "averageViewDuration": 6,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-03-20",
+          "views": 83,
+          "estimatedMinutesWatched": 1,
+          "averageViewDuration": 9,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
@@ -8472,9 +8479,23 @@
         {
           "id": "atPZPAb9JBs",
           "title": "Cosmic Sleep Playlist — Deep Otherworldly Sleep 😴 #sleepmusic #432hz",
-          "views": 71,
+          "views": 72,
           "watchMin": 2,
           "retention": 92.73
+        },
+        {
+          "id": "rQsBn_RcXKQ",
+          "title": "Reality Is a Game — Be the Game Maker 🎮 #mindset #exitandrest",
+          "views": 69,
+          "watchMin": 1,
+          "retention": 46.82
+        },
+        {
+          "id": "Nr4G5sUTPzE",
+          "title": "Your Spring Is Around the Corner 🌱 #hope #nature #shorts",
+          "views": 42,
+          "watchMin": 1,
+          "retention": 83
         },
         {
           "id": "1V23aeEAYpI",
@@ -8482,26 +8503,12 @@
           "views": 40,
           "watchMin": 0,
           "retention": 69.15
-        },
-        {
-          "id": "Nr4G5sUTPzE",
-          "title": "Your Spring Is Around the Corner 🌱 #hope #nature #shorts",
-          "views": 29,
-          "watchMin": 0,
-          "retention": 83
-        },
-        {
-          "id": "sMF7NL9dwNU",
-          "title": "Look Up to the Sun — Look Up to God ☀️ #mindfulness #gratitude",
-          "views": 4,
-          "watchMin": 0,
-          "retention": 0
         }
       ]
     }
   },
   "pixel_7d": {
-    "PageView": 544,
+    "PageView": 540,
     "ViewContent": 253,
     "Lead": 1
   },
@@ -12689,12 +12696,9 @@
   },
   "instagram": {
     "followers": 19538,
-    "source": "export",
-    "follower_peak": 19763,
-    "net_change_12mo": -156,
-    "engagement_rate": 0.62,
-    "avg_impressions_per_post": 130,
-    "note": "Account suppressed - <1.2% organic reach. Fix: Switch to Reels only."
+    "source": "api",
+    "reach_7d": 26237,
+    "profile_views_7d": 66
   },
   "spotify": {
     "streams_28d": 41245,
