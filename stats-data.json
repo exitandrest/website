@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-22T17:47:09.230Z",
+  "updatedAt": "2026-03-22T18:03:02.633Z",
   "date": "2026-03-22",
   "exitAndRest": {
     "streams28d": 41245,
@@ -8501,7 +8501,7 @@
     }
   },
   "pixel_7d": {
-    "PageView": 543,
+    "PageView": 544,
     "ViewContent": 253,
     "Lead": 1
   },
@@ -12686,6 +12686,15 @@
         "text": "ambient music is older than recorded history.\n\nsinging bowls. chant. didgeridoos.\n\nhumans always kne"
       }
     ]
+  },
+  "instagram": {
+    "followers": 19538,
+    "source": "export",
+    "follower_peak": 19763,
+    "net_change_12mo": -156,
+    "engagement_rate": 0.62,
+    "avg_impressions_per_post": 130,
+    "note": "Account suppressed - <1.2% organic reach. Fix: Switch to Reels only."
   },
   "spotify": {
     "streams_28d": 41245,
