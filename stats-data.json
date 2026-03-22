@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-22T03:38:57.859Z",
+  "updatedAt": "2026-03-22T03:47:19.200Z",
   "date": "2026-03-22",
   "exitAndRest": {
     "streams28d": 41107,
@@ -273,43 +273,8 @@
     ],
     "followersHistory": [
       {
-        "date": "2026-03-10",
-        "followers": 113,
-        "saves": 88
-      },
-      {
-        "date": "2026-03-14",
-        "followers": 111,
-        "saves": 87
-      },
-      {
-        "date": "2026-03-15",
-        "followers": 111,
-        "saves": 87
-      },
-      {
-        "date": "2026-03-16",
-        "followers": 115,
-        "saves": 90
-      },
-      {
-        "date": "2026-03-17",
-        "followers": 122,
-        "saves": 95
-      },
-      {
-        "date": "2026-03-19",
-        "followers": 148,
-        "saves": 117
-      },
-      {
-        "date": "2026-03-20",
-        "followers": 151,
-        "saves": 119
-      },
-      {
         "date": "2026-03-21",
-        "followers": 154,
+        "followers": 25,
         "saves": 123
       }
     ]
@@ -532,23 +497,9 @@
       700
     ],
     "sa_followers": [
-      113,
-      111,
-      111,
-      115,
-      122,
-      148,
-      151,
-      154
+      25
     ],
     "sa_follower_dates": [
-      "2026-03-10",
-      "2026-03-14",
-      "2026-03-15",
-      "2026-03-16",
-      "2026-03-17",
-      "2026-03-19",
-      "2026-03-20",
       "2026-03-21"
     ],
     "subs": [],
@@ -564,6 +515,57 @@
     "win_rate": 6,
     "pnl": 1.26,
     "last_trade": "2026-03-21"
+  },
+  "social": {
+    "totalPosts7d": 2,
+    "byPlatform": {
+      "facebook": {
+        "name": "Exit and Rest",
+        "connected": true,
+        "posts7d": 0
+      },
+      "tiktok": {
+        "name": "exitandrest",
+        "connected": true,
+        "posts7d": 0
+      },
+      "youtube": {
+        "name": "Exit and Rest",
+        "connected": true,
+        "posts7d": 0
+      },
+      "twitter": {
+        "name": "ExitandRest",
+        "connected": true,
+        "posts7d": 2
+      },
+      "startPage": {
+        "name": "exit and rest",
+        "connected": true,
+        "posts7d": 0
+      },
+      "instagram": {
+        "name": "exitandrest",
+        "connected": true,
+        "posts7d": 0
+      }
+    },
+    "recentPosts": [
+      {
+        "id": "69b8b89e31d21707840fbaa4",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-03-17",
+        "text": "take the path less traveled."
+      },
+      {
+        "id": "69b8573488d05d8b0b43bc6f",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-03-16",
+        "text": "ambient music is older than recorded history.\n\nsinging bowls. chant. didgeridoos.\n\nhumans always kne"
+      }
+    ]
   },
   "spotify": {
     "streams_28d": 41107,
