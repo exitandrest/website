@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-03-26T18:45:09.209Z",
+  "updatedAt": "2026-03-26T18:56:05.552Z",
   "date": "2026-03-26",
   "exitAndRest": {
     "streams28d": 42932,
     "streams28dChange": 245.5,
     "listeners28d": 8591,
     "listenersChange": 797.7,
-    "followers": null,
-    "saves": null,
+    "followers": 64,
+    "saves": 388,
     "todayStreams": 1687,
     "todayListeners": 396,
     "topTracks": [
@@ -4177,6 +4177,11 @@
         "date": "2026-03-21",
         "followers": 585,
         "saves": 544
+      },
+      {
+        "date": "2026-03-26",
+        "followers": 64,
+        "saves": 388
       }
     ]
   },
@@ -4185,8 +4190,8 @@
     "streams28dChange": 48.6,
     "listeners28d": 3830,
     "listenersChange": 51.3,
-    "followers": null,
-    "saves": null,
+    "followers": 24,
+    "saves": 30,
     "todayStreams": 533,
     "todayListeners": 126,
     "topTracks": [
@@ -8361,6 +8366,11 @@
         "date": "2026-03-21",
         "followers": 154,
         "saves": 123
+      },
+      {
+        "date": "2026-03-26",
+        "followers": 24,
+        "saves": 30
       }
     ]
   },
@@ -9289,7 +9299,8 @@
       59,
       568,
       579,
-      585
+      585,
+      64
     ],
     "follower_dates": [
       "2024-01-01",
@@ -10100,7 +10111,8 @@
       "2026-03-18",
       "2026-03-19",
       "2026-03-20",
-      "2026-03-21"
+      "2026-03-21",
+      "2026-03-26"
     ],
     "saves": [
       0,
@@ -10911,7 +10923,8 @@
       2,
       526,
       539,
-      544
+      544,
+      388
     ],
     "sa_streams": [
       774,
@@ -11732,7 +11745,8 @@
       24,
       148,
       151,
-      154
+      154,
+      24
     ],
     "sa_follower_dates": [
       "2024-01-01",
@@ -12544,7 +12558,8 @@
       "2026-03-18",
       "2026-03-19",
       "2026-03-20",
-      "2026-03-21"
+      "2026-03-21",
+      "2026-03-26"
     ],
     "subs": [],
     "adspend": []
@@ -12676,7 +12691,7 @@
   "instagram": {
     "followers": 19537,
     "source": "api",
-    "reach_7d": 34524,
+    "reach_7d": 34540,
     "profile_views_7d": 105
   },
   "spotify": {
@@ -12684,8 +12699,8 @@
     "streams_28d_change": 245.5,
     "listeners_28d": 8591,
     "listeners_change": 797.7,
-    "artist_followers": null,
-    "saves": null,
+    "artist_followers": 64,
+    "saves": 388,
     "today_streams": 1687,
     "today_listeners": 396,
     "top_tracks": [
@@ -12786,8 +12801,8 @@
     "streams_28d_change": 48.6,
     "listeners_28d": 3830,
     "listeners_change": 51.3,
-    "artist_followers": null,
-    "saves": null,
+    "artist_followers": 24,
+    "saves": 30,
     "today_streams": 533,
     "today_listeners": 126,
     "top_tracks": [
