@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-26T18:30:49.496Z",
+  "updatedAt": "2026-03-26T18:45:09.209Z",
   "date": "2026-03-26",
   "exitAndRest": {
     "streams28d": 42932,
@@ -8,8 +8,8 @@
     "listenersChange": 797.7,
     "followers": null,
     "saves": null,
-    "todayStreams": 2131,
-    "todayListeners": 433,
+    "todayStreams": 1687,
+    "todayListeners": 396,
     "topTracks": [
       {
         "rank": 1,
@@ -74,10 +74,6 @@
     ],
     "daily": [
       {
-        "date": "2026-03-18",
-        "streams": 1849
-      },
-      {
         "date": "2026-03-19",
         "streams": 1594
       },
@@ -100,13 +96,13 @@
       {
         "date": "2026-03-24",
         "streams": 2131
+      },
+      {
+        "date": "2026-03-25",
+        "streams": 1687
       }
     ],
     "dailyListeners": [
-      {
-        "date": "2026-03-18",
-        "listeners": 983
-      },
       {
         "date": "2026-03-19",
         "listeners": 627
@@ -130,6 +126,10 @@
       {
         "date": "2026-03-24",
         "listeners": 433
+      },
+      {
+        "date": "2026-03-25",
+        "listeners": 396
       }
     ],
     "followersHistory": [
@@ -4187,8 +4187,8 @@
     "listenersChange": 51.3,
     "followers": null,
     "saves": null,
-    "todayStreams": 856,
-    "todayListeners": 223,
+    "todayStreams": 533,
+    "todayListeners": 126,
     "topTracks": [
       {
         "rank": 1,
@@ -4253,10 +4253,6 @@
     ],
     "daily": [
       {
-        "date": "2026-03-18",
-        "streams": 887
-      },
-      {
         "date": "2026-03-19",
         "streams": 774
       },
@@ -4279,13 +4275,13 @@
       {
         "date": "2026-03-24",
         "streams": 856
+      },
+      {
+        "date": "2026-03-25",
+        "streams": 533
       }
     ],
     "dailyListeners": [
-      {
-        "date": "2026-03-18",
-        "listeners": 492
-      },
       {
         "date": "2026-03-19",
         "listeners": 239
@@ -4309,6 +4305,10 @@
       {
         "date": "2026-03-24",
         "listeners": 223
+      },
+      {
+        "date": "2026-03-25",
+        "listeners": 126
       }
     ],
     "followersHistory": [
@@ -8463,22 +8463,22 @@
   },
   "history": {
     "streams": [
-      1849,
       1594,
       969,
       777,
       1061,
       2010,
-      2131
+      2131,
+      1687
     ],
     "stream_dates": [
-      "2026-03-18",
       "2026-03-19",
       "2026-03-20",
       "2026-03-21",
       "2026-03-22",
       "2026-03-23",
-      "2026-03-24"
+      "2026-03-24",
+      "2026-03-25"
     ],
     "followers": [
       0,
@@ -10914,13 +10914,13 @@
       544
     ],
     "sa_streams": [
-      887,
       774,
       700,
       479,
       565,
       948,
-      856
+      856,
+      533
     ],
     "sa_followers": [
       1,
@@ -12686,8 +12686,8 @@
     "listeners_change": 797.7,
     "artist_followers": null,
     "saves": null,
-    "today_streams": 2131,
-    "today_listeners": 433,
+    "today_streams": 1687,
+    "today_listeners": 396,
     "top_tracks": [
       {
         "rank": 1,
@@ -12752,10 +12752,6 @@
     ],
     "daily": [
       {
-        "date": "2026-03-18",
-        "streams": 1849
-      },
-      {
         "date": "2026-03-19",
         "streams": 1594
       },
@@ -12778,6 +12774,10 @@
       {
         "date": "2026-03-24",
         "streams": 2131
+      },
+      {
+        "date": "2026-03-25",
+        "streams": 1687
       }
     ]
   },
@@ -12788,8 +12788,8 @@
     "listeners_change": 51.3,
     "artist_followers": null,
     "saves": null,
-    "today_streams": 856,
-    "today_listeners": 223,
+    "today_streams": 533,
+    "today_listeners": 126,
     "top_tracks": [
       {
         "rank": 1,
@@ -12854,10 +12854,6 @@
     ],
     "daily": [
       {
-        "date": "2026-03-18",
-        "streams": 887
-      },
-      {
         "date": "2026-03-19",
         "streams": 774
       },
@@ -12880,6 +12876,10 @@
       {
         "date": "2026-03-24",
         "streams": 856
+      },
+      {
+        "date": "2026-03-25",
+        "streams": 533
       }
     ]
   }
