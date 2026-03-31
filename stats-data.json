@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-03-30T17:04:25.229Z",
-  "date": "2026-03-30",
+  "updatedAt": "2026-03-31T17:03:52.553Z",
+  "date": "2026-03-31",
   "exitAndRest": {
     "streams28d": 42430,
     "streams28dChange": 136,
@@ -4190,6 +4190,11 @@
       },
       {
         "date": "2026-03-30",
+        "followers": 68,
+        "saves": 339
+      },
+      {
+        "date": "2026-03-31",
         "followers": 68,
         "saves": 339
       }
@@ -8391,77 +8396,75 @@
         "date": "2026-03-30",
         "followers": 24,
         "saves": 10
+      },
+      {
+        "date": "2026-03-31",
+        "followers": 24,
+        "saves": 10
       }
     ]
   },
   "symphonic": {
-    "streams": 12726,
-    "dateRange": "2026-03-22 to 2026-03-28",
+    "streams": 12896,
+    "dateRange": "2026-03-23 to 2026-03-29",
     "trend7d": [],
     "topCountries": [
       {
         "country": "Brazil",
-        "count": 5066,
-        "display": "5,066"
+        "count": 5052,
+        "display": "5,052"
       },
       {
         "country": "United States of America",
-        "count": 1662,
-        "display": "1,662"
+        "count": 1767,
+        "display": "1,767"
       },
       {
         "country": "Mexico",
-        "count": 1462,
-        "display": "1,462"
+        "count": 1505,
+        "display": "1,505"
       },
       {
         "country": "Hong Kong",
-        "count": 647,
-        "display": "647"
+        "count": 638,
+        "display": "638"
       },
       {
         "country": "Portugal",
-        "count": 436,
-        "display": "436"
+        "count": 472,
+        "display": "472"
       }
     ],
     "topTracks": [
       {
         "title": "Insomnia",
-        "count": "725"
-      },
-      {
-        "title": "Low Light",
-        "count": "497"
-      },
-      {
-        "title": "Quiet Street",
-        "count": "462"
+        "count": "711"
       },
       {
         "title": "Center",
-        "count": "424"
+        "count": "524"
+      },
+      {
+        "title": "Quiet Street",
+        "count": "514"
+      },
+      {
+        "title": "Low Light",
+        "count": "459"
       },
       {
         "title": "Balance",
-        "count": "392"
+        "count": "436"
       }
     ]
   },
   "youtube": {
     "subscribers": 1600,
     "views": 27601,
-    "videos": 211,
+    "videos": 212,
     "title": "Exit and Rest",
     "analytics": {
       "daily": [
-        {
-          "day": "2026-03-23",
-          "views": 141,
-          "estimatedMinutesWatched": 5,
-          "averageViewDuration": 9,
-          "subscribersGained": 1
-        },
         {
           "day": "2026-03-24",
           "views": 29,
@@ -8489,20 +8492,20 @@
           "estimatedMinutesWatched": 0,
           "averageViewDuration": 5,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-03-28",
+          "views": 9,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 0,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
         {
-          "id": "zjXCHTKlthI",
-          "title": "Why are we here?",
-          "views": 144,
-          "watchMin": 5,
-          "retention": 102.59
-        },
-        {
           "id": "xLY5g_--QKE",
           "title": "You are alive.  Be alive.",
-          "views": 46,
+          "views": 48,
           "watchMin": 1,
           "retention": 87.37
         },
@@ -8516,54 +8519,61 @@
         {
           "id": "v2RfJCwuGlo",
           "title": "your thoughts send messages to your body's cells.  stay bright. stay positive.",
-          "views": 31,
+          "views": 32,
           "watchMin": 0,
           "retention": 80.14
         },
         {
+          "id": "zjXCHTKlthI",
+          "title": "Why are we here?",
+          "views": 14,
+          "watchMin": 0,
+          "retention": 73.5
+        },
+        {
           "id": "zMZAm2rE9KA",
           "title": "cosmic thinking starts with cosmic sleeping.  Link in Bio.",
-          "views": 17,
+          "views": 7,
           "watchMin": 0,
-          "retention": 87.62
+          "retention": 65.71
         }
       ]
     }
   },
   "pixel_7d": {
-    "PageView": 2592,
-    "ViewContent": 1576,
+    "PageView": 2024,
+    "ViewContent": 1236,
     "Lead": 0
   },
   "meta": {
-    "spend": "62.77",
-    "spend_7d": "$63",
-    "impressions": 37933,
-    "lpv": 328,
-    "video_views": 5291,
-    "cost_per_lpv": "0.19",
-    "cpm": "1.65",
+    "spend": "61.40",
+    "spend_7d": "$61",
+    "impressions": 37092,
+    "lpv": 303,
+    "video_views": 5206,
+    "cost_per_lpv": "0.20",
+    "cpm": "1.66",
     "top_ads": [
       {
         "id": "120243701096670522",
         "name": "sleep 2 og winner",
-        "spend": 60.38,
-        "impressions": 37211,
-        "link_clicks": 324
+        "spend": 58.93,
+        "impressions": 36269,
+        "link_clicks": 306
       },
       {
         "id": "120244039145080522",
         "name": "aligned ad 4",
-        "spend": 55.51,
-        "impressions": 11852,
-        "link_clicks": 425
+        "spend": 44.19,
+        "impressions": 9522,
+        "link_clicks": 357
       },
       {
         "id": "120244039141580522",
         "name": "aligned ad 3",
-        "spend": 13.31,
-        "impressions": 2806,
-        "link_clicks": 91
+        "spend": 9.33,
+        "impressions": 1994,
+        "link_clicks": 73
       }
     ]
   },
@@ -9398,6 +9408,7 @@
       585,
       64,
       68,
+      68,
       68
     ],
     "follower_dates": [
@@ -10212,7 +10223,8 @@
       "2026-03-21",
       "2026-03-26",
       "2026-03-29",
-      "2026-03-30"
+      "2026-03-30",
+      "2026-03-31"
     ],
     "saves": [
       0,
@@ -11026,6 +11038,7 @@
       544,
       388,
       336,
+      339,
       339
     ],
     "sa_streams": [
@@ -11850,6 +11863,7 @@
       154,
       24,
       24,
+      24,
       24
     ],
     "sa_follower_dates": [
@@ -12665,7 +12679,8 @@
       "2026-03-21",
       "2026-03-26",
       "2026-03-29",
-      "2026-03-30"
+      "2026-03-30",
+      "2026-03-31"
     ],
     "subs": [],
     "adspend": []
@@ -12682,7 +12697,7 @@
     "last_trade": "2026-03-27"
   },
   "social": {
-    "totalPosts7d": 1,
+    "totalPosts7d": 0,
     "totalScheduled": 10,
     "byPlatform": {
       "facebook": {
@@ -12706,7 +12721,7 @@
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 1,
+        "posts7d": 0,
         "postsScheduled": 3
       },
       "startPage": {
@@ -12722,16 +12737,7 @@
         "postsScheduled": 1
       }
     },
-    "recentPosts": [
-      {
-        "id": "69c2c1633a550e6144ff3748",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "date": "2026-03-24",
-        "text": "Brian Eno left a record playing too quietly to hear. Instead of fixing it, he listened.\n\nThat moment became ambient music.\n\nNo drops. No tension. Just space.\n\nThe nervous system doesn't need more stim",
-        "analytics": null
-      }
-    ],
+    "recentPosts": [],
     "upcomingPosts": [
       {
         "id": "69caa4e8e1238afcb8b7032f",
@@ -12796,10 +12802,10 @@
     ]
   },
   "instagram": {
-    "followers": 19536,
+    "followers": 19538,
     "source": "api",
-    "reach_7d": 34668,
-    "profile_views_7d": 116
+    "reach_7d": 31396,
+    "profile_views_7d": 112
   },
   "spotify": {
     "streams_28d": 42430,
