@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-08T00:28:46.789Z",
+  "updatedAt": "2026-04-08T17:17:18.371Z",
   "date": "2026-04-08",
   "exitAndRest": {
     "streams28d": 42668,
@@ -8468,38 +8468,38 @@
     "error": "no data"
   },
   "pixel_7d": {
-    "PageView": 884,
-    "ViewContent": 499,
+    "PageView": 946,
+    "ViewContent": 562,
     "Lead": 0
   },
   "meta": {
-    "spend": "61.33",
+    "spend": "61.21",
     "spend_7d": "$61",
-    "impressions": 34803,
-    "lpv": 307,
-    "video_views": 5219,
-    "cost_per_lpv": "0.20",
-    "cpm": "1.76",
+    "impressions": 34643,
+    "lpv": 325,
+    "video_views": 5225,
+    "cost_per_lpv": "0.19",
+    "cpm": "1.77",
     "top_ads": [
       {
         "id": "120243701096670522",
         "name": "sleep 2 og winner",
-        "spend": 55.79,
-        "impressions": 32667,
-        "link_clicks": 306
+        "spend": 56.51,
+        "impressions": 32824,
+        "link_clicks": 326
       },
       {
         "id": "120243701096650522",
         "name": "sleep 31",
-        "spend": 5.18,
-        "impressions": 1999,
-        "link_clicks": 18
+        "spend": 4.4,
+        "impressions": 1708,
+        "link_clicks": 17
       },
       {
         "id": "120243701096630522",
         "name": "sleep 24",
-        "spend": 0.36,
-        "impressions": 137,
+        "spend": 0.3,
+        "impressions": 111,
         "link_clicks": 2
       }
     ]
@@ -12779,7 +12779,7 @@
     ]
   },
   "instagram": {
-    "followers": 19529,
+    "followers": 19530,
     "source": "api",
     "reach_7d": 0,
     "profile_views_7d": 0
