@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15T17:17:17.206Z",
+  "updatedAt": "2026-04-15T23:39:32.360Z",
   "date": "2026-04-15",
   "exitAndRest": {
     "streams28d": 46793,
@@ -8533,7 +8533,7 @@
   },
   "youtube": {
     "subscribers": 1600,
-    "views": 28157,
+    "views": 28220,
     "videos": 222,
     "title": "Exit and Rest",
     "analytics": {
@@ -8572,9 +8572,23 @@
           "estimatedMinutesWatched": 0,
           "averageViewDuration": 0,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-04-13",
+          "views": 45,
+          "estimatedMinutesWatched": 1,
+          "averageViewDuration": 6,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
+        {
+          "id": "ruOMb2IKDg0",
+          "title": "You used to be able to sleep anywhere. What happened?",
+          "views": 45,
+          "watchMin": 1,
+          "retention": 40.81
+        },
         {
           "id": "E9AFCwxv0jE",
           "title": "You're working harder than you need to.",
@@ -8600,8 +8614,8 @@
     }
   },
   "pixel_7d": {
-    "PageView": 927,
-    "ViewContent": 480,
+    "PageView": 911,
+    "ViewContent": 482,
     "Lead": 0
   },
   "meta": {
@@ -12797,20 +12811,10 @@
     "subs": [],
     "adspend": []
   },
-  "kalshi": {
-    "balance": "100.00",
-    "mode": "paper",
-    "trades": 60,
-    "open": 8,
-    "wins": 9,
-    "losses": 51,
-    "win_rate": 15,
-    "pnl": -30.18,
-    "last_trade": "2026-03-27"
-  },
+  "kalshi": null,
   "social": {
     "totalPosts7d": 0,
-    "totalScheduled": 4,
+    "totalScheduled": 10,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -12822,19 +12826,19 @@
         "name": "exitandrest",
         "connected": true,
         "posts7d": 0,
-        "postsScheduled": 1
+        "postsScheduled": 3
       },
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
         "posts7d": 0,
-        "postsScheduled": 1
+        "postsScheduled": 3
       },
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
         "posts7d": 0,
-        "postsScheduled": 1
+        "postsScheduled": 2
       },
       "startPage": {
         "name": "exit and rest",
@@ -12846,34 +12850,70 @@
         "name": "exitandrest",
         "connected": true,
         "posts7d": 0,
-        "postsScheduled": 1
+        "postsScheduled": 2
       }
     },
     "recentPosts": [],
     "upcomingPosts": [
       {
-        "id": "69caa4e8e1238afcb8b7032f",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "text": "Ocean sounds work on your brain differently than silence."
-      },
-      {
-        "id": "69caa4e4e1238afcb8b70309",
+        "id": "69dfebc8b5aae064bb2ad0a6",
         "channelId": "68ad007e3d2fbc20d49b79fb",
         "service": "youtube",
-        "text": "Ocean frequencies (infrasound, binaural beating of waves) specifically trigger sleep-onset neural pa"
+        "text": "the earth has been here 4.5 billion years.\n\nyour nervous system knows how to rest like it.\n\nExit and"
       },
       {
-        "id": "69caa4dfe1238afcb8b702e3",
+        "id": "69dfebc5b5aae064bb2ad06b",
         "channelId": "68e44e40ca3a4e6b7467f51d",
         "service": "tiktok",
-        "text": "Ocean sounds work on your brain differently than silence."
+        "text": "the earth has been here 4.5 billion years.\n\nyour nervous system knows how to rest like it.\n\nExit and"
       },
       {
-        "id": "69caa4dbe1238afcb8b7028d",
+        "id": "69dfebc1b5aae064bb2ad041",
         "channelId": "68bb3108a9557ab19bdbad29",
         "service": "instagram",
-        "text": "Ocean frequencies (infrasound, binaural beating of waves) specifically trigger sleep-onset neural pa"
+        "text": "the earth has been here 4.5 billion years.\n\nyour nervous system knows how to rest like it.\n\nExit and"
+      },
+      {
+        "id": "69dfebbeedd42cea55bc06b0",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "the earth has been here 4.5 billion years.\n\nyour nervous system knows how to rest like it.\n\nExit and"
+      },
+      {
+        "id": "69dfeb8dedd42cea55bc058d",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "text": "It's just been running too long. Exit and Rest is ambient music designed to downregulate — 8 continu"
+      },
+      {
+        "id": "69dfeb89edd42cea55bc0567",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "text": "your nervous system is not broken"
+      },
+      {
+        "id": "69dfeb85edd42cea55bc0541",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
+        "text": "It's just been running too long. Exit and Rest is ambient music designed to downregulate — 8 continu"
+      },
+      {
+        "id": "69dfeb80b5aae064bb2ace7e",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "your nervous system is not broken"
+      },
+      {
+        "id": "69dfd28f0558d4f0771f217a",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "text": "the hardest part isn't relaxing.\n\nit's believing you're allowed to.\n\nExit and Rest removes that barr"
+      },
+      {
+        "id": "69dfd28c0558d4f0771f2154",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "text": "the hardest part isn't relaxing.\n\nit's believing you're allowed to.\n\nExit and Rest removes that barr"
       }
     ]
   },
