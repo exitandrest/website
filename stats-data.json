@@ -1,82 +1,78 @@
 {
-  "updatedAt": "2026-04-15T23:39:32.360Z",
-  "date": "2026-04-15",
+  "updatedAt": "2026-04-16T17:17:08.523Z",
+  "date": "2026-04-16",
   "exitAndRest": {
-    "streams28d": 46793,
-    "streams28dChange": 20.9,
-    "listeners28d": 11199,
-    "listenersChange": 61.5,
-    "followers": 81,
-    "saves": 366,
-    "todayStreams": 1385,
-    "todayListeners": 539,
+    "streams28d": 46274,
+    "streams28dChange": 16,
+    "listeners28d": 10994,
+    "listenersChange": 47.4,
+    "followers": 82,
+    "saves": 365,
+    "todayStreams": 1330,
+    "todayListeners": 660,
     "topTracks": [
       {
         "rank": 1,
-        "title": "Insomnia",
-        "streams": "2,626",
-        "saves": "5"
+        "title": "Axis",
+        "streams": "2,528",
+        "saves": "40"
       },
       {
         "rank": 2,
-        "title": "Axis",
-        "streams": "2,504",
-        "saves": "40"
+        "title": "Insomnia",
+        "streams": "2,500",
+        "saves": "5"
       },
       {
         "rank": 3,
         "title": "Center",
-        "streams": "2,324",
-        "saves": "48"
+        "streams": "2,476",
+        "saves": "49"
       },
       {
         "rank": 4,
         "title": "Quiet Street",
-        "streams": "2,243",
-        "saves": "5"
+        "streams": "2,228",
+        "saves": "3"
       },
       {
         "rank": 5,
         "title": "Shadows iii",
-        "streams": "2,005",
+        "streams": "1,945",
         "saves": "1"
       },
       {
         "rank": 6,
         "title": "Response",
-        "streams": "1,982",
+        "streams": "1,834",
         "saves": "18"
       },
       {
         "rank": 7,
         "title": "Balance",
-        "streams": "1,751",
+        "streams": "1,803",
         "saves": "42"
       },
       {
         "rank": 8,
-        "title": "Low Light",
-        "streams": "1,737",
-        "saves": "5"
+        "title": "Core",
+        "streams": "1,647",
+        "saves": "42"
       },
       {
         "rank": 9,
-        "title": "Modern Line",
-        "streams": "1,599",
-        "saves": "1"
+        "title": "Bedtime",
+        "streams": "1,601",
+        "saves": "3"
       },
       {
         "rank": 10,
-        "title": "Core",
-        "streams": "1,597",
-        "saves": "42"
+        "title": "Modern Line",
+        "streams": "1,556",
+        "saves": "1"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-08",
-        "streams": 2001
-      },
       {
         "date": "2026-04-09",
         "streams": 1924
@@ -100,13 +96,13 @@
       {
         "date": "2026-04-14",
         "streams": 1385
+      },
+      {
+        "date": "2026-04-15",
+        "streams": 1330
       }
     ],
     "dailyListeners": [
-      {
-        "date": "2026-04-08",
-        "listeners": 1013
-      },
       {
         "date": "2026-04-09",
         "listeners": 606
@@ -130,6 +126,10 @@
       {
         "date": "2026-04-14",
         "listeners": 539
+      },
+      {
+        "date": "2026-04-15",
+        "listeners": 660
       }
     ],
     "followersHistory": [
@@ -4257,54 +4257,59 @@
         "date": "2026-04-15",
         "followers": 81,
         "saves": 366
+      },
+      {
+        "date": "2026-04-16",
+        "followers": 82,
+        "saves": 365
       }
     ]
   },
   "shelbyArcher": {
-    "streams28d": 15370,
-    "streams28dChange": -24.5,
-    "listeners28d": 3369,
-    "listenersChange": 3.3,
+    "streams28d": 14751,
+    "streams28dChange": -28.6,
+    "listeners28d": 3053,
+    "listenersChange": -13.5,
     "followers": 26,
-    "saves": 24,
-    "todayStreams": 462,
-    "todayListeners": 91,
+    "saves": 25,
+    "todayStreams": 268,
+    "todayListeners": 82,
     "topTracks": [
       {
         "rank": 1,
         "title": "Yin Negative",
-        "streams": "1,639",
+        "streams": "1,528",
         "saves": null
       },
       {
         "rank": 2,
         "title": "Yang Masculine",
-        "streams": "1,176",
+        "streams": "1,152",
         "saves": "1"
       },
       {
         "rank": 3,
         "title": "Mossy Currents",
-        "streams": "1,147",
+        "streams": "1,138",
         "saves": "2"
       },
       {
         "rank": 4,
-        "title": "Yin Feminine",
-        "streams": "1,123",
-        "saves": null
-      },
-      {
-        "rank": 5,
         "title": "Yang Active",
-        "streams": "1,038",
+        "streams": "1,002",
         "saves": "2"
       },
       {
-        "rank": 6,
+        "rank": 5,
         "title": "Yin Passive",
-        "streams": "942",
+        "streams": "896",
         "saves": "1"
+      },
+      {
+        "rank": 6,
+        "title": "Yin Feminine",
+        "streams": "819",
+        "saves": null
       },
       {
         "rank": 7,
@@ -4315,27 +4320,23 @@
       {
         "rank": 8,
         "title": "Whispering Sands",
-        "streams": "582",
+        "streams": "573",
         "saves": null
       },
       {
         "rank": 9,
         "title": "Cotton Clouds",
-        "streams": "555",
+        "streams": "549",
         "saves": null
       },
       {
         "rank": 10,
         "title": "Fragments 3",
-        "streams": "536",
+        "streams": "529",
         "saves": "2"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-08",
-        "streams": 376
-      },
       {
         "date": "2026-04-09",
         "streams": 665
@@ -4359,13 +4360,13 @@
       {
         "date": "2026-04-14",
         "streams": 462
+      },
+      {
+        "date": "2026-04-15",
+        "streams": 268
       }
     ],
     "dailyListeners": [
-      {
-        "date": "2026-04-08",
-        "listeners": 95
-      },
       {
         "date": "2026-04-09",
         "listeners": 92
@@ -4389,6 +4390,10 @@
       {
         "date": "2026-04-14",
         "listeners": 91
+      },
+      {
+        "date": "2026-04-15",
+        "listeners": 82
       }
     ],
     "followersHistory": [
@@ -8521,6 +8526,11 @@
         "date": "2026-04-15",
         "followers": 26,
         "saves": 24
+      },
+      {
+        "date": "2026-04-16",
+        "followers": 26,
+        "saves": 25
       }
     ]
   },
@@ -8534,17 +8544,10 @@
   "youtube": {
     "subscribers": 1600,
     "views": 28220,
-    "videos": 222,
+    "videos": 223,
     "title": "Exit and Rest",
     "analytics": {
       "daily": [
-        {
-          "day": "2026-04-08",
-          "views": 0,
-          "estimatedMinutesWatched": 0,
-          "averageViewDuration": 0,
-          "subscribersGained": 0
-        },
         {
           "day": "2026-04-09",
           "views": 23,
@@ -8602,65 +8605,58 @@
           "views": 24,
           "watchMin": 1,
           "retention": 51.36999999999999
-        },
-        {
-          "id": "9hLDX4C-Ppo",
-          "title": "Most couples spend their evenings on separate screens.",
-          "views": 0,
-          "watchMin": 0,
-          "retention": 0
         }
       ]
     }
   },
   "pixel_7d": {
-    "PageView": 911,
-    "ViewContent": 482,
+    "PageView": 0,
+    "ViewContent": 0,
     "Lead": 0
   },
   "meta": {
-    "spend": "60.10",
-    "spend_7d": "$60",
-    "impressions": 32688,
-    "lpv": 313,
-    "video_views": 4883,
-    "cost_per_lpv": "0.19",
-    "cpm": "1.84",
+    "spend": "59.06",
+    "spend_7d": "$59",
+    "impressions": 31421,
+    "lpv": 289,
+    "video_views": 4769,
+    "cost_per_lpv": "0.20",
+    "cpm": "1.88",
     "top_ads": [
       {
         "id": "120243701096670522",
         "name": "sleep 2 og winner",
-        "spend": 59.53,
-        "impressions": 32417,
-        "link_clicks": 329
+        "spend": 58.47,
+        "impressions": 31142,
+        "link_clicks": 302
       },
       {
         "id": "120243701096630522",
         "name": "sleep 24",
-        "spend": 0.57,
-        "impressions": 271,
-        "link_clicks": 0
+        "spend": 0.59,
+        "impressions": 279,
+        "link_clicks": 1
       }
     ]
   },
   "history": {
     "streams": [
-      2001,
       1924,
       1890,
       2236,
       1985,
       2031,
-      1385
+      1385,
+      1330
     ],
     "stream_dates": [
-      "2026-04-08",
       "2026-04-09",
       "2026-04-10",
       "2026-04-11",
       "2026-04-12",
       "2026-04-13",
-      "2026-04-14"
+      "2026-04-14",
+      "2026-04-15"
     ],
     "followers": [
       0,
@@ -9487,7 +9483,8 @@
       79,
       80,
       80,
-      81
+      81,
+      82
     ],
     "follower_dates": [
       "2024-01-01",
@@ -10314,7 +10311,8 @@
       "2026-04-12",
       "2026-04-13",
       "2026-04-14",
-      "2026-04-15"
+      "2026-04-15",
+      "2026-04-16"
     ],
     "saves": [
       0,
@@ -11141,16 +11139,17 @@
       352,
       362,
       367,
-      366
+      366,
+      365
     ],
     "sa_streams": [
-      376,
       665,
       436,
       617,
       600,
       513,
-      462
+      462,
+      268
     ],
     "sa_followers": [
       1,
@@ -11974,6 +11973,7 @@
       25,
       25,
       25,
+      26,
       26,
       26,
       26,
@@ -12806,15 +12806,16 @@
       "2026-04-12",
       "2026-04-13",
       "2026-04-14",
-      "2026-04-15"
+      "2026-04-15",
+      "2026-04-16"
     ],
     "subs": [],
     "adspend": []
   },
   "kalshi": null,
   "social": {
-    "totalPosts7d": 0,
-    "totalScheduled": 10,
+    "totalPosts7d": 2,
+    "totalScheduled": 8,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -12825,14 +12826,14 @@
       "tiktok": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 0,
-        "postsScheduled": 3
+        "posts7d": 1,
+        "postsScheduled": 2
       },
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
-        "posts7d": 0,
-        "postsScheduled": 3
+        "posts7d": 1,
+        "postsScheduled": 2
       },
       "twitter": {
         "name": "ExitandRest",
@@ -12853,7 +12854,24 @@
         "postsScheduled": 2
       }
     },
-    "recentPosts": [],
+    "recentPosts": [
+      {
+        "id": "69dfd28f0558d4f0771f217a",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "date": "2026-04-15",
+        "text": "the hardest part isn't relaxing.\n\nit's believing you're allowed to.\n\nExit and Rest removes that barrier. 8 hours of permission, loopable.\n\n→ https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN",
+        "analytics": null
+      },
+      {
+        "id": "69dfd28c0558d4f0771f2154",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "date": "2026-04-15",
+        "text": "the hardest part isn't relaxing. it's believing you're allowed to. Exit and Rest removes that barrier. 8 hours of permission, loopable. → https:...",
+        "analytics": null
+      }
+    ],
     "upcomingPosts": [
       {
         "id": "69dfebc8b5aae064bb2ad0a6",
@@ -12902,18 +12920,6 @@
         "channelId": "68ad00a13d2fbc20d49b7a01",
         "service": "twitter",
         "text": "your nervous system is not broken"
-      },
-      {
-        "id": "69dfd28f0558d4f0771f217a",
-        "channelId": "68ad007e3d2fbc20d49b79fb",
-        "service": "youtube",
-        "text": "the hardest part isn't relaxing.\n\nit's believing you're allowed to.\n\nExit and Rest removes that barr"
-      },
-      {
-        "id": "69dfd28c0558d4f0771f2154",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "text": "the hardest part isn't relaxing.\n\nit's believing you're allowed to.\n\nExit and Rest removes that barr"
       }
     ]
   },
@@ -12924,81 +12930,77 @@
     "profile_views_7d": 0
   },
   "spotify": {
-    "streams_28d": 46793,
-    "streams_28d_change": 20.9,
-    "listeners_28d": 11199,
-    "listeners_change": 61.5,
-    "artist_followers": 81,
-    "saves": 366,
-    "today_streams": 1385,
-    "today_listeners": 539,
+    "streams_28d": 46274,
+    "streams_28d_change": 16,
+    "listeners_28d": 10994,
+    "listeners_change": 47.4,
+    "artist_followers": 82,
+    "saves": 365,
+    "today_streams": 1330,
+    "today_listeners": 660,
     "top_tracks": [
       {
         "rank": 1,
-        "title": "Insomnia",
-        "streams": "2,626",
-        "saves": "5"
+        "title": "Axis",
+        "streams": "2,528",
+        "saves": "40"
       },
       {
         "rank": 2,
-        "title": "Axis",
-        "streams": "2,504",
-        "saves": "40"
+        "title": "Insomnia",
+        "streams": "2,500",
+        "saves": "5"
       },
       {
         "rank": 3,
         "title": "Center",
-        "streams": "2,324",
-        "saves": "48"
+        "streams": "2,476",
+        "saves": "49"
       },
       {
         "rank": 4,
         "title": "Quiet Street",
-        "streams": "2,243",
-        "saves": "5"
+        "streams": "2,228",
+        "saves": "3"
       },
       {
         "rank": 5,
         "title": "Shadows iii",
-        "streams": "2,005",
+        "streams": "1,945",
         "saves": "1"
       },
       {
         "rank": 6,
         "title": "Response",
-        "streams": "1,982",
+        "streams": "1,834",
         "saves": "18"
       },
       {
         "rank": 7,
         "title": "Balance",
-        "streams": "1,751",
+        "streams": "1,803",
         "saves": "42"
       },
       {
         "rank": 8,
-        "title": "Low Light",
-        "streams": "1,737",
-        "saves": "5"
+        "title": "Core",
+        "streams": "1,647",
+        "saves": "42"
       },
       {
         "rank": 9,
-        "title": "Modern Line",
-        "streams": "1,599",
-        "saves": "1"
+        "title": "Bedtime",
+        "streams": "1,601",
+        "saves": "3"
       },
       {
         "rank": 10,
-        "title": "Core",
-        "streams": "1,597",
-        "saves": "42"
+        "title": "Modern Line",
+        "streams": "1,556",
+        "saves": "1"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-08",
-        "streams": 2001
-      },
       {
         "date": "2026-04-09",
         "streams": 1924
@@ -13022,54 +13024,58 @@
       {
         "date": "2026-04-14",
         "streams": 1385
+      },
+      {
+        "date": "2026-04-15",
+        "streams": 1330
       }
     ]
   },
   "shelby_archer": {
-    "streams_28d": 15370,
-    "streams_28d_change": -24.5,
-    "listeners_28d": 3369,
-    "listeners_change": 3.3,
+    "streams_28d": 14751,
+    "streams_28d_change": -28.6,
+    "listeners_28d": 3053,
+    "listeners_change": -13.5,
     "artist_followers": 26,
-    "saves": 24,
-    "today_streams": 462,
-    "today_listeners": 91,
+    "saves": 25,
+    "today_streams": 268,
+    "today_listeners": 82,
     "top_tracks": [
       {
         "rank": 1,
         "title": "Yin Negative",
-        "streams": "1,639",
+        "streams": "1,528",
         "saves": null
       },
       {
         "rank": 2,
         "title": "Yang Masculine",
-        "streams": "1,176",
+        "streams": "1,152",
         "saves": "1"
       },
       {
         "rank": 3,
         "title": "Mossy Currents",
-        "streams": "1,147",
+        "streams": "1,138",
         "saves": "2"
       },
       {
         "rank": 4,
-        "title": "Yin Feminine",
-        "streams": "1,123",
-        "saves": null
-      },
-      {
-        "rank": 5,
         "title": "Yang Active",
-        "streams": "1,038",
+        "streams": "1,002",
         "saves": "2"
       },
       {
-        "rank": 6,
+        "rank": 5,
         "title": "Yin Passive",
-        "streams": "942",
+        "streams": "896",
         "saves": "1"
+      },
+      {
+        "rank": 6,
+        "title": "Yin Feminine",
+        "streams": "819",
+        "saves": null
       },
       {
         "rank": 7,
@@ -13080,27 +13086,23 @@
       {
         "rank": 8,
         "title": "Whispering Sands",
-        "streams": "582",
+        "streams": "573",
         "saves": null
       },
       {
         "rank": 9,
         "title": "Cotton Clouds",
-        "streams": "555",
+        "streams": "549",
         "saves": null
       },
       {
         "rank": 10,
         "title": "Fragments 3",
-        "streams": "536",
+        "streams": "529",
         "saves": "2"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-08",
-        "streams": 376
-      },
       {
         "date": "2026-04-09",
         "streams": 665
@@ -13124,6 +13126,10 @@
       {
         "date": "2026-04-14",
         "streams": 462
+      },
+      {
+        "date": "2026-04-15",
+        "streams": 268
       }
     ]
   }
