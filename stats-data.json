@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18T14:49:45.724Z",
+  "updatedAt": "2026-04-18T17:16:53.673Z",
   "date": "2026-04-18",
   "exitAndRest": {
     "streams28d": 47211,
@@ -8644,14 +8644,14 @@
     }
   },
   "pixel_7d": {
-    "PageView": 874,
-    "ViewContent": 488,
+    "PageView": 871,
+    "ViewContent": 484,
     "Lead": 0
   },
   "meta": {
-    "spend": "59.53",
+    "spend": "59.54",
     "spend_7d": "$60",
-    "impressions": 32034,
+    "impressions": 32036,
     "lpv": 307,
     "video_views": 4958,
     "cost_per_lpv": "0.19",
@@ -8660,8 +8660,8 @@
       {
         "id": "120243701096670522",
         "name": "sleep 2 og winner",
-        "spend": 58.94,
-        "impressions": 31758,
+        "spend": 58.95,
+        "impressions": 31760,
         "link_clicks": 327
       },
       {
