@@ -1,82 +1,78 @@
 {
-  "updatedAt": "2026-04-18T17:16:53.673Z",
-  "date": "2026-04-18",
+  "updatedAt": "2026-04-19T15:34:43.170Z",
+  "date": "2026-04-19",
   "exitAndRest": {
-    "streams28d": 47211,
-    "streams28dChange": 14.8,
-    "listeners28d": 11327,
-    "listenersChange": 43.3,
-    "followers": 84,
-    "saves": 360,
-    "todayStreams": 1758,
-    "todayListeners": 805,
+    "streams28d": 48156,
+    "streams28dChange": 16.8,
+    "listeners28d": 11667,
+    "listenersChange": 46,
+    "followers": 85,
+    "saves": 359,
+    "todayStreams": 1722,
+    "todayListeners": 671,
     "topTracks": [
       {
         "rank": 1,
         "title": "Center",
-        "streams": "2,789",
-        "saves": "50"
+        "streams": "3,075",
+        "saves": "52"
       },
       {
         "rank": 2,
         "title": "Axis",
-        "streams": "2,619",
+        "streams": "2,659",
         "saves": "40"
       },
       {
         "rank": 3,
         "title": "Insomnia",
-        "streams": "2,408",
+        "streams": "2,382",
         "saves": "5"
       },
       {
         "rank": 4,
         "title": "Quiet Street",
-        "streams": "2,287",
+        "streams": "2,318",
         "saves": "2"
       },
       {
         "rank": 5,
+        "title": "Balance",
+        "streams": "2,029",
+        "saves": "42"
+      },
+      {
+        "rank": 6,
         "title": "Shadows iii",
         "streams": "1,963",
         "saves": "1"
       },
       {
-        "rank": 6,
-        "title": "Balance",
-        "streams": "1,946",
-        "saves": "42"
-      },
-      {
         "rank": 7,
         "title": "Core",
-        "streams": "1,806",
+        "streams": "1,928",
         "saves": "43"
       },
       {
         "rank": 8,
         "title": "Response",
-        "streams": "1,764",
-        "saves": "17"
+        "streams": "1,763",
+        "saves": "14"
       },
       {
         "rank": 9,
         "title": "Bedtime",
-        "streams": "1,658",
+        "streams": "1,668",
         "saves": "3"
       },
       {
         "rank": 10,
         "title": "Modern Line",
-        "streams": "1,615",
+        "streams": "1,641",
         "saves": "1"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-11",
-        "streams": 2236
-      },
       {
         "date": "2026-04-12",
         "streams": 1985
@@ -100,13 +96,13 @@
       {
         "date": "2026-04-17",
         "streams": 1758
+      },
+      {
+        "date": "2026-04-18",
+        "streams": 1722
       }
     ],
     "dailyListeners": [
-      {
-        "date": "2026-04-11",
-        "listeners": 592
-      },
       {
         "date": "2026-04-12",
         "listeners": 645
@@ -130,6 +126,10 @@
       {
         "date": "2026-04-17",
         "listeners": 805
+      },
+      {
+        "date": "2026-04-18",
+        "listeners": 671
       }
     ],
     "followersHistory": [
@@ -4272,85 +4272,86 @@
         "date": "2026-04-18",
         "followers": 84,
         "saves": 360
+      },
+      {
+        "date": "2026-04-19",
+        "followers": 85,
+        "saves": 359
       }
     ]
   },
   "shelbyArcher": {
-    "streams28d": 14195,
-    "streams28dChange": -31,
-    "listeners28d": 2924,
-    "listenersChange": -19.7,
+    "streams28d": 14303,
+    "streams28dChange": -30.1,
+    "listeners28d": 2870,
+    "listenersChange": -21.3,
     "followers": 26,
     "saves": 24,
-    "todayStreams": 553,
-    "todayListeners": 126,
+    "todayStreams": 587,
+    "todayListeners": 119,
     "topTracks": [
       {
         "rank": 1,
         "title": "Yin Negative",
-        "streams": "1,394",
+        "streams": "1,357",
         "saves": null
       },
       {
         "rank": 2,
         "title": "Mossy Currents",
-        "streams": "1,162",
+        "streams": "1,201",
         "saves": "1"
       },
       {
         "rank": 3,
         "title": "Yang Masculine",
-        "streams": "1,045",
+        "streams": "1,058",
         "saves": "1"
       },
       {
         "rank": 4,
         "title": "Yang Active",
-        "streams": "966",
+        "streams": "976",
         "saves": "2"
       },
       {
         "rank": 5,
         "title": "Velvet Echoes",
-        "streams": "827",
+        "streams": "838",
         "saves": "2"
       },
       {
         "rank": 6,
         "title": "Yin Passive",
-        "streams": "790",
+        "streams": "764",
         "saves": "1"
       },
       {
         "rank": 7,
         "title": "Yin Feminine",
-        "streams": "665",
+        "streams": "589",
         "saves": null
       },
       {
         "rank": 8,
         "title": "Whispering Sands",
-        "streams": "569",
+        "streams": "575",
         "saves": null
       },
       {
         "rank": 9,
         "title": "Cotton Clouds",
-        "streams": "553",
+        "streams": "562",
         "saves": null
       },
       {
         "rank": 10,
         "title": "Fragments 3",
-        "streams": "529",
+        "streams": "536",
         "saves": "2"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-11",
-        "streams": 617
-      },
       {
         "date": "2026-04-12",
         "streams": 600
@@ -4374,13 +4375,13 @@
       {
         "date": "2026-04-17",
         "streams": 553
+      },
+      {
+        "date": "2026-04-18",
+        "streams": 587
       }
     ],
     "dailyListeners": [
-      {
-        "date": "2026-04-11",
-        "listeners": 153
-      },
       {
         "date": "2026-04-12",
         "listeners": 125
@@ -4404,6 +4405,10 @@
       {
         "date": "2026-04-17",
         "listeners": 126
+      },
+      {
+        "date": "2026-04-18",
+        "listeners": 119
       }
     ],
     "followersHistory": [
@@ -8551,6 +8556,11 @@
         "date": "2026-04-18",
         "followers": 26,
         "saves": 24
+      },
+      {
+        "date": "2026-04-19",
+        "followers": 26,
+        "saves": 24
       }
     ]
   },
@@ -8563,18 +8573,11 @@
   },
   "youtube": {
     "subscribers": 1600,
-    "views": 28254,
-    "videos": 225,
+    "views": 28288,
+    "videos": 226,
     "title": "Exit and Rest",
     "analytics": {
       "daily": [
-        {
-          "day": "2026-04-11",
-          "views": 24,
-          "estimatedMinutesWatched": 0,
-          "averageViewDuration": 6,
-          "subscribersGained": 0
-        },
         {
           "day": "2026-04-12",
           "views": 0,
@@ -8591,7 +8594,7 @@
         },
         {
           "day": "2026-04-14",
-          "views": 61,
+          "views": 59,
           "estimatedMinutesWatched": 2,
           "averageViewDuration": 9,
           "subscribersGained": 0
@@ -8602,15 +8605,22 @@
           "estimatedMinutesWatched": 1,
           "averageViewDuration": 7,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-04-16",
+          "views": 7,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 5,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
         {
           "id": "bpg7LRoodQ4",
           "title": "Anxiety lives in your body, not your mind. This reaches it.",
-          "views": 57,
-          "watchMin": 1,
-          "retention": 51.07000000000001
+          "views": 56,
+          "watchMin": 2,
+          "retention": 49.24
         },
         {
           "id": "ruOMb2IKDg0",
@@ -8622,16 +8632,9 @@
         {
           "id": "V3OMOoHB29Y",
           "title": "Exit and Rest",
-          "views": 33,
-          "watchMin": 1,
+          "views": 38,
+          "watchMin": 2,
           "retention": 44.36
-        },
-        {
-          "id": "E9AFCwxv0jE",
-          "title": "You're working harder than you need to.",
-          "views": 25,
-          "watchMin": 0,
-          "retention": 40.09
         },
         {
           "id": "9hLDX4C-Ppo",
@@ -8639,30 +8642,37 @@
           "views": 1,
           "watchMin": 0,
           "retention": 32.17
+        },
+        {
+          "id": "rOHh7RiXIQA",
+          "title": "ambient music to calm yourself",
+          "views": 1,
+          "watchMin": 0,
+          "retention": 0
         }
       ]
     }
   },
   "pixel_7d": {
-    "PageView": 871,
-    "ViewContent": 484,
+    "PageView": 874,
+    "ViewContent": 483,
     "Lead": 0
   },
   "meta": {
-    "spend": "59.54",
-    "spend_7d": "$60",
-    "impressions": 32036,
-    "lpv": 307,
-    "video_views": 4958,
-    "cost_per_lpv": "0.19",
+    "spend": "58.62",
+    "spend_7d": "$59",
+    "impressions": 31530,
+    "lpv": 298,
+    "video_views": 4769,
+    "cost_per_lpv": "0.20",
     "cpm": "1.86",
     "top_ads": [
       {
         "id": "120243701096670522",
         "name": "sleep 2 og winner",
-        "spend": 58.95,
-        "impressions": 31760,
-        "link_clicks": 327
+        "spend": 58.03,
+        "impressions": 31254,
+        "link_clicks": 319
       },
       {
         "id": "120243701096630522",
@@ -8675,22 +8685,22 @@
   },
   "history": {
     "streams": [
-      2236,
       1985,
       2031,
       1385,
       1330,
       1742,
-      1758
+      1758,
+      1722
     ],
     "stream_dates": [
-      "2026-04-11",
       "2026-04-12",
       "2026-04-13",
       "2026-04-14",
       "2026-04-15",
       "2026-04-16",
-      "2026-04-17"
+      "2026-04-17",
+      "2026-04-18"
     ],
     "followers": [
       0,
@@ -9520,7 +9530,8 @@
       81,
       82,
       84,
-      84
+      84,
+      85
     ],
     "follower_dates": [
       "2024-01-01",
@@ -10350,7 +10361,8 @@
       "2026-04-15",
       "2026-04-16",
       "2026-04-17",
-      "2026-04-18"
+      "2026-04-18",
+      "2026-04-19"
     ],
     "saves": [
       0,
@@ -11180,16 +11192,17 @@
       366,
       365,
       365,
-      360
+      360,
+      359
     ],
     "sa_streams": [
-      617,
       600,
       513,
       462,
       268,
       365,
-      553
+      553,
+      587
     ],
     "sa_followers": [
       1,
@@ -12013,6 +12026,7 @@
       25,
       25,
       25,
+      26,
       26,
       26,
       26,
@@ -12851,15 +12865,16 @@
       "2026-04-15",
       "2026-04-16",
       "2026-04-17",
-      "2026-04-18"
+      "2026-04-18",
+      "2026-04-19"
     ],
     "subs": [],
     "adspend": []
   },
   "kalshi": null,
   "social": {
-    "totalPosts7d": 7,
-    "totalScheduled": 8,
+    "totalPosts7d": 10,
+    "totalScheduled": 4,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -12870,20 +12885,20 @@
       "tiktok": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 3,
-        "postsScheduled": 2
+        "posts7d": 4,
+        "postsScheduled": 1
       },
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
-        "posts7d": 3,
-        "postsScheduled": 2
+        "posts7d": 4,
+        "postsScheduled": 1
       },
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 1,
-        "postsScheduled": 2
+        "posts7d": 2,
+        "postsScheduled": 1
       },
       "startPage": {
         "name": "exit and rest",
@@ -12895,10 +12910,34 @@
         "name": "exitandrest",
         "connected": true,
         "posts7d": 0,
-        "postsScheduled": 2
+        "postsScheduled": 1
       }
     },
     "recentPosts": [
+      {
+        "id": "69e31efbd68594fa387f108c",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-04-18",
+        "text": "Lower cortisol. Longer life. Most people never make this connection.",
+        "analytics": null
+      },
+      {
+        "id": "69e31efbd68594fa387f1066",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "date": "2026-04-18",
+        "text": "Health/longevity hook — cortisol reduction through ambient music is documented. High cortisol = accelerated aging, poor sleep, immune suppression. Ambient music is free preventive medicine. The daily ",
+        "analytics": null
+      },
+      {
+        "id": "69e31ef83a4ea0d014397886",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "date": "2026-04-18",
+        "text": "Lower cortisol. Longer life. Most people never make this connection.",
+        "analytics": null
+      },
       {
         "id": "69e19a25c5b6611f0ce88c29",
         "channelId": "68ad007e3d2fbc20d49b79fb",
@@ -12936,7 +12975,7 @@
         "channelId": "68e44e40ca3a4e6b7467f51d",
         "service": "tiktok",
         "date": "2026-04-15",
-        "text": "the earth has been here 4.5 billion years.\n\nyour nervous system knows how to rest like it.\n\nExit and Rest is that frequency — deep time, ancient ca...",
+        "text": "the earth has been here 4.5 billion years. your nervous system knows how to rest like it. Exit and Rest is that frequency — deep time, ancient ca...",
         "analytics": null
       },
       {
@@ -12980,115 +13019,87 @@
         "channelId": "68bb3108a9557ab19bdbad29",
         "service": "instagram",
         "text": "Holiday anxiety reframe — not everyone feels peaceful on Easter. Family pressure, grief, expectation"
-      },
-      {
-        "id": "69e31efbd68594fa387f108c",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "text": "Lower cortisol. Longer life. Most people never make this connection."
-      },
-      {
-        "id": "69e31efbd68594fa387f1066",
-        "channelId": "68ad007e3d2fbc20d49b79fb",
-        "service": "youtube",
-        "text": "Health/longevity hook — cortisol reduction through ambient music is documented. High cortisol = acce"
-      },
-      {
-        "id": "69e31ef83a4ea0d014397886",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "text": "Lower cortisol. Longer life. Most people never make this connection."
-      },
-      {
-        "id": "69e31ef5d68594fa387f1007",
-        "channelId": "68bb3108a9557ab19bdbad29",
-        "service": "instagram",
-        "text": "Health/longevity hook — cortisol reduction through ambient music is documented. High cortisol = acce"
       }
     ]
   },
   "instagram": {
-    "followers": 19543,
+    "followers": 19546,
     "source": "api",
     "reach_7d": 0,
     "profile_views_7d": 0
   },
   "spotify": {
-    "streams_28d": 47211,
-    "streams_28d_change": 14.8,
-    "listeners_28d": 11327,
-    "listeners_change": 43.3,
-    "artist_followers": 84,
-    "saves": 360,
-    "today_streams": 1758,
-    "today_listeners": 805,
+    "streams_28d": 48156,
+    "streams_28d_change": 16.8,
+    "listeners_28d": 11667,
+    "listeners_change": 46,
+    "artist_followers": 85,
+    "saves": 359,
+    "today_streams": 1722,
+    "today_listeners": 671,
     "top_tracks": [
       {
         "rank": 1,
         "title": "Center",
-        "streams": "2,789",
-        "saves": "50"
+        "streams": "3,075",
+        "saves": "52"
       },
       {
         "rank": 2,
         "title": "Axis",
-        "streams": "2,619",
+        "streams": "2,659",
         "saves": "40"
       },
       {
         "rank": 3,
         "title": "Insomnia",
-        "streams": "2,408",
+        "streams": "2,382",
         "saves": "5"
       },
       {
         "rank": 4,
         "title": "Quiet Street",
-        "streams": "2,287",
+        "streams": "2,318",
         "saves": "2"
       },
       {
         "rank": 5,
+        "title": "Balance",
+        "streams": "2,029",
+        "saves": "42"
+      },
+      {
+        "rank": 6,
         "title": "Shadows iii",
         "streams": "1,963",
         "saves": "1"
       },
       {
-        "rank": 6,
-        "title": "Balance",
-        "streams": "1,946",
-        "saves": "42"
-      },
-      {
         "rank": 7,
         "title": "Core",
-        "streams": "1,806",
+        "streams": "1,928",
         "saves": "43"
       },
       {
         "rank": 8,
         "title": "Response",
-        "streams": "1,764",
-        "saves": "17"
+        "streams": "1,763",
+        "saves": "14"
       },
       {
         "rank": 9,
         "title": "Bedtime",
-        "streams": "1,658",
+        "streams": "1,668",
         "saves": "3"
       },
       {
         "rank": 10,
         "title": "Modern Line",
-        "streams": "1,615",
+        "streams": "1,641",
         "saves": "1"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-11",
-        "streams": 2236
-      },
       {
         "date": "2026-04-12",
         "streams": 1985
@@ -13112,85 +13123,85 @@
       {
         "date": "2026-04-17",
         "streams": 1758
+      },
+      {
+        "date": "2026-04-18",
+        "streams": 1722
       }
     ]
   },
   "shelby_archer": {
-    "streams_28d": 14195,
-    "streams_28d_change": -31,
-    "listeners_28d": 2924,
-    "listeners_change": -19.7,
+    "streams_28d": 14303,
+    "streams_28d_change": -30.1,
+    "listeners_28d": 2870,
+    "listeners_change": -21.3,
     "artist_followers": 26,
     "saves": 24,
-    "today_streams": 553,
-    "today_listeners": 126,
+    "today_streams": 587,
+    "today_listeners": 119,
     "top_tracks": [
       {
         "rank": 1,
         "title": "Yin Negative",
-        "streams": "1,394",
+        "streams": "1,357",
         "saves": null
       },
       {
         "rank": 2,
         "title": "Mossy Currents",
-        "streams": "1,162",
+        "streams": "1,201",
         "saves": "1"
       },
       {
         "rank": 3,
         "title": "Yang Masculine",
-        "streams": "1,045",
+        "streams": "1,058",
         "saves": "1"
       },
       {
         "rank": 4,
         "title": "Yang Active",
-        "streams": "966",
+        "streams": "976",
         "saves": "2"
       },
       {
         "rank": 5,
         "title": "Velvet Echoes",
-        "streams": "827",
+        "streams": "838",
         "saves": "2"
       },
       {
         "rank": 6,
         "title": "Yin Passive",
-        "streams": "790",
+        "streams": "764",
         "saves": "1"
       },
       {
         "rank": 7,
         "title": "Yin Feminine",
-        "streams": "665",
+        "streams": "589",
         "saves": null
       },
       {
         "rank": 8,
         "title": "Whispering Sands",
-        "streams": "569",
+        "streams": "575",
         "saves": null
       },
       {
         "rank": 9,
         "title": "Cotton Clouds",
-        "streams": "553",
+        "streams": "562",
         "saves": null
       },
       {
         "rank": 10,
         "title": "Fragments 3",
-        "streams": "529",
+        "streams": "536",
         "saves": "2"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-11",
-        "streams": 617
-      },
       {
         "date": "2026-04-12",
         "streams": 600
@@ -13214,6 +13225,10 @@
       {
         "date": "2026-04-17",
         "streams": 553
+      },
+      {
+        "date": "2026-04-18",
+        "streams": 587
       }
     ]
   }
