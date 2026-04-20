@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-19T17:23:11.180Z",
-  "date": "2026-04-19",
+  "updatedAt": "2026-04-20T14:16:02.651Z",
+  "date": "2026-04-20",
   "exitAndRest": {
     "streams28d": 48156,
     "streams28dChange": 16.8,
@@ -4275,6 +4275,11 @@
       },
       {
         "date": "2026-04-19",
+        "followers": 85,
+        "saves": 359
+      },
+      {
+        "date": "2026-04-20",
         "followers": 85,
         "saves": 359
       }
@@ -8561,6 +8566,11 @@
         "date": "2026-04-19",
         "followers": 26,
         "saves": 24
+      },
+      {
+        "date": "2026-04-20",
+        "followers": 26,
+        "saves": 24
       }
     ]
   },
@@ -8572,19 +8582,12 @@
     "topTracks": []
   },
   "youtube": {
-    "subscribers": 1600,
+    "subscribers": 1590,
     "views": 28331,
-    "videos": 226,
+    "videos": 227,
     "title": "Exit and Rest",
     "analytics": {
       "daily": [
-        {
-          "day": "2026-04-12",
-          "views": 0,
-          "estimatedMinutesWatched": 0,
-          "averageViewDuration": 0,
-          "subscribersGained": 0
-        },
         {
           "day": "2026-04-13",
           "views": 45,
@@ -8612,13 +8615,20 @@
           "estimatedMinutesWatched": 0,
           "averageViewDuration": 5,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-04-17",
+          "views": 29,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 7,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
         {
           "id": "bpg7LRoodQ4",
           "title": "Anxiety lives in your body, not your mind. This reaches it.",
-          "views": 56,
+          "views": 57,
           "watchMin": 2,
           "retention": 49.24
         },
@@ -8632,53 +8642,53 @@
         {
           "id": "V3OMOoHB29Y",
           "title": "Exit and Rest",
-          "views": 38,
+          "views": 44,
           "watchMin": 2,
           "retention": 44.36
         },
         {
-          "id": "9hLDX4C-Ppo",
-          "title": "Most couples spend their evenings on separate screens.",
-          "views": 1,
+          "id": "b2ZFDcbrQdA",
+          "title": "quiet isn't empty",
+          "views": 18,
           "watchMin": 0,
-          "retention": 32.17
+          "retention": 43.82
         },
         {
-          "id": "rOHh7RiXIQA",
-          "title": "ambient music to calm yourself",
-          "views": 1,
+          "id": "E9AFCwxv0jE",
+          "title": "You're working harder than you need to.",
+          "views": 4,
           "watchMin": 0,
-          "retention": 0
+          "retention": 49.75
         }
       ]
     }
   },
   "pixel_7d": {
-    "PageView": 874,
-    "ViewContent": 483,
+    "PageView": 899,
+    "ViewContent": 507,
     "Lead": 0
   },
   "meta": {
-    "spend": "58.62",
+    "spend": "58.83",
     "spend_7d": "$59",
-    "impressions": 31530,
-    "lpv": 298,
-    "video_views": 4769,
+    "impressions": 31211,
+    "lpv": 300,
+    "video_views": 4722,
     "cost_per_lpv": "0.20",
-    "cpm": "1.86",
+    "cpm": "1.88",
     "top_ads": [
       {
         "id": "120243701096670522",
         "name": "sleep 2 og winner",
-        "spend": 58.03,
-        "impressions": 31254,
-        "link_clicks": 319
+        "spend": 58.72,
+        "impressions": 31162,
+        "link_clicks": 317
       },
       {
         "id": "120243701096630522",
         "name": "sleep 24",
-        "spend": 0.59,
-        "impressions": 276,
+        "spend": 0.11,
+        "impressions": 49,
         "link_clicks": 1
       }
     ]
@@ -9531,6 +9541,7 @@
       82,
       84,
       84,
+      85,
       85
     ],
     "follower_dates": [
@@ -10362,7 +10373,8 @@
       "2026-04-16",
       "2026-04-17",
       "2026-04-18",
-      "2026-04-19"
+      "2026-04-19",
+      "2026-04-20"
     ],
     "saves": [
       0,
@@ -11193,6 +11205,7 @@
       365,
       365,
       360,
+      359,
       359
     ],
     "sa_streams": [
@@ -12034,6 +12047,7 @@
       26,
       26,
       26,
+      26,
       26
     ],
     "sa_follower_dates": [
@@ -12866,7 +12880,8 @@
       "2026-04-16",
       "2026-04-17",
       "2026-04-18",
-      "2026-04-19"
+      "2026-04-19",
+      "2026-04-20"
     ],
     "subs": [],
     "adspend": []
@@ -12874,7 +12889,7 @@
   "kalshi": null,
   "social": {
     "totalPosts7d": 10,
-    "totalScheduled": 4,
+    "totalScheduled": 3,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -12885,7 +12900,7 @@
       "tiktok": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 4,
+        "posts7d": 3,
         "postsScheduled": 1
       },
       "youtube": {
@@ -12897,7 +12912,7 @@
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 2,
+        "posts7d": 3,
         "postsScheduled": 1
       },
       "startPage": {
@@ -12910,10 +12925,34 @@
         "name": "exitandrest",
         "connected": true,
         "posts7d": 0,
-        "postsScheduled": 1
+        "postsScheduled": 0
       }
     },
     "recentPosts": [
+      {
+        "id": "69e31f2a3a4ea0d014397be9",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-04-18",
+        "text": "Easter doesn't have to feel like performance.",
+        "analytics": null
+      },
+      {
+        "id": "69e31f2a3a4ea0d014397aea",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "date": "2026-04-18",
+        "text": "Holiday anxiety reframe — not everyone feels peaceful on Easter. Family pressure, grief, expectation. Ambient music is permission to actually slow down without performing peace. The 3-hour version on ",
+        "analytics": null
+      },
+      {
+        "id": "69e31f27d68594fa387f12e6",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "date": "2026-04-18",
+        "text": "Easter doesn't have to feel like performance.",
+        "analytics": null
+      },
       {
         "id": "69e31efbd68594fa387f108c",
         "channelId": "68ad00a13d2fbc20d49b7a01",
@@ -12969,61 +13008,31 @@
         "date": "2026-04-15",
         "text": "the earth has been here 4.5 billion years.\n\nyour nervous system knows how to rest like it.\n\nExit and Rest is that frequency — deep time, ancient calm.\n\n→ https://open.spotify.com/artist/6mfcGE04ZwO1pT",
         "analytics": null
-      },
-      {
-        "id": "69dfebc5b5aae064bb2ad06b",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "date": "2026-04-15",
-        "text": "the earth has been here 4.5 billion years. your nervous system knows how to rest like it. Exit and Rest is that frequency — deep time, ancient ca...",
-        "analytics": null
-      },
-      {
-        "id": "69dfd28f0558d4f0771f217a",
-        "channelId": "68ad007e3d2fbc20d49b79fb",
-        "service": "youtube",
-        "date": "2026-04-15",
-        "text": "the hardest part isn't relaxing.\n\nit's believing you're allowed to.\n\nExit and Rest removes that barrier. 8 hours of permission, loopable.\n\n→ https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN",
-        "analytics": null
-      },
-      {
-        "id": "69dfd28c0558d4f0771f2154",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "date": "2026-04-15",
-        "text": "the hardest part isn't relaxing. it's believing you're allowed to. Exit and Rest removes that barrier. 8 hours of permission, loopable. → https:...",
-        "analytics": null
       }
     ],
     "upcomingPosts": [
       {
-        "id": "69e31f2a3a4ea0d014397be9",
+        "id": "69e57bc2932e4f62195a4178",
         "channelId": "68ad00a13d2fbc20d49b7a01",
         "service": "twitter",
-        "text": "Easter doesn't have to feel like performance."
+        "text": "space between notes"
       },
       {
-        "id": "69e31f2a3a4ea0d014397aea",
+        "id": "69e57bc2932e4f62195a4152",
         "channelId": "68ad007e3d2fbc20d49b79fb",
         "service": "youtube",
-        "text": "Holiday anxiety reframe — not everyone feels peaceful on Easter. Family pressure, grief, expectation"
+        "text": "that's where it lives. the gap. the breath. the almost. Exit and Rest. follow + save on Spotify. lin"
       },
       {
-        "id": "69e31f27d68594fa387f12e6",
+        "id": "69e57bbfd7b70b6ed8d67861",
         "channelId": "68e44e40ca3a4e6b7467f51d",
         "service": "tiktok",
-        "text": "Easter doesn't have to feel like performance."
-      },
-      {
-        "id": "69e31f233a4ea0d014397950",
-        "channelId": "68bb3108a9557ab19bdbad29",
-        "service": "instagram",
-        "text": "Holiday anxiety reframe — not everyone feels peaceful on Easter. Family pressure, grief, expectation"
+        "text": "space between notes"
       }
     ]
   },
   "instagram": {
-    "followers": 19546,
+    "followers": 19544,
     "source": "api",
     "reach_7d": 0,
     "profile_views_7d": 0
