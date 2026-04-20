@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20T14:16:02.651Z",
+  "updatedAt": "2026-04-20T17:16:56.631Z",
   "date": "2026-04-20",
   "exitAndRest": {
     "streams28d": 48156,
@@ -8664,7 +8664,7 @@
     }
   },
   "pixel_7d": {
-    "PageView": 899,
+    "PageView": 900,
     "ViewContent": 507,
     "Lead": 0
   },
@@ -12889,7 +12889,7 @@
   "kalshi": null,
   "social": {
     "totalPosts7d": 10,
-    "totalScheduled": 3,
+    "totalScheduled": 1,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -12901,19 +12901,19 @@
         "name": "exitandrest",
         "connected": true,
         "posts7d": 3,
-        "postsScheduled": 1
+        "postsScheduled": 0
       },
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
-        "posts7d": 4,
+        "posts7d": 3,
         "postsScheduled": 1
       },
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 3,
-        "postsScheduled": 1
+        "posts7d": 4,
+        "postsScheduled": 0
       },
       "startPage": {
         "name": "exit and rest",
@@ -12929,6 +12929,22 @@
       }
     },
     "recentPosts": [
+      {
+        "id": "69e57bc2932e4f62195a4178",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-04-20",
+        "text": "space between notes",
+        "analytics": null
+      },
+      {
+        "id": "69e57bbfd7b70b6ed8d67861",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "date": "2026-04-20",
+        "text": "space between notes",
+        "analytics": null
+      },
       {
         "id": "69e31f2a3a4ea0d014397be9",
         "channelId": "68ad00a13d2fbc20d49b7a01",
@@ -12992,42 +13008,14 @@
         "date": "2026-04-17",
         "text": "quiet isn't empty",
         "analytics": null
-      },
-      {
-        "id": "69e19a21a6f1f9c797ee7525",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "date": "2026-04-17",
-        "text": "quiet isn't empty",
-        "analytics": null
-      },
-      {
-        "id": "69dfebc8b5aae064bb2ad0a6",
-        "channelId": "68ad007e3d2fbc20d49b79fb",
-        "service": "youtube",
-        "date": "2026-04-15",
-        "text": "the earth has been here 4.5 billion years.\n\nyour nervous system knows how to rest like it.\n\nExit and Rest is that frequency — deep time, ancient calm.\n\n→ https://open.spotify.com/artist/6mfcGE04ZwO1pT",
-        "analytics": null
       }
     ],
     "upcomingPosts": [
-      {
-        "id": "69e57bc2932e4f62195a4178",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "text": "space between notes"
-      },
       {
         "id": "69e57bc2932e4f62195a4152",
         "channelId": "68ad007e3d2fbc20d49b79fb",
         "service": "youtube",
         "text": "that's where it lives. the gap. the breath. the almost. Exit and Rest. follow + save on Spotify. lin"
-      },
-      {
-        "id": "69e57bbfd7b70b6ed8d67861",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "text": "space between notes"
       }
     ]
   },
