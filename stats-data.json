@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T15:26:34.544Z",
+  "updatedAt": "2026-04-26T17:03:33.431Z",
   "date": "2026-04-26",
   "exitAndRest": {
     "streams28d": 46895,
@@ -8638,8 +8638,8 @@
     "error": "no data"
   },
   "pixel_7d": {
-    "PageView": 308,
-    "ViewContent": 148,
+    "PageView": 305,
+    "ViewContent": 146,
     "Lead": 0
   },
   "meta": {
