@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-25T17:15:23.604Z",
-  "date": "2026-04-25",
+  "updatedAt": "2026-04-26T02:55:02.621Z",
+  "date": "2026-04-26",
   "exitAndRest": {
     "streams28d": 47440,
     "streams28dChange": 10.8,
@@ -4300,6 +4300,11 @@
       },
       {
         "date": "2026-04-25",
+        "followers": 87,
+        "saves": 99
+      },
+      {
+        "date": "2026-04-26",
         "followers": 87,
         "saves": 99
       }
@@ -8611,6 +8616,11 @@
         "date": "2026-04-25",
         "followers": 26,
         "saves": 27
+      },
+      {
+        "date": "2026-04-26",
+        "followers": 26,
+        "saves": 27
       }
     ]
   },
@@ -8628,8 +8638,8 @@
     "error": "no data"
   },
   "pixel_7d": {
-    "PageView": 446,
-    "ViewContent": 214,
+    "PageView": 371,
+    "ViewContent": 176,
     "Lead": 0
   },
   "meta": {
@@ -9510,6 +9520,7 @@
       87,
       87,
       87,
+      87,
       87
     ],
     "follower_dates": [
@@ -10346,7 +10357,8 @@
       "2026-04-21",
       "2026-04-23",
       "2026-04-24",
-      "2026-04-25"
+      "2026-04-25",
+      "2026-04-26"
     ],
     "saves": [
       0,
@@ -11182,6 +11194,7 @@
       342,
       212,
       101,
+      99,
       99
     ],
     "sa_streams": [
@@ -12015,6 +12028,7 @@
       25,
       25,
       25,
+      26,
       26,
       26,
       26,
@@ -12865,7 +12879,8 @@
       "2026-04-21",
       "2026-04-23",
       "2026-04-24",
-      "2026-04-25"
+      "2026-04-25",
+      "2026-04-26"
     ],
     "subs": [],
     "adspend": []
@@ -12884,19 +12899,19 @@
       "tiktok": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 2,
+        "posts7d": 1,
         "postsScheduled": 0
       },
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
-        "posts7d": 4,
+        "posts7d": 3,
         "postsScheduled": 0
       },
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 4,
+        "posts7d": 6,
         "postsScheduled": 0
       },
       "startPage": {
@@ -12913,6 +12928,22 @@
       }
     },
     "recentPosts": [
+      {
+        "id": "69ed4b42e56655619b920b68",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-04-25",
+        "text": "OpenClaw dashboard test — 4/25/2026, 4:16:14 PM",
+        "analytics": null
+      },
+      {
+        "id": "69ed4539e56655619b91eaa0",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-04-25",
+        "text": "20 minutes before you both fall asleep. That's the most intimate time of your week.",
+        "analytics": null
+      },
       {
         "id": "69ea76b3a915dd6c1333983a",
         "channelId": "68ad00a13d2fbc20d49b7a01",
@@ -12976,28 +13007,12 @@
         "date": "2026-04-20",
         "text": "space between notes",
         "analytics": null
-      },
-      {
-        "id": "69e57bc2932e4f62195a4152",
-        "channelId": "68ad007e3d2fbc20d49b79fb",
-        "service": "youtube",
-        "date": "2026-04-20",
-        "text": "that's where it lives. the gap. the breath. the almost. Exit and Rest. follow + save on Spotify. link in bio. #electronica #ambient #deeprest",
-        "analytics": null
-      },
-      {
-        "id": "69e57bbfd7b70b6ed8d67861",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "date": "2026-04-20",
-        "text": "space between notes",
-        "analytics": null
       }
     ],
     "upcomingPosts": []
   },
   "instagram": {
-    "followers": 19532,
+    "followers": 19531,
     "source": "api",
     "reach_7d": 0,
     "profile_views_7d": 0
