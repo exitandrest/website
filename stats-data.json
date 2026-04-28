@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-27T17:03:34.132Z",
-  "date": "2026-04-27",
+  "updatedAt": "2026-04-28T17:05:03.618Z",
+  "date": "2026-04-28",
   "exitAndRest": {
     "streams28d": 46515,
     "streams28dChange": 9.6,
@@ -4310,6 +4310,11 @@
       },
       {
         "date": "2026-04-27",
+        "followers": 88,
+        "saves": 94
+      },
+      {
+        "date": "2026-04-28",
         "followers": 88,
         "saves": 94
       }
@@ -8631,6 +8636,11 @@
         "date": "2026-04-27",
         "followers": 26,
         "saves": 28
+      },
+      {
+        "date": "2026-04-28",
+        "followers": 26,
+        "saves": 28
       }
     ]
   },
@@ -8648,32 +8658,25 @@
     "error": "no data"
   },
   "pixel_7d": {
-    "PageView": 145,
-    "ViewContent": 42,
+    "PageView": 63,
+    "ViewContent": 0,
     "Lead": 0
   },
   "meta": {
-    "spend": "6.82",
-    "spend_7d": "$7",
-    "impressions": 3472,
-    "lpv": 33,
-    "video_views": 506,
-    "cost_per_lpv": "0.21",
-    "cpm": "1.96",
+    "spend": "0.09",
+    "spend_7d": "$0",
+    "impressions": 49,
+    "lpv": null,
+    "video_views": 9,
+    "cost_per_lpv": null,
+    "cpm": "1.84",
     "top_ads": [
       {
         "id": "120243701096670522",
         "name": "sleep 2 og winner",
-        "spend": 6.77,
-        "impressions": 3458,
-        "link_clicks": 35
-      },
-      {
-        "id": "120243701096630522",
-        "name": "sleep 24",
-        "spend": 0.05,
-        "impressions": 14,
-        "link_clicks": 1
+        "spend": 0.09,
+        "impressions": 49,
+        "link_clicks": 0
       }
     ]
   },
@@ -9532,6 +9535,7 @@
       87,
       87,
       88,
+      88,
       88
     ],
     "follower_dates": [
@@ -10370,7 +10374,8 @@
       "2026-04-24",
       "2026-04-25",
       "2026-04-26",
-      "2026-04-27"
+      "2026-04-27",
+      "2026-04-28"
     ],
     "saves": [
       0,
@@ -11208,6 +11213,7 @@
       101,
       99,
       97,
+      94,
       94
     ],
     "sa_streams": [
@@ -12041,6 +12047,7 @@
       25,
       25,
       25,
+      26,
       26,
       26,
       26,
@@ -12895,7 +12902,8 @@
       "2026-04-24",
       "2026-04-25",
       "2026-04-26",
-      "2026-04-27"
+      "2026-04-27",
+      "2026-04-28"
     ],
     "subs": [],
     "adspend": []
@@ -13027,7 +13035,7 @@
     "upcomingPosts": []
   },
   "instagram": {
-    "followers": 19525,
+    "followers": 19523,
     "source": "api",
     "reach_7d": 0,
     "profile_views_7d": 0
