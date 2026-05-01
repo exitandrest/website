@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T17:03:41.514Z",
+  "updatedAt": "2026-05-01T19:09:33.411Z",
   "date": "2026-05-01",
   "exitAndRest": {
     "streams28d": 42038,
@@ -8722,6 +8722,13 @@
           "estimatedMinutesWatched": 1,
           "averageViewDuration": 21,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-04-29",
+          "views": 2,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 28,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
@@ -8735,9 +8742,9 @@
         {
           "id": "WArkLYMJwIw",
           "title": "April is almost over. How many nights did you actually rest?",
-          "views": 663,
-          "watchMin": 93,
-          "retention": 71.44
+          "views": 665,
+          "watchMin": 94,
+          "retention": 71.59
         },
         {
           "id": "A_qg0axvcz4",
@@ -8780,22 +8787,22 @@
       {
         "id": "120246351769300522",
         "name": "Silence - Hush 2",
-        "spend": 17,
-        "impressions": 9808,
+        "spend": 17.01,
+        "impressions": 9835,
         "link_clicks": 86
       },
       {
         "id": "120246351951560522",
         "name": "Silence - Hush 3",
         "spend": 4.76,
-        "impressions": 2222,
+        "impressions": 2225,
         "link_clicks": 24
       },
       {
         "id": "120246352074930522",
         "name": "Silence - Hush 5",
         "spend": 3.62,
-        "impressions": 2459,
+        "impressions": 2466,
         "link_clicks": 27
       }
     ]
@@ -13045,7 +13052,7 @@
   },
   "kalshi": null,
   "social": {
-    "totalPosts7d": 9,
+    "totalPosts7d": 10,
     "totalScheduled": 0,
     "byPlatform": {
       "facebook": {
@@ -13069,7 +13076,7 @@
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 5,
+        "posts7d": 3,
         "postsScheduled": 0
       },
       "startPage": {
@@ -13081,11 +13088,35 @@
       "instagram": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 0,
+        "posts7d": 3,
         "postsScheduled": 0
       }
     },
     "recentPosts": [
+      {
+        "id": "69f4f03f23f659436fdca932",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
+        "date": "2026-05-01",
+        "text": "hush\nlead single\nsoft ambient for deep rest\n6 tracks • 45–90 seconds each",
+        "analytics": null
+      },
+      {
+        "id": "69f4f03f23f659436fdca930",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
+        "date": "2026-05-01",
+        "text": "silence\nnew EP out now",
+        "analytics": null
+      },
+      {
+        "id": "69f4f03f23f659436fdca92e",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
+        "date": "2026-05-01",
+        "text": "stream silence now\nlink in bio",
+        "analytics": null
+      },
       {
         "id": "69ed969348db1c78e00fd71a",
         "channelId": "68ad00a13d2fbc20d49b7a01",
@@ -13140,22 +13171,6 @@
         "service": "tiktok",
         "date": "2026-04-26",
         "text": "April is almost over. How many nights did you actually rest?",
-        "analytics": null
-      },
-      {
-        "id": "69ed4b42e56655619b920b68",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "date": "2026-04-25",
-        "text": "OpenClaw dashboard test — 4/25/2026, 4:16:14 PM",
-        "analytics": null
-      },
-      {
-        "id": "69ed4539e56655619b91eaa0",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "date": "2026-04-25",
-        "text": "20 minutes before you both fall asleep. That's the most intimate time of your week.",
         "analytics": null
       }
     ],
