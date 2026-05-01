@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T20:45:44.659Z",
+  "updatedAt": "2026-05-01T23:22:22.641Z",
   "date": "2026-05-01",
   "exitAndRest": {
     "streams28d": 42038,
@@ -8771,8 +8771,8 @@
     }
   },
   "pixel_7d": {
-    "PageView": 731,
-    "ViewContent": 75,
+    "PageView": 733,
+    "ViewContent": 77,
     "Lead": 0
   },
   "meta": {
@@ -8788,21 +8788,21 @@
         "id": "120246351769300522",
         "name": "Silence - Hush 2",
         "spend": 17.01,
-        "impressions": 9851,
+        "impressions": 9873,
         "link_clicks": 86
       },
       {
         "id": "120246351951560522",
         "name": "Silence - Hush 3",
         "spend": 4.76,
-        "impressions": 2229,
+        "impressions": 2233,
         "link_clicks": 24
       },
       {
         "id": "120246352074930522",
         "name": "Silence - Hush 5",
         "spend": 3.62,
-        "impressions": 2468,
+        "impressions": 2471,
         "link_clicks": 27
       }
     ]
