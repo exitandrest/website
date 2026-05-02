@@ -1,16 +1,77 @@
 {
-  "updatedAt": "2026-05-02T22:22:33.747Z",
+  "updatedAt": "2026-05-02T22:29:26.006Z",
   "date": "2026-05-02",
   "exitAndRest": {
-    "streams28d": null,
-    "streams28dChange": null,
-    "listeners28d": null,
-    "listenersChange": null,
-    "followers": null,
-    "saves": null,
+    "streams28d": 41065,
+    "streams28dChange": -4.7,
+    "listeners28d": 11161,
+    "listenersChange": 15.3,
+    "followers": 91,
+    "saves": 132,
     "todayStreams": 693,
     "todayListeners": 247,
-    "topTracks": [],
+    "topTracks": [
+      {
+        "rank": 1,
+        "title": "Center",
+        "streams": "3,176",
+        "saves": "15"
+      },
+      {
+        "rank": 2,
+        "title": "Axis",
+        "streams": "2,412",
+        "saves": "6"
+      },
+      {
+        "rank": 3,
+        "title": "Core",
+        "streams": "1,868",
+        "saves": "7"
+      },
+      {
+        "rank": 4,
+        "title": "Shadows iii",
+        "streams": "1,848",
+        "saves": "1"
+      },
+      {
+        "rank": 5,
+        "title": "Balance",
+        "streams": "1,846",
+        "saves": "7"
+      },
+      {
+        "rank": 6,
+        "title": "Rejuvenate",
+        "streams": "1,751",
+        "saves": "1"
+      },
+      {
+        "rank": 7,
+        "title": "Quiet Street",
+        "streams": "1,719",
+        "saves": "3"
+      },
+      {
+        "rank": 8,
+        "title": "Bedtime",
+        "streams": "1,542",
+        "saves": "2"
+      },
+      {
+        "rank": 9,
+        "title": "Response",
+        "streams": "1,470",
+        "saves": "4"
+      },
+      {
+        "rank": 10,
+        "title": "Dream",
+        "streams": "1,440",
+        "saves": "2"
+      }
+    ],
     "daily": [
       {
         "date": "2026-04-25",
@@ -4271,6 +4332,11 @@
         "date": "2026-05-01",
         "followers": 89,
         "saves": 114
+      },
+      {
+        "date": "2026-05-02",
+        "followers": 91,
+        "saves": 132
       }
     ]
   },
@@ -4279,8 +4345,8 @@
     "streams28dChange": -34.3,
     "listeners28d": 2396,
     "listenersChange": -36,
-    "followers": null,
-    "saves": null,
+    "followers": 26,
+    "saves": 19,
     "todayStreams": 129,
     "todayListeners": 52,
     "topTracks": [
@@ -8610,6 +8676,11 @@
         "date": "2026-05-01",
         "followers": 26,
         "saves": 19
+      },
+      {
+        "date": "2026-05-02",
+        "followers": 26,
+        "saves": 19
       }
     ]
   },
@@ -9605,7 +9676,8 @@
       89,
       88,
       88,
-      89
+      89,
+      91
     ],
     "follower_dates": [
       "2024-01-01",
@@ -10447,7 +10519,8 @@
       "2026-04-28",
       "2026-04-29",
       "2026-04-30",
-      "2026-05-01"
+      "2026-05-01",
+      "2026-05-02"
     ],
     "saves": [
       0,
@@ -11289,7 +11362,8 @@
       127,
       116,
       115,
-      114
+      114,
+      132
     ],
     "sa_streams": [
       286,
@@ -12122,6 +12196,7 @@
       25,
       25,
       25,
+      26,
       26,
       26,
       26,
@@ -12984,7 +13059,8 @@
       "2026-04-28",
       "2026-04-29",
       "2026-04-30",
-      "2026-05-01"
+      "2026-05-01",
+      "2026-05-02"
     ],
     "subs": [],
     "adspend": []
@@ -13122,15 +13198,76 @@
     "profile_views_7d": 0
   },
   "spotify": {
-    "streams_28d": null,
-    "streams_28d_change": null,
-    "listeners_28d": null,
-    "listeners_change": null,
-    "artist_followers": null,
-    "saves": null,
+    "streams_28d": 41065,
+    "streams_28d_change": -4.7,
+    "listeners_28d": 11161,
+    "listeners_change": 15.3,
+    "artist_followers": 91,
+    "saves": 132,
     "today_streams": 693,
     "today_listeners": 247,
-    "top_tracks": [],
+    "top_tracks": [
+      {
+        "rank": 1,
+        "title": "Center",
+        "streams": "3,176",
+        "saves": "15"
+      },
+      {
+        "rank": 2,
+        "title": "Axis",
+        "streams": "2,412",
+        "saves": "6"
+      },
+      {
+        "rank": 3,
+        "title": "Core",
+        "streams": "1,868",
+        "saves": "7"
+      },
+      {
+        "rank": 4,
+        "title": "Shadows iii",
+        "streams": "1,848",
+        "saves": "1"
+      },
+      {
+        "rank": 5,
+        "title": "Balance",
+        "streams": "1,846",
+        "saves": "7"
+      },
+      {
+        "rank": 6,
+        "title": "Rejuvenate",
+        "streams": "1,751",
+        "saves": "1"
+      },
+      {
+        "rank": 7,
+        "title": "Quiet Street",
+        "streams": "1,719",
+        "saves": "3"
+      },
+      {
+        "rank": 8,
+        "title": "Bedtime",
+        "streams": "1,542",
+        "saves": "2"
+      },
+      {
+        "rank": 9,
+        "title": "Response",
+        "streams": "1,470",
+        "saves": "4"
+      },
+      {
+        "rank": 10,
+        "title": "Dream",
+        "streams": "1,440",
+        "saves": "2"
+      }
+    ],
     "daily": [
       {
         "date": "2026-04-25",
@@ -13167,8 +13304,8 @@
     "streams_28d_change": -34.3,
     "listeners_28d": 2396,
     "listeners_change": -36,
-    "artist_followers": null,
-    "saves": null,
+    "artist_followers": 26,
+    "saves": 19,
     "today_streams": 129,
     "today_listeners": 52,
     "top_tracks": [
