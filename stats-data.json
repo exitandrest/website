@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-02T17:07:42.425Z",
+  "updatedAt": "2026-05-02T19:27:00.988Z",
   "date": "2026-05-02",
   "exitAndRest": {
     "streams28d": 41065,
@@ -8732,6 +8732,13 @@
           "estimatedMinutesWatched": 0,
           "averageViewDuration": 28,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-04-30",
+          "views": 2,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 0,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
@@ -8764,17 +8771,17 @@
           "retention": 0.3
         },
         {
-          "id": "V3OMOoHB29Y",
-          "title": "Exit and Rest",
-          "views": 2,
+          "id": "l04BBH3Tm5A",
+          "title": "Philosophy & Ambience — Daily Mind Food 📖 #philosophy #ambientmusic",
+          "views": 3,
           "watchMin": 0,
-          "retention": 101.53000000000002
+          "retention": 0
         }
       ]
     }
   },
   "pixel_7d": {
-    "PageView": 736,
+    "PageView": 737,
     "ViewContent": 77,
     "Lead": 0
   },
@@ -8791,7 +8798,7 @@
         "id": "120246351769300522",
         "name": "Silence - Hush 2",
         "spend": 27.85,
-        "impressions": 17504,
+        "impressions": 17505,
         "link_clicks": 167
       },
       {
