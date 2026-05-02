@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-02T04:00:29.573Z",
+  "updatedAt": "2026-05-02T04:45:15.140Z",
   "date": "2026-05-02",
   "exitAndRest": {
     "streams28d": 42038,
@@ -8781,7 +8781,7 @@
         "id": "120246351769300522",
         "name": "Silence - Hush 2",
         "spend": 17.02,
-        "impressions": 9896,
+        "impressions": 9899,
         "link_clicks": 86
       },
       {
@@ -8795,7 +8795,7 @@
         "id": "120246352074930522",
         "name": "Silence - Hush 5",
         "spend": 3.63,
-        "impressions": 2481,
+        "impressions": 2482,
         "link_clicks": 27
       }
     ]
