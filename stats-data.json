@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-02T03:22:27.817Z",
+  "updatedAt": "2026-05-02T04:00:29.573Z",
   "date": "2026-05-02",
   "exitAndRest": {
     "streams28d": 42038,
@@ -8728,7 +8728,7 @@
         {
           "id": "WHkAink0fxQ",
           "title": "20 minutes before you both fall asleep. That's the most intimate time of your week.",
-          "views": 832,
+          "views": 827,
           "watchMin": 93,
           "retention": 49.28
         },
@@ -8764,7 +8764,7 @@
     }
   },
   "pixel_7d": {
-    "PageView": 733,
+    "PageView": 735,
     "ViewContent": 77,
     "Lead": 0
   },
@@ -8781,21 +8781,21 @@
         "id": "120246351769300522",
         "name": "Silence - Hush 2",
         "spend": 17.02,
-        "impressions": 9894,
+        "impressions": 9896,
         "link_clicks": 86
       },
       {
         "id": "120246351951560522",
         "name": "Silence - Hush 3",
         "spend": 4.76,
-        "impressions": 2236,
+        "impressions": 2238,
         "link_clicks": 24
       },
       {
         "id": "120246352074930522",
         "name": "Silence - Hush 5",
         "spend": 3.63,
-        "impressions": 2480,
+        "impressions": 2481,
         "link_clicks": 27
       }
     ]
