@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-02T23:46:21.405Z",
-  "date": "2026-05-02",
+  "updatedAt": "2026-05-03T00:20:46.049Z",
+  "date": "2026-05-03",
   "exitAndRest": {
     "streams28d": 41065,
     "streams28dChange": -4.7,
@@ -8699,13 +8699,6 @@
     "analytics": {
       "daily": [
         {
-          "day": "2026-04-25",
-          "views": 335,
-          "estimatedMinutesWatched": 55,
-          "averageViewDuration": 22,
-          "subscribersGained": 0
-        },
-        {
           "day": "2026-04-26",
           "views": 1176,
           "estimatedMinutesWatched": 156,
@@ -8743,13 +8736,6 @@
       ],
       "topVideos": [
         {
-          "id": "WHkAink0fxQ",
-          "title": "20 minutes before you both fall asleep. That's the most intimate time of your week.",
-          "views": 832,
-          "watchMin": 93,
-          "retention": 49.28
-        },
-        {
           "id": "WArkLYMJwIw",
           "title": "April is almost over. How many nights did you actually rest?",
           "views": 665,
@@ -8757,23 +8743,30 @@
           "retention": 71.59
         },
         {
-          "id": "A_qg0axvcz4",
-          "title": "20 minutes of nature sounds = lower blood pressure than most OTC meds.",
-          "views": 18,
-          "watchMin": 0,
-          "retention": 45.56
+          "id": "WHkAink0fxQ",
+          "title": "20 minutes before you both fall asleep. That's the most intimate time of your week.",
+          "views": 521,
+          "watchMin": 64,
+          "retention": 50.24999999999999
         },
         {
-          "id": "HnweQejTrPs",
-          "title": "Exit and Rest - 24/7 Relax",
-          "views": 6,
-          "watchMin": 25,
-          "retention": 0.3
+          "id": "A_qg0axvcz4",
+          "title": "20 minutes of nature sounds = lower blood pressure than most OTC meds.",
+          "views": 3,
+          "watchMin": 0,
+          "retention": 0
+        },
+        {
+          "id": "V3OMOoHB29Y",
+          "title": "Exit and Rest",
+          "views": 2,
+          "watchMin": 0,
+          "retention": 101.53000000000002
         },
         {
           "id": "l04BBH3Tm5A",
           "title": "Philosophy & Ambience — Daily Mind Food 📖 #philosophy #ambientmusic",
-          "views": 3,
+          "views": 2,
           "watchMin": 0,
           "retention": 0
         }
