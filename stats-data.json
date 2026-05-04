@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-04T17:04:04.783Z",
+  "updatedAt": "2026-05-04T17:08:24.050Z",
   "date": "2026-05-04",
   "exitAndRest": {
     "streams28d": 39437,
@@ -4357,8 +4357,8 @@
     "listenersChange": -38.7,
     "followers": 26,
     "saves": 18,
-    "todayStreams": 245,
-    "todayListeners": 48,
+    "todayStreams": null,
+    "todayListeners": null,
     "topTracks": [
       {
         "rank": 1,
@@ -4421,66 +4421,8 @@
         "saves": null
       }
     ],
-    "daily": [
-      {
-        "date": "2026-04-27",
-        "streams": 187
-      },
-      {
-        "date": "2026-04-28",
-        "streams": 181
-      },
-      {
-        "date": "2026-04-29",
-        "streams": 237
-      },
-      {
-        "date": "2026-04-30",
-        "streams": 173
-      },
-      {
-        "date": "2026-05-01",
-        "streams": 129
-      },
-      {
-        "date": "2026-05-02",
-        "streams": 66
-      },
-      {
-        "date": "2026-05-03",
-        "streams": 245
-      }
-    ],
-    "dailyListeners": [
-      {
-        "date": "2026-04-27",
-        "listeners": 88
-      },
-      {
-        "date": "2026-04-28",
-        "listeners": 91
-      },
-      {
-        "date": "2026-04-29",
-        "listeners": 81
-      },
-      {
-        "date": "2026-04-30",
-        "listeners": 60
-      },
-      {
-        "date": "2026-05-01",
-        "listeners": 52
-      },
-      {
-        "date": "2026-05-02",
-        "listeners": 43
-      },
-      {
-        "date": "2026-05-03",
-        "listeners": 48
-      }
-    ],
+    "daily": [],
+    "dailyListeners": [],
     "followersHistory": [
       {
         "date": "2024-01-01",
@@ -11384,15 +11326,7 @@
       143,
       162
     ],
-    "sa_streams": [
-      187,
-      181,
-      237,
-      173,
-      129,
-      66,
-      245
-    ],
+    "sa_streams": [],
     "sa_followers": [
       1,
       1,
@@ -13273,8 +13207,8 @@
     "listeners_change": -38.7,
     "artist_followers": 26,
     "saves": 18,
-    "today_streams": 245,
-    "today_listeners": 48,
+    "today_streams": null,
+    "today_listeners": null,
     "top_tracks": [
       {
         "rank": 1,
@@ -13337,35 +13271,6 @@
         "saves": null
       }
     ],
-    "daily": [
-      {
-        "date": "2026-04-27",
-        "streams": 187
-      },
-      {
-        "date": "2026-04-28",
-        "streams": 181
-      },
-      {
-        "date": "2026-04-29",
-        "streams": 237
-      },
-      {
-        "date": "2026-04-30",
-        "streams": 173
-      },
-      {
-        "date": "2026-05-01",
-        "streams": 129
-      },
-      {
-        "date": "2026-05-02",
-        "streams": 66
-      },
-      {
-        "date": "2026-05-03",
-        "streams": 245
-      }
-    ]
+    "daily": []
   }
 }
