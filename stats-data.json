@@ -1,82 +1,78 @@
 {
-  "updatedAt": "2026-05-04T17:08:24.050Z",
-  "date": "2026-05-04",
+  "updatedAt": "2026-05-05T17:03:12.894Z",
+  "date": "2026-05-05",
   "exitAndRest": {
-    "streams28d": 39437,
-    "streams28dChange": -6.8,
-    "listeners28d": 10675,
-    "listenersChange": 8.5,
-    "followers": 93,
-    "saves": 162,
-    "todayStreams": 729,
-    "todayListeners": 215,
+    "streams28d": 37757,
+    "streams28dChange": -11.5,
+    "listeners28d": 10423,
+    "listenersChange": 5,
+    "followers": 92,
+    "saves": 168,
+    "todayStreams": 545,
+    "todayListeners": 192,
     "topTracks": [
       {
         "rank": 1,
         "title": "Center",
-        "streams": "3,109",
+        "streams": "2,889",
         "saves": "15"
       },
       {
         "rank": 2,
         "title": "Axis",
-        "streams": "2,306",
+        "streams": "2,092",
         "saves": "6"
       },
       {
         "rank": 3,
         "title": "Shadows iii",
-        "streams": "1,841",
+        "streams": "1,783",
         "saves": "1"
       },
       {
         "rank": 4,
-        "title": "Core",
-        "streams": "1,793",
-        "saves": "7"
-      },
-      {
-        "rank": 5,
         "title": "Balance",
-        "streams": "1,770",
+        "streams": "1,726",
         "saves": "8"
       },
       {
+        "rank": 5,
+        "title": "Core",
+        "streams": "1,607",
+        "saves": "7"
+      },
+      {
         "rank": 6,
-        "title": "Rejuvenate",
-        "streams": "1,669",
-        "saves": "1"
+        "title": "Quiet Street",
+        "streams": "1,581",
+        "saves": "3"
       },
       {
         "rank": 7,
-        "title": "Quiet Street",
-        "streams": "1,629",
-        "saves": "3"
+        "title": "Rejuvenate",
+        "streams": "1,577",
+        "saves": "1"
       },
       {
         "rank": 8,
         "title": "Bedtime",
-        "streams": "1,460",
+        "streams": "1,421",
         "saves": "2"
       },
       {
         "rank": 9,
         "title": "Response",
-        "streams": "1,419",
+        "streams": "1,405",
         "saves": "3"
       },
       {
         "rank": 10,
-        "title": "Modern Line",
-        "streams": "1,351",
+        "title": "Neutral Clean",
+        "streams": "1,314",
         "saves": "2"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-27",
-        "streams": 838
-      },
       {
         "date": "2026-04-28",
         "streams": 542
@@ -100,13 +96,13 @@
       {
         "date": "2026-05-03",
         "streams": 729
+      },
+      {
+        "date": "2026-05-04",
+        "streams": 545
       }
     ],
     "dailyListeners": [
-      {
-        "date": "2026-04-27",
-        "listeners": 450
-      },
       {
         "date": "2026-04-28",
         "listeners": 315
@@ -130,6 +126,10 @@
       {
         "date": "2026-05-03",
         "listeners": 215
+      },
+      {
+        "date": "2026-05-04",
+        "listeners": 192
       }
     ],
     "followersHistory": [
@@ -4347,82 +4347,145 @@
         "date": "2026-05-04",
         "followers": 93,
         "saves": 162
+      },
+      {
+        "date": "2026-05-05",
+        "followers": 92,
+        "saves": 168
       }
     ]
   },
   "shelbyArcher": {
-    "streams28d": 11453,
-    "streams28dChange": -33,
-    "listeners28d": 2303,
-    "listenersChange": -38.7,
-    "followers": 26,
-    "saves": 18,
-    "todayStreams": null,
-    "todayListeners": null,
+    "streams28d": 10999,
+    "streams28dChange": -35.2,
+    "listeners28d": 2213,
+    "listenersChange": -40.9,
+    "followers": 27,
+    "saves": 29,
+    "todayStreams": 149,
+    "todayListeners": 39,
     "topTracks": [
       {
         "rank": 1,
         "title": "Mossy Currents",
-        "streams": "1,092",
+        "streams": "1,041",
         "saves": "5"
       },
       {
         "rank": 2,
         "title": "Yang Active",
-        "streams": "939",
-        "saves": null
+        "streams": "913",
+        "saves": "1"
       },
       {
         "rank": 3,
         "title": "Yang Masculine",
-        "streams": "900",
-        "saves": null
+        "streams": "868",
+        "saves": "1"
       },
       {
         "rank": 4,
         "title": "Velvet Echoes",
-        "streams": "762",
-        "saves": "2"
+        "streams": "744",
+        "saves": "3"
       },
       {
         "rank": 5,
         "title": "Yin Negative",
-        "streams": "556",
+        "streams": "538",
         "saves": "1"
       },
       {
         "rank": 6,
         "title": "Yin Passive",
-        "streams": "501",
+        "streams": "462",
         "saves": "1"
       },
       {
         "rank": 7,
         "title": "Whispering Sands",
-        "streams": "462",
+        "streams": "445",
         "saves": null
       },
       {
         "rank": 8,
         "title": "Fragments 3",
-        "streams": "450",
+        "streams": "436",
         "saves": "1"
       },
       {
         "rank": 9,
         "title": "Yang Positive",
-        "streams": "441",
-        "saves": "4"
+        "streams": "432",
+        "saves": "5"
       },
       {
         "rank": 10,
         "title": "Yin Feminine",
-        "streams": "436",
+        "streams": "417",
         "saves": null
       }
     ],
-    "daily": [],
-    "dailyListeners": [],
+    "daily": [
+      {
+        "date": "2026-04-28",
+        "streams": 181
+      },
+      {
+        "date": "2026-04-29",
+        "streams": 237
+      },
+      {
+        "date": "2026-04-30",
+        "streams": 173
+      },
+      {
+        "date": "2026-05-01",
+        "streams": 129
+      },
+      {
+        "date": "2026-05-02",
+        "streams": 66
+      },
+      {
+        "date": "2026-05-03",
+        "streams": 245
+      },
+      {
+        "date": "2026-05-04",
+        "streams": 149
+      }
+    ],
+    "dailyListeners": [
+      {
+        "date": "2026-04-28",
+        "listeners": 91
+      },
+      {
+        "date": "2026-04-29",
+        "listeners": 81
+      },
+      {
+        "date": "2026-04-30",
+        "listeners": 60
+      },
+      {
+        "date": "2026-05-01",
+        "listeners": 52
+      },
+      {
+        "date": "2026-05-02",
+        "listeners": 43
+      },
+      {
+        "date": "2026-05-03",
+        "listeners": 48
+      },
+      {
+        "date": "2026-05-04",
+        "listeners": 39
+      }
+    ],
     "followersHistory": [
       {
         "date": "2024-01-01",
@@ -8643,6 +8706,11 @@
         "date": "2026-05-04",
         "followers": 26,
         "saves": 18
+      },
+      {
+        "date": "2026-05-05",
+        "followers": 27,
+        "saves": 29
       }
     ]
   },
@@ -8660,13 +8728,6 @@
     "title": "Exit and Rest",
     "analytics": {
       "daily": [
-        {
-          "day": "2026-04-27",
-          "views": 13,
-          "estimatedMinutesWatched": 1,
-          "averageViewDuration": 9,
-          "subscribersGained": 0
-        },
         {
           "day": "2026-04-28",
           "views": 5,
@@ -8694,16 +8755,16 @@
           "estimatedMinutesWatched": 0,
           "averageViewDuration": 19,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-05-02",
+          "views": 0,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 0,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
-        {
-          "id": "WHkAink0fxQ",
-          "title": "20 minutes before you both fall asleep. That's the most intimate time of your week.",
-          "views": 13,
-          "watchMin": 1,
-          "retention": 43.24
-        },
         {
           "id": "WArkLYMJwIw",
           "title": "April is almost over. How many nights did you actually rest?",
@@ -8719,18 +8780,18 @@
           "retention": 0
         },
         {
-          "id": "n1w9jT1t8kw",
-          "title": "Ground Yourself in Nature 🌍 #grounding #nature #mindfulness",
-          "views": 1,
-          "watchMin": 0,
-          "retention": 0
-        },
-        {
           "id": "TY9dzpvJCyo",
           "title": "1 Hour New Beginnings Meditation Music | Healing Frequencies for Renewal | Exit and Rest",
           "views": 1,
           "watchMin": 0,
           "retention": 0.39
+        },
+        {
+          "id": "WHkAink0fxQ",
+          "title": "20 minutes before you both fall asleep. That's the most intimate time of your week.",
+          "views": 1,
+          "watchMin": 0,
+          "retention": 96
         }
       ]
     }
@@ -8752,9 +8813,9 @@
       {
         "id": "120246352074930522",
         "name": "Silence - Hush 5",
-        "spend": 31.49,
-        "impressions": 11544,
-        "link_clicks": 181
+        "spend": 31.54,
+        "impressions": 11556,
+        "link_clicks": 182
       },
       {
         "id": "120246351769300522",
@@ -8774,22 +8835,22 @@
   },
   "history": {
     "streams": [
-      838,
       542,
       676,
       311,
       693,
       505,
-      729
+      729,
+      545
     ],
     "stream_dates": [
-      "2026-04-27",
       "2026-04-28",
       "2026-04-29",
       "2026-04-30",
       "2026-05-01",
       "2026-05-02",
-      "2026-05-03"
+      "2026-05-03",
+      "2026-05-04"
     ],
     "followers": [
       0,
@@ -9634,7 +9695,8 @@
       89,
       91,
       91,
-      93
+      93,
+      92
     ],
     "follower_dates": [
       "2024-01-01",
@@ -10479,7 +10541,8 @@
       "2026-05-01",
       "2026-05-02",
       "2026-05-03",
-      "2026-05-04"
+      "2026-05-04",
+      "2026-05-05"
     ],
     "saves": [
       0,
@@ -11324,9 +11387,18 @@
       114,
       132,
       143,
-      162
+      162,
+      168
     ],
-    "sa_streams": [],
+    "sa_streams": [
+      181,
+      237,
+      173,
+      129,
+      66,
+      245,
+      149
+    ],
     "sa_followers": [
       1,
       1,
@@ -12171,7 +12243,8 @@
       26,
       26,
       26,
-      26
+      26,
+      27
     ],
     "sa_follower_dates": [
       "2024-01-01",
@@ -13017,7 +13090,8 @@
       "2026-05-01",
       "2026-05-02",
       "2026-05-03",
-      "2026-05-04"
+      "2026-05-04",
+      "2026-05-05"
     ],
     "subs": [],
     "adspend": []
@@ -13093,87 +13167,83 @@
     "upcomingPosts": []
   },
   "instagram": {
-    "followers": 19525,
+    "followers": 19526,
     "source": "api",
-    "reach_7d": 0,
-    "profile_views_7d": 0
+    "reach_7d": 13434,
+    "profile_views_7d": 32
   },
   "spotify": {
-    "streams_28d": 39437,
-    "streams_28d_change": -6.8,
-    "listeners_28d": 10675,
-    "listeners_change": 8.5,
-    "artist_followers": 93,
-    "saves": 162,
-    "today_streams": 729,
-    "today_listeners": 215,
+    "streams_28d": 37757,
+    "streams_28d_change": -11.5,
+    "listeners_28d": 10423,
+    "listeners_change": 5,
+    "artist_followers": 92,
+    "saves": 168,
+    "today_streams": 545,
+    "today_listeners": 192,
     "top_tracks": [
       {
         "rank": 1,
         "title": "Center",
-        "streams": "3,109",
+        "streams": "2,889",
         "saves": "15"
       },
       {
         "rank": 2,
         "title": "Axis",
-        "streams": "2,306",
+        "streams": "2,092",
         "saves": "6"
       },
       {
         "rank": 3,
         "title": "Shadows iii",
-        "streams": "1,841",
+        "streams": "1,783",
         "saves": "1"
       },
       {
         "rank": 4,
-        "title": "Core",
-        "streams": "1,793",
-        "saves": "7"
-      },
-      {
-        "rank": 5,
         "title": "Balance",
-        "streams": "1,770",
+        "streams": "1,726",
         "saves": "8"
       },
       {
+        "rank": 5,
+        "title": "Core",
+        "streams": "1,607",
+        "saves": "7"
+      },
+      {
         "rank": 6,
-        "title": "Rejuvenate",
-        "streams": "1,669",
-        "saves": "1"
+        "title": "Quiet Street",
+        "streams": "1,581",
+        "saves": "3"
       },
       {
         "rank": 7,
-        "title": "Quiet Street",
-        "streams": "1,629",
-        "saves": "3"
+        "title": "Rejuvenate",
+        "streams": "1,577",
+        "saves": "1"
       },
       {
         "rank": 8,
         "title": "Bedtime",
-        "streams": "1,460",
+        "streams": "1,421",
         "saves": "2"
       },
       {
         "rank": 9,
         "title": "Response",
-        "streams": "1,419",
+        "streams": "1,405",
         "saves": "3"
       },
       {
         "rank": 10,
-        "title": "Modern Line",
-        "streams": "1,351",
+        "title": "Neutral Clean",
+        "streams": "1,314",
         "saves": "2"
       }
     ],
     "daily": [
-      {
-        "date": "2026-04-27",
-        "streams": 838
-      },
       {
         "date": "2026-04-28",
         "streams": 542
@@ -13197,80 +13267,113 @@
       {
         "date": "2026-05-03",
         "streams": 729
+      },
+      {
+        "date": "2026-05-04",
+        "streams": 545
       }
     ]
   },
   "shelby_archer": {
-    "streams_28d": 11453,
-    "streams_28d_change": -33,
-    "listeners_28d": 2303,
-    "listeners_change": -38.7,
-    "artist_followers": 26,
-    "saves": 18,
-    "today_streams": null,
-    "today_listeners": null,
+    "streams_28d": 10999,
+    "streams_28d_change": -35.2,
+    "listeners_28d": 2213,
+    "listeners_change": -40.9,
+    "artist_followers": 27,
+    "saves": 29,
+    "today_streams": 149,
+    "today_listeners": 39,
     "top_tracks": [
       {
         "rank": 1,
         "title": "Mossy Currents",
-        "streams": "1,092",
+        "streams": "1,041",
         "saves": "5"
       },
       {
         "rank": 2,
         "title": "Yang Active",
-        "streams": "939",
-        "saves": null
+        "streams": "913",
+        "saves": "1"
       },
       {
         "rank": 3,
         "title": "Yang Masculine",
-        "streams": "900",
-        "saves": null
+        "streams": "868",
+        "saves": "1"
       },
       {
         "rank": 4,
         "title": "Velvet Echoes",
-        "streams": "762",
-        "saves": "2"
+        "streams": "744",
+        "saves": "3"
       },
       {
         "rank": 5,
         "title": "Yin Negative",
-        "streams": "556",
+        "streams": "538",
         "saves": "1"
       },
       {
         "rank": 6,
         "title": "Yin Passive",
-        "streams": "501",
+        "streams": "462",
         "saves": "1"
       },
       {
         "rank": 7,
         "title": "Whispering Sands",
-        "streams": "462",
+        "streams": "445",
         "saves": null
       },
       {
         "rank": 8,
         "title": "Fragments 3",
-        "streams": "450",
+        "streams": "436",
         "saves": "1"
       },
       {
         "rank": 9,
         "title": "Yang Positive",
-        "streams": "441",
-        "saves": "4"
+        "streams": "432",
+        "saves": "5"
       },
       {
         "rank": 10,
         "title": "Yin Feminine",
-        "streams": "436",
+        "streams": "417",
         "saves": null
       }
     ],
-    "daily": []
+    "daily": [
+      {
+        "date": "2026-04-28",
+        "streams": 181
+      },
+      {
+        "date": "2026-04-29",
+        "streams": 237
+      },
+      {
+        "date": "2026-04-30",
+        "streams": 173
+      },
+      {
+        "date": "2026-05-01",
+        "streams": 129
+      },
+      {
+        "date": "2026-05-02",
+        "streams": 66
+      },
+      {
+        "date": "2026-05-03",
+        "streams": 245
+      },
+      {
+        "date": "2026-05-04",
+        "streams": 149
+      }
+    ]
   }
 }
