@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T17:02:14.119Z",
+  "updatedAt": "2026-05-07T17:03:38.927Z",
   "date": "2026-05-07",
   "exitAndRest": {
     "streams28d": 34509,
@@ -13128,7 +13128,7 @@
   },
   "kalshi": null,
   "social": {
-    "totalPosts7d": 7,
+    "totalPosts7d": 9,
     "totalScheduled": 7,
     "byPlatform": {
       "facebook": {
@@ -13140,7 +13140,7 @@
       "tiktok": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 0,
+        "posts7d": 1,
         "postsScheduled": 2
       },
       "youtube": {
@@ -13164,7 +13164,7 @@
       "instagram": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 4,
+        "posts7d": 5,
         "postsScheduled": 1
       }
     },
@@ -13181,6 +13181,22 @@
         "id": "69fc30bc193634c27465dc20",
         "channelId": "68ad007e3d2fbc20d49b79fb",
         "service": "youtube",
+        "date": "2026-05-07",
+        "text": "hush works where white noise doesn't. pure void with subtle pulse. Builds playlist traction in cosmic sleep rotations. Save to return to center. Spotify link in bio.\n\nExit and Rest — Save Silence EP",
+        "analytics": null
+      },
+      {
+        "id": "69fc30b8f50c6f951de78c79",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "date": "2026-05-07",
+        "text": "when noise fails you",
+        "analytics": null
+      },
+      {
+        "id": "69fc30b5f50c6f951de78c1b",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
         "date": "2026-05-07",
         "text": "hush works where white noise doesn't. pure void with subtle pulse. Builds playlist traction in cosmic sleep rotations. Save to return to center. Spotify link in bio.\n\nExit and Rest — Save Silence EP",
         "analytics": null
