@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-06T17:04:35.551Z",
-  "date": "2026-05-06",
+  "updatedAt": "2026-05-07T15:39:02.868Z",
+  "date": "2026-05-07",
   "exitAndRest": {
     "streams28d": 36003,
     "streams28dChange": -16.5,
@@ -4355,6 +4355,11 @@
       },
       {
         "date": "2026-05-06",
+        "followers": 92,
+        "saves": 158
+      },
+      {
+        "date": "2026-05-07",
         "followers": 92,
         "saves": 158
       }
@@ -8721,6 +8726,11 @@
         "date": "2026-05-06",
         "followers": 27,
         "saves": 29
+      },
+      {
+        "date": "2026-05-07",
+        "followers": 27,
+        "saves": 29
       }
     ]
   },
@@ -8732,13 +8742,82 @@
     "topTracks": []
   },
   "youtube": {
-    "subscribers": null,
-    "views": null,
-    "videos": null,
-    "error": "no data"
+    "subscribers": 1590,
+    "views": 29986,
+    "videos": 229,
+    "title": "Exit and Rest",
+    "analytics": {
+      "daily": [
+        {
+          "day": "2026-04-30",
+          "views": 2,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 0,
+          "subscribersGained": 0
+        },
+        {
+          "day": "2026-05-01",
+          "views": 2,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 19,
+          "subscribersGained": 0
+        },
+        {
+          "day": "2026-05-02",
+          "views": 0,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 0,
+          "subscribersGained": 0
+        },
+        {
+          "day": "2026-05-03",
+          "views": 1,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 4,
+          "subscribersGained": 0
+        },
+        {
+          "day": "2026-05-04",
+          "views": 0,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 0,
+          "subscribersGained": 0
+        }
+      ],
+      "topVideos": [
+        {
+          "id": "l04BBH3Tm5A",
+          "title": "Philosophy & Ambience — Daily Mind Food 📖 #philosophy #ambientmusic",
+          "views": 2,
+          "watchMin": 0,
+          "retention": 0
+        },
+        {
+          "id": "4dzYGIJI2M8",
+          "title": "1 Hour Nature Sounds for Study & Sleep | Peaceful Trees & Grass Ambience | Exit and Rest",
+          "views": 1,
+          "watchMin": 0,
+          "retention": 0.14
+        },
+        {
+          "id": "WArkLYMJwIw",
+          "title": "April is almost over. How many nights did you actually rest?",
+          "views": 1,
+          "watchMin": 0,
+          "retention": 96.43
+        },
+        {
+          "id": "TY9dzpvJCyo",
+          "title": "1 Hour New Beginnings Meditation Music | Healing Frequencies for Renewal | Exit and Rest",
+          "views": 1,
+          "watchMin": 0,
+          "retention": 0.39
+        }
+      ]
+    }
   },
   "pixel_7d": {
-    "PageView": 798,
+    "PageView": 797,
     "ViewContent": 77,
     "Lead": 0
   },
@@ -9638,6 +9717,7 @@
       91,
       93,
       92,
+      92,
       92
     ],
     "follower_dates": [
@@ -10485,7 +10565,8 @@
       "2026-05-03",
       "2026-05-04",
       "2026-05-05",
-      "2026-05-06"
+      "2026-05-06",
+      "2026-05-07"
     ],
     "saves": [
       0,
@@ -11332,6 +11413,7 @@
       143,
       162,
       168,
+      158,
       158
     ],
     "sa_streams": [
@@ -12189,6 +12271,7 @@
       26,
       26,
       27,
+      27,
       27
     ],
     "sa_follower_dates": [
@@ -13037,15 +13120,16 @@
       "2026-05-03",
       "2026-05-04",
       "2026-05-05",
-      "2026-05-06"
+      "2026-05-06",
+      "2026-05-07"
     ],
     "subs": [],
     "adspend": []
   },
   "kalshi": null,
   "social": {
-    "totalPosts7d": 3,
-    "totalScheduled": 0,
+    "totalPosts7d": 5,
+    "totalScheduled": 10,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -13057,19 +13141,19 @@
         "name": "exitandrest",
         "connected": true,
         "posts7d": 0,
-        "postsScheduled": 0
+        "postsScheduled": 2
       },
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
         "posts7d": 0,
-        "postsScheduled": 0
+        "postsScheduled": 3
       },
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 0,
-        "postsScheduled": 0
+        "posts7d": 1,
+        "postsScheduled": 3
       },
       "startPage": {
         "name": "exit and rest",
@@ -13080,11 +13164,27 @@
       "instagram": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 3,
-        "postsScheduled": 0
+        "posts7d": 4,
+        "postsScheduled": 2
       }
     },
     "recentPosts": [
+      {
+        "id": "69fc2cb9f50c6f951de7589b",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
+        "date": "2026-05-07",
+        "text": "No filler sounds. Just space. Hush strips ambient to breath and pause. Listeners loop it for cosmic sleep playlists. Body remembers quiet. Follow Exit and Rest on Spotify.\n\nExit and Rest. Follow on Sp",
+        "analytics": null
+      },
+      {
+        "id": "69fc2b2ff50c6f951de74e24",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-05-07",
+        "text": "hush quiets everything",
+        "analytics": null
+      },
       {
         "id": "69f4f03f23f659436fdca932",
         "channelId": "68bb3108a9557ab19bdbad29",
@@ -13110,13 +13210,74 @@
         "analytics": null
       }
     ],
-    "upcomingPosts": []
+    "upcomingPosts": [
+      {
+        "id": "69fc3207193634c27465e70e",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "the silence before sleep"
+      },
+      {
+        "id": "69fc3204f50c6f951de79828",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "text": "Silence arrives first. Then rest. Hush leads the EP: one note held, then nothing. Nervous systems un"
+      },
+      {
+        "id": "69fc3200f50c6f951de797ed",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "text": "the silence before sleep"
+      },
+      {
+        "id": "69fc31fdf50c6f951de797c8",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
+        "text": "Silence arrives first. Then rest. Hush leads the EP: one note held, then nothing. Nervous systems un"
+      },
+      {
+        "id": "69fc30bff50c6f951de78caa",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "when noise fails you"
+      },
+      {
+        "id": "69fc30bc193634c27465dc20",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "text": "hush works where white noise doesn't. pure void with subtle pulse. Builds playlist traction in cosmi"
+      },
+      {
+        "id": "69fc30b8f50c6f951de78c79",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "text": "when noise fails you"
+      },
+      {
+        "id": "69fc30b5f50c6f951de78c1b",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
+        "text": "hush works where white noise doesn't. pure void with subtle pulse. Builds playlist traction in cosmi"
+      },
+      {
+        "id": "69fc2edaf50c6f951de7767d",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "hush quiets everything"
+      },
+      {
+        "id": "69fc2ed6f50c6f951de77644",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "text": "No filler sounds. Just space. Hush strips ambient to breath and pause. Listeners loop it for cosmic "
+      }
+    ]
   },
   "instagram": {
-    "followers": 19304,
+    "followers": 19302,
     "source": "api",
-    "reach_7d": 13440,
-    "profile_views_7d": 33
+    "reach_7d": 9917,
+    "profile_views_7d": 29
   },
   "spotify": {
     "streams_28d": 36003,
