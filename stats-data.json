@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-07T17:03:38.927Z",
-  "date": "2026-05-07",
+  "updatedAt": "2026-05-08T17:02:14.968Z",
+  "date": "2026-05-08",
   "exitAndRest": {
     "streams28d": 34509,
     "streams28dChange": -21.6,
@@ -4360,6 +4360,11 @@
       },
       {
         "date": "2026-05-07",
+        "followers": 92,
+        "saves": 158
+      },
+      {
+        "date": "2026-05-08",
         "followers": 92,
         "saves": 158
       }
@@ -8731,6 +8736,11 @@
         "date": "2026-05-07",
         "followers": 27,
         "saves": 28
+      },
+      {
+        "date": "2026-05-08",
+        "followers": 27,
+        "saves": 28
       }
     ]
   },
@@ -8743,18 +8753,11 @@
   },
   "youtube": {
     "subscribers": 1590,
-    "views": 29986,
-    "videos": 230,
+    "views": 30050,
+    "videos": 232,
     "title": "Exit and Rest",
     "analytics": {
       "daily": [
-        {
-          "day": "2026-04-30",
-          "views": 2,
-          "estimatedMinutesWatched": 0,
-          "averageViewDuration": 0,
-          "subscribersGained": 0
-        },
         {
           "day": "2026-05-01",
           "views": 2,
@@ -8782,15 +8785,22 @@
           "estimatedMinutesWatched": 0,
           "averageViewDuration": 0,
           "subscribersGained": 0
+        },
+        {
+          "day": "2026-05-05",
+          "views": 2,
+          "estimatedMinutesWatched": 0,
+          "averageViewDuration": 11,
+          "subscribersGained": 0
         }
       ],
       "topVideos": [
         {
-          "id": "l04BBH3Tm5A",
-          "title": "Philosophy & Ambience — Daily Mind Food 📖 #philosophy #ambientmusic",
+          "id": "KJIqyElzalE",
+          "title": "Thoreau & Ambience — Ancient Wisdom, Modern Sound 📖 #philosophy #ambientmusic",
           "views": 2,
           "watchMin": 0,
-          "retention": 0
+          "retention": 106.65
         },
         {
           "id": "WArkLYMJwIw",
@@ -8817,8 +8827,8 @@
     }
   },
   "pixel_7d": {
-    "PageView": 796,
-    "ViewContent": 77,
+    "PageView": 120,
+    "ViewContent": 2,
     "Lead": 0
   },
   "meta": {
@@ -8833,23 +8843,23 @@
       {
         "id": "120246352074930522",
         "name": "Silence - Hush 5",
-        "spend": 31.54,
-        "impressions": 11556,
-        "link_clicks": 182
-      },
-      {
-        "id": "120246351769300522",
-        "name": "Silence - Hush 2",
-        "spend": 27.85,
-        "impressions": 17506,
-        "link_clicks": 167
+        "spend": 27.91,
+        "impressions": 9071,
+        "link_clicks": 155
       },
       {
         "id": "120246351951560522",
         "name": "Silence - Hush 3",
-        "spend": 25.96,
-        "impressions": 20666,
-        "link_clicks": 280
+        "spend": 21.2,
+        "impressions": 18427,
+        "link_clicks": 256
+      },
+      {
+        "id": "120246351769300522",
+        "name": "Silence - Hush 2",
+        "spend": 10.83,
+        "impressions": 7594,
+        "link_clicks": 81
       }
     ]
   },
@@ -9718,6 +9728,7 @@
       93,
       92,
       92,
+      92,
       92
     ],
     "follower_dates": [
@@ -10566,7 +10577,8 @@
       "2026-05-04",
       "2026-05-05",
       "2026-05-06",
-      "2026-05-07"
+      "2026-05-07",
+      "2026-05-08"
     ],
     "saves": [
       0,
@@ -11413,6 +11425,7 @@
       143,
       162,
       168,
+      158,
       158,
       158
     ],
@@ -12272,6 +12285,7 @@
       26,
       27,
       27,
+      27,
       27
     ],
     "sa_follower_dates": [
@@ -13121,15 +13135,16 @@
       "2026-05-04",
       "2026-05-05",
       "2026-05-06",
-      "2026-05-07"
+      "2026-05-07",
+      "2026-05-08"
     ],
     "subs": [],
     "adspend": []
   },
   "kalshi": null,
   "social": {
-    "totalPosts7d": 9,
-    "totalScheduled": 7,
+    "totalPosts7d": 10,
+    "totalScheduled": 0,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -13140,20 +13155,20 @@
       "tiktok": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 1,
-        "postsScheduled": 2
+        "posts7d": 2,
+        "postsScheduled": 0
       },
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
-        "posts7d": 1,
-        "postsScheduled": 2
+        "posts7d": 3,
+        "postsScheduled": 0
       },
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 2,
-        "postsScheduled": 2
+        "posts7d": 3,
+        "postsScheduled": 0
       },
       "startPage": {
         "name": "exit and rest",
@@ -13164,11 +13179,43 @@
       "instagram": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 5,
-        "postsScheduled": 1
+        "posts7d": 2,
+        "postsScheduled": 0
       }
     },
     "recentPosts": [
+      {
+        "id": "69fc3207193634c27465e70e",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-05-07",
+        "text": "the silence before sleep",
+        "analytics": null
+      },
+      {
+        "id": "69fc3204f50c6f951de79828",
+        "channelId": "68ad007e3d2fbc20d49b79fb",
+        "service": "youtube",
+        "date": "2026-05-07",
+        "text": "Silence arrives first. Then rest. Hush leads the EP: one note held, then nothing. Nervous systems unwind. Playlists call it cosmic sleep. Save Hush on Spotify in bio.\n\nExit and Rest. Save Hush on Spot",
+        "analytics": null
+      },
+      {
+        "id": "69fc3200f50c6f951de797ed",
+        "channelId": "68e44e40ca3a4e6b7467f51d",
+        "service": "tiktok",
+        "date": "2026-05-07",
+        "text": "the silence before sleep",
+        "analytics": null
+      },
+      {
+        "id": "69fc31fdf50c6f951de797c8",
+        "channelId": "68bb3108a9557ab19bdbad29",
+        "service": "instagram",
+        "date": "2026-05-07",
+        "text": "Silence arrives first. Then rest. Hush leads the EP: one note held, then nothing. Nervous systems unwind. Playlists call it cosmic sleep. Save Hush on Spotify in bio.\n\nExit and Rest. Save Hush on Spot",
+        "analytics": null
+      },
       {
         "id": "69fc30bff50c6f951de78caa",
         "channelId": "68ad00a13d2fbc20d49b7a01",
@@ -13202,15 +13249,7 @@
         "analytics": null
       },
       {
-        "id": "69fc2cb9f50c6f951de7589b",
-        "channelId": "68bb3108a9557ab19bdbad29",
-        "service": "instagram",
-        "date": "2026-05-07",
-        "text": "No filler sounds. Just space. Hush strips ambient to breath and pause. Listeners loop it for cosmic sleep playlists. Body remembers quiet. Follow Exit and Rest on Spotify.\n\nExit and Rest. Follow on Sp",
-        "analytics": null
-      },
-      {
-        "id": "69fc2b2ff50c6f951de74e24",
+        "id": "69fc2edaf50c6f951de7767d",
         "channelId": "68ad00a13d2fbc20d49b7a01",
         "service": "twitter",
         "date": "2026-05-07",
@@ -13218,80 +13257,21 @@
         "analytics": null
       },
       {
-        "id": "69f4f03f23f659436fdca932",
-        "channelId": "68bb3108a9557ab19bdbad29",
-        "service": "instagram",
-        "date": "2026-05-01",
-        "text": "hush\nlead single\nsoft ambient for deep rest\n6 tracks • 45–90 seconds each",
-        "analytics": null
-      },
-      {
-        "id": "69f4f03f23f659436fdca930",
-        "channelId": "68bb3108a9557ab19bdbad29",
-        "service": "instagram",
-        "date": "2026-05-01",
-        "text": "silence\nnew EP out now",
-        "analytics": null
-      },
-      {
-        "id": "69f4f03f23f659436fdca92e",
-        "channelId": "68bb3108a9557ab19bdbad29",
-        "service": "instagram",
-        "date": "2026-05-01",
-        "text": "stream silence now\nlink in bio",
-        "analytics": null
-      }
-    ],
-    "upcomingPosts": [
-      {
-        "id": "69fc3207193634c27465e70e",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "text": "the silence before sleep"
-      },
-      {
-        "id": "69fc3204f50c6f951de79828",
-        "channelId": "68ad007e3d2fbc20d49b79fb",
-        "service": "youtube",
-        "text": "Silence arrives first. Then rest. Hush leads the EP: one note held, then nothing. Nervous systems un"
-      },
-      {
-        "id": "69fc3200f50c6f951de797ed",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "text": "the silence before sleep"
-      },
-      {
-        "id": "69fc31fdf50c6f951de797c8",
-        "channelId": "68bb3108a9557ab19bdbad29",
-        "service": "instagram",
-        "text": "Silence arrives first. Then rest. Hush leads the EP: one note held, then nothing. Nervous systems un"
-      },
-      {
-        "id": "69fc2edaf50c6f951de7767d",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "text": "hush quiets everything"
-      },
-      {
         "id": "69fc2ed6f50c6f951de77644",
         "channelId": "68ad007e3d2fbc20d49b79fb",
         "service": "youtube",
-        "text": "No filler sounds. Just space. Hush strips ambient to breath and pause. Listeners loop it for cosmic "
-      },
-      {
-        "id": "69fc2ed3f50c6f951de7761f",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "text": "hush quiets everything"
+        "date": "2026-05-07",
+        "text": "No filler sounds. Just space. Hush strips ambient to breath and pause. Listeners loop it for cosmic sleep playlists. Body remembers quiet. Follow Exit and Rest on Spotify.\n\nExit and Rest.  Follow on S",
+        "analytics": null
       }
-    ]
+    ],
+    "upcomingPosts": []
   },
   "instagram": {
-    "followers": 19302,
+    "followers": 19217,
     "source": "api",
-    "reach_7d": 9917,
-    "profile_views_7d": 29
+    "reach_7d": 3397,
+    "profile_views_7d": 20
   },
   "spotify": {
     "streams_28d": 34509,
