@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-08T17:03:34.199Z",
+  "updatedAt": "2026-05-08T18:24:18.732Z",
   "date": "2026-05-08",
   "exitAndRest": {
     "streams28d": 34509,
@@ -8827,7 +8827,7 @@
     }
   },
   "pixel_7d": {
-    "PageView": 120,
+    "PageView": 122,
     "ViewContent": 2,
     "Lead": 0
   },
@@ -13270,7 +13270,7 @@
   "instagram": {
     "followers": 19217,
     "source": "api",
-    "reach_7d": 3397,
+    "reach_7d": 3399,
     "profile_views_7d": 20
   },
   "spotify": {
