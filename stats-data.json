@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-11T17:05:16.944Z",
-  "date": "2026-05-11",
+  "updatedAt": "2026-05-12T17:05:19.840Z",
+  "date": "2026-05-12",
   "exitAndRest": {
     "streams28d": 28435,
     "streams28dChange": -38.9,
@@ -4380,6 +4380,11 @@
       },
       {
         "date": "2026-05-11",
+        "followers": 95,
+        "saves": 136
+      },
+      {
+        "date": "2026-05-12",
         "followers": 95,
         "saves": 136
       }
@@ -8771,6 +8776,11 @@
         "date": "2026-05-11",
         "followers": 29,
         "saves": 40
+      },
+      {
+        "date": "2026-05-12",
+        "followers": 29,
+        "saves": 40
       }
     ]
   },
@@ -8829,19 +8839,12 @@
     ]
   },
   "youtube": {
-    "subscribers": 1600,
+    "subscribers": 1590,
     "views": 30293,
     "videos": 233,
     "title": "Exit and Rest",
     "analytics": {
       "daily": [
-        {
-          "day": "2026-05-04",
-          "views": 0,
-          "estimatedMinutesWatched": 0,
-          "averageViewDuration": 0,
-          "subscribersGained": 0
-        },
         {
           "day": "2026-05-05",
           "views": 2,
@@ -8869,36 +8872,43 @@
           "estimatedMinutesWatched": 129,
           "averageViewDuration": 547,
           "subscribersGained": 1
+        },
+        {
+          "day": "2026-05-09",
+          "views": 110,
+          "estimatedMinutesWatched": 4,
+          "averageViewDuration": 11,
+          "subscribersGained": 1
         }
       ],
       "topVideos": [
         {
+          "id": "iutahRPIEso",
+          "title": "hush quiets everything",
+          "views": 85,
+          "watchMin": 76,
+          "retention": 1443.97
+        },
+        {
           "id": "TD4tSe8A0aw",
           "title": "the silence before sleep",
-          "views": 70,
+          "views": 74,
           "watchMin": 2,
           "retention": 46.8
         },
         {
-          "id": "iutahRPIEso",
-          "title": "hush quiets everything",
-          "views": 50,
-          "watchMin": 75,
-          "retention": 2453.09
+          "id": "jIjKHEACpCk",
+          "title": "your body remembers quiet",
+          "views": 68,
+          "watchMin": 3,
+          "retention": 77.99
         },
         {
           "id": "PL04J839SMg",
           "title": "when noise fails you",
-          "views": 41,
+          "views": 44,
           "watchMin": 1,
           "retention": 92.53
-        },
-        {
-          "id": "WArkLYMJwIw",
-          "title": "April is almost over. How many nights did you actually rest?",
-          "views": 2,
-          "watchMin": 0,
-          "retention": 198.54
         },
         {
           "id": "KJIqyElzalE",
@@ -8911,8 +8921,8 @@
     }
   },
   "pixel_7d": {
-    "PageView": 64,
-    "ViewContent": 0,
+    "PageView": 63,
+    "ViewContent": 2,
     "Lead": 0
   },
   "meta": {
@@ -9794,6 +9804,7 @@
       92,
       93,
       95,
+      95,
       95
     ],
     "follower_dates": [
@@ -10646,7 +10657,8 @@
       "2026-05-08",
       "2026-05-09",
       "2026-05-10",
-      "2026-05-11"
+      "2026-05-11",
+      "2026-05-12"
     ],
     "saves": [
       0,
@@ -11498,6 +11510,7 @@
       158,
       148,
       147,
+      136,
       136
     ],
     "sa_streams": [
@@ -12360,6 +12373,7 @@
       27,
       27,
       29,
+      29,
       29
     ],
     "sa_follower_dates": [
@@ -13213,7 +13227,8 @@
       "2026-05-08",
       "2026-05-09",
       "2026-05-10",
-      "2026-05-11"
+      "2026-05-11",
+      "2026-05-12"
     ],
     "subs": [],
     "adspend": []
@@ -13221,7 +13236,7 @@
   "kalshi": null,
   "social": {
     "totalPosts7d": 10,
-    "totalScheduled": 0,
+    "totalScheduled": 6,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -13232,20 +13247,20 @@
       "tiktok": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 2,
+        "posts7d": 1,
         "postsScheduled": 0
       },
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
-        "posts7d": 3,
+        "posts7d": 2,
         "postsScheduled": 0
       },
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 3,
-        "postsScheduled": 0
+        "posts7d": 6,
+        "postsScheduled": 6
       },
       "startPage": {
         "name": "exit and rest",
@@ -13256,11 +13271,43 @@
       "instagram": {
         "name": "exitandrest",
         "connected": true,
-        "posts7d": 2,
+        "posts7d": 1,
         "postsScheduled": 0
       }
     },
     "recentPosts": [
+      {
+        "id": "6a02879823dbe4fb7a48f374",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-05-12",
+        "text": "the best time to listen: 4-6am when the world is still asleep, or 10pm when you're ready to let go of the day. not because the music changes. because you do. the listener is the instrument.",
+        "analytics": null
+      },
+      {
+        "id": "6a02879723dbe4fb7a48f34f",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-05-12",
+        "text": "listeners tell us they fall asleep fastest to exit and rest. not because the songs are boring. because their bodies recognize safety in the sound design. music doesn't have to demand attention to matt",
+        "analytics": null
+      },
+      {
+        "id": "6a0287970f2e1f2e87500fb2",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-05-12",
+        "text": "how a track gets made: find one note that makes sense. hold it. layer breath into the space around it. let time do the work. that's electronic ambient. not composition. conversation with air.",
+        "analytics": null
+      },
+      {
+        "id": "6a0287960f2e1f2e87500f8d",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-05-12",
+        "text": "silence isn't empty. it's the sound of everything finally settling. we spend days filling space with noise. one track at a time, exit and rest teaches the nervous system what it already knew: quiet is",
+        "analytics": null
+      },
       {
         "id": "69ffcd6a2789e816c9149742",
         "channelId": "68ad00a13d2fbc20d49b7a01",
@@ -13308,47 +13355,52 @@
         "date": "2026-05-07",
         "text": "Silence arrives first. Then rest. Hush leads the EP: one note held, then nothing. Nervous systems unwind. Playlists call it cosmic sleep. Save Hush on Spotify in bio.\n\nExit and Rest. Save Hush on Spot",
         "analytics": null
-      },
-      {
-        "id": "69fc3200f50c6f951de797ed",
-        "channelId": "68e44e40ca3a4e6b7467f51d",
-        "service": "tiktok",
-        "date": "2026-05-07",
-        "text": "the silence before sleep",
-        "analytics": null
-      },
-      {
-        "id": "69fc31fdf50c6f951de797c8",
-        "channelId": "68bb3108a9557ab19bdbad29",
-        "service": "instagram",
-        "date": "2026-05-07",
-        "text": "Silence arrives first. Then rest. Hush leads the EP: one note held, then nothing. Nervous systems unwind. Playlists call it cosmic sleep. Save Hush on Spotify in bio.\n\nExit and Rest. Save Hush on Spot",
-        "analytics": null
-      },
-      {
-        "id": "69fc30bff50c6f951de78caa",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "date": "2026-05-07",
-        "text": "when noise fails you",
-        "analytics": null
-      },
-      {
-        "id": "69fc30bc193634c27465dc20",
-        "channelId": "68ad007e3d2fbc20d49b79fb",
-        "service": "youtube",
-        "date": "2026-05-07",
-        "text": "hush works where white noise doesn't. pure void with subtle pulse. Builds playlist traction in cosmic sleep rotations. Save to return to center. Spotify link in bio.\n\nExit and Rest — Save Silence EP",
-        "analytics": null
       }
     ],
-    "upcomingPosts": []
+    "upcomingPosts": [
+      {
+        "id": "6a02879a0f2e1f2e87501046",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "new track coming. seven minutes of sustained tone that shifts so slowly you won't notice until you'r"
+      },
+      {
+        "id": "6a02879a0f2e1f2e87501021",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "synthesis starts with frequency. which frequencies make a nervous system soften. we map it. test it."
+      },
+      {
+        "id": "6a02879923dbe4fb7a48f3be",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "someone listened to hush on repeat for 8 hours. said it was the first time in years their mind went "
+      },
+      {
+        "id": "6a02879923dbe4fb7a48f399",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "rest isn't lazy. it's the state where your body finally heals. cortisol drops. your nervous system r"
+      },
+      {
+        "id": "6a0287990f2e1f2e87500ffc",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "working on something that feels like rain on old windows. not the image. the feeling it creates in y"
+      },
+      {
+        "id": "6a0287980f2e1f2e87500fd7",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "text": "every breath you take while listening is part of the mix. we design with that in mind. tracks breath"
+      }
+    ]
   },
   "instagram": {
-    "followers": 19210,
+    "followers": 19215,
     "source": "api",
-    "reach_7d": 243,
-    "profile_views_7d": 10
+    "reach_7d": 245,
+    "profile_views_7d": 8
   },
   "spotify": {
     "streams_28d": 28435,
