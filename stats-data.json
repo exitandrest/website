@@ -1,18 +1,137 @@
 {
-  "updatedAt": "2026-05-13T17:05:33.333Z",
-  "date": "2026-05-13",
+  "updatedAt": "2026-05-14T17:05:14.277Z",
+  "date": "2026-05-14",
   "exitAndRest": {
-    "streams28d": null,
-    "streams28dChange": null,
-    "listeners28d": null,
-    "listenersChange": null,
-    "followers": null,
-    "saves": null,
-    "todayStreams": null,
-    "todayListeners": null,
-    "topTracks": [],
-    "daily": [],
-    "dailyListeners": [],
+    "streams28d": 25786,
+    "streams28dChange": -44.9,
+    "listeners28d": 7816,
+    "listenersChange": -30.2,
+    "followers": 95,
+    "saves": 129,
+    "todayStreams": 355,
+    "todayListeners": 239,
+    "topTracks": [
+      {
+        "rank": 1,
+        "title": "Center",
+        "streams": "1,887",
+        "saves": "10"
+      },
+      {
+        "rank": 2,
+        "title": "Shadows iii",
+        "streams": "1,415",
+        "saves": "1"
+      },
+      {
+        "rank": 3,
+        "title": "Rejuvenate",
+        "streams": "1,274",
+        "saves": null
+      },
+      {
+        "rank": 4,
+        "title": "Quiet Street",
+        "streams": "1,158",
+        "saves": "3"
+      },
+      {
+        "rank": 5,
+        "title": "Bedtime",
+        "streams": "1,097",
+        "saves": null
+      },
+      {
+        "rank": 6,
+        "title": "Response",
+        "streams": "1,059",
+        "saves": "1"
+      },
+      {
+        "rank": 7,
+        "title": "Dream",
+        "streams": "982",
+        "saves": null
+      },
+      {
+        "rank": 8,
+        "title": "Core",
+        "streams": "952",
+        "saves": "5"
+      },
+      {
+        "rank": 9,
+        "title": "Balance",
+        "streams": "880",
+        "saves": "6"
+      },
+      {
+        "rank": 10,
+        "title": "Unfinished",
+        "streams": "848",
+        "saves": "1"
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-05-06",
+        "streams": 507
+      },
+      {
+        "date": "2026-05-07",
+        "streams": 576
+      },
+      {
+        "date": "2026-05-08",
+        "streams": 602
+      },
+      {
+        "date": "2026-05-09",
+        "streams": 309
+      },
+      {
+        "date": "2026-05-10",
+        "streams": 474
+      },
+      {
+        "date": "2026-05-11",
+        "streams": 412
+      },
+      {
+        "date": "2026-05-12",
+        "streams": 355
+      }
+    ],
+    "dailyListeners": [
+      {
+        "date": "2026-05-06",
+        "listeners": 284
+      },
+      {
+        "date": "2026-05-07",
+        "listeners": 286
+      },
+      {
+        "date": "2026-05-08",
+        "listeners": 231
+      },
+      {
+        "date": "2026-05-09",
+        "listeners": 185
+      },
+      {
+        "date": "2026-05-10",
+        "listeners": 251
+      },
+      {
+        "date": "2026-05-11",
+        "listeners": 271
+      },
+      {
+        "date": "2026-05-12",
+        "listeners": 239
+      }
+    ],
     "followersHistory": [
       {
         "date": "2024-01-01",
@@ -4268,14 +4387,19 @@
         "date": "2026-05-12",
         "followers": 95,
         "saves": 136
+      },
+      {
+        "date": "2026-05-14",
+        "followers": 95,
+        "saves": 129
       }
     ]
   },
   "shelbyArcher": {
-    "streams28d": null,
-    "streams28dChange": null,
-    "listeners28d": null,
-    "listenersChange": null,
+    "streams28d": 8096,
+    "streams28dChange": -47.3,
+    "listeners28d": 1708,
+    "listenersChange": -49.3,
     "followers": 29,
     "saves": 37,
     "todayStreams": 40,
@@ -8667,6 +8791,11 @@
         "date": "2026-05-13",
         "followers": 29,
         "saves": 37
+      },
+      {
+        "date": "2026-05-14",
+        "followers": 29,
+        "saves": 37
       }
     ]
   },
@@ -8725,90 +8854,14 @@
     ]
   },
   "youtube": {
-    "subscribers": 1590,
-    "views": 30293,
-    "videos": 233,
-    "title": "Exit and Rest",
-    "analytics": {
-      "daily": [
-        {
-          "day": "2026-05-06",
-          "views": 0,
-          "estimatedMinutesWatched": 0,
-          "averageViewDuration": 0,
-          "subscribersGained": 0
-        },
-        {
-          "day": "2026-05-07",
-          "views": 49,
-          "estimatedMinutesWatched": 2,
-          "averageViewDuration": 13,
-          "subscribersGained": 0
-        },
-        {
-          "day": "2026-05-08",
-          "views": 116,
-          "estimatedMinutesWatched": 129,
-          "averageViewDuration": 547,
-          "subscribersGained": 1
-        },
-        {
-          "day": "2026-05-09",
-          "views": 110,
-          "estimatedMinutesWatched": 4,
-          "averageViewDuration": 11,
-          "subscribersGained": 1
-        },
-        {
-          "day": "2026-05-10",
-          "views": 12,
-          "estimatedMinutesWatched": 0,
-          "averageViewDuration": 7,
-          "subscribersGained": 0
-        }
-      ],
-      "topVideos": [
-        {
-          "id": "iutahRPIEso",
-          "title": "hush quiets everything",
-          "views": 94,
-          "watchMin": 76,
-          "retention": 1335.17
-        },
-        {
-          "id": "TD4tSe8A0aw",
-          "title": "the silence before sleep",
-          "views": 76,
-          "watchMin": 2,
-          "retention": 46.8
-        },
-        {
-          "id": "jIjKHEACpCk",
-          "title": "your body remembers quiet",
-          "views": 68,
-          "watchMin": 3,
-          "retention": 77.99
-        },
-        {
-          "id": "PL04J839SMg",
-          "title": "when noise fails you",
-          "views": 45,
-          "watchMin": 1,
-          "retention": 92.53
-        },
-        {
-          "id": "WArkLYMJwIw",
-          "title": "April is almost over. How many nights did you actually rest?",
-          "views": 2,
-          "watchMin": 0,
-          "retention": 198.54
-        }
-      ]
-    }
+    "subscribers": null,
+    "views": null,
+    "videos": null,
+    "error": "no data"
   },
   "pixel_7d": {
-    "PageView": 66,
-    "ViewContent": 2,
+    "PageView": 0,
+    "ViewContent": 0,
     "Lead": 0
   },
   "meta": {
@@ -8822,8 +8875,24 @@
     "top_ads": []
   },
   "history": {
-    "streams": [],
-    "stream_dates": [],
+    "streams": [
+      507,
+      576,
+      602,
+      309,
+      474,
+      412,
+      355
+    ],
+    "stream_dates": [
+      "2026-05-06",
+      "2026-05-07",
+      "2026-05-08",
+      "2026-05-09",
+      "2026-05-10",
+      "2026-05-11",
+      "2026-05-12"
+    ],
     "followers": [
       0,
       0,
@@ -9673,6 +9742,7 @@
       92,
       92,
       93,
+      95,
       95,
       95,
       95
@@ -10528,7 +10598,8 @@
       "2026-05-09",
       "2026-05-10",
       "2026-05-11",
-      "2026-05-12"
+      "2026-05-12",
+      "2026-05-14"
     ],
     "saves": [
       0,
@@ -11381,7 +11452,8 @@
       148,
       147,
       136,
-      136
+      136,
+      129
     ],
     "sa_streams": [
       147,
@@ -12245,6 +12317,7 @@
       29,
       29,
       29,
+      29,
       29
     ],
     "sa_follower_dates": [
@@ -13100,7 +13173,8 @@
       "2026-05-10",
       "2026-05-11",
       "2026-05-12",
-      "2026-05-13"
+      "2026-05-13",
+      "2026-05-14"
     ],
     "subs": [],
     "adspend": []
@@ -13108,7 +13182,7 @@
   "kalshi": null,
   "social": {
     "totalPosts7d": 10,
-    "totalScheduled": 2,
+    "totalScheduled": 0,
     "byPlatform": {
       "facebook": {
         "name": "Exit and Rest",
@@ -13125,14 +13199,14 @@
       "youtube": {
         "name": "Exit and Rest",
         "connected": true,
-        "posts7d": 1,
+        "posts7d": 0,
         "postsScheduled": 0
       },
       "twitter": {
         "name": "ExitandRest",
         "connected": true,
-        "posts7d": 9,
-        "postsScheduled": 2
+        "posts7d": 10,
+        "postsScheduled": 0
       },
       "startPage": {
         "name": "exit and rest",
@@ -13148,6 +13222,22 @@
       }
     },
     "recentPosts": [
+      {
+        "id": "6a02879a0f2e1f2e87501046",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-05-12",
+        "text": "new track coming. seven minutes of sustained tone that shifts so slowly you won't notice until you're somewhere else. that's the contract: we make the journey. you just show up and breathe.",
+        "analytics": null
+      },
+      {
+        "id": "6a02879a0f2e1f2e87501021",
+        "channelId": "68ad00a13d2fbc20d49b7a01",
+        "service": "twitter",
+        "date": "2026-05-12",
+        "text": "synthesis starts with frequency. which frequencies make a nervous system soften. we map it. test it. throw out what's clever. keep what feels true. the science and art have to agree.",
+        "analytics": null
+      },
       {
         "id": "6a02879923dbe4fb7a48f3be",
         "channelId": "68ad00a13d2fbc20d49b7a01",
@@ -13211,62 +13301,123 @@
         "date": "2026-05-12",
         "text": "silence isn't empty. it's the sound of everything finally settling. we spend days filling space with noise. one track at a time, exit and rest teaches the nervous system what it already knew: quiet is",
         "analytics": null
-      },
-      {
-        "id": "69ffcd6a2789e816c9149742",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "date": "2026-05-10",
-        "text": "your body remembers quiet",
-        "analytics": null
-      },
-      {
-        "id": "69ffcd678c697e6b3c203a7e",
-        "channelId": "68ad007e3d2fbc20d49b79fb",
-        "service": "youtube",
-        "date": "2026-05-10",
-        "text": "Silence is not the absence of sound.\nIt is the presence of space.\nThe Silence EP was built for the nervous system that forgot how to rest.\nSix tracks. No filler. Save it for when you need to come back",
-        "analytics": null
       }
     ],
-    "upcomingPosts": [
+    "upcomingPosts": []
+  },
+  "instagram": {
+    "followers": 19215,
+    "source": "api",
+    "reach_7d": 162,
+    "profile_views_7d": 4
+  },
+  "spotify": {
+    "streams_28d": 25786,
+    "streams_28d_change": -44.9,
+    "listeners_28d": 7816,
+    "listeners_change": -30.2,
+    "artist_followers": 95,
+    "saves": 129,
+    "today_streams": 355,
+    "today_listeners": 239,
+    "top_tracks": [
       {
-        "id": "6a02879a0f2e1f2e87501046",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "text": "new track coming. seven minutes of sustained tone that shifts so slowly you won't notice until you'r"
+        "rank": 1,
+        "title": "Center",
+        "streams": "1,887",
+        "saves": "10"
       },
       {
-        "id": "6a02879a0f2e1f2e87501021",
-        "channelId": "68ad00a13d2fbc20d49b7a01",
-        "service": "twitter",
-        "text": "synthesis starts with frequency. which frequencies make a nervous system soften. we map it. test it."
+        "rank": 2,
+        "title": "Shadows iii",
+        "streams": "1,415",
+        "saves": "1"
+      },
+      {
+        "rank": 3,
+        "title": "Rejuvenate",
+        "streams": "1,274",
+        "saves": null
+      },
+      {
+        "rank": 4,
+        "title": "Quiet Street",
+        "streams": "1,158",
+        "saves": "3"
+      },
+      {
+        "rank": 5,
+        "title": "Bedtime",
+        "streams": "1,097",
+        "saves": null
+      },
+      {
+        "rank": 6,
+        "title": "Response",
+        "streams": "1,059",
+        "saves": "1"
+      },
+      {
+        "rank": 7,
+        "title": "Dream",
+        "streams": "982",
+        "saves": null
+      },
+      {
+        "rank": 8,
+        "title": "Core",
+        "streams": "952",
+        "saves": "5"
+      },
+      {
+        "rank": 9,
+        "title": "Balance",
+        "streams": "880",
+        "saves": "6"
+      },
+      {
+        "rank": 10,
+        "title": "Unfinished",
+        "streams": "848",
+        "saves": "1"
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-05-06",
+        "streams": 507
+      },
+      {
+        "date": "2026-05-07",
+        "streams": 576
+      },
+      {
+        "date": "2026-05-08",
+        "streams": 602
+      },
+      {
+        "date": "2026-05-09",
+        "streams": 309
+      },
+      {
+        "date": "2026-05-10",
+        "streams": 474
+      },
+      {
+        "date": "2026-05-11",
+        "streams": 412
+      },
+      {
+        "date": "2026-05-12",
+        "streams": 355
       }
     ]
   },
-  "instagram": {
-    "followers": 19212,
-    "source": "api",
-    "reach_7d": 233,
-    "profile_views_7d": 7
-  },
-  "spotify": {
-    "streams_28d": null,
-    "streams_28d_change": null,
-    "listeners_28d": null,
-    "listeners_change": null,
-    "artist_followers": null,
-    "saves": null,
-    "today_streams": null,
-    "today_listeners": null,
-    "top_tracks": [],
-    "daily": []
-  },
   "shelby_archer": {
-    "streams_28d": null,
-    "streams_28d_change": null,
-    "listeners_28d": null,
-    "listeners_change": null,
+    "streams_28d": 8096,
+    "streams_28d_change": -47.3,
+    "listeners_28d": 1708,
+    "listeners_change": -49.3,
     "artist_followers": 29,
     "saves": 37,
     "today_streams": 40,
