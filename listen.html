@@ -80,20 +80,20 @@
   <script>
     const ROOMS = [
       {
-        id: 'sleep',
-        label: 'sleep',
-        title: 'sleep',
-        use: 'Night mode, sleep apps, rest, recovery. Soft, low event density, loop-friendly.',
-        album: '22qizZ3MqZ7LxPa0IP1sw5',
-        cover: 'https://i.scdn.co/image/ab67616d00001e025034cc9a6ac10638366ce0e5'
-      },
-      {
         id: 'night',
         label: 'night drive',
         title: 'night walk',
         use: 'Late-night brand, automotive, journey, city after hours. Moody, hopeful, not sinister.',
         album: '38N12aSf0xxoFxN9Cz2xh1',
         cover: 'https://i.scdn.co/image/ab67616d00001e024c0c6e74c8f653dd0e1d8ff4'
+      },
+      {
+        id: 'sleep',
+        label: 'sleep',
+        title: 'sleep',
+        use: 'Night mode, sleep apps, rest, recovery. Soft, low event density, loop-friendly.',
+        album: '22qizZ3MqZ7LxPa0IP1sw5',
+        cover: 'https://i.scdn.co/image/ab67616d00001e025034cc9a6ac10638366ce0e5'
       },
       {
         id: 'still',
@@ -145,7 +145,7 @@
       }
     ];
 
-    const EMAIL = 'shelbyarcher@me.com';
+    const EMAIL = 'exitandrest@gmail.com';
     const roomsEl = document.getElementById('rooms');
     const player = document.getElementById('player');
     const cover = document.getElementById('cover');
@@ -180,7 +180,7 @@
       roomsEl.appendChild(b);
     });
 
-    const fromHash = ROOMS.find(function (r) { return r.id === location.hash.replace('#', ''); }) || ROOMS[0];
+    const fromHash = ROOMS.find(function (r) { return r.id === location.hash.replace('#', ''); }) || ROOMS.find(function (r) { return r.id === 'night'; }) || ROOMS[0];
     select(fromHash);
   </script>
 </body>

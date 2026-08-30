@@ -237,8 +237,8 @@ header img {
 }
 
 header .z-20 img {
-  max-width: 20%; /* Reduces logo width, adjust as needed */
-  height: auto; /* Maintains aspect ratio */
+  max-width: 42%;
+  height: auto;
 }
 
 
@@ -255,7 +255,7 @@ header .z-20 p {
 
  @media (max-width: 640px) {
   .z-20 img {
-    max-width: 70% !important; /* Overrides Tailwind for mobile */
+    max-width: 58% !important;
   }
 }
 
@@ -537,30 +537,28 @@ header .z-20 p {
   <!-- Background Image -->
   <img
     src="img/darkmoonbanner.png"
-    alt="A serene crescent moon framed by palm tree shadows, evoking tranquility and introspection for ambient music"
+    alt="Crescent moon through palm shadows"
     class="absolute top-0 left-0 w-full h-full object-cover z-0"
-    onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/000000/FFFFFF?text=Exit+and+Rest';"
     itemprop="image"
-    role="img"
-    aria-describedby="hero-description"
   />
+  <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/20 to-black/70"></div>
 
   <!-- Header Content -->
   <div
     class="relative z-20 flex flex-col items-center justify-center w-full p-4"
     itemscope
     itemtype="https://schema.org/MusicGroup"
-    role="main"
+    role="group"
     aria-labelledby="site-title"
   >
     <img
       src="EARLOGO.svg"
-      alt="Exit and Rest Logo - Modern text design with Exit & Rest"
-      class="max-w-[10%] md:max-w-[10%] sm:max-w-[30%] w-full h-auto mx-auto mb-2 md:mb-4"
+      alt="Exit and Rest"
+      class="w-full h-auto mx-auto mb-2 md:mb-4"
+      style="max-width: 42%; filter: brightness(0) invert(1); opacity: 0.92;"
       itemprop="logo"
     />
 
-    </p>
     <meta itemprop="url" content="https://exitandrest.com/" />
     <meta itemprop="genre" content="Ambient" />
     <meta itemprop="genre" content="Meditation" />
@@ -652,13 +650,10 @@ header .z-20 p {
           itemprop="articleBody"
           role="region"
         >
-          <h2
-            id="about-heading"
-            class="text-3xl sm:text-4xl font-thin text-center mb-4 tracking-wide"
-            itemprop="headline"
-          >
-       <section>
-  <h2 class="text-2xl sm:text-3xl font-light tracking-wide text-center mb-8">
+  <h2
+    id="about-heading"
+    class="text-2xl sm:text-3xl font-light tracking-wide text-center mb-8"
+  >
     A Journey into Sound
   </h2>
   <div
@@ -706,6 +701,11 @@ header .z-20 p {
       >
         <span itemprop="name">Exit and Rest</span>
       </span>.
+    </p>
+    <p class="text-center pt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm tracking-wide">
+      <a href="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN" class="underline underline-offset-4">Spotify</a>
+      <a href="listen.html" class="underline underline-offset-4">Licensing</a>
+      <a href="mailto:exitandrest@gmail.com" class="underline underline-offset-4">exitandrest@gmail.com</a>
     </p>
   </div>
 </section>
@@ -980,6 +980,8 @@ header .z-20 p {
         </nav>
         <p class="text-sm footer-text-enhanced mb-4">
           <a href="listen.html" class="underline-offset-4 hover:underline">Licensing catalog</a>
+          <span aria-hidden="true"> · </span>
+          <a href="mailto:exitandrest@gmail.com" class="underline-offset-4 hover:underline">exitandrest@gmail.com</a>
         </p>
         <!-- Copyright -->
         <p
