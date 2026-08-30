@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /stats.html
+Disallow: /refactor.html
+Disallow: /stats-data.json
+
+Sitemap: https://exitandrest.com/sitemap.xml
