@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Listen — Exit and Rest</title>
+  <meta name="description" content="Instrumental ambient catalog for film, television, brand, and picture. Organized by use. 100% owned."/>
+  <link rel="canonical" href="https://exitandrest.com/listen.html"/>
+  <meta name="theme-color" content="#050810"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://exitandrest.com/listen.html"/>
+  <meta property="og:title" content="Listen — Exit and Rest"/>
+  <meta property="og:description" content="Instrumental ambient catalog for film, television, brand, and picture. Organized by use."/>
+  <link rel="icon" href="favicon.ico"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+  <style>
+    @font-face{font-family:'MM';src:url('MuseoModerno.ttf') format('truetype');font-weight:100 900;font-display:swap;}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    html,body{background:#050810;color:rgba(255,255,255,.88);font-family:'MM',sans-serif;-webkit-font-smoothing:antialiased;}
+    body{min-height:100vh;padding:2.25rem 1.25rem 4rem;}
+    a{color:inherit;}
+    .wrap{max-width:720px;margin:0 auto;}
+    .logo{width:92px;height:auto;display:block;margin:0 auto 1.75rem;filter:brightness(0) invert(1);opacity:.7;}
+    .kicker{text-align:center;font-size:.68rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:.55rem;}
+    h1{text-align:center;font-size:1.55rem;font-weight:200;letter-spacing:.14em;margin-bottom:.7rem;}
+    .lede{text-align:center;font-size:.84rem;font-weight:300;letter-spacing:.04em;line-height:1.65;color:rgba(255,255,255,.5);max-width:38rem;margin:0 auto 1.5rem;}
+    .facts{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem .55rem;margin:0 auto 1.75rem;max-width:40rem;}
+    .facts span{font-size:.62rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.42);border:1px solid rgba(255,255,255,.12);padding:.28rem .55rem;border-radius:999px;}
+    .rooms{display:flex;flex-wrap:wrap;justify-content:center;gap:.45rem;margin-bottom:1.6rem;}
+    .rooms button{
+      font-family:'MM',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.08em;
+      background:transparent;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.14);
+      padding:.45rem .8rem;border-radius:999px;cursor:pointer;
+    }
+    .rooms button[aria-pressed="true"]{color:#050810;background:rgba(255,255,255,.9);border-color:transparent;}
+    .stage{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.15rem 1rem 1.05rem;margin-bottom:1.4rem;}
+    .stage-head{display:flex;gap:1rem;align-items:center;margin-bottom:1rem;}
+    .cover{width:72px;height:72px;border-radius:8px;object-fit:cover;flex-shrink:0;box-shadow:0 8px 28px rgba(0,0,0,.45);}
+    .stage h2{font-size:1.05rem;font-weight:300;letter-spacing:.1em;text-transform:lowercase;}
+    .use{font-size:.78rem;font-weight:300;color:rgba(255,255,255,.48);line-height:1.55;margin-top:.28rem;}
+    iframe{width:100%;height:352px;border:0;border-radius:12px;display:block;}
+    .mail{
+      display:block;text-align:center;text-decoration:none;
+      font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+      color:#050810;background:rgba(255,255,255,.92);padding:.95rem 1.2rem;border-radius:999px;
+      margin:0 auto 1rem;max-width:22rem;
+    }
+    .note{text-align:center;font-size:.7rem;font-weight:300;letter-spacing:.04em;line-height:1.6;color:rgba(255,255,255,.32);}
+    .home{display:block;text-align:center;margin-top:1.4rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.28);text-decoration:none;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="/"><img class="logo" src="EARLOGO.svg" alt="Exit and Rest"/></a>
+    <p class="kicker">For picture</p>
+    <h1>listen</h1>
+    <p class="lede">Instrumental ambient, organized by use. Play a room. If it fits the picture, email Exit and Rest. Direct. No library middleman.</p>
+    <div class="facts">
+      <span>100% masters</span>
+      <span>100% publishing</span>
+      <span>instrumental</span>
+      <span>non-exclusive</span>
+      <span>Content ID on</span>
+    </div>
+    <div class="rooms" id="rooms" role="tablist" aria-label="Catalog rooms"></div>
+    <div class="stage">
+      <div class="stage-head">
+        <img class="cover" id="cover" alt=""/>
+        <div>
+          <h2 id="title"></h2>
+          <p class="use" id="use"></p>
+        </div>
+      </div>
+      <iframe id="player" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Exit and Rest catalog player"></iframe>
+    </div>
+    <a class="mail" id="mail" href="#">Email Exit and Rest</a>
+    <p class="note">Stereo masters. Stems not available. Content ID is on via Symphonic. Licensed uses can be whitelisted. ASCAP writer and Funk It Up Music publishing.</p>
+    <a class="home" href="/">exitandrest.com</a>
+  </div>
+  <script>
+    const ROOMS = [
+      {
+        id: 'sleep',
+        label: 'sleep',
+        title: 'sleep',
+        use: 'Night mode, sleep apps, rest, recovery. Soft, low event density, loop-friendly.',
+        album: '22qizZ3MqZ7LxPa0IP1sw5',
+        cover: 'https://i.scdn.co/image/ab67616d00001e025034cc9a6ac10638366ce0e5'
+      },
+      {
+        id: 'night',
+        label: 'night drive',
+        title: 'night walk',
+        use: 'Late-night brand, automotive, journey, city after hours. Moody, hopeful, not sinister.',
+        album: '38N12aSf0xxoFxN9Cz2xh1',
+        cover: 'https://i.scdn.co/image/ab67616d00001e024c0c6e74c8f653dd0e1d8ff4'
+      },
+      {
+        id: 'still',
+        label: 'still / VO',
+        title: 'silence',
+        use: 'Documentary, talking-head, narration beds. Spacious, recedes on cue.',
+        album: '6rvk2kXnuZykmaP7pPPL3X',
+        cover: 'https://i.scdn.co/image/ab67616d00001e023d02f1bfb89f94e3b9b977bc'
+      },
+      {
+        id: 'focus',
+        label: 'focus',
+        title: 'aligned',
+        use: 'Mindfulness, study, balanced daytime underscore. Clean and centered.',
+        album: '3boXMhsITJuyp5MMkcIeDL',
+        cover: 'https://i.scdn.co/image/ab67616d00001e02a756a015990a9a83c7eee162'
+      },
+      {
+        id: 'interiors',
+        label: 'interiors',
+        title: 'interiors',
+        use: 'Home, design, lifestyle, product in place. Warm, domestic, lo-fi calm.',
+        album: '19TnTkSMkNJP81Qbk4K426',
+        cover: 'https://i.scdn.co/image/ab67616d00001e021eff9e1b5e24d4015f094f60'
+      },
+      {
+        id: 'dark',
+        label: 'dark / tech',
+        title: 'shadows',
+        use: 'Hardware, SaaS, restrained drama. Brooding without horror. Controlled tension.',
+        album: '2F8gTYazWIfjW6nvfsVKN1',
+        cover: 'https://i.scdn.co/image/ab67616d00001e0268003f86bfff5fef8f235d13'
+      },
+      {
+        id: 'drone',
+        label: 'drone',
+        title: 'void',
+        use: 'Sci-fi, planetarium, long texture, space. Deep drone, little melody.',
+        album: '102c10KC2rZpU3WAzmzE4y',
+        cover: 'https://i.scdn.co/image/ab67616d00001e020ca9eb6520810d3b31019473'
+      },
+      {
+        id: 'art',
+        label: 'art film',
+        title: 'abstractions',
+        use: 'Gallery, experimental picture, design docs. Textural, non-melodic, still.',
+        album: '7cmLvaMG02Gdi6HnzJ0fQ0',
+        cover: 'https://i.scdn.co/image/ab67616d00001e026c1aa3efeddc4d9c35ade925'
+      }
+    ];
+
+    const EMAIL = 'shelbyarcher@me.com';
+    const roomsEl = document.getElementById('rooms');
+    const player = document.getElementById('player');
+    const cover = document.getElementById('cover');
+    const title = document.getElementById('title');
+    const use = document.getElementById('use');
+    const mail = document.getElementById('mail');
+
+    function select(room) {
+      history.replaceState(null, '', '#' + room.id);
+      title.textContent = room.title;
+      use.textContent = room.use;
+      cover.src = room.cover;
+      cover.alt = room.title;
+      player.src = 'https://open.spotify.com/embed/album/' + room.album + '?utm_source=generator&theme=0';
+      const subject = encodeURIComponent('Exit and Rest licensing / ' + room.title);
+      const body = encodeURIComponent(
+        'Hi,\n\nI am reaching out about licensing Exit and Rest.\n\nProject:\nUse: ' + room.title + '\nTrack(s):\nTerritory / term:\n\nThanks.'
+      );
+      mail.href = 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
+      roomsEl.querySelectorAll('button').forEach(function (b) {
+        b.setAttribute('aria-pressed', b.dataset.id === room.id ? 'true' : 'false');
+      });
+    }
+
+    ROOMS.forEach(function (room) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.dataset.id = room.id;
+      b.textContent = room.label;
+      b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', function () { select(room); });
+      roomsEl.appendChild(b);
+    });
+
+    const fromHash = ROOMS.find(function (r) { return r.id === location.hash.replace('#', ''); }) || ROOMS[0];
+    select(fromHash);
+  </script>
+</body>
+</html>
