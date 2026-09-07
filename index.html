@@ -59,7 +59,7 @@ src="https://www.facebook.com/tr?id=1334453668358087&ev=PageView&noscript=1"
 
     <!-- Theme color for browser chrome and PWA title bars -->
     <!-- Matches the brand color (#3a3ad9) for consistent visual identity -->
-    <meta name="theme-color" content="#3a3ad9" />
+    <meta name="theme-color" content="#050810" />
 
     <!-- =======================================================================
          SEARCH ENGINE OPTIMIZATION (SEO) META TAGS
@@ -167,7 +167,7 @@ src="https://www.facebook.com/tr?id=1334453668358087&ev=PageView&noscript=1"
 
     <!-- Safari mask icon for pinned tabs -->
     <!-- Monochrome version with specified theme color -->
-    <link rel="mask-icon" href="mask-icon.svg" color="#3a3ad9" />
+    <link rel="mask-icon" href="mask-icon.svg" color="#050810" />
 
     <!-- Apple touch icon for iOS devices -->
     <!-- Used for home screen shortcuts and bookmark icons -->
@@ -200,41 +200,37 @@ src="https://www.facebook.com/tr?id=1334453668358087&ev=PageView&noscript=1"
 
 
 
-header {
-  height: 50vh; /* Reduces header height to 50% of viewport height, adjust as needed */
-  min-height: 200px; /* Optional: Sets a minimum height */
+header.hero {
+  height: 78vh;
+  height: 78dvh;
+  min-height: 28rem;
 }
-
-header img {
-  max-height: 50vh; /* Limits the background image height */
+header.hero .hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
-
-header .z-20 img {
-  max-width: 42%;
+header.hero .hero-mark {
+  width: auto;
   height: auto;
+  max-width: min(42vw, 34rem);
+  max-height: calc(78vh - 5rem);
+  max-height: calc(78dvh - 5rem);
 }
-
-
-header .z-20 p {
-  font-size: 0.875rem; /* Reduces text size to 14px, adjust as needed */
-  line-height: 1.25; /* Adjusts line spacing for smaller text */
-}
-
-      main {
-  margin-top: -2rem; /* Reduces the top margin, adjust as needed (negative value pulls it up) */
-  padding-top: 1rem; /* Optional: Adds a small padding to avoid content touching the header */
-}
-
-
- @media (max-width: 640px) {
-  .z-20 img {
-    max-width: 58% !important;
+@media (max-width: 640px) {
+  header.hero {
+    height: 72vh;
+    height: 72dvh;
+    min-height: 24rem;
   }
-}
-
-      @media (max-width: 640px) {
-  header img {
-    object-position: center 70%; /* Adjusts where the image is cropped, tweak the percentage */
+  header.hero .hero-mark {
+    max-width: 78vw;
+    max-height: calc(72vh - 4.5rem);
+    max-height: calc(72dvh - 4.5rem);
+  }
+  header.hero .hero-bg {
+    object-position: center 70%;
   }
 }
 
@@ -372,20 +368,10 @@ header .z-20 p {
       // 2. System/browser preference for dark mode
       // 3. Default to light mode if neither is available
 
-      if (
-        // First condition: User explicitly chose dark mode previously
-        localStorage.theme === "dark" ||
-        // Second condition: No explicit preference AND system prefers dark mode
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        // Apply dark mode by adding 'dark' class to root HTML element
-        // This triggers all dark: prefixed Tailwind classes throughout the site
-        document.documentElement.classList.add("dark");
-      } else {
-        // Apply light mode by removing 'dark' class from root HTML element
-        // This ensures clean state if dark class was previously applied
+      if (localStorage.theme === "light") {
         document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
       }
     </script>
 
@@ -457,7 +443,7 @@ header .z-20 p {
 
 <!-- Header Section -->
 <header
-  class="relative w-full h-[40vh] min-h-[200px] flex items-center justify-center text-center overflow-hidden"
+  class="hero relative w-full flex items-center justify-center text-center overflow-hidden"
   itemscope
   itemtype="https://schema.org/WPHeader"
   role="banner"
@@ -467,7 +453,7 @@ header .z-20 p {
   <img
     src="img/darkmoonbanner.png"
     alt="Crescent moon through palm shadows"
-    class="absolute top-0 left-0 w-full h-full object-cover z-0"
+    class="hero-bg absolute top-0 left-0 z-0"
     itemprop="image"
   />
   <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/20 to-black/70"></div>
@@ -483,8 +469,8 @@ header .z-20 p {
     <img
       src="EARLOGO.svg"
       alt="Exit and Rest"
-      class="w-full h-auto mx-auto mb-2 md:mb-4"
-      style="max-width: 42%; filter: brightness(0) invert(1); opacity: 0.92;"
+      class="hero-mark mx-auto"
+      style="filter: brightness(0) invert(1); opacity: 0.92;"
       itemprop="logo"
     />
     <h1 class="sr-only">Exit and Rest. Electronic ambient for sleep and night.</h1>
@@ -615,8 +601,7 @@ header .z-20 p {
         itemscope
         itemtype="https://schema.org/MusicGroup"
       >
-        <span itemprop="name">Exit and Rest</span>
-      </span>.
+        <span itemprop="name">Exit and Rest</span></span>.
     </p>
     <p class="text-center pt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm tracking-wide">
       <a href="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN" class="underline underline-offset-4">Spotify</a>
@@ -639,7 +624,7 @@ header .z-20 p {
             id="listen-heading"
             class="text-3xl sm:text-4xl font-thin text-center mb-8 tracking-wide"
           >
-            Listen Now
+            listen
           </h2>
           <meta itemprop="name" content="Exit and Rest Music Collection" />
           <meta
@@ -708,10 +693,12 @@ header .z-20 p {
               aria-labelledby="spotify-heading"
             >
               <h3 id="spotify-heading" class="sr-only">Spotify Music Player</h3>
-             <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3JiPmwzvhlWmPZ5GHixsbp?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-             <br>
-              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4doqZUR4rfbrkMHptTirj3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <br>
+              <p class="text-center text-sm tracking-wide footer-text-enhanced mb-3">Exit and Rest</p>
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/6mfcGE04ZwO1pTQb5ftsaN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Exit and Rest on Spotify"></iframe>
+              <p class="text-center text-sm tracking-wide footer-text-enhanced mt-10 mb-3">drift into quiet</p>
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3JiPmwzvhlWmPZ5GHixsbp?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="drift into quiet playlist"></iframe>
+              <p class="text-center text-sm tracking-wide footer-text-enhanced mt-10 mb-3">cosmic sleep</p>
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4doqZUR4rfbrkMHptTirj3?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="cosmic sleep playlist"></iframe>
             
               <meta
                 itemprop="name"
@@ -744,7 +731,7 @@ header .z-20 p {
 
     <!-- Footer Section -->
     <footer
-      class="bg-stone-200 dark:bg-gray-900 py-12"
+      class="bg-stone-200 dark:bg-black py-12"
       itemscope
       itemtype="https://schema.org/WPFooter"
       role="contentinfo"
