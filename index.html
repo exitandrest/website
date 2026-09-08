@@ -1,1133 +1,310 @@
-<!doctype html>
-<!--
-  =============================================================================
-  EXIT AND REST - AMBIENT MUSIC WEBSITE
-  =============================================================================
-  A comprehensive website for Exit and Rest, an ambient music artist creating
-  original soundscapes for meditation, relaxation, and introspection.
-
-  Features:
-  - Progressive Web App (PWA) capabilities
-  - Dark/Light theme switching with system preference detection
-  - Full accessibility compliance (WCAG 2.1 AA)
-  - SEO optimized with structured data markup
-  - Social media integration and sharing optimization
-  - Responsive design for all device types
-  =============================================================================
--->
-<html
-  lang="en-US"
-  dir="auto"
-  class="dark"
-  itemscope
-  itemtype="https://schema.org/WebSite"
->
+<!DOCTYPE html>
+<html lang="en">
   <head>
-
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1334453668358087');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1334453668358087&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-    
-    <!-- =======================================================================
-         CORE DOCUMENT SETTINGS AND VIEWPORT CONFIGURATION
-         ======================================================================= -->
-
-    <!-- Character encoding specification - UTF-8 for international support -->
     <meta charset="UTF-8" />
-
-    <!-- Responsive viewport configuration for mobile devices -->
-    <!-- viewport-fit=cover ensures full screen usage on devices with notches -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-
-    <!-- Theme color for browser chrome and PWA title bars -->
-    <!-- Matches the brand color (#3a3ad9) for consistent visual identity -->
-    <meta name="theme-color" content="#050810" />
-
-    <!-- =======================================================================
-         SEARCH ENGINE OPTIMIZATION (SEO) META TAGS
-         ======================================================================= -->
-
-    <!-- Primary page title - appears in browser tab and search results -->
-    <!-- Optimized with target keywords for music discovery -->
-    <title>Exit and Rest | Ambient Music for Sleep and Focus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exit and Rest</title>
     <meta
       name="description"
-      content="Electronic ambient for sleep and night. Analog warmth. Tuned to 432. Human-made. Fully instrumental."
+      content="Exit and Rest. Original ambient music made to lower the temperature of a room. Night drive, sleep, interiors, focus."
     />
-    <meta name="author" content="Exit and Rest" />
-    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://exitandrest.com/" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#050810" />
+    <meta name="msapplication-TileColor" content="#050810" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="mask-icon" href="mask-icon.svg" color="#050810" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- =======================================================================
-         OPEN GRAPH (FACEBOOK/SOCIAL MEDIA) META TAGS
-         ======================================================================= -->
-
-    <!-- Content type declaration for social media platforms -->
     <meta property="og:type" content="website" />
-
-    <!-- Canonical URL for social media sharing -->
-    <!-- Ensures consistent link sharing across platforms -->
+    <meta property="og:site_name" content="Exit and Rest" />
     <meta property="og:url" content="https://exitandrest.com/" />
-
-    <!-- Social media optimized title -->
-    <!-- May differ slightly from page title for better social engagement -->
-    <meta
-      property="og:title"
-      content="Exit and Rest | Ambient Music for Sleep and Focus"
-    />
+    <meta property="og:title" content="Exit and Rest" />
     <meta
       property="og:description"
-      content="Electronic ambient for sleep and night. Analog warmth. Tuned to 432. Human-made."
+      content="Original ambient music made to lower the temperature of a room."
     />
-    <meta property="og:image" content="https://exitandrest.com/img/moonbanner.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="Exit and Rest. Moon through palms."
-    />
-
-    <!-- Website/brand name for social media attribution -->
-    <meta property="og:site_name" content="Exit and Rest" />
-
-    <!-- Locale specification for international social media support -->
-    <meta property="og:locale" content="en_US" />
-
-    <!-- =======================================================================
-         TWITTER CARD OPTIMIZATION
-         ======================================================================= -->
-
-    <!-- Twitter card type - "summary_large_image" shows large preview image -->
+    <meta property="og:image" content="https://exitandrest.com/img/logo.jpg" />
+    <meta property="og:image:alt" content="Exit and Rest" />
     <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- Twitter account handles for attribution and engagement -->
     <meta name="twitter:site" content="@exitandrest" />
-    <!-- Website's Twitter -->
-    <meta name="twitter:creator" content="@exitandrest" />
-    <!-- Content creator's Twitter -->
-
-    <!-- Twitter-optimized title and description -->
-    <!-- May differ from Open Graph for platform-specific optimization -->
-    <meta
-      name="twitter:title"
-      content="Exit and Rest | Ambient Music for Sleep and Focus"
-    />
+    <meta name="twitter:title" content="Exit and Rest" />
     <meta
       name="twitter:description"
-      content="Electronic ambient for sleep and night. Analog warmth. Tuned to 432. Human-made."
+      content="Original ambient music made to lower the temperature of a room."
     />
-    <meta name="twitter:image" content="https://exitandrest.com/img/moonbanner.jpg" />
-    <meta
-      name="twitter:image:alt"
-      content="Exit and Rest. Moon through palms."
-    />
+    <meta name="twitter:image" content="https://exitandrest.com/img/logo.jpg" />
 
-    <!-- =======================================================================
-         MUSIC-SPECIFIC OPEN GRAPH TAGS
-         ======================================================================= -->
-
-    <!-- Direct links to music platforms for rich social media integration -->
-    <!-- Spotify artist profile for music discovery -->
-    <meta
-      property="music:musician"
-      content="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN"
-    />
-
-    <!-- Spotify playlist for immediate listening access -->
-    <meta
-      property="music:song"
-      content="https://open.spotify.com/playlist/3JiPmwzvhlWmPZ5GHixsbp"
-    />
-
-    <!-- =======================================================================
-         FAVICON AND ICON CONFIGURATION
-         ======================================================================= -->
-
-    <!-- Modern SVG favicon - scalable and crisp at any size -->
-    <!-- Used as primary favicon for modern browsers -->
-    <link rel="icon" href="favicon.svg" />
-
-    <!-- Safari mask icon for pinned tabs -->
-    <!-- Monochrome version with specified theme color -->
-    <link rel="mask-icon" href="mask-icon.svg" color="#050810" />
-
-    <!-- Apple touch icon for iOS devices -->
-    <!-- Used for home screen shortcuts and bookmark icons -->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-
-    <!-- Progressive Web App manifest file -->
-    <!-- Defines app behavior when installed on devices -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- =======================================================================
-         EXTERNAL RESOURCES AND PERFORMANCE OPTIMIZATION
-         ======================================================================= -->
-
-    <!-- Tailwind CSS CDN - Utility-first CSS framework -->
-    <!-- Provides responsive design classes and consistent styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts optimization - DNS prefetching for better performance -->
-    <!-- Establishes early connection to font servers to reduce loading time -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- MuseoModerno font family loading -->
-    <!-- Variable weight font (100-900) with italic support -->
-    <!-- display=swap prevents invisible text during font loading -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-
-
-
-header.hero {
-  height: 78vh;
-  height: 78dvh;
-  min-height: 28rem;
-}
-header.hero .hero-bg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-header.hero .hero-mark {
-  width: auto;
-  height: auto;
-  max-width: min(42vw, 34rem);
-  max-height: calc(78vh - 5rem);
-  max-height: calc(78dvh - 5rem);
-}
-@media (max-width: 640px) {
-  header.hero {
-    height: 72vh;
-    height: 72dvh;
-    min-height: 24rem;
-  }
-  header.hero .hero-mark {
-    max-width: 78vw;
-    max-height: calc(72vh - 4.5rem);
-    max-height: calc(72dvh - 4.5rem);
-  }
-  header.hero .hero-bg {
-    object-position: center 70%;
-  }
-}
-
-      /* ==========================================================================
-         TYPOGRAPHY AND FONT CONFIGURATION
-         ========================================================================== */
-
-      /* Apply MuseoModerno font family to entire website */
-      /* This creates a modern, artistic aesthetic matching the ambient music theme */
-      body {
-        font-family: "MuseoModerno", sans-serif;
-      }
-
-      img {
-        display: inline-block;
-        max-inline-size: 100dvw;
-        block-size: auto;
-      }
-
-      /* ==========================================================================
-         DARK MODE TOGGLE SWITCH STYLING (Legacy - Not Currently Used)
-         ========================================================================== */
-
-      /* Styles for checkbox-style toggle when in checked/active state */
-      /* Positions toggle to right side and applies green accent color */
-      .toggle-checkbox:checked {
-        right: 0;
-        border-color: #68d391; /* Green-400 for active state indication */
-      }
-
-      /* Background color for toggle label when checkbox is checked */
-      .toggle-checkbox:checked + .toggle-label {
-        background-color: #68d391; /* Matching green-400 background */
-      }
-
-      /* ==========================================================================
-         ACCESSIBILITY IMPROVEMENTS
-         ========================================================================== */
-
-      /* Skip navigation links for screen readers and keyboard users */
-      /* Hidden by default, visible when focused for keyboard navigation */
-      .skip-link {
-        position: absolute;
-        top: -40px; /* Hidden above viewport */
-        left: 6px; /* Small left margin */
-        background: #000; /* High contrast black background */
-        color: #fff; /* White text for maximum contrast */
-        padding: 8px; /* Comfortable clickable area */
-        text-decoration: none; /* Remove default link underline */
-        z-index: 9999; /* Ensure it appears above all other content */
-        border-radius: 4px; /* Subtle rounded corners */
-        font-weight: bold; /* Bold text for better readability */
-      }
-
-      /* Make skip links visible when focused via keyboard navigation */
-      .skip-link:focus {
-        top: 6px; /* Move into viewport when focused */
-      }
-
-      /* Enhanced focus indicators for better accessibility */
-      /* Applies to all interactive elements: buttons, links, and iframes */
-      button:focus,
-      a:focus,
-      iframe:focus {
-        outline: 3px solid #3b82f6; /* Blue-500 outline for high visibility */
-        outline-offset: 2px; /* Space between element and outline */
-      }
-
-      /* Dark mode specific focus indicators */
-      /* Lighter blue for better contrast on dark backgrounds */
-      .dark button:focus,
-      .dark a:focus,
-      .dark iframe:focus {
-        outline-color: #60a5fa; /* Blue-400 for dark mode contrast */
-      }
-
-      /* ==========================================================================
-         COLOR CONTRAST IMPROVEMENTS
-         ========================================================================== */
-
-      /* Enhanced text contrast for footer and secondary text elements */
-      /* Replaces stone-600/stone-400 with darker alternatives for WCAG compliance */
-      .footer-text-enhanced {
-        color: #374151 !important; /* stone-700 instead of stone-600 for better contrast */
-      }
-
-      /* Dark mode version with lighter text for contrast on dark backgrounds */
-      .dark .footer-text-enhanced {
-        color: #d1d5db !important; /* stone-300 instead of stone-400 for better contrast */
-      }
-
-      /* ==========================================================================
-         SCREEN READER AND ASSISTIVE TECHNOLOGY SUPPORT
-         ========================================================================== */
-
-      /* Screen reader only content - visually hidden but available to assistive technology */
-      /* Uses clip method for better screen reader compatibility than display:none */
-      .sr-only {
-        position: absolute;
-        width: 1px; /* Minimal dimensions */
-        height: 1px;
-        padding: 0; /* Remove padding */
-        margin: -1px; /* Negative margin to hide */
-        overflow: hidden; /* Hide any overflow */
-        clip: rect(0, 0, 0, 0); /* Clip to hide visually */
-        white-space: nowrap; /* Prevent text wrapping */
-        border-width: 0; /* Remove borders */
-      }
-
-      /* ==========================================================================
-         HIGH CONTRAST TEXT UTILITIES
-         ========================================================================== */
-
-      /* Utility class for maximum contrast text in light mode */
-      .text-high-contrast {
-        color: #1f2937 !important; /* gray-800 for maximum readability */
-      }
-
-      /* Dark mode version with near-white text for maximum contrast */
-      .dark .text-high-contrast {
-        color: #f9fafb !important; /* gray-50 for dark mode maximum contrast */
-      }
-    </style>
-    <script>
-      /* ========================================================================
-         THEME INITIALIZATION SCRIPT - DARK/LIGHT MODE DETECTION
-         ========================================================================
-         This script runs in the <head> section to prevent flash of incorrect
-         theme (FOIT). It must execute before the body renders to avoid visual
-         glitches when the page loads.
-         ======================================================================== */
-
-      // Check for user's theme preference in the following priority order:
-      // 1. Explicit user preference stored in localStorage
-      // 2. System/browser preference for dark mode
-      // 3. Default to light mode if neither is available
-
-      if (localStorage.theme === "light") {
-        document.documentElement.classList.remove("dark");
-      } else {
-        document.documentElement.classList.add("dark");
-      }
-    </script>
+    <link rel="stylesheet" href="night.css" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://exitandrest.com/#website",
-            "url": "https://exitandrest.com/",
-            "name": "Exit and Rest",
-            "description": "Electronic ambient for sleep and night. Analog warmth. Tuned to 432.",
-            "publisher": { "@id": "https://exitandrest.com/#artist" }
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://exitandrest.com/#webpage",
-            "url": "https://exitandrest.com/",
-            "name": "Exit and Rest | Ambient Music for Sleep and Focus",
-            "isPartOf": { "@id": "https://exitandrest.com/#website" },
-            "about": { "@id": "https://exitandrest.com/#artist" },
-            "description": "Electronic ambient for sleep and night. Analog warmth. Tuned to 432. Human-made. Fully instrumental."
-          },
-          {
-            "@type": "MusicGroup",
-            "@id": "https://exitandrest.com/#artist",
-            "name": "Exit and Rest",
-            "description": "Electronic ambient for sleep and night. Analog warmth. Tuned to 432. Human-made. Fully owned.",
-            "url": "https://exitandrest.com/",
-            "email": "exitandrest@gmail.com",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://exitandrest.com/EARLOGO.svg"
-            },
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://exitandrest.com/img/moonbanner.jpg"
-            },
-            "genre": ["Ambient", "Electronic", "Sleep music", "Downtempo"],
-            "sameAs": [
-              "https://www.youtube.com/@exitandrest",
-              "https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN",
-              "https://www.tiktok.com/@exitandrest",
-              "https://x.com/exitandrest",
-              "https://www.instagram.com/exitandrest",
-              "https://www.facebook.com/profile.php?id=61572647316325",
-              "https://www.wikidata.org/wiki/Q141217950",
-              "https://musicbrainz.org/artist/dcf3467a-c0b8-4d07-88bc-7251aece8ed6"
-            ]
-          }
+        "@type": "MusicGroup",
+        "name": "Exit and Rest",
+        "url": "https://exitandrest.com/",
+        "image": "https://exitandrest.com/img/logo.jpg",
+        "description": "Original ambient music made to lower the temperature of a room.",
+        "genre": ["Ambient", "Electronic", "Sleep"],
+        "email": "exitandrest@gmail.com",
+        "sameAs": [
+          "https://www.youtube.com/@exitandrest",
+          "https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN",
+          "https://www.instagram.com/exitandrest",
+          "https://x.com/exitandrest",
+          "https://www.tiktok.com/@exitandrest",
+          "https://www.facebook.com/exitandrest",
+          "https://exitandrest.bandcamp.com/"
         ]
       }
     </script>
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "760586340058207");
+      fbq("track", "PageView");
+    </script>
   </head>
-  <body
-    class="bg-stone-100 dark:bg-black text-stone-800 dark:text-stone-200 transition-colors duration-500"
-    itemscope
-    itemtype="https://schema.org/WebPage"
-  >
-    <!-- Skip Links for Keyboard Navigation -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#listen" class="skip-link">Skip to music player</a>
-    <a href="#footer-navigation" class="skip-link">Skip to footer navigation</a>
+  <body>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=760586340058207&ev=PageView&noscript=1"
+        alt=""
+    /></noscript>
 
+    <a class="skip" href="#listen">Skip to listen</a>
 
+    <header class="hero">
+      <nav class="nav" aria-label="Site">
+        <a href="#listen">listen</a>
+        <a href="works.html">works</a>
+        <a href="listen.html">picture</a>
+      </nav>
+      <img
+        class="hero-bg"
+        src="img/darkmoonbanner.png"
+        alt=""
+        width="1920"
+        height="1080"
+      />
+      <div class="hero-veil" aria-hidden="true"></div>
+      <img class="hero-mark" src="EARLOGO.svg" alt="Exit and Rest" />
+    </header>
 
+    <main class="wrap">
+      <section class="thesis">
+        <p class="line">Made to lower the temperature of a room.</p>
+        <p>
+          Electronic ambient for night. Analog warmth. Human hands. No AI in the
+          tracks. Tuned to 432.
+        </p>
+      </section>
 
+      <section id="listen">
+        <p class="kicker">play a room</p>
+        <h1>listen</h1>
+        <p class="lede">
+          Choose a temperature. The catalog stays on Spotify. Hours live on
+          YouTube.
+        </p>
 
-<!-- Header Section -->
-<header
-  class="hero relative w-full flex items-center justify-center text-center overflow-hidden"
-  itemscope
-  itemtype="https://schema.org/WPHeader"
-  role="banner"
-  aria-label="Site header with hero image and navigation"
->
-  <!-- Background Image -->
-  <img
-    src="img/darkmoonbanner.png"
-    alt="Crescent moon through palm shadows"
-    class="hero-bg absolute top-0 left-0 z-0"
-    itemprop="image"
-  />
-  <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/20 to-black/70"></div>
+        <div class="rooms" role="tablist" aria-label="Listening rooms">
+          <button type="button" data-room="night" aria-pressed="true">night drive</button>
+          <button type="button" data-room="sleep" aria-pressed="false">sleep</button>
+          <button type="button" data-room="interiors" aria-pressed="false">interiors</button>
+          <button type="button" data-room="focus" aria-pressed="false">focus</button>
+          <button type="button" data-room="void" aria-pressed="false">void</button>
+          <button type="button" data-room="cosmic" aria-pressed="false">cosmic sleep</button>
+        </div>
 
-  <!-- Header Content -->
-  <div
-    class="relative z-20 flex flex-col items-center justify-center w-full p-4"
-    itemscope
-    itemtype="https://schema.org/MusicGroup"
-    role="group"
-    aria-labelledby="site-title"
-  >
-    <img
-      src="EARLOGO.svg"
-      alt="Exit and Rest"
-      class="hero-mark mx-auto"
-      style="filter: brightness(0) invert(1); opacity: 0.92;"
-      itemprop="logo"
-    />
-    <h1 class="sr-only">Exit and Rest. Electronic ambient for sleep and night.</h1>
-
-    <meta itemprop="url" content="https://exitandrest.com/" />
-    <meta itemprop="genre" content="Ambient" />
-    <meta itemprop="genre" content="Meditation" />
-    <meta itemprop="genre" content="New Age" />
-  </div>
-
-  <!-- Dark Mode Toggle -->
-  <div
-    id="theme-toggle-container"
-    class="absolute top-4 right-4 z-30"
-    role="complementary"
-  >
-    <button
-      id="theme-toggle"
-      aria-label="Toggle between dark and light mode"
-      aria-pressed="false"
-      class="p-2 rounded-full bg-stone-800 bg-opacity-50 text-white hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white transition"
-      role="switch"
-      aria-describedby="theme-description"
-    >
-      <!-- Sun Icon for Light Mode -->
-      <svg
-        id="theme-toggle-sun"
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        focusable="false"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
-        ></path>
-        <circle cx="12" cy="12" r="5"></circle>
-      </svg>
-      <!-- Moon Icon for Dark Mode -->
-      <svg
-        id="theme-toggle-moon"
-        class="w-6 h-6 hidden"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        focusable="false"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-        ></path>
-      </svg>
-    </button>
-    <div id="theme-description" class="sr-only">
-      Toggle between dark and light theme. Current theme will be announced
-      when changed.
-    </div>
-  </div>
-</header>
-
-
-
-
-
-
-
-
-
-
-    <!-- Main Content Section -->
-    <main
-      id="main-content"
-      class="py-16 sm:py-24"
-      itemscope
-      itemtype="https://schema.org/Article"
-      role="main"
-      aria-label="Main content about Exit and Rest ambient music"
-    >
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Introduction Section -->
-        <section
-          id="about"
-          aria-labelledby="about-heading"
-          itemprop="articleBody"
-          role="region"
-        >
-  <h2
-    id="about-heading"
-    class="text-2xl sm:text-3xl font-light tracking-wide text-center mb-8"
-  >
-    night.
-  </h2>
-  <div
-    class="text-base sm:text-lg font-light space-y-6 footer-text-enhanced text-left sm:text-center"
-    itemprop="text"
-    role="text"
-    aria-label="Description of Exit and Rest music project"
-  >
-    <p>
-      Exit and Rest is electronic ambient for sleep and night. A living discipline. Original instrumental music, made to lower the temperature of a room.
-    </p>
-
-    <p>
-      Analog warmth, human hands, no AI. Synths, drones, field recordings. Tuned to 432. The silence between is part of the piece.
-    </p>
-
-    <p>
-      The listener finishes it. Breath, room, stillness.
-    </p>
-
-    <p class="font-normal text-center pt-4" itemprop="description">
-      <strong>Feeling drowsy? Exit and Rest.</strong>
-    </p>
-
-    <p class="font-normal text-center pt-4">
-      Every sound is original and produced by
-      <span
-        itemprop="author"
-        itemscope
-        itemtype="https://schema.org/MusicGroup"
-      >
-        <span itemprop="name">Exit and Rest</span></span>.
-    </p>
-    <p class="text-center pt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm tracking-wide">
-      <a href="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN" class="underline underline-offset-4">Spotify</a>
-      <a href="listen.html" class="underline underline-offset-4">Licensing</a>
-      <a href="mailto:exitandrest@gmail.com" class="underline underline-offset-4">exitandrest@gmail.com</a>
-    </p>
-  </div>
-</section>
-        <!-- Media Embeds Section -->
-        <section
-          id="listen"
-          aria-labelledby="listen-heading"
-          class="mt-16 sm:mt-24"
-          itemscope
-          itemtype="https://schema.org/MusicPlaylist"
-          role="region"
-          aria-label="Music players for Exit and Rest content"
-        >
-          <h2
-            id="listen-heading"
-            class="text-3xl sm:text-4xl font-thin text-center mb-8 tracking-wide"
-          >
-            listen
-          </h2>
-          <meta itemprop="name" content="Exit and Rest Music Collection" />
-          <meta
-            itemprop="description"
-            content="Listen to Exit and Rest ambient music on YouTube and Spotify"
-          />
-          <meta itemprop="numTracks" content="Multiple" />
-          <div
-            class="space-y-8"
-            role="group"
-            aria-label="Music streaming platforms"
-          >
-            <!-- YouTube Embed -->
-            <div
-              class="relative w-full"
-              style="aspect-ratio: 16/9; min-height: 300px"
-              itemscope
-              itemtype="https://schema.org/VideoObject"
-              role="region"
-              aria-labelledby="youtube-heading"
-            >
-              <h3 id="youtube-heading" class="sr-only">YouTube Music Player</h3>
-              <iframe
-                src="https://www.youtube.com/embed/videoseries?si=ZKOuTTKzQRJpBqDB&list=PLuB5ulPguuaA4R-13u_PpgKhlpemfbB-A"
-                title="Exit and Rest ambient music playlist on YouTube - Full collection of meditation and sleep music"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-                class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                loading="lazy"
-                aria-label="YouTube video player containing Exit and Rest music playlist"
-                tabindex="0"
-              >
-              </iframe>
-              <meta
-                itemprop="name"
-                content="Exit and Rest - YouTube Playlist"
-              />
-              <meta
-                itemprop="description"
-                content="Complete collection of Exit and Rest ambient music videos"
-              />
-              <meta
-                itemprop="embedUrl"
-                content="https://www.youtube.com/embed/videoseries?si=ZKOuTTKzQRJpBqDB&list=PLuB5ulPguuaA4R-13u_PpgKhlpemfbB-A"
-              />
-              <meta itemprop="uploadDate" content="2024-01-01" />
-              <span
-                itemprop="author"
-                itemscope
-                itemtype="https://schema.org/MusicGroup"
-              >
-                <meta itemprop="name" content="Exit and Rest" />
-                <meta
-                  itemprop="url"
-                  content="https://www.youtube.com/@exitandrest"
-                />
-              </span>
-            </div>
-            <!-- Spotify Embed -->
-            <div
-              itemscope
-              itemtype="https://schema.org/MusicPlaylist"
-              role="region"
-              aria-labelledby="spotify-heading"
-            >
-              <h3 id="spotify-heading" class="sr-only">Spotify Music Player</h3>
-              <p class="text-center text-sm tracking-wide footer-text-enhanced mb-3">Exit and Rest</p>
-              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/6mfcGE04ZwO1pTQb5ftsaN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Exit and Rest on Spotify"></iframe>
-              <p class="text-center text-sm tracking-wide footer-text-enhanced mt-10 mb-3">drift into quiet</p>
-              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3JiPmwzvhlWmPZ5GHixsbp?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="drift into quiet playlist"></iframe>
-              <p class="text-center text-sm tracking-wide footer-text-enhanced mt-10 mb-3">cosmic sleep</p>
-              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4doqZUR4rfbrkMHptTirj3?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="cosmic sleep playlist"></iframe>
-            
-              <meta
-                itemprop="name"
-                content="Exit and Rest - Spotify Collection"
-              />
-              <meta
-                itemprop="description"
-                content="Stream Exit and Rest ambient music on Spotify"
-              />
-              <meta
-                itemprop="url"
-                content="https://open.spotify.com/playlist/3JiPmwzvhlWmPZ5GHixsbp"
-              />
-              <span
-                itemprop="byArtist"
-                itemscope
-                itemtype="https://schema.org/MusicGroup"
-              >
-                <meta itemprop="name" content="Exit and Rest" />
-                <meta
-                  itemprop="url"
-                  content="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN"
-                />
-              </span>
+        <article class="stage">
+          <div class="stage-head">
+            <img id="cover" class="cover" src="" alt="" />
+            <div>
+              <h2 id="room-name">night drive</h2>
+              <p id="room-use" class="use"></p>
             </div>
           </div>
-        </section>
-      </div>
+          <iframe
+            id="player"
+            class="player"
+            title="Exit and Rest on Spotify"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="eager"
+          ></iframe>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="hours-heading">
+        <p class="kicker">longform</p>
+        <h2 id="hours-heading" class="display">hours</h2>
+        <p class="lede">Sleep and focus loops. Leave it on.</p>
+        <div class="hours">
+          <iframe
+            src="https://www.youtube.com/embed/videoseries?list=PLuB5ulPguuaA4R-13u_PpgKhlpemfbB-A"
+            title="Exit and Rest on YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="works-heading">
+        <p class="kicker">still and motion</p>
+        <h2 id="works-heading" class="display">works</h2>
+        <p class="lede">
+          Night pieces. Music as soundtrack. The recordings stay free.
+        </p>
+        <div class="works-grid">
+          <a href="works.html">
+            <img src="img/darkmoonbanner.png" alt="" />
+            <h3>Night I</h3>
+            <p>Moon through palms. The house at night.</p>
+          </a>
+          <a href="works.html">
+            <img src="cosmic-sleep.jpg" alt="" />
+            <h3>Cosmic Sleep</h3>
+            <p>The all-night room.</p>
+          </a>
+          <a href="works.html">
+            <img src="img/moonbanner.jpg" alt="" />
+            <h3>Night II</h3>
+            <p>Same moon. Different hour.</p>
+          </a>
+        </div>
+        <p class="note"><a href="works.html">the archive</a></p>
+      </section>
+
+      <section class="section" aria-labelledby="picture-heading">
+        <p class="kicker">for picture</p>
+        <h2 id="picture-heading" class="display">film, television, brand</h2>
+        <p class="lede">
+          Original recordings. Organized by use. Masters and publishing, one
+          desk.
+        </p>
+        <a class="mail" href="listen.html">see the rooms</a>
+        <p class="note">
+          <a href="mailto:exitandrest@gmail.com">exitandrest@gmail.com</a>
+        </p>
+      </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer
-      class="bg-stone-200 dark:bg-black py-12"
-      itemscope
-      itemtype="https://schema.org/WPFooter"
-      role="contentinfo"
-      aria-label="Site footer with social media links and copyright information"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h3
-          id="footer-navigation"
-          class="text-xl font-normal mb-6"
-          aria-label="Social media navigation"
-        >
-          Connect
-        </h3>
-        <!-- Social Links -->
-        <nav
-          aria-labelledby="footer-navigation"
-          class="flex justify-center items-center gap-6 sm:gap-8 flex-wrap mb-8"
-          itemscope
-          itemtype="https://schema.org/MusicGroup"
-          role="navigation"
-        >
-          <meta itemprop="name" content="Exit and Rest" />
-          <link itemprop="url" href="https://exitandrest.com/" />
-          <a
-            href="https://www.youtube.com/@exitandrest"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer-text-enhanced hover:text-red-600 dark:hover:text-red-500 transition-colors duration-300"
-            itemprop="sameAs"
-            aria-label="Visit Exit and Rest on YouTube - Opens in new tab"
-            tabindex="0"
-          >
-            <span class="sr-only">YouTube Channel</span>
-            <svg
-              class="w-8 h-8"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
-              <title>YouTube</title>
-              <path
-                fill-rule="evenodd"
-                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.78 22 12 22 12s0 3.22-.42 4.814a2.506 2.506 0 0 1-1.768 1.768c-1.594.42-7.812.42-7.812.42s-6.218 0-7.812-.42a2.506 2.506 0 0 1-1.768-1.768C2 15.22 2 12 2 12s0-3.22.42-4.814a2.506 2.506 0 0 1 1.768-1.768C5.782 5 12 5 12 5s6.218 0 7.812.418ZM9.75 15.5V8.5l6.5 3.5-6.5 3.5Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer-text-enhanced hover:text-green-600 dark:hover:text-green-500 transition-colors duration-300"
-            itemprop="sameAs"
-            aria-label="Listen to Exit and Rest on Spotify - Opens in new tab"
-            tabindex="0"
-          >
-            <span class="sr-only">Spotify Artist Profile</span>
-            <svg
-              class="w-8 h-8"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
-              <title>Spotify</title>
-              <path
-                fill-rule="evenodd"
-                d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2Zm.922 16.03a.75.75 0 0 1-1.08-.022c-2.334-1.434-5.252-1.76-8.733-.966a.75.75 0 0 1-.585-1.442c3.837-.878 7.114-.49 9.718 1.135a.75.75 0 0 1 .022 1.08Zm2.04-2.61a.75.75 0 0 1-1.182.664c-2.534-1.538-6.41-2.01-9.492-1.102a.75.75 0 0 1-.6-1.412c3.483-.99 7.718-.456 10.613 1.312a.75.75 0 0 1-.52 1.538Zm.48-2.923a.75.75 0 0 1-1.273.782c-2.81-1.7-7.023-1.895-10.056-.943a.75.75 0 0 1-.445-1.446c3.388-1.043 7.977-.81 11.12 1.118a.75.75 0 0 1-.346 1.488Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://x.com/exitandrest"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer-text-enhanced hover:text-black dark:hover:text-white transition-colors duration-300"
-            aria-label="Follow Exit and Rest on X (formerly Twitter) - Opens in new tab"
-            tabindex="0"
-          >
-            <span class="sr-only">X (formerly Twitter)</span>
-            <svg
-              class="w-8 h-8"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
-              <title>X (formerly Twitter)</title>
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.instagram.com/exitandrest"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer-text-enhanced hover:text-pink-600 dark:hover:text-pink-500 transition-colors duration-300"
-            aria-label="Follow Exit and Rest on Instagram - Opens in new tab"
-            tabindex="0"
-          >
-            <span class="sr-only">Instagram</span>
-            <svg
-              class="w-8 h-8"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
-              <title>Instagram</title>
-              <path
-                fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 0 1 1.772 1.153 4.902 4.902 0 0 1 1.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 0 1-1.153 1.772 4.902 4.902 0 0 1-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 0 1-1.772-1.153 4.902 4.902 0 0 1-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 0 1 1.153-1.772A4.902 4.902 0 0 1 6.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2Zm0 1.623c-2.403 0-2.72.01-3.667.058-1.146.052-1.602.248-1.922.487-.427.33-.729.629-.958.958-.248.32-.435.776-.487 1.922-.048.947-.058 1.264-.058 3.667s.01 2.72.058 3.667c.052 1.146.248 1.602.487 1.922.33.427.629.729.958.958.32.248.776.435 1.922.487.947.048 1.264.058 3.667.058s2.72-.01 3.667-.058c1.146-.052 1.602-.248 1.922-.487.427-.33.729-.629.958-.958.248-.32.435-.776.487-1.922.048-.947.058-1.264.058-3.667s-.01-2.72-.058-3.667c-.052-1.146-.248-1.602-.487-1.922-.33-.427-.629-.729-.958-.958-.32-.248-.776-.435-1.922-.487-.947-.048-1.264-.058-3.667-.058ZM12 8.118a3.882 3.882 0 1 0 0 7.764 3.882 3.882 0 0 0 0-7.764Zm0 6.138a2.256 2.256 0 1 1 0-4.512 2.256 2.256 0 0 1 0 4.512Zm4.965-7.462a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.tiktok.com/@exitandrest"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer-text-enhanced hover:text-white transition-colors duration-300"
-            itemprop="sameAs"
-            aria-label="Follow Exit and Rest on TikTok"
-          >
-            <span class="sr-only">TikTok</span>
-            <svg
-              class="w-8 h-8"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
-              <title>TikTok</title>
-              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.28 0 .54.04.8.1v-3.5a6.37 6.37 0 0 0-.8-.05A6.34 6.34 0 0 0 3.15 16.2a6.34 6.34 0 0 0 10.9 4.4c1.7-1.5 2.7-3.7 2.7-6.03V8.73a8.16 8.16 0 0 0 4.8 1.54V6.82a4.84 4.84 0 0 1-1.96-.13z"/>
-            </svg>
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61572647316325"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer-text-enhanced hover:text-blue-600 dark:hover:text-blue-500 transition-colors duration-300"
-            aria-label="Like Exit and Rest on Facebook - Opens in new tab"
-            tabindex="0"
-          >
-            <span class="sr-only">Facebook</span>
-            <svg
-              class="w-8 h-8"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
-              <title>Facebook</title>
-              <path
-                fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-        </nav>
-        <p class="text-sm footer-text-enhanced mb-4">
-          <a href="listen.html" class="underline-offset-4 hover:underline">Licensing catalog</a>
-          <span aria-hidden="true"> · </span>
-          <a href="mailto:exitandrest@gmail.com" class="underline-offset-4 hover:underline">exitandrest@gmail.com</a>
-        </p>
-        <!-- Copyright -->
-        <p
-          class="text-sm footer-text-enhanced"
-          role="contentinfo"
-          aria-label="Copyright information"
-        >
-          &copy;
-          <span id="copyright-year" aria-label="Current year"></span> Exit and
-          Rest. All rights reserved.
-        </p>
-      </div>
+    <footer class="site-footer">
+      <img class="logo-mini" src="EARLOGO.svg" alt="" />
+      <nav aria-label="Elsewhere">
+        <a href="https://open.spotify.com/artist/6mfcGE04ZwO1pTQb5ftsaN">Spotify</a>
+        <a href="https://www.youtube.com/@exitandrest">YouTube</a>
+        <a href="https://www.instagram.com/exitandrest">Instagram</a>
+        <a href="https://www.tiktok.com/@exitandrest">TikTok</a>
+        <a href="https://x.com/exitandrest">X</a>
+        <a href="https://www.facebook.com/exitandrest">Facebook</a>
+        <a href="https://exitandrest.bandcamp.com/">Bandcamp</a>
+        <a href="mailto:exitandrest@gmail.com">Email</a>
+      </nav>
+      <p class="note">Feeling drowsy? Exit and Rest.</p>
     </footer>
 
     <script>
-      /* ========================================================================
-         INTERACTIVE THEME MANAGEMENT AND ACCESSIBILITY FEATURES
-         ========================================================================
-         This script manages dark/light mode toggling, accessibility features,
-         and user interface enhancements. It runs after the DOM is fully loaded
-         to ensure all elements are available for manipulation.
-         ======================================================================== */
+      const ROOMS = {
+        night: {
+          name: "night drive",
+          use: "Late road. City after hours. Moody, not sinister.",
+          id: "38N12aSf0xxoFxN9Cz2xh1",
+          kind: "album",
+          cover: "https://i.scdn.co/image/ab67616d00001e024c0c6e74c8f653dd0e1d8ff4",
+        },
+        sleep: {
+          name: "sleep",
+          use: "The hour before. Soft. Loop-friendly.",
+          id: "22qizZ3MqZ7LxPa0IP1sw5",
+          kind: "album",
+          cover: "https://i.scdn.co/image/ab67616d00001e025034cc9a6ac10638366ce0e5",
+        },
+        interiors: {
+          name: "interiors",
+          use: "Lamps, rooms, quiet house. Intimate, not cinematic.",
+          id: "19TnTkSMkNJP81Qbk4K426",
+          kind: "album",
+          cover: "https://i.scdn.co/image/ab67616d00001e021eff9e1b5e24d4015f094f60",
+        },
+        focus: {
+          name: "focus",
+          use: "Still work. Present, not sleepy.",
+          id: "3boXMhsITJuyp5MMkcIeDL",
+          kind: "album",
+          cover: "https://i.scdn.co/image/ab67616d00001e02a756a015990a9a83c7eee162",
+        },
+        void: {
+          name: "void",
+          use: "Long texture. Almost no event. Holds a dark cut.",
+          id: "102c10KC2rZpU3WAzmzE4y",
+          kind: "album",
+          cover: "https://i.scdn.co/image/ab67616d00001e020ca9eb6520810d3b31019473",
+        },
+        cosmic: {
+          name: "cosmic sleep",
+          use: "All night. Leave it on.",
+          id: "4doqZUR4rfbrkMHptTirj3",
+          kind: "playlist",
+          cover: "cosmic-sleep.jpg",
+        },
+      };
 
-      /**
-       * Main application initialization - waits for DOM to be fully loaded
-       * before setting up event handlers and initial state
-       */
-      document.addEventListener("DOMContentLoaded", () => {
-        /* =====================================================================
-           DOM ELEMENT REFERENCES
-           ===================================================================== */
+      const cover = document.getElementById("cover");
+      const nameEl = document.getElementById("room-name");
+      const useEl = document.getElementById("room-use");
+      const player = document.getElementById("player");
+      const buttons = document.querySelectorAll(".rooms button");
 
-        // Theme toggle button in the header navigation
-        const themeToggleButton = document.getElementById("theme-toggle");
-
-        // Sun and moon icons for visual feedback of current theme
-        const sunIcon = document.getElementById("theme-toggle-sun");
-        const moonIcon = document.getElementById("theme-toggle-moon");
-
-        // Copyright year span for automatic year updates
-        const copyrightYear = document.getElementById("copyright-year");
-
-        /* =====================================================================
-           THEME ICON MANAGEMENT FUNCTIONS
-           ===================================================================== */
-
-        /**
-         * Updates the visibility of sun/moon icons based on current theme
-         * @param {boolean} isDarkMode - True if dark theme is active
-         */
-        const updateThemeIcons = (isDarkMode) => {
-          if (isDarkMode) {
-            // Dark mode: Hide sun icon, show moon icon
-            sunIcon.classList.add("hidden");
-            moonIcon.classList.remove("hidden");
-          } else {
-            // Light mode: Show sun icon, hide moon icon
-            sunIcon.classList.remove("hidden");
-            moonIcon.classList.add("hidden");
-          }
-        };
-
-        /* =====================================================================
-           ACCESSIBILITY AND SCREEN READER SUPPORT
-           ===================================================================== */
-
-        /**
-         * Creates and announces theme changes to screen reader users
-         * Uses ARIA live regions for non-intrusive announcements
-         * @param {boolean} isDarkMode - True if dark theme was activated
-         */
-        const announceThemeChange = (isDarkMode) => {
-          // Create temporary announcement element
-          const announcement = document.createElement("div");
-          announcement.setAttribute("aria-live", "polite"); // Non-intrusive announcement
-          announcement.setAttribute("aria-atomic", "true"); // Read entire content as one unit
-          announcement.className = "sr-only"; // Visually hidden but available to screen readers
-          announcement.textContent = `Theme changed to ${isDarkMode ? "dark" : "light"} mode`;
-
-          // Add to DOM for screen readers to detect
-          document.body.appendChild(announcement);
-
-          // Remove after sufficient time for screen readers to process
-          setTimeout(() => {
-            document.body.removeChild(announcement);
-          }, 1000);
-        };
-
-        /**
-         * Updates ARIA attributes for the theme toggle button
-         * Provides current state and available actions to screen readers
-         * @param {boolean} isDarkMode - True if dark theme is active
-         */
-        const updateAriaPressed = (isDarkMode) => {
-          if (themeToggleButton) {
-            // Set pressed state for screen readers (true/false)
-            themeToggleButton.setAttribute(
-              "aria-pressed",
-              isDarkMode.toString()
-            );
-
-            // Update descriptive label with current state and next action
-            themeToggleButton.setAttribute(
-              "aria-label",
-              `Toggle to ${isDarkMode ? "light" : "dark"} mode. Currently in ${isDarkMode ? "dark" : "light"} mode.`
-            );
-          }
-        };
-
-        /* =====================================================================
-           THEME TOGGLING FUNCTIONALITY
-           ===================================================================== */
-
-        /**
-         * Main theme toggle function - handles all aspects of theme switching
-         * - Toggles CSS classes for visual changes
-         * - Saves user preference to localStorage for persistence
-         * - Updates UI elements and accessibility attributes
-         * - Announces changes to screen readers
-         */
-        const toggleTheme = () => {
-          // Toggle 'dark' class on root HTML element and get resulting state
-          const isDarkMode = document.documentElement.classList.toggle("dark");
-
-          // Persist user's theme preference for future visits
-          localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-
-          // Update all theme-related UI elements
-          updateThemeIcons(isDarkMode); // Switch sun/moon icons
-          updateAriaPressed(isDarkMode); // Update accessibility attributes
-          announceThemeChange(isDarkMode); // Notify screen readers
-        };
-
-        /* =====================================================================
-           KEYBOARD NAVIGATION SUPPORT
-           ===================================================================== */
-
-        /**
-         * Handles keyboard interactions for the theme toggle button
-         * Ensures full keyboard accessibility beyond mouse/touch
-         * @param {KeyboardEvent} event - The keyboard event object
-         */
-        const handleKeyboardNavigation = (event) => {
-          // Support both Enter and Space keys for activation (standard practice)
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault(); // Prevent default browser behavior
-            toggleTheme(); // Execute theme toggle
-          }
-        };
-
-        /* =====================================================================
-           INITIALIZATION AND EVENT BINDING
-           ===================================================================== */
-
-        // Determine initial theme state from current HTML class
-        const initialDarkMode =
-          document.documentElement.classList.contains("dark");
-
-        // Set up initial UI state based on current theme
-        updateThemeIcons(initialDarkMode); // Show correct sun/moon icon
-        updateAriaPressed(initialDarkMode); // Set correct ARIA attributes
-
-        // Bind event handlers to theme toggle button (if it exists)
-        if (themeToggleButton) {
-          // Mouse/touch interaction
-          themeToggleButton.addEventListener("click", toggleTheme);
-
-          // Keyboard interaction for accessibility
-          themeToggleButton.addEventListener(
-            "keydown",
-            handleKeyboardNavigation
-          );
-        }
-
-        /* =====================================================================
-           AUTOMATIC COPYRIGHT YEAR UPDATE
-           ===================================================================== */
-
-        // Automatically update copyright year to current year
-        if (copyrightYear) {
-          copyrightYear.textContent = new Date().getFullYear();
-        }
-
-        /* =====================================================================
-           SKIP LINK FUNCTIONALITY FOR ACCESSIBILITY
-           ===================================================================== */
-
-        // Enhance skip links with proper focus management
-        const skipLinks = document.querySelectorAll(".skip-link");
-        skipLinks.forEach((link) => {
-          link.addEventListener("click", (e) => {
-            // Extract target ID from href attribute
-            const targetId = link.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-              // Set focus to target element after DOM updates
-              setTimeout(() => {
-                targetElement.focus();
-
-                // Make non-focusable elements focusable for skip link functionality
-                if (!targetElement.hasAttribute("tabindex")) {
-                  targetElement.setAttribute("tabindex", "-1");
-                }
-              }, 100);
-            }
-          });
+      function loadRoom(key) {
+        const room = ROOMS[key];
+        const src =
+          "https://open.spotify.com/embed/" +
+          room.kind +
+          "/" +
+          room.id +
+          "?utm_source=generator&theme=0";
+        nameEl.textContent = room.name;
+        useEl.textContent = room.use;
+        cover.alt = room.name;
+        cover.src = room.cover;
+        player.title = room.name + " on Spotify";
+        if (player.src !== src) player.src = src;
+        buttons.forEach(function (btn) {
+          btn.setAttribute("aria-pressed", String(btn.dataset.room === key));
         });
+      }
 
-        /* =====================================================================
-           REDUCED MOTION ACCESSIBILITY SUPPORT
-           ===================================================================== */
-
-        // Respect user's motion preferences for accessibility
-        const prefersReducedMotion = window.matchMedia(
-          "(prefers-reduced-motion: reduce)"
-        );
-        if (prefersReducedMotion.matches) {
-          // Disable transitions for users who prefer reduced motion
-          document.body.style.setProperty("--transition-duration", "0ms");
-        }
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          loadRoom(btn.dataset.room);
+        });
       });
+
+      loadRoom("night");
     </script>
   </body>
 </html>
