@@ -6,7 +6,7 @@
     <title>Exit and Rest</title>
     <meta
       name="description"
-      content="Exit and Rest. Original ambient music made to lower the temperature of a room. Night drive, sleep, interiors, focus."
+      content="Exit and Rest. Cosmic Sleep is the all-night room. Original ambient music made to lower the temperature of a room."
     />
     <link rel="canonical" href="https://exitandrest.com/" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -25,7 +25,7 @@
     <meta property="og:title" content="Exit and Rest" />
     <meta
       property="og:description"
-      content="Original ambient music made to lower the temperature of a room."
+      content="Cosmic Sleep is the all-night room. Original ambient music made to lower the temperature of a room."
     />
     <meta property="og:image" content="https://exitandrest.com/img/logo.jpg" />
     <meta property="og:image:alt" content="Exit and Rest" />
@@ -34,7 +34,7 @@
     <meta name="twitter:title" content="Exit and Rest" />
     <meta
       name="twitter:description"
-      content="Original ambient music made to lower the temperature of a room."
+      content="Cosmic Sleep is the all-night room. Original ambient music made to lower the temperature of a room."
     />
     <meta name="twitter:image" content="https://exitandrest.com/img/logo.jpg" />
 
@@ -97,7 +97,7 @@
 
     <header class="hero">
       <nav class="nav" aria-label="Site">
-        <a href="#listen">listen</a>
+        <a href="#cosmic">listen</a>
         <a href="works.html">works</a>
         <a href="listen.html">picture</a>
       </nav>
@@ -122,27 +122,27 @@
       </section>
 
       <section id="listen">
-        <p class="kicker">play a room</p>
+        <p class="kicker">the all-night room</p>
         <h1>listen</h1>
         <p class="lede">
-          Choose a temperature. The catalog stays on Spotify. Hours live on
-          YouTube.
+          Cosmic Sleep is already on. Other rooms if you want a different
+          temperature. Hours live on YouTube.
         </p>
 
         <div class="rooms" role="tablist" aria-label="Listening rooms">
-          <button type="button" data-room="night" aria-pressed="true">night drive</button>
+          <button type="button" data-room="cosmic" aria-pressed="true">cosmic sleep</button>
           <button type="button" data-room="sleep" aria-pressed="false">sleep</button>
+          <button type="button" data-room="night" aria-pressed="false">night drive</button>
           <button type="button" data-room="interiors" aria-pressed="false">interiors</button>
           <button type="button" data-room="focus" aria-pressed="false">focus</button>
           <button type="button" data-room="void" aria-pressed="false">void</button>
-          <button type="button" data-room="cosmic" aria-pressed="false">cosmic sleep</button>
         </div>
 
         <article class="stage">
           <div class="stage-head">
             <img id="cover" class="cover" src="" alt="" />
             <div>
-              <h2 id="room-name">night drive</h2>
+              <h2 id="room-name">cosmic sleep</h2>
               <p id="room-use" class="use"></p>
             </div>
           </div>
@@ -180,14 +180,14 @@
         </p>
         <div class="works-grid">
           <a href="works.html">
-            <img src="img/darkmoonbanner.png" alt="" />
-            <h3>Night I</h3>
-            <p>Moon through palms. The house at night.</p>
-          </a>
-          <a href="works.html">
             <img src="cosmic-sleep.jpg" alt="" />
             <h3>Cosmic Sleep</h3>
             <p>The all-night room.</p>
+          </a>
+          <a href="works.html">
+            <img src="img/darkmoonbanner.png" alt="" />
+            <h3>Night I</h3>
+            <p>Moon through palms. The house at night.</p>
           </a>
           <a href="works.html">
             <img src="img/moonbanner.jpg" alt="" />
@@ -296,6 +296,9 @@
         buttons.forEach(function (btn) {
           btn.setAttribute("aria-pressed", String(btn.dataset.room === key));
         });
+        if ((location.hash || "").replace("#", "") !== key) {
+          history.replaceState(null, "", "#" + key);
+        }
       }
 
       buttons.forEach(function (btn) {
@@ -304,7 +307,13 @@
         });
       });
 
-      loadRoom("night");
+      window.addEventListener("hashchange", function () {
+        var h = (location.hash || "").replace("#", "").toLowerCase();
+        if (h && ROOMS[h]) loadRoom(h);
+      });
+
+      var start = (location.hash || "").replace("#", "").toLowerCase();
+      loadRoom(ROOMS[start] ? start : "cosmic");
     </script>
   </body>
 </html>
